@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiches espèces · Wiki Cap Nature</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .especes-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin: 1.5rem 0 3rem;
+    }
+
+    @media (min-width: 900px) {
+      .especes-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .espece-card {
+      background: white;
+      border: 1px solid var(--bordure);
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      transition: var(--transition);
+      box-shadow: var(--ombre);
+    }
+
+    .espece-card:hover {
+      box-shadow: var(--ombre-forte);
+      transform: translateY(-2px);
+    }
+
+    .espece-silhouette {
+      background: linear-gradient(135deg, #f1f8e7 0%, #e8f5f5 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      border-right: 1px solid var(--bordure);
+    }
+
+    .espece-silhouette svg {
+      width: 100%;
+      max-width: 160px;
+      height: auto;
+    }
+
+    .espece-content {
+      padding: 1.25rem 1.5rem;
+      min-width: 0;
+    }
+
+    .espece-nom {
+      color: var(--bleu-fonce);
+      margin: 0 0 0.1rem;
+      font-size: 1.15rem;
+    }
+
+    .espece-latin {
+      color: var(--texte-leger);
+      font-size: 0.88rem;
+      margin: 0 0 0.75rem;
+    }
+
+    .espece-meta {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.82rem;
+      color: var(--texte-leger);
+      padding-bottom: 0.6rem;
+      border-bottom: 1px dashed var(--bordure);
+      margin-bottom: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .espece-line {
+      font-size: 0.88rem;
+      margin: 0.4rem 0;
+      line-height: 1.5;
+    }
+
+    .espece-anecdote {
+      background: #f1f8e7;
+      border-left: 3px solid var(--vert);
+      padding: 0.65rem 0.85rem;
+      margin: 0.75rem 0 0.6rem;
+      font-size: 0.85rem;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .espece-tip {
+      font-size: 0.85rem;
+      color: var(--bleu-fonce);
+      background: #eff3fc;
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      margin: 0.6rem 0 0;
+    }
+
+    .cat-desc {
+      color: var(--texte-leger);
+      font-style: italic;
+      margin: 0 0 1rem;
+    }
+
+    .legend {
+      background: var(--bg-clair);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      font-size: 0.9rem;
+    }
+
+    .legend-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.5rem 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .espece-card {
+        grid-template-columns: 1fr;
+      }
+      .espece-silhouette {
+        border-right: none;
+        border-bottom: 1px solid var(--bordure);
+        padding: 1.5rem;
+      }
+    }
+
+    /* Impression */
+    @media print {
+      .especes-grid { grid-template-columns: 1fr 1fr; }
+      .espece-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #999;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../index.html" class="brand">
+      <div class="brand-logo">🐦</div>
+      <div class="brand-text">
+        <span class="brand-title">Wiki Cap Nature</span>
+        <span class="brand-sub">Ateliers Birds · Guide de réplication</span>
+      </div>
+    </a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../presentation.html">Présentation</a></li>
+        <li><a href="../protocole/index.html">Protocole</a></li>
+        <li><a href="../materiel/index.html">Matériel</a></li>
+        <li><a href="../fiches-eleves/index.html">Fiches élèves</a></li>
+        <li><a href="index.html" class="active">Espèces</a></li>
+        <li><a href="../sonogramme/index.html">Sonogramme</a></li>
+        <li><a href="../forum/index.html">Forum</a></li>
+        <li><a href="../evaluation/index.html">Évaluation</a></li>
+        <li><a href="../ressources/index.html">Ressources</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrapper">
+
+  <aside class="sidebar">
+    <h3>Naviguer</h3>
+    <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#cat-urbain">🏙️ Espèces urbaines très communes</a></li>
+<li><a href="#cat-parcs">🌳 Espèces des parcs et jardins</a></li>
+<li><a href="#cat-campagne">🌾 Espèces des lisières et de la campagne</a></li>
+<li><a href="#cat-humide">💧 Espèces des zones humides</a></li>
+
+    </ul>
+    <h3>Actions</h3>
+    <ul>
+      <li><a href="#" onclick="window.print(); return false;">🖨️ Imprimer ce mini-guide</a></li>
+      <li><a href="../fiches-eleves/index.html">→ Fiches de terrain</a></li>
+    </ul>
+  </aside>
+
+  <main class="content">
+
+    <h1>Fiches espèces illustrées</h1>
+    <p class="page-lead">Un mini-guide de 29 espèces communes à connaître pour préparer ou prolonger l'atelier — du moineau de trottoir au héron cendré.</p>
+
+    <h2 id="intro">À quoi sert ce mini-guide ?</h2>
+    <p>Ces fiches ne sont <strong>pas un outil d'identification de terrain</strong> (Merlin Bird ID s'en charge mieux), mais un support :</p>
+    <ul>
+      <li>Pour <strong>préparer les élèves</strong> en amont : montrer les espèces qu'ils ont des chances d'entendre</li>
+      <li>Pour <strong>prolonger en classe</strong> : approfondir les espèces effectivement identifiées pendant l'atelier</li>
+      <li>Pour <strong>les enseignants et animateurs</strong> qui souhaitent se familiariser avec l'avifaune commune</li>
+      <li>Pour offrir des <strong>anecdotes mémorables</strong> qui ancrent les apprentissages</li>
+    </ul>
+
+    <div class="legend">
+      <strong>Légende des statuts de conservation</strong> (Liste Rouge UICN France) :
+      <div class="legend-grid">
+        <span>🟢 <strong>LC</strong> · Préoccupation mineure</span>
+        <span>🟧 <strong>NT/Décl.</strong> · Quasi menacée ou en déclin</span>
+        <span>🟥 <strong>VU/EN</strong> · Vulnérable / En danger</span>
+      </div>
+    </div>
+
+    <div class="callout tip">
+      <p class="callout-title">💡 Comment utiliser ces fiches</p>
+      <ul style="margin: 0.5rem 0 0;">
+        <li><strong>Avant l'atelier</strong> : sélectionnez 5 à 10 espèces probables sur votre site et imprimez-les pour préparer le groupe</li>
+        <li><strong>Pendant l'atelier</strong> : laissez Merlin faire le travail d'identification, ne consultez pas les fiches sur le terrain</li>
+        <li><strong>Après l'atelier</strong> : revenez sur les espèces effectivement identifiées et lisez les fiches en classe</li>
+      </ul>
+    </div>
+
+    
+    <h2 id="cat-urbain">🏙️ Espèces urbaines très communes</h2>
+    <p class="cat-desc">Les “stars” des rues, places, et centres-villes. Présentes presque toute l'année.</p>
+    <div class="especes-grid">
+      
+    <article class="espece-card" id="moineau-domestique">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="82" rx="48" ry="32" fill="#a07850"/>
+        <ellipse cx="100" cy="75" rx="44" ry="20" fill="#7a5a3a"/>
+        <circle cx="146" cy="62" r="22" fill="#7a5a3a"/>
+        <path d="M 132 73 Q 140 80 155 78 Q 160 75 158 70 L 135 68 Z" fill="#3a2a1a"/>
+        <path d="M 166 58 L 184 62 L 166 66 Z" fill="#3a2a1a"/>
+        <circle cx="152" cy="58" r="2.5" fill="#1f2a6b"/>
+        <path d="M 65 85 Q 45 95 30 102 L 48 110 Q 68 100 78 95 Z" fill="#5a4028"/>
+        <path d="M 94 110 L 92 128 L 97 128 L 99 113 Z" fill="#3a2a1a"/>
+        <path d="M 108 110 L 106 128 L 112 128 L 113 113 Z" fill="#3a2a1a"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Moineau domestique</h3>
+        <p class="espece-latin"><em>Passer domesticus</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 14–16 cm</span>
+          <span><strong>Envergure</strong> · 21–25 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Villes, villages, granges — quasi exclusivement lié à l'homme</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Pépiements rauques et répétés, “chip-chip-chip” parfois en chœur depuis un buisson</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Granivore opportuniste, niche en cavités de bâtiments (corniches, tuiles, fissures). Très grégaire, peut former des dortoirs de plusieurs dizaines d'individus.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟧 Préoccupation mineure mais en déclin marqué (−60% depuis 30 ans en France selon le STOC).</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Le moineau domestique est l'oiseau le plus largement distribué au monde, présent sur tous les continents (sauf l'Antarctique), suivant l'humain partout. Sa raréfaction urbaine récente est un signal d'alerte sur la qualité des écosystèmes urbains.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Cherchez-le près des terrasses de café et des boulangeries : il y récupère miettes et insectes.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="pigeon-ramier">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="55" ry="35" fill="#9ca5b8"/>
+        <circle cx="152" cy="55" r="25" fill="#7a8898"/>
+        <ellipse cx="142" cy="65" rx="8" ry="4" fill="white"/>
+        <path d="M 175 52 L 192 56 L 175 60 Z" fill="#d8a070"/>
+        <circle cx="158" cy="52" r="2.5" fill="#f7d038"/>
+        <path d="M 60 85 Q 35 92 20 98 L 40 110 Q 60 100 75 95 Z" fill="#6a7888"/>
+        <rect x="45" y="88" width="22" height="3" fill="white"/>
+        <path d="M 93 110 L 91 130 L 97 130 L 99 115 Z" fill="#c83045"/>
+        <path d="M 108 110 L 106 130 L 112 130 L 114 115 Z" fill="#c83045"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Pigeon ramier</h3>
+        <p class="espece-latin"><em>Columba palumbus</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 40–42 cm</span>
+          <span><strong>Envergure</strong> · 75–80 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Forêts, parcs urbains, jardins — partout où il y a des arbres</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · “Roucoulement profond en 5 notes : “hou-houhou-hou-hou”, la deuxième note appuyée</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Granivore puis omnivore en ville. Niche dans les arbres, deux pontes par an. A largement colonisé les centres urbains depuis les années 1970.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure, en forte expansion (+150% en 30 ans).</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> À ne pas confondre avec le pigeon biset (le pigeon des villes, en théorie féral). Le ramier a une tache blanche bien nette sur le cou et est plus grand. Son envol est bruyant : un battement d'ailes “claquant” caractéristique.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Repérez la tache blanche sur le côté du cou et le bord blanc des ailes en vol — c'est lui.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="tourterelle-turque">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="48" ry="30" fill="#d8c8b0"/>
+        <circle cx="148" cy="58" r="22" fill="#c8b890"/>
+        <path d="M 138 50 Q 145 45 158 48 L 158 54 L 138 56 Z" fill="#1a1525"/>
+        <path d="M 168 56 L 185 60 L 168 64 Z" fill="#3a2a1a"/>
+        <circle cx="154" cy="55" r="2.5" fill="#c83045"/>
+        <path d="M 62 80 Q 42 88 27 98 L 47 105 Q 67 92 78 88 Z" fill="#a89870"/>
+        <path d="M 93 108 L 91 128 L 97 128 L 99 113 Z" fill="#c83045"/>
+        <path d="M 108 108 L 106 128 L 112 128 L 114 113 Z" fill="#c83045"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Tourterelle turque</h3>
+        <p class="espece-latin"><em>Streptopelia decaocto</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 32 cm</span>
+          <span><strong>Envergure</strong> · 47–55 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Villes, villages, jardins, parcs — souvent associée aux mangeoires</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Roucoulement trisyllabique “tou-touuuu-tou”, monotone, répété en cycles</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Granivore, niche très simplement sur une branche basse ou un rebord de gouttière. Très tolérante à la présence humaine.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure, en expansion.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Espèce originaire d'Asie qui a colonisé l'Europe en moins de 50 ans (années 1930–80) — un des cas les plus rapides d'expansion d'aire connue chez un oiseau. Arrivée en France dans les années 1950.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Couleur beige uniforme et fin collier noir derrière la nuque — la plus claire des tourterelles.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="etourneau">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="82" rx="55" ry="30" fill="#2a1f4a"/>
+        <circle cx="150" cy="60" r="22" fill="#2a1f4a"/>
+        <circle cx="92" cy="78" r="2" fill="#f7d038"/>
+        <circle cx="110" cy="80" r="2" fill="#f7d038"/>
+        <circle cx="128" cy="79" r="2" fill="#f7d038"/>
+        <circle cx="100" cy="92" r="2" fill="#f7d038"/>
+        <circle cx="118" cy="93" r="2" fill="#f7d038"/>
+        <circle cx="140" cy="75" r="2" fill="#f7d038"/>
+        <path d="M 170 55 L 195 58 L 170 62 Z" fill="#f7d038"/>
+        <circle cx="156" cy="55" r="2.5" fill="#f7d038"/>
+        <path d="M 60 85 Q 38 92 22 100 L 42 108 Q 65 98 75 92 Z" fill="#1f1535"/>
+        <path d="M 95 108 L 93 130 L 99 130 L 101 113 Z" fill="#2a1f4a"/>
+        <path d="M 110 108 L 108 130 L 114 130 L 116 113 Z" fill="#2a1f4a"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Étourneau sansonnet</h3>
+        <p class="espece-latin"><em>Sturnus vulgaris</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 20–22 cm</span>
+          <span><strong>Envergure</strong> · 37–42 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Villes, parcs, champs cultivés, élevages</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Sifflets, gazouillis, imitations d'autres oiseaux ou de sons mécaniques — un véritable répertoire</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Omnivore. Niche en cavité, en colonies lâches. Forme à l'automne des dortoirs spectaculaires (les “murmurations”) pouvant rassembler des milliers d'individus.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟧 Préoccupation mineure mais en déclin notable.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> L'étourneau est un imitateur exceptionnel : il peut reproduire des sonneries de téléphone, des miaulements, des chants d'autres oiseaux. Si Merlin vous indique une espèce surprenante, vérifiez qu'un étourneau ne se cache pas à proximité !
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · À distance, semble noir ; de près, son plumage à reflets verts et violets piqueté de blanc devient visible.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="rougequeue-noir">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="78" rx="46" ry="30" fill="#4a4a55"/>
+        <circle cx="146" cy="58" r="22" fill="#3a3a45"/>
+        <path d="M 165 56 L 183 60 L 165 64 Z" fill="#1f2a6b"/>
+        <circle cx="152" cy="55" r="2" fill="#f7d038"/>
+        <path d="M 62 78 Q 42 86 28 96 L 46 104 Q 66 92 76 86 Z" fill="#2a2a35"/>
+        <path d="M 92 105 Q 88 122 95 132 L 102 132 Q 105 118 102 108 Z" fill="#e8862a"/>
+        <path d="M 105 108 Q 103 122 108 132 L 113 132 Q 116 118 113 110 Z" fill="#e8862a"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Rougequeue noir</h3>
+        <p class="espece-latin"><em>Phoenicurus ochruros</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 13–15 cm</span>
+          <span><strong>Envergure</strong> · 23–26 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Bâtiments, cours intérieures, ruines, falaises — surtout en ville</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Strophe sifflée puis “crachée” avec des notes râpeuses caractéristiques, souvent depuis un point haut (cheminée, toit)</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Insectivore. Niche dans les anfractuosités de murs, sous les toits. À l'origine espèce de falaise, a colonisé les villes.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Le mâle adulte est gris foncé/noir avec une queue orange-rouille très visible quand il s'envole — d'où son nom. Il agite fréquemment la queue, comme un tressaillement nerveux : un signe d'identification très fiable.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Écoutez-le au lever du jour : il chante très tôt et depuis les toits, parfois avant même l'aube.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="hirondelle">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="78" rx="40" ry="22" fill="#1f2a6b"/>
+        <circle cx="138" cy="65" r="18" fill="#1f2a6b"/>
+        <path d="M 122 75 Q 130 85 145 82 Q 150 78 148 73 Z" fill="white"/>
+        <path d="M 128 58 Q 132 50 148 50 Q 152 55 150 60 Z" fill="#c83045"/>
+        <path d="M 158 62 L 175 65 L 158 68 Z" fill="#1f2a6b"/>
+        <circle cx="143" cy="60" r="2" fill="white"/>
+        <path d="M 60 75 Q 30 60 10 80 Q 25 78 50 82 Z" fill="#1f2a6b"/>
+        <path d="M 65 80 Q 35 100 15 95 Q 35 85 60 85 Z" fill="#1f2a6b"/>
+        <path d="M 95 95 L 80 130 L 95 115 Z" fill="#1f2a6b"/>
+        <path d="M 105 95 L 120 130 L 105 115 Z" fill="#1f2a6b"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Hirondelle rustique</h3>
+        <p class="espece-latin"><em>Hirundo rustica</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 17–19 cm</span>
+          <span><strong>Envergure</strong> · 32–35 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Villages, fermes, élevages — niche dans les bâtiments ouverts</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Gazouillis aigus et continus émis en vol ou perchée sur un fil électrique</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Insectivore strict, capture les insectes en vol. Construit un nid en boue collé à une poutre. Migratrice longue distance : hiverne en Afrique subsaharienne.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟧 Préoccupation mineure, en déclin marqué (perte des élevages traditionnels et des insectes).</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> L'hirondelle rustique se distingue de l'hirondelle de fenêtre par sa gorge rouge brique et sa longue queue très fourchue. Une hirondelle rustique parcourt environ 10 000 km par an entre l'Europe et l'Afrique.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Si vous voyez une hirondelle, regardez la couleur de la gorge : rouge = rustique ; blanche = fenêtre.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="martinet">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="75" rx="35" ry="14" fill="#2a2535"/>
+        <ellipse cx="130" cy="68" rx="16" ry="11" fill="#2a2535"/>
+        <path d="M 142 66 L 158 70 L 142 72 Z" fill="#2a2535"/>
+        <circle cx="138" cy="64" r="1.5" fill="#f7d038"/>
+        <path d="M 70 70 Q 25 40 5 70 Q 30 70 65 75 Z" fill="#2a2535"/>
+        <path d="M 75 78 Q 30 100 8 82 Q 32 82 68 80 Z" fill="#2a2535"/>
+        <path d="M 90 85 L 82 110 L 95 95 Z" fill="#2a2535"/>
+        <path d="M 105 85 L 115 110 L 102 95 Z" fill="#2a2535"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Martinet noir</h3>
+        <p class="espece-latin"><em>Apus apus</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 16–18 cm</span>
+          <span><strong>Envergure</strong> · 42–48 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Ciel urbain (uniquement en vol) — niche sous les toits anciens</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Cris stridents “sriii-sriii” émis en bandes de plusieurs individus filant à grande vitesse</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Insectivore aérien strict. Passe quasiment toute sa vie en vol : mange, dort, s'accouple en l'air ! Ne se pose que pour nicher.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟧 Préoccupation mineure, en déclin (rénovation des bâtiments anciens).</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Souvent confondu avec une hirondelle, mais c'est en fait un cousin du colibri ! Présent en France de mai à fin juillet seulement, le martinet boucle un cycle annuel de 200 000 km. Un jeune au nid peut tomber par épuisement de chaleur en cas de canicule.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Silhouette en faucille (ailes en croissant), entièrement noire. Cris stridents = c'est lui, pas une hirondelle.</p>
+      </div>
+    </article>
+    </div>
+    
+    <h2 id="cat-parcs">🌳 Espèces des parcs et jardins</h2>
+    <p class="cat-desc">À chercher dans les parcs urbains arborés, jardins, et zones végétalisées.</p>
+    <div class="especes-grid">
+      
+    <article class="espece-card" id="merle">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="105" cy="80" rx="55" ry="32" fill="#1f2a6b"/>
+        <circle cx="155" cy="58" r="22" fill="#1f2a6b"/>
+        <path d="M 175 56 L 195 60 L 175 64 Z" fill="#f7d038"/>
+        <circle cx="162" cy="54" r="3" fill="#f7d038"/>
+        <path d="M 75 85 Q 50 95 30 100 L 50 110 Q 70 100 80 95 Z" fill="#1f2a6b"/>
+        <path d="M 95 110 L 92 130 L 99 130 L 102 115 Z" fill="#1f2a6b"/>
+        <path d="M 115 112 L 113 130 L 120 130 L 122 115 Z" fill="#1f2a6b"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Merle noir (mâle)</h3>
+        <p class="espece-latin"><em>Turdus merula</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 24–27 cm</span>
+          <span><strong>Envergure</strong> · 34–38 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Forêts, parcs, jardins, haies</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Chant flûté, mélodique, modulé en strophes successives — souvent le premier à chanter à l'aube et le dernier au crépuscule</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Omnivore : vers de terre, baies, insectes. Niche dans les haies ou arbustes. Deux à trois nichées par an.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure, espèce commune et stable.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Le merle noir est l'un des oiseaux qui chante le plus longtemps de l'année (février à juillet) et avec le répertoire le plus mélodieux. Le “chant du merle” a inspiré de nombreux musiciens, dont Olivier Messiaen.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Tout noir, bec et cercle oculaire jaune vif : impossible à confondre. C'est la “signature sonore” des parcs urbains.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="merle-femelle">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="105" cy="80" rx="55" ry="32" fill="#7a5a3a"/>
+        <circle cx="155" cy="58" r="22" fill="#7a5a3a"/>
+        <path d="M 175 56 L 195 60 L 175 64 Z" fill="#c89060"/>
+        <circle cx="162" cy="54" r="3" fill="#1f2a6b"/>
+        <path d="M 75 85 Q 50 95 30 100 L 50 110 Q 70 100 80 95 Z" fill="#5a4028"/>
+        <path d="M 95 110 L 92 130 L 99 130 L 102 115 Z" fill="#7a5a3a"/>
+        <path d="M 115 112 L 113 130 L 120 130 L 122 115 Z" fill="#7a5a3a"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Merle noir (femelle)</h3>
+        <p class="espece-latin"><em>Turdus merula</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 24–27 cm</span>
+          <span><strong>Envergure</strong> · 34–38 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Forêts, parcs, jardins, haies — partout avec le mâle</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Ne chante pas comme le mâle, mais émet des “tchak-tchak” d'alarme, surtout en fin de journée</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Identique au mâle (omnivore, niche dans haies). C'est elle qui construit le nid.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Souvent confondue avec une grive musicienne à cause de son plumage brun. Mais elle est plus uniforme, sans tachetures nettes sur le ventre. Bon test : si elle est avec un “merle noir”, c'est la femelle.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Plumage brun chocolat uni, gorge un peu plus claire avec des stries. Bec brun (pas jaune).</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="rouge-gorge">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="48" ry="38" fill="#94c11f"/>
+        <ellipse cx="100" cy="80" rx="48" ry="38" fill="#5a8a1a" opacity="0.4"/>
+        <circle cx="145" cy="58" r="25" fill="#94c11f"/>
+        <path d="M 122 75 Q 135 95 155 90 Q 165 78 160 70 Q 145 62 130 65 Z" fill="#e8862a"/>
+        <path d="M 168 56 L 188 60 L 168 64 Z" fill="#3a2a1a"/>
+        <circle cx="152" cy="54" r="3" fill="#1f2a6b"/>
+        <path d="M 60 85 Q 40 95 25 100 L 45 108 Q 65 100 75 95 Z" fill="#5a8a1a"/>
+        <path d="M 92 115 L 90 132 L 96 132 L 99 118 Z" fill="#5a4028"/>
+        <path d="M 108 116 L 106 132 L 112 132 L 114 119 Z" fill="#5a4028"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Rouge-gorge familier</h3>
+        <p class="espece-latin"><em>Erithacus rubecula</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 12–14 cm</span>
+          <span><strong>Envergure</strong> · 20–22 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Forêts, parcs, jardins, sous-bois denses</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Chant cristallin, mélancolique, avec des trilles aigus et des notes perlées — chante toute l'année, y compris en hiver</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Insectivore (et baies en hiver). Très territorial : un individu défend âprement son territoire, parfois jusqu'à la mort de son rival.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure, espèce commune et stable.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> C'est l'un des rares oiseaux européens à chanter en plein hiver. Sa familiarité avec l'humain (il suit le jardinier qui retourne la terre) lui a valu son nom et a inspiré de nombreux contes. Aux Pays-Bas et en Grande-Bretagne, il est l'oiseau national de fait.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Plastron orange vif sur la poitrine et le visage, posture droite et ronde, regard noir — adorable.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="mesange-charbonniere">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="45" ry="33" fill="#f7d038"/>
+        <path d="M 100 80 L 100 110 Q 95 95 92 80 Z" fill="#1f2a6b"/>
+        <circle cx="145" cy="58" r="22" fill="#1f2a6b"/>
+        <ellipse cx="143" cy="62" rx="14" ry="10" fill="white"/>
+        <path d="M 165 56 L 182 60 L 165 64 Z" fill="#3a2a1a"/>
+        <circle cx="150" cy="55" r="2.5" fill="#1f2a6b"/>
+        <path d="M 65 80 Q 45 90 30 100 L 50 105 Q 70 95 80 90 Z" fill="#3aa8a8"/>
+        <path d="M 93 110 L 91 128 L 96 128 L 98 113 Z" fill="#3a2a1a"/>
+        <path d="M 108 110 L 106 128 L 112 128 L 113 113 Z" fill="#3a2a1a"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Mésange charbonnière</h3>
+        <p class="espece-latin"><em>Parus major</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 13–15 cm</span>
+          <span><strong>Envergure</strong> · 22–26 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Forêts, parcs, jardins, haies — partout avec arbres</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Chant en deux notes répétées très reconnaissable : “ti-tu, ti-tu, ti-tu” (souvent décrit comme une scie qu'on aiguise)</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Insectivore au printemps (chenilles surtout), granivore en hiver. Niche en cavité (arbres creux, nichoirs). Une seule grande nichée par an (8–12 œufs !).</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure, espèce commune et stable.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Capable d'apprendre par observation : une étude célèbre a montré que la pratique d'ouvrir les bouteilles de lait pour boire la crème, apparue à Londres dans les années 1920, s'est propagée par imitation à l'ensemble des mésanges britanniques.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Tête noire luisante avec joues blanches, cravate noire qui descend sur le ventre jaune — distinctive.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="mesange-bleue">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="42" ry="30" fill="#f7d038"/>
+        <circle cx="142" cy="60" r="20" fill="white"/>
+        <path d="M 122 50 Q 130 38 145 38 Q 162 38 162 55 Q 162 62 160 65 L 124 64 Z" fill="#3aa8a8"/>
+        <path d="M 122 65 Q 120 68 124 72 L 158 72 Q 162 70 160 65 Z" fill="#1f2a6b"/>
+        <path d="M 162 56 L 180 58 L 162 62 Z" fill="#3a2a1a"/>
+        <circle cx="148" cy="58" r="2" fill="#1f2a6b"/>
+        <path d="M 70 80 Q 50 90 35 98 L 52 102 Q 72 92 80 88 Z" fill="#3aa8a8"/>
+        <path d="M 95 108 L 93 125 L 98 125 L 100 110 Z" fill="#3a2a1a"/>
+        <path d="M 107 108 L 105 125 L 110 125 L 111 110 Z" fill="#3a2a1a"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Mésange bleue</h3>
+        <p class="espece-latin"><em>Cyanistes caeruleus</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 10–12 cm</span>
+          <span><strong>Envergure</strong> · 17–20 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Forêts feuillues, parcs, jardins</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Chant haut perché, “tsii-tsii-tsiiirr” (trille final caractéristique), plus aigu et rapide que la charbonnière</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Insectivore au printemps, granivore en hiver. Niche en cavité, fréquente les nichoirs. Couvée moyenne de 7–10 œufs.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure, espèce commune et stable.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> C'est l'une des espèces les plus étudiées par les ornithologues : le suivi des populations de mésange bleue depuis 50 ans a fourni des données cruciales sur les effets du changement climatique (avancement des pontes au printemps).
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Calotte bleue électrique, joues blanches encadrées d'un trait noir, ventre jaune. Plus petite que la charbonnière.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="pinson-arbres">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="48" ry="33" fill="#d8a070"/>
+        <ellipse cx="100" cy="80" rx="48" ry="33" fill="#c8704a" opacity="0.5"/>
+        <circle cx="148" cy="58" r="22" fill="#5a6fb8"/>
+        <path d="M 168 56 L 186 60 L 168 64 Z" fill="#3a2a1a"/>
+        <circle cx="154" cy="55" r="2.5" fill="#1f2a6b"/>
+        <path d="M 62 80 Q 42 90 27 100 L 47 108 Q 67 96 78 90 Z" fill="#3a4a8a"/>
+        <rect x="55" y="78" width="20" height="3" fill="white"/>
+        <rect x="55" y="86" width="20" height="3" fill="white"/>
+        <path d="M 93 110 L 91 128 L 96 128 L 98 113 Z" fill="#3a2a1a"/>
+        <path d="M 108 110 L 106 128 L 112 128 L 113 113 Z" fill="#3a2a1a"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Pinson des arbres</h3>
+        <p class="espece-latin"><em>Fringilla coelebs</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 14–16 cm</span>
+          <span><strong>Envergure</strong> · 24–28 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Forêts, parcs, jardins, lisières</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Chant en strophe descendante de notes claires terminée par une chute caractéristique (“tchip-tchip-tchip-tchirip-tcho”)</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Granivore (et insectes au printemps). Niche dans une coupe finement maçonnée sur une branche, magnifiquement camouflée avec des lichens.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure, espèce très commune.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Le mâle a un chant à plusieurs dialectes régionaux : on a montré qu'un pinson breton n'a pas tout à fait le même chant qu'un pinson provençal — une vraie diversité culturelle.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Mâle : poitrine rosée, tête bleu-gris, deux barres alaires blanches très visibles. Femelle plus terne.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="verdier">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="48" ry="34" fill="#94c11f"/>
+        <circle cx="148" cy="58" r="23" fill="#94c11f"/>
+        <path d="M 168 55 L 188 58 L 188 62 L 168 65 Z" fill="#d8a070"/>
+        <circle cx="154" cy="56" r="2.5" fill="#1f2a6b"/>
+        <path d="M 62 78 Q 42 88 27 98 L 47 105 Q 67 92 78 88 Z" fill="#5a8a1a"/>
+        <path d="M 50 92 L 30 95 L 50 98 Z" fill="#f7d038"/>
+        <path d="M 95 110 L 93 128 L 99 128 L 101 113 Z" fill="#5a4028"/>
+        <path d="M 108 110 L 106 128 L 112 128 L 114 113 Z" fill="#5a4028"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Verdier d'Europe</h3>
+        <p class="espece-latin"><em>Chloris chloris</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 14–16 cm</span>
+          <span><strong>Envergure</strong> · 24–28 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Parcs, jardins, lisières, vergers</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Trilles roulés et longs gazouillis, ponctués d'un “dzwiii” nasillard très caractéristique</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Granivore (gros bec puissant capable de casser de grosses graines). Niche dans des arbustes denses ou des haies.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟧 Préoccupation mineure mais en déclin notable (épidémies de trichomonose).</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Les populations européennes ont chuté à partir des années 2000 à cause d'une maladie parasitaire transmise sur les mangeoires. D'où l'importance de nettoyer régulièrement les mangeoires l'hiver.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Plumage vert olive avec du jaune vif sur les bords des ailes et la queue — visible en vol.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="chardonneret">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="48" ry="32" fill="#d8a070"/>
+        <circle cx="148" cy="58" r="22" fill="white"/>
+        <path d="M 148 38 Q 165 38 165 56 L 148 56 Z" fill="#1f2a6b"/>
+        <path d="M 132 50 Q 130 60 138 65 Q 145 62 148 56 L 148 38 Q 142 40 132 50 Z" fill="#e8862a"/>
+        <path d="M 168 56 L 188 60 L 168 64 Z" fill="#d8a070"/>
+        <circle cx="153" cy="57" r="2" fill="#1f2a6b"/>
+        <path d="M 62 78 Q 42 88 27 98 L 47 105 Q 67 92 78 88 Z" fill="#1f2a6b"/>
+        <path d="M 50 88 Q 45 90 50 94 L 75 91 Q 73 87 70 86 Z" fill="#f7d038"/>
+        <path d="M 95 108 L 93 126 L 99 126 L 101 111 Z" fill="#3a2a1a"/>
+        <path d="M 108 108 L 106 126 L 112 126 L 114 111 Z" fill="#3a2a1a"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Chardonneret élégant</h3>
+        <p class="espece-latin"><em>Carduelis carduelis</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 12–14 cm</span>
+          <span><strong>Envergure</strong> · 21–25 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Parcs, jardins, friches, vergers</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Gazouillis liquides et cristallins, très mélodieux, avec des notes flûtées descendantes</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Granivore strict, spécialisé sur les akènes de composées (chardons, pissenlits, bardanes). Bec fin et pointu adapté.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟧 Préoccupation mineure mais en déclin (capture illégale comme oiseau de cage).</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Sa beauté lui a longtemps valu d'être capturé pour orner les cages, pratique encore illégale aujourd'hui en France. Il a inspiré le célèbre tableau de Carel Fabritius (1654), redécouvert en littérature par Donna Tartt.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Impossible à confondre : face rouge vif, ailes noires barrées de jaune vif. Souvent en petites bandes.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="fauvette-tete-noire">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="46" ry="30" fill="#9ca08a"/>
+        <circle cx="148" cy="58" r="22" fill="#9ca08a"/>
+        <path d="M 130 50 Q 130 38 148 36 Q 165 38 165 52 L 130 52 Z" fill="#1f2a6b"/>
+        <path d="M 168 56 L 185 60 L 168 64 Z" fill="#3a2a1a"/>
+        <circle cx="153" cy="55" r="2.5" fill="#1f2a6b"/>
+        <path d="M 62 78 Q 42 88 27 98 L 47 105 Q 67 92 78 88 Z" fill="#6a6e5a"/>
+        <path d="M 93 108 L 91 126 L 97 126 L 99 113 Z" fill="#3a2a1a"/>
+        <path d="M 108 108 L 106 126 L 112 126 L 114 113 Z" fill="#3a2a1a"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Fauvette à tête noire</h3>
+        <p class="espece-latin"><em>Sylvia atricapilla</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 13–15 cm</span>
+          <span><strong>Envergure</strong> · 22–25 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Parcs, jardins, lisières, sous-bois</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Chant flûté, mélodieux, riche en variations — souvent comparé à celui d'un merle en miniature</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Insectivore au printemps, frugivore à l'automne. Niche dans des buissons denses. De plus en plus sédentaire en France (réchauffement).</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure, en légère augmentation.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Mâle à calotte noire, femelle à calotte rousse — un cas où les sexes ne se distinguent pas par les couleurs habituelles. Son chant est l'un des plus appréciés des amateurs : on l'appelait autrefois “le rossignol du nord”.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Plumage gris doux, calotte noire (mâle) ou rousse (femelle) bien délimitée.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="troglodyte">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="42" ry="32" fill="#a07050"/>
+        <circle cx="140" cy="65" r="20" fill="#a07050"/>
+        <path d="M 160 60 L 180 64 L 160 68 Z" fill="#3a2a1a"/>
+        <circle cx="148" cy="60" r="2" fill="#1f2a6b"/>
+        <path d="M 60 85 L 50 70 L 75 80 Z" fill="#7a5028"/>
+        <path d="M 92 110 L 90 124 L 96 124 L 98 113 Z" fill="#3a2a1a"/>
+        <path d="M 108 110 L 106 124 L 112 124 L 114 113 Z" fill="#3a2a1a"/>
+        <line x1="58" y1="78" x2="68" y2="76" stroke="#5a3018" stroke-width="1.5"/>
+        <line x1="60" y1="82" x2="70" y2="80" stroke="#5a3018" stroke-width="1.5"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Troglodyte mignon</h3>
+        <p class="espece-latin"><em>Troglodytes troglodytes</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 9–10 cm</span>
+          <span><strong>Envergure</strong> · 13–17 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Sous-bois denses, broussailles, jardins envahis</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Chant étonnamment puissant pour sa taille : longue cascade de trilles roulés très sonores</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Insectivore. Le mâle construit plusieurs nids en boule (jusqu'à 6 !), la femelle choisit celui qui lui plaît.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure, espèce stable.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> L'un des plus petits oiseaux d'Europe (à peine 10 g) mais avec un chant qui s'entend à 500 m. La densité acoustique de son chant par rapport à sa masse est l'une des plus élevées de l'avifaune mondiale.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Petite boule brune avec la queue dressée à la verticale — silhouette unique.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="accenteur-mouchet">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="46" ry="30" fill="#7a5a3a"/>
+        <ellipse cx="100" cy="80" rx="46" ry="20" fill="#5a4028" opacity="0.4"/>
+        <circle cx="146" cy="60" r="22" fill="#6a7088"/>
+        <path d="M 130 70 Q 132 80 140 82 L 158 80 Q 162 75 160 70 Z" fill="#6a7088"/>
+        <path d="M 165 58 L 184 62 L 165 66 Z" fill="#3a2a1a"/>
+        <circle cx="152" cy="57" r="2" fill="#1f2a6b"/>
+        <path d="M 62 80 Q 42 88 27 98 L 47 105 Q 67 92 78 88 Z" fill="#5a4028"/>
+        <line x1="65" y1="76" x2="80" y2="74" stroke="#3a2a1a" stroke-width="1.5"/>
+        <line x1="65" y1="82" x2="80" y2="82" stroke="#3a2a1a" stroke-width="1.5"/>
+        <path d="M 93 108 L 91 126 L 97 126 L 99 113 Z" fill="#3a2a1a"/>
+        <path d="M 108 108 L 106 126 L 112 126 L 114 113 Z" fill="#3a2a1a"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Accenteur mouchet</h3>
+        <p class="espece-latin"><em>Prunella modularis</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 13–14 cm</span>
+          <span><strong>Envergure</strong> · 19–21 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Haies, broussailles, jardins, lisières</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Chant sifflé doux, court et descendant, sans grande variation — discret</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Insectivore au printemps, granivore l'hiver. Système de reproduction inhabituel : polyandrie (une femelle, plusieurs mâles) ou polygynandrie.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure, stable.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Discret au sol, souvent ignoré, l'accenteur a un comportement reproducteur parmi les plus complexes des passereaux. Une femelle peut s'accoupler avec plusieurs mâles qui participeront tous à nourrir les jeunes — une stratégie évolutivement payante.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Plumage brun strié, tête et poitrine gris ardoise. Marche au sol près des buissons (ne sautille pas comme un moineau).</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="pie-bavarde">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="95" cy="75" rx="40" ry="25" fill="white"/>
+        <ellipse cx="95" cy="65" rx="40" ry="15" fill="#1f2a6b"/>
+        <circle cx="135" cy="55" r="20" fill="#1f2a6b"/>
+        <path d="M 155 52 L 172 56 L 155 60 Z" fill="#1f2a6b"/>
+        <circle cx="141" cy="50" r="2" fill="white"/>
+        <path d="M 60 75 Q 35 80 20 78 L 30 90 Q 55 88 70 85 Z" fill="#1f2a6b"/>
+        <path d="M 100 95 L 130 132 L 110 100 Z" fill="#1f2a6b"/>
+        <path d="M 110 95 L 145 130 L 115 100 Z" fill="#1f2a6b"/>
+        <path d="M 88 96 L 86 116 L 92 116 L 94 99 Z" fill="#1f2a6b"/>
+        <path d="M 100 97 L 98 117 L 104 117 L 106 100 Z" fill="#1f2a6b"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Pie bavarde</h3>
+        <p class="espece-latin"><em>Pica pica</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 44–46 cm (queue comprise)</span>
+          <span><strong>Envergure</strong> · 52–60 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Parcs, campagne ouverte avec arbres, villes</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Pas de chant à proprement parler, mais un “tchack-tchack-tchack” rauque très typique</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Omnivore et opportuniste. Construit un nid volumineux à coupole dans un grand arbre. Très intelligente, capable de reconnaître son reflet dans un miroir.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure, en expansion urbaine.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Avec les corvidés, la pie fait partie des animaux les plus intelligents au monde : utilisation d'outils, planification, jeu, deuil. Elle a réussi le test du miroir, qui mesure la conscience de soi (seulement quelques espèces y parviennent).
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Plumage contrasté noir et blanc, longue queue irisée. Impossible à confondre.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="corneille">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="58" ry="32" fill="#1a1525"/>
+        <circle cx="155" cy="55" r="25" fill="#1a1525"/>
+        <path d="M 178 52 L 198 56 L 178 60 Z" fill="#1a1525"/>
+        <circle cx="163" cy="50" r="2.5" fill="#3a3045"/>
+        <path d="M 58 85 Q 35 90 20 95 L 38 110 Q 60 100 75 95 Z" fill="#1a1525"/>
+        <path d="M 92 108 L 90 132 L 97 132 L 99 113 Z" fill="#1a1525"/>
+        <path d="M 110 108 L 108 132 L 115 132 L 117 113 Z" fill="#1a1525"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Corneille noire</h3>
+        <p class="espece-latin"><em>Corvus corone</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 44–51 cm</span>
+          <span><strong>Envergure</strong> · 85–100 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Tous milieux : villes, campagne, montagne</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · “Krôah-krôah” puissant et rauque, répété en série</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Omnivore extrême : carognes, déchets, œufs d'autres oiseaux, fruits, insectes. Très intelligente, vit en couple souvent fidèle à vie.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure, en expansion.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> À ne pas confondre avec le corbeau freux (qui vit en colonies bruyantes à la campagne, plus rare en ville). La corneille noire a démontré des capacités de raisonnement causal comparables à celles de jeunes enfants : elle peut résoudre des problèmes à plusieurs étapes pour obtenir une récompense.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Entièrement noire (y compris le bec et les pattes). Solitaire ou en petit groupe familial, jamais en grande colonie.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="geai">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="52" ry="32" fill="#c89070"/>
+        <ellipse cx="100" cy="85" rx="48" ry="20" fill="#b07a58" opacity="0.5"/>
+        <circle cx="148" cy="55" r="22" fill="#c89070"/>
+        <path d="M 130 38 Q 135 28 152 30 L 162 42 L 156 50 L 138 48 Z" fill="white"/>
+        <path d="M 132 40 L 135 32 M 140 38 L 144 30 M 148 38 L 152 30" stroke="#1a1525" stroke-width="1.5"/>
+        <path d="M 168 53 L 185 56 L 168 60 Z" fill="#1a1525"/>
+        <path d="M 130 64 Q 136 70 150 66" stroke="#1a1525" stroke-width="3" fill="none"/>
+        <circle cx="154" cy="52" r="2" fill="#1f2a6b"/>
+        <path d="M 60 78 Q 38 88 22 98 L 42 106 Q 65 95 78 90 Z" fill="#3aa8a8"/>
+        <rect x="42" y="83" width="22" height="3" fill="#1f2a6b"/>
+        <rect x="42" y="92" width="22" height="3" fill="white"/>
+        <path d="M 93 110 L 91 128 L 97 128 L 99 115 Z" fill="#3a2a1a"/>
+        <path d="M 108 110 L 106 128 L 112 128 L 114 115 Z" fill="#3a2a1a"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Geai des chênes</h3>
+        <p class="espece-latin"><em>Garrulus glandarius</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 32–35 cm</span>
+          <span><strong>Envergure</strong> · 52–58 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Forêts feuillues (surtout chênaies), parcs arborés</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Cri rauque puissant “rrââh” caractéristique, audible loin. Capable aussi d'imiter d'autres espèces (buse, chat).</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Omnivore, mais grand amateur de glands à l'automne. Joue un rôle écologique majeur : il enterre des milliers de glands chaque année, dont beaucoup germeront — c'est un planteur de chênes.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Un seul geai peut enterrer jusqu'à 4 500 glands en un automne, en mémorisant leurs cachettes ! Sans les geais, les chênaies européennes auraient une dynamique de régénération très différente. C'est l'un des rares oiseaux “forestiers” du paysage.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Plumage rosé-brun, tache bleu vif sur les ailes (très visible en vol), croupion blanc qui éclate à l'envol.</p>
+      </div>
+    </article>
+    </div>
+    
+    <h2 id="cat-campagne">🌾 Espèces des lisières et de la campagne</h2>
+    <p class="cat-desc">Plus discrètes en pleine ville, communes dès qu'on s'éloigne des centres.</p>
+    <div class="especes-grid">
+      
+    <article class="espece-card" id="pic-vert">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="50" ry="30" fill="#94c11f"/>
+        <ellipse cx="100" cy="92" rx="48" ry="14" fill="#c8d878"/>
+        <circle cx="150" cy="55" r="23" fill="#94c11f"/>
+        <path d="M 138 32 Q 148 28 165 32 Q 168 42 162 48 L 142 48 Z" fill="#c83045"/>
+        <path d="M 130 48 Q 130 60 142 60 L 145 50 Z" fill="#1a1525"/>
+        <path d="M 168 52 L 188 56 L 168 60 Z" fill="#1a1525"/>
+        <circle cx="155" cy="50" r="2" fill="white"/>
+        <path d="M 60 78 Q 40 86 25 95 L 45 105 Q 65 92 78 88 Z" fill="#5a8a1a"/>
+        <path d="M 93 108 L 91 128 L 97 128 L 99 113 Z" fill="#3a2a1a"/>
+        <path d="M 108 108 L 106 128 L 112 128 L 114 113 Z" fill="#3a2a1a"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Pic vert (ou Pivert)</h3>
+        <p class="espece-latin"><em>Picus viridis</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 30–36 cm</span>
+          <span><strong>Envergure</strong> · 45–51 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Parcs, prairies bordées d'arbres, lisières</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Le “ricanement” : longue série de “kiu-kiu-kiu-kiu-kiu” descendante, sonore — comme un rire moqueur</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Spécialiste des fourmis (qu'il capture au sol avec sa langue extensible jusqu'à 10 cm). Niche en creusant une cavité dans un arbre.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure, espèce commune.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Contrairement aux autres pics, le pic vert se nourrit principalement au sol — on le voit souvent sur les pelouses des parcs, chassant les fourmilières. C'est l'un des rares oiseaux à manger des fourmis adultes par milliers, supportant leur acide formique.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Dos vert vif, calotte rouge, masque noir. Vol ondulant caractéristique des pics.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="pic-epeiche">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="48" ry="30" fill="#1a1525"/>
+        <ellipse cx="100" cy="85" rx="38" ry="18" fill="white"/>
+        <rect x="68" y="68" width="8" height="3" fill="white" transform="rotate(-20 72 70)"/>
+        <rect x="78" y="62" width="8" height="3" fill="white" transform="rotate(-20 82 64)"/>
+        <rect x="88" y="56" width="8" height="3" fill="white" transform="rotate(-20 92 58)"/>
+        <circle cx="148" cy="58" r="22" fill="white"/>
+        <path d="M 135 42 Q 145 35 162 38 Q 165 50 158 55 L 142 55 Z" fill="#1a1525"/>
+        <path d="M 130 60 L 158 60 L 158 68 L 130 68 Z" fill="#1a1525"/>
+        <path d="M 142 70 L 158 72 L 158 80 L 142 78 Z" fill="#c83045"/>
+        <path d="M 168 56 L 188 60 L 168 64 Z" fill="#1a1525"/>
+        <circle cx="153" cy="55" r="2" fill="#1f2a6b"/>
+        <path d="M 92 105 Q 88 125 95 132 L 100 110 Z" fill="#c83045"/>
+        <path d="M 60 80 Q 40 88 25 95 L 45 102 Q 65 92 75 88 Z" fill="#1a1525"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Pic épeiche</h3>
+        <p class="espece-latin"><em>Dendrocopos major</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 22–24 cm</span>
+          <span><strong>Envergure</strong> · 34–39 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Forêts, parcs arborés, vergers</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · “Kik!” bref et sec, et surtout le tambourinage : roulement très rapide sur une branche morte (jusqu'à 20 coups/seconde !)</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Insectivore (larves xylophages, fourmis), graines en hiver. Le tambourinage sert à communiquer (territoire, attirance) sans user les cordes vocales.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Le crâne du pic épeiche est anatomiquement conçu pour amortir les impacts : os spongieux, langue qui s'enroule autour du cerveau comme une ceinture amortisseur. Il subit jusqu'à 1 200 g de décélération à chaque coup sans aucune lésion.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Damier noir et blanc, tache rouge vif sous la queue (et sur la nuque chez le mâle). Souvent contre le tronc.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="buse-variable">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="55" ry="35" fill="#7a5a3a"/>
+        <ellipse cx="100" cy="90" rx="48" ry="18" fill="#d8c8a0"/>
+        <rect x="68" y="80" width="60" height="3" fill="#5a4028"/>
+        <rect x="68" y="92" width="60" height="3" fill="#5a4028"/>
+        <circle cx="152" cy="55" r="25" fill="#7a5a3a"/>
+        <ellipse cx="146" cy="60" rx="14" ry="8" fill="#e8d8b0"/>
+        <path d="M 145 48 Q 152 40 168 44 L 175 52 L 168 58 L 150 58 Z" fill="#3a2a1a"/>
+        <path d="M 168 60 L 188 60 L 168 65 Z" fill="#f7d038"/>
+        <circle cx="158" cy="50" r="3" fill="#f7d038"/>
+        <circle cx="158" cy="50" r="1.5" fill="#1f2a6b"/>
+        <path d="M 92 110 Q 88 130 96 138 L 102 138 Q 105 122 100 112 Z" fill="#f7d038"/>
+        <path d="M 110 110 Q 106 130 114 138 L 120 138 Q 123 122 118 112 Z" fill="#f7d038"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Buse variable</h3>
+        <p class="espece-latin"><em>Buteo buteo</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 51–57 cm</span>
+          <span><strong>Envergure</strong> · 113–128 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Campagne ouverte avec bois, lisières — la plus commune des rapaces diurnes</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Miaulement aigu et triste “piiiia-yeu”, émis en cercle ascendant dans le ciel</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Carnivore : campagnols, taupes, lapereaux, reptiles, charognes. Pratique le vol stationnaire face au vent ("pylône") pour repérer ses proies.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure, en expansion.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Espèce dite “variable” car son plumage va du brun foncé presque noir au beige très clair, parfois même blanc immaculé. Deux buses d'un même nid peuvent avoir l'air d'espèces différentes.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Vol planant en cercles, ailes légèrement relevées en V peu accusé. Cri très caractéristique entendu en montant.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="faucon-crecerelle">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="48" ry="30" fill="#c8704a"/>
+        <ellipse cx="100" cy="86" rx="44" ry="14" fill="#e8c098"/>
+        <circle cx="100" cy="80" r="2" fill="#3a2a1a"/>
+        <circle cx="85" cy="78" r="2" fill="#3a2a1a"/>
+        <circle cx="115" cy="79" r="2" fill="#3a2a1a"/>
+        <circle cx="76" cy="82" r="2" fill="#3a2a1a"/>
+        <circle cx="125" cy="82" r="2" fill="#3a2a1a"/>
+        <circle cx="148" cy="55" r="22" fill="#7a8898"/>
+        <path d="M 140 62 L 148 70 L 156 62" stroke="#1a1525" stroke-width="3" fill="none"/>
+        <path d="M 132 50 Q 142 45 158 48 Q 162 55 156 58 L 138 56 Z" fill="#1a1525"/>
+        <path d="M 168 53 L 185 56 L 168 60 Z" fill="#f7d038"/>
+        <circle cx="154" cy="50" r="3" fill="#f7d038"/>
+        <circle cx="154" cy="50" r="1.5" fill="#1f2a6b"/>
+        <path d="M 90 108 Q 88 128 95 135 L 102 135 Q 104 120 100 110 Z" fill="#f7d038"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Faucon crécerelle</h3>
+        <p class="espece-latin"><em>Falco tinnunculus</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 32–39 cm</span>
+          <span><strong>Envergure</strong> · 65–82 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Campagne ouverte, bords d'autoroutes, villes (cathédrales, immeubles)</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Cris répétés et stridents “kii-kii-kii-kii”, souvent émis depuis un perchoir</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Carnivore spécialisé : campagnols principalement. Pratique le vol stationnaire (Saint-Esprit) à plusieurs mètres au-dessus du sol pour repérer ses proies.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟧 Préoccupation mineure mais en déclin (perte des prairies, pesticides).</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Le faucon crécerelle voit dans l'ultraviolet, ce qui lui permet de repérer les traces d'urine des campagnols (qui reflètent les UV) — il peut ainsi détecter les zones d'activité de ses proies.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Petit rapace, dos roux tacheté de noir. Souvent en vol stationnaire, ailes battant rapidement — c'est lui.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="chouette-hulotte">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="85" rx="52" ry="40" fill="#a07050"/>
+        <circle cx="100" cy="62" r="35" fill="#b88060"/>
+        <ellipse cx="85" cy="62" rx="13" ry="14" fill="#e8d8c0"/>
+        <ellipse cx="115" cy="62" rx="13" ry="14" fill="#e8d8c0"/>
+        <circle cx="85" cy="62" r="8" fill="#1a1525"/>
+        <circle cx="115" cy="62" r="8" fill="#1a1525"/>
+        <circle cx="85" cy="60" r="2" fill="white"/>
+        <circle cx="115" cy="60" r="2" fill="white"/>
+        <path d="M 100 70 L 95 78 L 105 78 Z" fill="#f7d038"/>
+        <path d="M 75 40 Q 80 30 100 35 Q 120 30 125 40" stroke="#5a4028" stroke-width="2" fill="none"/>
+        <path d="M 75 95 Q 70 110 76 122 L 90 122 Q 90 110 87 95 Z" fill="#7a5028"/>
+        <path d="M 113 95 Q 110 110 116 122 L 130 122 Q 130 110 125 95 Z" fill="#7a5028"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Chouette hulotte</h3>
+        <p class="espece-latin"><em>Strix aluco</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 37–43 cm</span>
+          <span><strong>Envergure</strong> · 81–105 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Forêts feuillues, parcs anciens, cimetières arborés</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Hululement profond et chaud “hou-hou-hou-houououuu” (le mâle), et “kewik !” aigu (la femelle)</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Carnivore nocturne : campagnols, mulots, oiseaux endormis. Niche en cavité d'arbre. Très territoriale, un couple reste sur le même territoire toute sa vie.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Le hululement de la hulotte est un dialogue : le mâle hulule, la femelle répond par son “kewik”. C'est ce duo qui forme la fameuse “chouette qui hulule” du folklore. L'oiseau est strictement nocturne — on ne l'entend qu'au crépuscule ou la nuit.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Très rarement vue de jour. Indices : pelotes de réjection au sol sous un arbre, hululement nocturne.</p>
+      </div>
+    </article>
+    </div>
+    
+    <h2 id="cat-humide">💧 Espèces des zones humides</h2>
+    <p class="cat-desc">Bords d'étangs, rivières, mares de parc.</p>
+    <div class="especes-grid">
+      
+    <article class="espece-card" id="canard-colvert">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="85" rx="65" ry="25" fill="#9c8060"/>
+        <path d="M 35 85 Q 25 75 40 70 L 45 85 Z" fill="#9c8060"/>
+        <circle cx="155" cy="60" r="22" fill="#1a5028"/>
+        <path d="M 175 58 L 195 62 L 175 66 Z" fill="#f7d038"/>
+        <rect x="143" y="76" width="20" height="3" fill="white"/>
+        <circle cx="162" cy="56" r="2" fill="#1a1525"/>
+        <path d="M 80 90 Q 60 80 50 70 L 55 90 Q 70 95 80 95 Z" fill="#3a4a8a"/>
+        <ellipse cx="120" cy="110" rx="18" ry="6" fill="#3a3045"/>
+        <line x1="35" y1="115" x2="60" y2="115" stroke="#3a4a8a" stroke-width="3"/>
+        <line x1="35" y1="115" x2="55" y2="118" stroke="#3a4a8a" stroke-width="3"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Canard colvert</h3>
+        <p class="espece-latin"><em>Anas platyrhynchos</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 50–65 cm</span>
+          <span><strong>Envergure</strong> · 81–98 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Étangs, rivières, mares de parc — partout où il y a de l'eau</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Le célèbre “coin-coin” (en fait émis surtout par la femelle ; le mâle émet un son plus rauque)</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Omnivore : plantes aquatiques, graines, invertébrés. C'est l'ancêtre sauvage du canard domestique.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> C'est la femelle (cane) qui fait “coin-coin” ; le mâle émet un sifflement plus discret. Le “coin-coin” classique est l'un des sons les plus universellement reconnus du règne aviaire.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Mâle : tête vert métallique, collier blanc, poitrine brune. Femelle : brun mouchetée, miroir bleu sur l'aile.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="foulque">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="80" rx="58" ry="32" fill="#1a1525"/>
+        <circle cx="148" cy="55" r="22" fill="#1a1525"/>
+        <ellipse cx="148" cy="45" rx="10" ry="6" fill="white"/>
+        <path d="M 158 50 L 178 53 L 158 56 Z" fill="white"/>
+        <circle cx="155" cy="50" r="2" fill="#c83045"/>
+        <line x1="35" y1="115" x2="60" y2="115" stroke="#9ca870" stroke-width="3"/>
+        <line x1="35" y1="115" x2="55" y2="120" stroke="#9ca870" stroke-width="3"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Foulque macroule</h3>
+        <p class="espece-latin"><em>Fulica atra</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 36–42 cm</span>
+          <span><strong>Envergure</strong> · 70–80 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Plans d'eau de toutes tailles avec végétation</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · “Kek!” bref et explosif, parfois en série lors des disputes territoriales</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Omnivore : plantes aquatiques surtout, parfois petits poissons. Très territoriale et bagarreuse au printemps.</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> À distinguer de la poule d'eau (qui a un bec rouge). La foulque a un bec et un front blanc immaculé — “avoir un crâne chauve comme une foulque” est une expression idiomatique dans plusieurs langues européennes.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Entièrement noir avec un bec et un “bouclier frontal” blanc éclatant. Ne pas confondre avec une poule d'eau.</p>
+      </div>
+    </article>
+
+    <article class="espece-card" id="heron-cendre">
+      <div class="espece-silhouette">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="82" rx="40" ry="22" fill="#9ca0b0"/>
+        <rect x="98" y="20" width="6" height="60" fill="#9ca0b0"/>
+        <ellipse cx="110" cy="20" rx="18" ry="10" fill="#9ca0b0"/>
+        <path d="M 128 20 L 152 22 L 128 24 Z" fill="#f7d038"/>
+        <path d="M 105 12 Q 115 8 130 15 L 130 18 L 105 18 Z" fill="#1a1525"/>
+        <path d="M 110 22 L 120 35 L 115 22 Z" fill="#1a1525"/>
+        <circle cx="118" cy="18" r="1.5" fill="#f7d038"/>
+        <path d="M 60 82 Q 35 78 18 80 L 35 95 Q 60 92 75 88 Z" fill="#7a8090"/>
+        <rect x="96" y="100" width="3" height="32" fill="#3a2a1a"/>
+        <rect x="106" y="100" width="3" height="32" fill="#3a2a1a"/>
+    </svg>
+      </div>
+      <div class="espece-content">
+        <h3 class="espece-nom">Héron cendré</h3>
+        <p class="espece-latin"><em>Ardea cinerea</em></p>
+        <div class="espece-meta">
+          <span><strong>Taille</strong> · 90–98 cm</span>
+          <span><strong>Envergure</strong> · 175–195 cm</span>
+        </div>
+        <p class="espece-line"><strong>🌍 Habitat</strong> · Bords d'eau, étangs, rivières, parcs urbains</p>
+        <p class="espece-line"><strong>🎵 Chant</strong> · Cri rauque et puissant “frânk!” émis en vol</p>
+        <p class="espece-line"><strong>🧬 Écologie</strong> · Piscivore (poissons, grenouilles, parfois petits mammifères). Chasse à l'affût, immobile. Niche en colonies dans la cime des arbres (héronnières).</p>
+        <p class="espece-line"><strong>📊 Statut</strong> · 🟢 Préoccupation mineure, en expansion.</p>
+        <div class="espece-anecdote">
+          <strong>💡 Le saviez-vous ?</strong> Le héron cendré a colonisé les villes dans les années 1980–2000 : on en voit aujourd'hui régulièrement sur les bassins urbains, voire sur les balcons. Une étude bordelaise a montré qu'il y avait plus de hérons en ville qu'en zone rurale ouverte.
+        </div>
+        <p class="espece-tip"><strong>🔍 Astuce d'ID</strong> · Grand oiseau gris à long cou, souvent immobile au bord de l'eau. En vol : cou replié en S (caractéristique des hérons).</p>
+      </div>
+    </article>
+    </div>
+    
+
+    <p style="margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--bordure); font-size: 0.88rem; color: var(--texte-leger); text-align: center;">
+      Les silhouettes sont des schémas stylisés à but pédagogique, non destinés à un usage d'identification précise. Pour des photographies de référence, consultez <a href="https://www.oiseaux.net/">oiseaux.net</a>, <a href="https://merlin.allaboutbirds.org/">Merlin Bird ID</a> ou <a href="https://www.xeno-canto.org/">xeno-canto.org</a>.
+    </p>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p>Wiki Cap Nature — Ateliers Birds · Sous licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+</footer>
+
+<script src="../assets/wiki.js"></script>
+</body>
+</html>

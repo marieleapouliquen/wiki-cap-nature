@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum · Wiki Cap Nature</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .giscus-frame {
+      background: white;
+      border: 1px solid var(--bordure);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      box-shadow: var(--ombre);
+      min-height: 200px;
+    }
+    .giscus-placeholder {
+      background: var(--bg-clair);
+      border: 2px dashed var(--bordure);
+      border-radius: var(--radius);
+      padding: 2.5rem 1.5rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+    .giscus-placeholder h3 {
+      margin-top: 0;
+      color: var(--bleu-fonce);
+    }
+    .giscus-placeholder code {
+      display: block;
+      background: white;
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      margin: 0.5rem auto;
+      max-width: 400px;
+      font-size: 0.85rem;
+      text-align: left;
+    }
+    .cat-card {
+      display: grid;
+      grid-template-columns: 60px 1fr auto;
+      gap: 1rem;
+      align-items: center;
+      background: white;
+      border: 1px solid var(--bordure);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin: 0.75rem 0;
+      text-decoration: none;
+      color: var(--texte);
+      transition: var(--transition);
+    }
+    .cat-card:hover {
+      border-color: var(--vert);
+      transform: translateX(3px);
+      box-shadow: var(--ombre);
+    }
+    .cat-icon {
+      font-size: 2rem;
+      text-align: center;
+    }
+    .cat-body h4 {
+      margin: 0 0 0.2rem;
+      color: var(--bleu-fonce);
+    }
+    .cat-body p {
+      margin: 0;
+      font-size: 0.88rem;
+      color: var(--texte-leger);
+    }
+    .cat-arrow {
+      color: var(--vert-fonce);
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+    .guidelines {
+      background: #fef9e9;
+      border: 1px solid #f4d77e;
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .guidelines h3 {
+      margin-top: 0;
+    }
+    .guidelines ul {
+      margin: 0.5rem 0 0;
+    }
+    @media (max-width: 600px) {
+      .cat-card {
+        grid-template-columns: 50px 1fr;
+      }
+      .cat-arrow { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../index.html" class="brand">
+      <div class="brand-logo">🐦</div>
+      <div class="brand-text">
+        <span class="brand-title">Wiki Cap Nature</span>
+        <span class="brand-sub">Ateliers Birds · Guide de réplication</span>
+      </div>
+    </a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../presentation.html">Présentation</a></li>
+        <li><a href="../protocole/index.html">Protocole</a></li>
+        <li><a href="../materiel/index.html">Matériel</a></li>
+        <li><a href="../fiches-eleves/index.html">Fiches élèves</a></li>
+        <li><a href="../especes/index.html">Espèces</a></li>
+        <li><a href="../sonogramme/index.html">Sonogramme</a></li>
+        <li><a href="index.html" class="active">Forum</a></li>
+        <li><a href="../evaluation/index.html">Évaluation</a></li>
+        <li><a href="../ressources/index.html">Ressources</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrapper">
+
+  <aside class="sidebar">
+    <h3>Sur cette page</h3>
+    <ul>
+      <li><a href="#bienvenue">Bienvenue</a></li>
+      <li><a href="#categories">Catégories</a></li>
+      <li><a href="#discussions">Toutes les discussions</a></li>
+      <li><a href="#participer">Comment participer</a></li>
+      <li><a href="#charte">Charte du forum</a></li>
+      <li><a href="#config">Configuration (admin)</a></li>
+    </ul>
+    <h3>Liens utiles</h3>
+    <ul>
+      <li><a href="../protocole/index.html">→ Protocole</a></li>
+      <li><a href="../materiel/index.html">→ Matériel</a></li>
+      <li><a href="../ressources/index.html">→ FAQ</a></li>
+    </ul>
+  </aside>
+
+  <main class="content">
+
+    <h1>Forum des enseignants & éducateurs</h1>
+    <p class="page-lead">Un espace pour échanger entre praticiens : retours d'expérience, questions, partage de bonnes idées.</p>
+
+    <h2 id="bienvenue">Bienvenue sur le forum</h2>
+    <p>Ce forum est ouvert à toutes les personnes qui animent (ou souhaitent animer) un atelier Cap Nature : <strong>enseignant·e·s, animateur·ice·s nature, éducateur·ice·s à l'environnement, médiateur·ice·s scientifiques</strong>. Que vous prépariez votre premier atelier ou que vous en ayez déjà animé dix, votre voix compte.</p>
+
+    <div class="callout info">
+      <p class="callout-title">ℹ️ Comment ça marche</p>
+      <p>Le forum est hébergé sur <strong>GitHub Discussions</strong> et intégré ici via l'outil libre <em>giscus</em>. Vous pouvez :</p>
+      <ul style="margin: 0.5rem 0 0;">
+        <li><strong>Lire toutes les discussions sans compte</strong> (aucune inscription nécessaire pour parcourir)</li>
+        <li><strong>Poster, commenter, réagir avec un compte GitHub</strong> (gratuit, création en 30 secondes)</li>
+        <li>Recevoir des notifications par e-mail pour suivre une discussion</li>
+        <li>Utiliser le formatage Markdown (gras, listes, liens, images, code)</li>
+      </ul>
+    </div>
+
+    <h2 id="categories">Catégories de discussion</h2>
+    <p>Les discussions sont organisées en grandes catégories. Cliquez sur celle qui vous concerne pour aller directement aux échanges en cours.</p>
+
+    <div class="cat-grid">
+      <a href="https://github.com/" class="cat-card" id="cat-link-premiers-pas">
+        <div class="cat-icon">🌱</div>
+        <div class="cat-body">
+          <h4>Premiers pas</h4>
+          <p>Premier atelier, choix du site, doutes de débutant — pas de question bête.</p>
+        </div>
+        <span class="cat-arrow">→</span>
+      </a>
+
+      <a href="https://github.com/" class="cat-card" id="cat-link-retours">
+        <div class="cat-icon">📝</div>
+        <div class="cat-body">
+          <h4>Retours d'expérience</h4>
+          <p>Racontez ce qui a marché (ou pas !) avec votre groupe. Photos bienvenues.</p>
+        </div>
+        <span class="cat-arrow">→</span>
+      </a>
+
+      <a href="https://github.com/" class="cat-card" id="cat-link-materiel">
+        <div class="cat-icon">🎙️</div>
+        <div class="cat-body">
+          <h4>Matériel & applications</h4>
+          <p>Questions sur Merlin, FizziQ, paraboles, alternatives, dépannage.</p>
+        </div>
+        <span class="cat-arrow">→</span>
+      </a>
+
+      <a href="https://github.com/" class="cat-card" id="cat-link-adaptations">
+        <div class="cat-icon">🔄</div>
+        <div class="cat-body">
+          <h4>Adaptations pédagogiques</h4>
+          <p>Comment adapter à votre niveau, votre discipline, votre public spécifique.</p>
+        </div>
+        <span class="cat-arrow">→</span>
+      </a>
+
+      <a href="https://github.com/" class="cat-card" id="cat-link-observations">
+        <div class="cat-icon">🐦</div>
+        <div class="cat-body">
+          <h4>Identifications & observations</h4>
+          <p>Une espèce surprise par Merlin ? Une observation à partager ? C'est ici.</p>
+        </div>
+        <span class="cat-arrow">→</span>
+      </a>
+
+      <a href="https://github.com/" class="cat-card" id="cat-link-prolongements">
+        <div class="cat-icon">📚</div>
+        <div class="cat-body">
+          <h4>Prolongements en classe</h4>
+          <p>Idées de séances suivantes, projets pluridisciplinaires, productions d'élèves.</p>
+        </div>
+        <span class="cat-arrow">→</span>
+      </a>
+
+      <a href="https://github.com/" class="cat-card" id="cat-link-suggestions">
+        <div class="cat-icon">💡</div>
+        <div class="cat-body">
+          <h4>Suggestions & améliorations</h4>
+          <p>Propositions pour faire évoluer le Wiki ou le dispositif.</p>
+        </div>
+        <span class="cat-arrow">→</span>
+      </a>
+
+      <a href="https://github.com/" class="cat-card" id="cat-link-annonces">
+        <div class="cat-icon">📣</div>
+        <div class="cat-body">
+          <h4>Annonces & événements</h4>
+          <p>Formations, rencontres, publications. Réservé aux modérateurs.</p>
+        </div>
+        <span class="cat-arrow">→</span>
+      </a>
+    </div>
+
+    <h2 id="discussions">Discussions récentes</h2>
+    <p>Toutes les discussions du forum apparaissent ci-dessous. Vous pouvez les parcourir librement, et participer si vous avez un compte GitHub.</p>
+
+    <!-- ============================================
+         WIDGET GISCUS — discussions GitHub embarquées
+         À configurer après création du repo
+         (voir section "Configuration" plus bas)
+         ============================================ -->
+    <div class="giscus-placeholder" id="giscus-zone">
+      <h3>💬 Le forum n'est pas encore configuré</h3>
+      <p style="margin: 0.5rem 0 1rem;">Pour activer les discussions, l'administrateur·ice du Wiki doit :</p>
+      <ol style="text-align: left; max-width: 500px; margin: 0 auto;">
+        <li>Activer les <strong>Discussions</strong> dans les paramètres du dépôt GitHub</li>
+        <li>Installer l'application <a href="https://github.com/apps/giscus">giscus</a> sur le dépôt</li>
+        <li>Générer la configuration sur <a href="https://giscus.app">giscus.app</a></li>
+        <li>Remplacer le bloc <code>&lt;script src="https://giscus.app/client.js"&gt;...&lt;/script&gt;</code> dans <code>forum/index.html</code></li>
+      </ol>
+      <p style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--texte-leger);">Voir la <a href="#config">section configuration</a> ci-dessous pour les instructions détaillées.</p>
+    </div>
+
+    <!-- BLOC GISCUS À DÉCOMMENTER ET CONFIGURER
+    <div class="giscus-frame">
+      <script src="https://giscus.app/client.js"
+        data-repo="UTILISATEUR/NOM-DU-DEPOT"
+        data-repo-id="VOTRE_REPO_ID"
+        data-category="General"
+        data-category-id="VOTRE_CATEGORY_ID"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="fr"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
+    -->
+
+    <h2 id="participer">Comment participer</h2>
+
+    <h3>1. Créer un compte GitHub (si besoin)</h3>
+    <p>Pour poster ou répondre, il faut un compte GitHub (gratuit, 30 secondes). C'est la même infrastructure que celle utilisée par des millions de développeurs et de scientifiques dans le monde.</p>
+    <ol>
+      <li>Aller sur <a href="https://github.com/signup">github.com/signup</a></li>
+      <li>Renseigner un e-mail, un mot de passe, un nom d'utilisateur (libre choix)</li>
+      <li>Confirmer son e-mail</li>
+      <li>Revenir sur cette page et participer !</li>
+    </ol>
+
+    <div class="callout tip">
+      <p class="callout-title">💡 Conseil pour les enseignants</p>
+      <p>Utilisez un nom d'utilisateur qui reflète votre identité professionnelle (ex. <code>marie-svt-rennes</code>) plutôt qu'un pseudo opaque. Cela facilite les échanges entre pairs et donne du contexte à vos messages.</p>
+    </div>
+
+    <h3>2. Lancer une nouvelle discussion</h3>
+    <ul>
+      <li>Choisir la <strong>catégorie</strong> appropriée (cf. plus haut)</li>
+      <li>Donner un <strong>titre clair</strong> (“Espèce non identifiée par Merlin sur platanes” plutôt que “Question”)</li>
+      <li>Décrire le contexte : niveau de classe, lieu, saison, problème rencontré</li>
+      <li>Ajouter une <strong>image</strong> si pertinent (capture d'écran de Merlin, photo de l'oiseau, sonogramme) — glisser-déposer dans la zone de saisie</li>
+    </ul>
+
+    <h3>3. Répondre, réagir, suivre</h3>
+    <ul>
+      <li>Cliquer sur <strong>Reply</strong> sous un message pour répondre dans le fil</li>
+      <li>Utiliser les <strong>réactions emoji</strong> (👍 ❤️ 🎉) pour valider sans alourdir le fil</li>
+      <li>Cliquer sur <strong>Subscribe</strong> pour recevoir un e-mail quand le fil s'enrichit</li>
+      <li>Si une réponse résout votre question : marquer comme <strong>Answer</strong> — c'est utile pour les futurs lecteurs</li>
+    </ul>
+
+    <h2 id="charte">Charte du forum</h2>
+
+    <div class="guidelines">
+      <h3>🤝 Quelques règles pour que ça se passe bien</h3>
+      <ul>
+        <li><strong>Bienveillance avant tout.</strong> Beaucoup de participants débutent ; chacun pose ses questions sans crainte du jugement.</li>
+        <li><strong>Pas de question bête.</strong> Si vous vous demandez, d'autres aussi. Posez.</li>
+        <li><strong>Restez factuel·le.</strong> Les retours négatifs sont bienvenus s'ils décrivent une situation, pas une personne.</li>
+        <li><strong>Respect du RGPD.</strong> Ne publiez pas de photos identifiantes d'élèves sans autorisation. Anonymisez les copies/questionnaires.</li>
+        <li><strong>Ne partagez pas d'observations sensibles.</strong> Pour les espèces protégées rares (chouette, rapaces nicheurs), ne précisez pas la localisation exacte — préférez la commune ou le quartier.</li>
+        <li><strong>Citez vos sources.</strong> Si vous reprenez une information lue ailleurs, indiquez d'où elle vient.</li>
+        <li><strong>Pas de publicité.</strong> Le forum n'est pas un canal commercial. Partager une formation gratuite ou un événement public est en revanche bienvenu (catégorie Annonces).</li>
+      </ul>
+    </div>
+
+    <p>Les contenus du forum sont publiés sous la même licence <strong>CC BY-SA 4.0</strong> que le reste du Wiki : ils peuvent être cités et réutilisés, en mentionnant les auteur·ice·s.</p>
+
+    <h2 id="config">Configuration du forum (admin)</h2>
+
+    <p>Cette section concerne uniquement la personne qui administre le dépôt GitHub. Une fois ces étapes effectuées, le forum sera pleinement fonctionnel.</p>
+
+    <h3>Étape 1 · Activer GitHub Discussions sur le dépôt</h3>
+    <ol>
+      <li>Aller dans <strong>Settings</strong> du dépôt</li>
+      <li>Dans la section <strong>Features</strong>, cocher <strong>Discussions</strong></li>
+      <li>Aller dans l'onglet <strong>Discussions</strong> du dépôt, cliquer sur <strong>Set up discussions</strong></li>
+    </ol>
+
+    <h3>Étape 2 · Créer les catégories</h3>
+    <p>Dans <em>Discussions → Categories</em>, créer ces catégories (en cliquant sur le crayon ✏️) :</p>
+
+    <table>
+      <thead>
+        <tr><th>Nom</th><th>Type</th><th>Description</th><th>Emoji</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Premiers pas</td><td>Discussion</td><td>Premier atelier, doutes de débutant</td><td>🌱</td></tr>
+        <tr><td>Retours d'expérience</td><td>Discussion</td><td>Ce qui a marché ou pas</td><td>📝</td></tr>
+        <tr><td>Matériel &amp; applications</td><td>Q&amp;A</td><td>Questions techniques (le format Q&amp;A permet de marquer les réponses validées)</td><td>🎙️</td></tr>
+        <tr><td>Adaptations pédagogiques</td><td>Discussion</td><td>Adaptations par niveau, discipline, public</td><td>🔄</td></tr>
+        <tr><td>Identifications &amp; observations</td><td>Discussion</td><td>Partage d'observations, identifications surprenantes</td><td>🐦</td></tr>
+        <tr><td>Prolongements en classe</td><td>Discussion</td><td>Idées et productions d'élèves</td><td>📚</td></tr>
+        <tr><td>Suggestions &amp; améliorations</td><td>Idea</td><td>Pour faire évoluer le Wiki (format Idea = avec votes)</td><td>💡</td></tr>
+        <tr><td>Annonces &amp; événements</td><td>Announcement</td><td>Réservé aux modérateurs</td><td>📣</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Étape 3 · Installer giscus</h3>
+    <ol>
+      <li>Aller sur <a href="https://github.com/apps/giscus">github.com/apps/giscus</a></li>
+      <li>Cliquer sur <strong>Install</strong></li>
+      <li>Choisir <strong>Only select repositories</strong> et sélectionner le dépôt du Wiki</li>
+    </ol>
+
+    <h3>Étape 4 · Générer la configuration giscus</h3>
+    <ol>
+      <li>Aller sur <a href="https://giscus.app">giscus.app</a></li>
+      <li>Renseigner le nom du dépôt (ex. <code>marie-pouliquen/wiki-cap-nature</code>)</li>
+      <li>Choisir la catégorie de mappage : <strong>General</strong> (ou une catégorie dédiée “Forum”)</li>
+      <li>Choisir l'option <strong>Discussion title contains page pathname</strong></li>
+      <li>Le site génère un bloc <code>&lt;script&gt;</code> à copier</li>
+    </ol>
+
+    <h3>Étape 5 · Coller le script dans cette page</h3>
+    <ol>
+      <li>Ouvrir <code>docs/forum/index.html</code></li>
+      <li>Repérer le bloc <strong>BLOC GISCUS À DÉCOMMENTER ET CONFIGURER</strong> (commentaire HTML)</li>
+      <li>Supprimer le placeholder <code>&lt;div class="giscus-placeholder"&gt;...&lt;/div&gt;</code></li>
+      <li>Décommenter le bloc giscus et y coller les valeurs <code>data-repo</code>, <code>data-repo-id</code>, <code>data-category</code>, <code>data-category-id</code> générées à l'étape 4</li>
+      <li>Commit, push, et le forum est en ligne 🎉</li>
+    </ol>
+
+    <h3>Étape 6 · Mettre à jour les liens des catégories</h3>
+    <p>Une fois les catégories créées, remplacer les liens <code>https://github.com/</code> dans les cartes ci-dessus par les URL réelles de vos catégories (du type <code>https://github.com/UTILISATEUR/DEPOT/discussions/categories/premiers-pas</code>).</p>
+
+    <div class="callout warning">
+      <p class="callout-title">⚠️ Modération</p>
+      <p>Pensez à désigner au moins <strong>un·e modérateur·ice</strong> en plus de l'administrateur·ice principal·e (via <em>Settings → Collaborators</em>). La modération consiste à : épingler les bonnes discussions, marquer les réponses validées, supprimer les messages hors charte, accueillir les nouveaux. Comptez environ 1 h par semaine pour un forum modérément actif.</p>
+    </div>
+
+    <h3>Bonus · Personnaliser le thème</h3>
+    <p>Le widget giscus accepte plusieurs thèmes. Pour rester cohérent avec le Wiki, utilisez <code>data-theme="light"</code> (par défaut) ou créez un thème custom avec les couleurs de la charte (bleu marine #1f2a6b, vert #94c11f, jaune #f7d038). Voir la <a href="https://github.com/giscus/giscus/blob/main/styles/themes/custom_example.css">doc giscus sur les thèmes custom</a>.</p>
+
+    <p style="margin-top: 2.5rem; text-align: center;">
+      <a href="../ressources/index.html" class="btn">Voir les ressources →</a>
+    </p>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p>Wiki Cap Nature — Ateliers Birds · Sous licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+</footer>
+
+<script src="../assets/wiki.js"></script>
+</body>
+</html>
