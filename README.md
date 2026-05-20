@@ -1,6 +1,6 @@
-# 🐦 Wiki Cap Nature — Ateliers Birds
+# Wiki Cap Nature — Ateliers Birds
 
-Guide complet et libre pour répliquer les **ateliers Cap Nature** : (re)découvrir la nature avec des capteurs participatifs.
+Guide pour répliquer les **ateliers Cap Nature** : (re)découvrir la nature avec des capteurs participatifs.
 
 > À destination des enseignant·e·s et éducateur·ice·s nature qui souhaitent répliquer l'expérience.
 
