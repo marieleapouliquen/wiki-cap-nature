@@ -40,9 +40,9 @@ cards:
 
 ---
 
-{% include hero.html title=page.hero.title subtitle=page.hero.subtitle tags=page.hero.tags %}
-
 {% include photo-band.html photos=page.photos %}
+
+{% include hero.html title=page.hero.title subtitle=page.hero.subtitle tags=page.hero.tags %}
 
 <div class="section" style="max-width: 760px;">
   <main class="content" style="max-width: none;">
