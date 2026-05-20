@@ -1,0 +1,8 @@
+<ul class="res-list">
+  {%- for item in include.items -%}
+  <li>
+    <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.name }}</a>{% if item.tag %}<span class="res-tag">{{ item.tag }}</span>{% endif %}
+    <span class="res-desc">{{ item.desc }}</span>
+  </li>
+  {%- endfor -%}
+</ul>

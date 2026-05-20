@@ -1,0 +1,10 @@
+<section class="hero">
+  <h1>{{ include.title }}</h1>
+  <p class="hero-sub">{{ include.subtitle }}</p>
+  <div class="hero-meta">
+    {%- assign tags = include.tags | split: "|" -%}
+    {%- for tag in tags -%}
+    <span class="hero-tag">{{ tag }}</span>
+    {%- endfor -%}
+  </div>
+</section>

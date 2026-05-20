@@ -1,0 +1,10 @@
+<div class="card-grid">
+  {%- for card in include.cards -%}
+  <a href="{{ card.url | relative_url }}" class="card">
+    <div class="card-icon">{{ card.icon }}</div>
+    <h3 class="card-title">{{ card.title }}</h3>
+    <p class="card-desc">{{ card.desc }}</p>
+    <span class="card-cta">{{ card.cta }}</span>
+  </a>
+  {%- endfor -%}
+</div>

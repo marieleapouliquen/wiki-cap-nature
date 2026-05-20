@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="page-wrapper">
+
+  <aside class="sidebar">
+    {%- if page.sidebar_title -%}<h3>{{ page.sidebar_title }}</h3>{%- else -%}<h3>Sur cette page</h3>{%- endif -%}
+    {%- if page.toc -%}
+    <ul>
+      {%- for item in page.toc -%}
+      <li><a href="#{{ item.id }}">{{ item.label }}</a></li>
+      {%- endfor -%}
+    </ul>
+    {%- endif -%}
+    {%- if page.sidebar_links -%}
+    <h3>{{ page.sidebar_links_title | default: "Liens utiles" }}</h3>
+    <ul>
+      {%- for link in page.sidebar_links -%}
+      <li><a href="{{ link.url | relative_url }}">→ {{ link.label }}</a></li>
+      {%- endfor -%}
+    </ul>
+    {%- endif -%}
+  </aside>
+
+  <main class="content">
+    <h1>{{ page.title }}</h1>
+    {%- if page.lead -%}<p class="page-lead">{{ page.lead }}</p>{%- endif -%}
+
+    {{ content }}
+  </main>
+
+</div>

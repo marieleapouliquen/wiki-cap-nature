@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a href="{{ '/' | relative_url }}" class="brand">
+      <div class="brand-text">
+        <span class="brand-title">{{ site.title }}</span>
+        <span class="brand-sub">{{ site.tagline }}</span>
+      </div>
+    </a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <nav class="main-nav">
+      <ul>
+        {%- for item in site.nav -%}
+          {%- assign item_url = item.url | relative_url -%}
+          {%- assign current = page.url | relative_url -%}
+          <li><a href="{{ item_url }}"{% if current == item_url %} class="active"{% endif %}>{{ item.title }}</a></li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+  </div>
+</header>
