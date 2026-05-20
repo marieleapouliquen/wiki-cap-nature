@@ -3,32 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ressources · Wiki Cap Nature</title>
+  <title>Ressources · Cap Nature</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .res-list { list-style: none; padding: 0; margin: 1.25rem 0; }
+    .res-list li {
+      padding: 1rem 1.25rem;
+      margin: 0.6rem 0;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      transition: var(--transition);
+    }
+    .res-list li:hover { border-color: var(--green-soft); box-shadow: var(--shadow-sm); }
+    .res-list a { font-weight: 600; text-decoration: none; font-size: 1.02rem; }
+    .res-list .res-desc { display: block; color: var(--ink-soft); font-size: 0.92rem; margin-top: 0.2rem; font-weight: 400; }
+    .res-list .res-tag {
+      display: inline-block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em;
+      font-weight: 700; color: var(--green); background: var(--mint); padding: 0.12rem 0.5rem;
+      border-radius: 20px; margin-left: 0.5rem; vertical-align: middle;
+    }
+  </style>
 </head>
 <body>
 
 <header class="site-header">
   <div class="header-inner">
     <a href="../index.html" class="brand">
-      <div class="brand-logo">🐦</div>
       <div class="brand-text">
-        <span class="brand-title">Wiki Cap Nature</span>
-        <span class="brand-sub">Ateliers Birds · Guide de réplication</span>
+        <span class="brand-title">Cap Nature</span>
+        <span class="brand-sub">Ateliers Birds</span>
       </div>
     </a>
     <button class="nav-toggle" aria-label="Menu">☰</button>
     <nav class="main-nav">
       <ul>
         <li><a href="../index.html">Accueil</a></li>
-        <li><a href="../presentation.html">Présentation</a></li>
         <li><a href="../protocole/index.html">Protocole</a></li>
         <li><a href="../materiel/index.html">Matériel</a></li>
-        <li><a href="../fiches-eleves/index.html">Fiches élèves</a></li>
-        <li><a href="../especes/index.html">Espèces</a></li>
-        <li><a href="../sonogramme/index.html">Sonogramme</a></li>
-        <li><a href="../forum/index.html">Forum</a></li>
-        <li><a href="../evaluation/index.html">Évaluation</a></li>
         <li><a href="index.html" class="active">Ressources</a></li>
       </ul>
     </nav>
@@ -40,205 +52,137 @@
   <aside class="sidebar">
     <h3>Sur cette page</h3>
     <ul>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#glossaire">Glossaire</a></li>
-      <li><a href="#aller-plus-loin">Pour aller plus loin</a></li>
-      <li><a href="#ressources-pedagogiques">Ressources pédagogiques</a></li>
-      <li><a href="#bibliographie">Bibliographie</a></li>
-      <li><a href="#contact">Contact &amp; contribution</a></li>
+      <li><a href="#applis">Applications</a></li>
+      <li><a href="#identification">Identifier les oiseaux</a></li>
+      <li><a href="#sciences">Sciences participatives</a></li>
+      <li><a href="#associations">Associations & réseaux</a></li>
+      <li><a href="#sons">Écouter la nature</a></li>
+      <li><a href="#lectures">Lectures</a></li>
+      <li><a href="#boutiques">Boutiques & matériel</a></li>
     </ul>
   </aside>
 
   <main class="content">
 
-    <h1>Ressources</h1>
-    <p class="page-lead">Pour aller plus loin : FAQ, glossaire, bibliographie, ressources pédagogiques et contact.</p>
+    <h1>Ressources externes</h1>
+    <p class="page-lead">Une sélection de sites, applications, associations et lectures pour prolonger l'expérience des ateliers — et continuer à écouter le vivant.</p>
 
-    <h2 id="faq">FAQ — Questions fréquentes</h2>
-
-    <h3>Faut-il être ornithologue pour animer cet atelier ?</h3>
-    <p><strong>Non.</strong> Merlin se charge de l'identification ; votre rôle est d'accompagner l'expérience et la curiosité. Vous découvrirez les espèces en même temps que vos participants — et c'est très bien comme ça.</p>
-
-    <h3>Et si on n'entend aucun oiseau ?</h3>
-    <p>Cela peut arriver, notamment hors-printemps ou par mauvais temps. C'est <strong>une occasion pédagogique</strong> : pourquoi ce silence ? Lien avec la pollution sonore, l'occupation du sol, la saison… Le constat d'absence est aussi un constat. Et vous entendrez forcément <em>quelque chose</em>, ne serait-ce que des moineaux ou des merles.</p>
-
-    <h3>Combien de paraboles me faut-il ?</h3>
-    <p>Idéalement 1 pour 4–5 participants. Si budget serré : 1 pour 8–10, en organisant un usage tournant. On peut aussi animer sans parabole, avec Merlin seul sur smartphone.</p>
-
-    <h3>Le smartphone des élèves : autorisé ou non ?</h3>
-    <p>En contexte scolaire français, le téléphone est interdit au collège et restreint au lycée. <strong>L'atelier nécessite une autorisation explicite</strong> de la direction (et idéalement des parents pour les mineurs). Présenter l'atelier comme un usage <em>pédagogique encadré</em>, limité au temps de l'activité. Alternative : une flotte de smartphones dédiés.</p>
-
-    <h3>Combien de temps pour préparer un atelier la première fois ?</h3>
-    <p>Comptez environ <strong>3 heures</strong> de préparation : 1h pour repérer le site, 1h pour installer et tester les applis, 1h pour préparer les fiches et le briefing. Les fois suivantes, c'est beaucoup plus rapide.</p>
-
-    <h3>Peut-on adapter l'atelier en intérieur ?</h3>
-    <p>Pas vraiment dans cette forme. L'atelier repose sur la rencontre avec le vivant <em>in situ</em>. En cas de très mauvais temps, mieux vaut <strong>reporter</strong>. À défaut, on peut faire une séance préparatoire en classe : présentation des outils, écoute de chants d'oiseaux enregistrés, repérage cartographique du futur lieu.</p>
-
-    <h3>L'atelier convient-il aux personnes malentendantes ?</h3>
-    <p>L'atelier est conçu autour de l'écoute, ce qui peut sembler exclure. Cela dit, des adaptations sont possibles : Merlin affiche aussi visuellement les sonogrammes en temps réel, ce qui permet une participation par la lecture des spectres ; FizziQ propose des données chiffrées et graphiques ; le travail de cartographie sensible mobilise tous les sens. En groupe mixte, la diversité enrichit la restitution.</p>
-
-    <h3>Que faire avec les données collectées ?</h3>
-    <p>Plusieurs usages possibles :</p>
-    <ul>
-      <li>Restitution en classe sous forme d'affiches, articles de journal scolaire, exposition</li>
-      <li>Mise en commun à l'échelle de l'établissement (carte des espèces, suivi dans le temps)</li>
-      <li>Contribution à des programmes de sciences citoyennes (Faune-France, GBIF) — sous réserve de vérification des identifications</li>
-      <li>Contribution à la recherche Cap Nature : <a href="#contact">contactez-nous</a></li>
+    <h2 id="applis">Applications utiles</h2>
+    <ul class="res-list">
+      <li>
+        <a href="https://merlin.allaboutbirds.org/" target="_blank" rel="noopener">Merlin Bird ID</a><span class="res-tag">Gratuit</span>
+        <span class="res-desc">L'application du Cornell Lab of Ornithology qui identifie les oiseaux par leur chant en temps réel. Fonctionne hors-ligne après téléchargement du pack Europe occidentale.</span>
+      </li>
+      <li>
+        <a href="https://www.fizziq.org/" target="_blank" rel="noopener">FizziQ</a><span class="res-tag">Gratuit</span>
+        <span class="res-desc">Application de la fondation La main à la pâte. Transforme le smartphone en sonomètre et autres instruments de mesure physique. Sans publicité ni collecte de données.</span>
+      </li>
+      <li>
+        <a href="https://www.birdnet.cornell.edu/" target="_blank" rel="noopener">BirdNET</a><span class="res-tag">Gratuit</span>
+        <span class="res-desc">Une alternative à Merlin, également développée par Cornell. Permet aussi d'analyser des fichiers audio enregistrés.</span>
+      </li>
     </ul>
 
-    <h3>L'atelier est-il réutilisable avec la même classe ?</h3>
-    <p>Oui, mais en variant les conditions (site différent, saison différente, focus thématique différent). Une <strong>série de 3 ateliers</strong> sur l'année permet aux participants de constater les variations saisonnières et de développer une attention plus fine au lieu fréquenté.</p>
-
-    <h2 id="glossaire">Glossaire</h2>
-
-    <table>
-      <tbody>
-        <tr><th>Anthrophonie (ou anthropophonie)</th><td>Ensemble des sons d'origine humaine dans un paysage sonore : trafic, machines, voix, musique amplifiée.</td></tr>
-        <tr><th>Biophonie</th><td>Ensemble des sons produits par les êtres vivants non-humains : chants d'oiseaux, stridulations d'insectes, cris d'amphibiens, etc.</td></tr>
-        <tr><th>Bioacoustique</th><td>Discipline scientifique qui étudie la production et la réception de sons par les organismes vivants.</td></tr>
-        <tr><th>Connexion à la nature</th><td>Sentiment subjectif d'appartenance, d'inclusion et d'interdépendance entre soi et le monde naturel. Mesuré notamment par l'échelle INS.</td></tr>
-        <tr><th>Décibel (dB)</th><td>Unité logarithmique de mesure du niveau sonore. Une augmentation de 10 dB correspond à une multiplication par 10 de l'intensité sonore.</td></tr>
-        <tr><th>Écoacoustique</th><td>Science qui étudie les paysages sonores naturels comme indicateurs de l'état des écosystèmes.</td></tr>
-        <tr><th>Effet de révélation</th><td>Phénomène psychologique par lequel la perception inattendue d'un élément (ici sonore) dans un environnement familier reconfigure la relation à cet environnement (Ratcliffe et al., 2013).</td></tr>
-        <tr><th>Extinction de l'expérience</th><td>Perte progressive des interactions directes avec la nature, particulièrement marquée en milieu urbain (Soga &amp; Gaston, 2016).</td></tr>
-        <tr><th>Géophonie</th><td>Ensemble des sons d'origine naturelle non biologique : vent, eau, tonnerre, etc.</td></tr>
-        <tr><th>INS</th><td>Inclusion of Nature in Self. Échelle visuelle en 7 paires de cercles mesurant la connexion à la nature (Schultz, 2002).</td></tr>
-        <tr><th>Niche acoustique</th><td>Bande de fréquences et de temps occupée par une espèce dans un paysage sonore. Concept central pour comprendre la coexistence acoustique des espèces.</td></tr>
-        <tr><th>Paysage sonore (soundscape)</th><td>Ensemble cohérent des sons d'un lieu donné, intégrant biophonie, géophonie et anthrophonie. Concept popularisé par R. Murray Schafer.</td></tr>
-        <tr><th>Restauration attentionnelle</th><td>Récupération des capacités d'attention dirigée après exposition à un environnement naturel (théorie de Kaplan).</td></tr>
-        <tr><th>Sound ID</th><td>Mode d'identification par le son dans l'application Merlin Bird ID.</td></tr>
-        <tr><th>Sonomètre</th><td>Instrument (ici une fonction de FizziQ) qui mesure le niveau sonore en décibels.</td></tr>
-      </tbody>
-    </table>
-
-    <h2 id="aller-plus-loin">Pour aller plus loin (lectures &amp; écoutes)</h2>
-
-    <h3>Ouvrages d'introduction</h3>
-    <ul>
-      <li><strong>R. Murray Schafer</strong>, <em>Le paysage sonore</em> (1977, traduction Wildproject 2010) — le livre fondateur de l'écologie sonore.</li>
-      <li><strong>Bernie Krause</strong>, <em>Le grand orchestre animal</em> (2013) — un classique sur la bioacoustique et la disparition des paysages sonores.</li>
-      <li><strong>Jérôme Sueur</strong>, <em>Histoire naturelle du silence</em> (2023) — réflexion sur l'écologie sonore par un acousticien du Muséum.</li>
-      <li><strong>David G. Haskell</strong>, <em>Un million de chants</em> (<em>Sounds Wild and Broken</em>, 2022) — une plongée poétique dans les paysages sonores du monde.</li>
+    <h2 id="identification">Identifier les oiseaux</h2>
+    <ul class="res-list">
+      <li>
+        <a href="https://www.oiseaux.net/" target="_blank" rel="noopener">Oiseaux.net</a>
+        <span class="res-desc">Encyclopédie en ligne de référence sur les oiseaux, avec fiches descriptives, photos et enregistrements de chants pour chaque espèce.</span>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/" target="_blank" rel="noopener">Xeno-canto</a>
+        <span class="res-desc">Banque collaborative mondiale de chants d'oiseaux. Chaque enregistrement est accompagné de son sonogramme — idéal pour s'entraîner à l'écoute.</span>
+      </li>
+      <li>
+        <a href="https://www.lpo.fr/decouvrir-la-nature/apprendre-a-identifier" target="_blank" rel="noopener">Guides d'identification LPO</a>
+        <span class="res-desc">Fiches et affiches téléchargeables de la Ligue pour la Protection des Oiseaux, notamment sur les oiseaux des jardins.</span>
+      </li>
     </ul>
 
-    <h3>Podcasts &amp; ressources audio</h3>
-    <ul>
-      <li><strong>« Les pieds sur Terre »</strong> (France Culture) — épisodes occasionnels sur l'écologie sonore.</li>
-      <li><strong>« Mécaniques du vivant »</strong> (France Culture) — saison sur les sons du vivant.</li>
-      <li><strong>Sons de la nature de Boris Jollivet</strong> (audionaturaliste) — disponibles en ligne et sur podcasts.</li>
+    <h2 id="sciences">Sciences participatives</h2>
+    <ul class="res-list">
+      <li>
+        <a href="https://www.faune-france.org/" target="_blank" rel="noopener">Faune-France</a>
+        <span class="res-desc">Plateforme nationale de saisie d'observations naturalistes. Vos observations contribuent à la connaissance de la biodiversité.</span>
+      </li>
+      <li>
+        <a href="https://www.vigienature-ecole.fr/" target="_blank" rel="noopener">Vigie-Nature École</a>
+        <span class="res-desc">Programme de sciences participatives du Muséum national d'Histoire naturelle, conçu pour les enseignants et leurs classes.</span>
+      </li>
+      <li>
+        <a href="https://oiseauxdesjardins.fr/" target="_blank" rel="noopener">Oiseaux des jardins</a>
+        <span class="res-desc">Observatoire participatif LPO + Muséum, parfait pour un suivi simple et régulier à la mangeoire ou dans la cour.</span>
+      </li>
     </ul>
 
-    <h3>Sites de référence</h3>
-    <ul>
-      <li><a href="https://merlin.allaboutbirds.org/">Merlin Bird ID</a> · application + base de données ornithologique</li>
-      <li><a href="https://www.fizziq.org/">FizziQ</a> · application + fiches pédagogiques</li>
-      <li><a href="https://www.oiseaux.net/">Oiseaux.net</a> · encyclopédie en ligne avec chants</li>
-      <li><a href="https://www.faune-france.org/">Faune-France</a> · base de données collaborative</li>
-      <li><a href="https://www.vigienature-ecole.fr/">Vigie-Nature École</a> · programme de sciences participatives</li>
-      <li><a href="https://www.xeno-canto.org/">Xeno-canto</a> · banque collaborative de chants d'oiseaux du monde entier</li>
+    <h2 id="associations">Associations & réseaux</h2>
+    <ul class="res-list">
+      <li>
+        <a href="https://www.lpo.fr/" target="_blank" rel="noopener">LPO — Ligue pour la Protection des Oiseaux</a>
+        <span class="res-desc">Réseau national avec des antennes locales proposant des animations, des formations et des ressources pédagogiques.</span>
+      </li>
+      <li>
+        <a href="https://www.bretagne-vivante.org/" target="_blank" rel="noopener">Bretagne Vivante</a>
+        <span class="res-desc">Association naturaliste régionale proposant des animations scolaires et des sorties de découverte.</span>
+      </li>
+      <li>
+        <a href="https://www.cpie.fr/" target="_blank" rel="noopener">Réseau des CPIE</a>
+        <span class="res-desc">Centres Permanents d'Initiatives pour l'Environnement, présents partout en France pour l'éducation à l'environnement.</span>
+      </li>
+      <li>
+        <a href="https://reseauecoleetnature.org/" target="_blank" rel="noopener">Réseau École et Nature</a>
+        <span class="res-desc">Plateforme nationale d'éducation à l'environnement, riche en outils et retours d'expérience pédagogiques.</span>
+      </li>
     </ul>
 
-    <h2 id="ressources-pedagogiques">Ressources pédagogiques complémentaires</h2>
-
-    <h3>Pour préparer ses élèves en amont</h3>
-    <ul>
-      <li><strong>Affiche LPO</strong> « Les oiseaux du jardin » (téléchargeable gratuitement sur le site de la LPO)</li>
-      <li><strong>Fiches espèces simplifiées</strong> (10 oiseaux communs urbains) : merle noir, pigeon ramier, mésange charbonnière, mésange bleue, rouge-gorge, pinson des arbres, pie bavarde, corneille noire, étourneau sansonnet, moineau domestique</li>
-      <li><strong>Vidéos courtes</strong> (chaîne YouTube de la LPO, du Muséum)</li>
+    <h2 id="sons">Écouter la nature</h2>
+    <ul class="res-list">
+      <li>
+        <a href="https://www.sonotheque.mnhn.fr/" target="_blank" rel="noopener">Sonothèque du Muséum</a>
+        <span class="res-desc">Collection sonore du Muséum national d'Histoire naturelle&nbsp;: enregistrements naturalistes de référence.</span>
+      </li>
+      <li>
+        <a href="https://www.borisjollivet.com/" target="_blank" rel="noopener">Boris Jollivet, audionaturaliste</a>
+        <span class="res-desc">Le travail d'un preneur de sons de la nature&nbsp;: une belle porte d'entrée vers l'écoute fine des paysages sonores.</span>
+      </li>
     </ul>
 
-    <h3>Pour prolonger en classe</h3>
-    <ul>
-      <li><strong>Programme « Oiseaux des jardins »</strong> · LPO + Muséum, suivi mensuel d'une mangeoire</li>
-      <li><strong>BirdLab</strong> · Vigie-Nature École, observation comportementale à la mangeoire</li>
-      <li><strong>Programme STOC</strong> (Suivi Temporel des Oiseaux Communs) · pour les plus avancés</li>
-      <li><strong>Plantons un arbre</strong> · projet de plantation pour favoriser la biodiversité locale</li>
+    <h2 id="lectures">Lectures pour aller plus loin</h2>
+    <ul class="res-list">
+      <li>
+        <a href="https://www.wildproject.org/livres/le-paysage-sonore" target="_blank" rel="noopener">R. Murray Schafer — <em>Le paysage sonore</em></a>
+        <span class="res-desc">Le livre fondateur de l'écologie sonore, qui a forgé la notion de « paysage sonore ».</span>
+      </li>
+      <li>
+        <a href="https://www.actes-sud.fr/catalogue/sciences-humaines-et-sociales-essais/le-grand-orchestre-animal" target="_blank" rel="noopener">Bernie Krause — <em>Le grand orchestre animal</em></a>
+        <span class="res-desc">Un classique accessible sur la bioacoustique et la richesse sonore du vivant.</span>
+      </li>
+      <li>
+        <a href="https://www.actes-sud.fr/catalogue/nature-et-environnement/histoire-naturelle-du-silence" target="_blank" rel="noopener">Jérôme Sueur — <em>Histoire naturelle du silence</em></a>
+        <span class="res-desc">Une réflexion sur le silence et le bruit par un acousticien du Muséum.</span>
+      </li>
     </ul>
 
-    <h3>Réseaux et structures-ressources</h3>
-    <ul>
-      <li><strong>LPO</strong> (Ligue pour la Protection des Oiseaux) · réseau national, antennes locales</li>
-      <li><strong>Bretagne Vivante</strong> (en Bretagne) · animations naturalistes scolaires</li>
-      <li><strong>CPIE</strong> (Centres Permanents d'Initiatives pour l'Environnement) · réseau d'éducation à l'environnement</li>
-      <li><strong>Réseau École et Nature</strong> · plateforme nationale d'éducation à l'environnement</li>
-      <li><strong>Graine</strong> · réseaux régionaux d'éducation à l'environnement</li>
-    </ul>
-
-    <h2 id="bibliographie">Bibliographie scientifique</h2>
-
-    <h3>Sur la connexion à la nature</h3>
-    <ul style="font-size: 0.92em;">
-      <li>Schultz, P. W. (2002). Inclusion with nature: The psychology of human-nature relations. In P. Schmuck &amp; W. P. Schultz (Eds.), <em>Psychology of sustainable development</em>.</li>
-      <li>Soga, M., &amp; Gaston, K. J. (2016). Extinction of experience: the loss of human–nature interactions. <em>Frontiers in Ecology and the Environment</em>, 14(2), 94–101.</li>
-      <li>Capaldi, C. A., Dopko, R. L., &amp; Zelenski, J. M. (2014). The relationship between nature connectedness and happiness: a meta-analysis. <em>Frontiers in Psychology</em>, 5, 976.</li>
-    </ul>
-
-    <h3>Sur les paysages sonores &amp; effets restaurateurs</h3>
-    <ul style="font-size: 0.92em;">
-      <li>Pijanowski, B. C., Villanueva-Rivera, L. J., Dumyahn, S. L., Farina, A., Krause, B. L., Napoletano, B. M., Gage, S. H., &amp; Pieretti, N. (2011). Soundscape ecology: the science of sound in the landscape. <em>BioScience</em>, 61(3), 203–216.</li>
-      <li>Ratcliffe, E., Gatersleben, B., &amp; Sowden, P. T. (2013). Bird sounds and their contributions to perceived attention restoration and stress recovery. <em>Journal of Environmental Psychology</em>, 36, 221–228.</li>
-      <li>Hedblom, M., Knez, I., Ode Sang, Å., &amp; Gunnarsson, B. (2017). Evaluation of natural sounds in urban greenery: potential impact for urban nature preservation. <em>Royal Society Open Science</em>, 4(2), 170037.</li>
-      <li>Buxton, R. T., Pearson, A. L., Allou, C., Fristrup, K., &amp; Wittemyer, G. (2021). A synthesis of health benefits of natural sounds and their distribution in national parks. <em>PNAS</em>, 118(14).</li>
-    </ul>
-
-    <h3>Sur technologie, attention et nature</h3>
-    <ul style="font-size: 0.92em;">
-      <li>Frumkin, H., Bratman, G. N., Breslow, S. J., Cochran, B., Kahn, P. H., Lawler, J. J., et al. (2017). Nature contact and human health: a research agenda. <em>Environmental Health Perspectives</em>, 125(7).</li>
-      <li>Kahn, P. H. (2011). <em>Technological Nature: Adaptation and the Future of Human Life</em>. MIT Press.</li>
-      <li>van Kraalingen, I., Sandseter, E. B. H., &amp; Skar, M. (2024). Technology in outdoor education: a systematic review. <em>Journal of Outdoor and Environmental Education</em>.</li>
-    </ul>
-
-    <h3>Sur l'écologie sonore en éducation</h3>
-    <ul style="font-size: 0.92em;">
-      <li>Goday, M. (2022). Pour une approche d'écologie sonore à l'école. <em>Revue d'éducation à l'environnement</em>.</li>
-      <li>Vince, J., Bouquet, F., Bobroff, J., Creutzer, G., &amp; Dorsel, D. (2022). Des mesures sans fil avec son smartphone. <em>Bulletin de l'Union des Professeurs de Physique et de Chimie</em>, 116.</li>
-    </ul>
-
-    <h3>Étude Cap Nature</h3>
-    <ul style="font-size: 0.92em;">
-      <li>Pouliquen, M.-L. (à paraître). Effets d'un atelier de reconnexion à la nature mobilisant des capteurs participatifs sur la connexion à la nature et le bien-être. <em>Thèse de doctorat</em>, Université Rennes 2, ESO UMR 6590.</li>
-    </ul>
-
-    <h2 id="contact">Contact &amp; contribution</h2>
-
-    <h3>Qui sommes-nous ?</h3>
-    <p>Ce Wiki est issu du travail de thèse de <strong>Marie-Léa Pouliquen</strong>, doctorante en sociologie de l'environnement à l'Université Rennes 2 (laboratoire ESO UMR 6590), en co-direction avec Géosciences Rennes. La thèse s'inscrit dans le projet européen Interreg Cap Nature.</p>
-
-    <h3>Comment nous contacter ?</h3>
-    <p>Pour toute question, demande de précision, retour d'expérience, ou pour signaler une réplication de l'atelier dans votre contexte :</p>
-    <ul>
-      <li>📧 Courriel : <em>(à compléter)</em></li>
-      <li>🐙 GitHub : <em>(lien à compléter quand le repo est public)</em></li>
-    </ul>
-
-    <h3>Contribuer au Wiki</h3>
-    <p>Ce Wiki est sous licence <strong>CC BY-SA 4.0</strong>. Vous pouvez :</p>
-    <ul>
-      <li>L'utiliser librement dans vos formations et animations</li>
-      <li>L'adapter à votre contexte (en gardant la mention de la source)</li>
-      <li>Le partager (sous la même licence)</li>
-      <li>Proposer des améliorations, des fiches complémentaires, des retours d'expérience via GitHub (pull request ou issue)</li>
+    <h2 id="boutiques">Boutiques & matériel</h2>
+    <ul class="res-list">
+      <li>
+        <a href="https://www.birdcollective.com/" target="_blank" rel="noopener">Bird Collective</a>
+        <span class="res-desc">Boutique engagée autour des oiseaux (guides, accessoires, vêtements), qui reverse une part de ses ventes à la conservation. Une belle source d'inspiration visuelle et de supports.</span>
+      </li>
+      <li>
+        <a href="https://www.lpo-boutique.com/" target="_blank" rel="noopener">LPO Boutique</a>
+        <span class="res-desc">Jumelles, guides, mangeoires, nichoirs et matériel d'observation, avec des bénéfices au profit de la protection des oiseaux.</span>
+      </li>
+      <li>
+        <a href="https://www.telinga.com/" target="_blank" rel="noopener">Telinga</a>
+        <span class="res-desc">Fabricant de microphones paraboliques pour l'enregistrement de la nature (modèles utilisés dans l'atelier).</span>
+      </li>
     </ul>
 
     <div class="callout info">
-      <p class="callout-title">ℹ️ Partage de retours d'expérience</p>
-      <p>Vous avez animé l'atelier ? Nous serions ravi·e·s de connaître votre expérience : ce qui a marché, ce qui a posé difficulté, les adaptations que vous avez faites, et — si vous l'avez fait — les résultats de votre évaluation pré/post. Ces retours nourrissent l'amélioration du dispositif et la recherche en cours.</p>
+      <p class="callout-title">À propos de ces liens</p>
+      <p>Ces ressources sont proposées à titre indicatif&nbsp;; Cap Nature n'a aucun lien commercial avec ces sites. N'hésitez pas à explorer aussi les structures d'éducation à l'environnement de votre territoire, souvent les mieux placées pour un accompagnement local.</p>
     </div>
-
-    <h3>Partenaires &amp; financement</h3>
-    <p>Le projet Cap Nature bénéficie du soutien :</p>
-    <ul>
-      <li>du <strong>FEDER · Programme Interreg Europe</strong></li>
-      <li>de l'<strong>Université Rennes 2</strong></li>
-      <li>du laboratoire <strong>ESO UMR 6590</strong></li>
-      <li>de <strong>Géosciences Rennes</strong></li>
-      <li>du <strong>Collège Doctoral de Bretagne</strong> (Espaces, Sociétés, Civilisations)</li>
-    </ul>
-
-    <h3>Comment citer ce Wiki</h3>
-    <p style="font-size: 0.92em; background: #f1f3eb; padding: 1rem; border-radius: 6px;">
-      Pouliquen, M.-L. (2026). <em>Wiki Cap Nature · Ateliers Birds : guide de réplication pour enseignants et éducateurs nature</em>. Université Rennes 2, ESO UMR 6590. Sous licence CC BY-SA 4.0.
-    </p>
 
     <p style="margin-top: 2.5rem; text-align: center;">
       <a href="../index.html" class="btn">← Retour à l'accueil</a>
@@ -248,7 +192,8 @@
 </div>
 
 <footer class="site-footer">
-  <p>Wiki Cap Nature — Ateliers Birds · Sous licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+  <p>Cap Nature — Ateliers Birds · Marie-Léa Pouliquen, Université Rennes 2</p>
+  <p>Sous licence <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 </footer>
 
 <script src="../assets/wiki.js"></script>
