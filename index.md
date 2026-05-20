@@ -4,9 +4,8 @@ title: Accueil
 show_photo_credits: true
 
 hero:
-  title: Écouter le vivant, ensemble
-  subtitle: "Un guide libre pour animer les ateliers Cap Nature — Birds : (re)découvrir la nature avec des capteurs participatifs. À destination des enseignants et éducateurs nature."
-  tags: "🕐 75 minutes|👥 15–35 participants|🌳 Tous milieux"
+  title: A l'écoute des oiseaux et des paysages sonores
+  subtitle: "(Re)découvrir la nature avec des capteurs participatifs"
 
 photos:
   - file: grive.jpg
@@ -29,35 +28,16 @@ photos:
     caption: Martin-pêcheur
 
 cards:
-  - icon: 🧭
-    title: Protocole
-    desc: "Le déroulé complet de l'atelier : avant, pendant, après. Timing, étapes, posture d'animation."
+  - title: Protocole
     cta: Voir le protocole →
     url: /protocole/
-  - icon: 🎙️
-    title: Matériel
-    desc: "Les applications et capteurs : Merlin Bird ID, parabole directionnelle, FizziQ. Budgets et alternatives."
+  - title: Matériel
     cta: Découvrir →
     url: /materiel/
-  - icon: 🔗
-    title: Ressources
-    desc: Une sélection de sites, applications, associations et lectures pour prolonger l'expérience.
+  - title: Ressources
     cta: Explorer →
     url: /ressources/
 
-timeline:
-  - phase: Phase 1
-    duration: 15 min
-    title: Mise en attention
-    text: "Accueil, présentation des capteurs, écoute silencieuse de 30 secondes sans aucun outil : une mise en attention avant l'exploration instrumentée."
-  - phase: Phase 2
-    duration: 45 min
-    title: Exploration en sous-groupes
-    text: "Sous-groupes de 3–5 personnes partageant les capteurs : identification des oiseaux, amplification des sons, mesure des niveaux sonores. Exploration libre et auto-dirigée."
-  - phase: Phase 3
-    duration: 15 min
-    title: Restitution collective
-    text: "Partage en grand groupe : espèces identifiées, sons remarquables, mesures, ressentis. Co-construction d'une cartographie sensible du lieu."
 ---
 
 {% include hero.html title=page.hero.title subtitle=page.hero.subtitle tags=page.hero.tags %}
