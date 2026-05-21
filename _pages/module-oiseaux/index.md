@@ -2,11 +2,13 @@
 layout: page
 permalink: /module-oiseaux/
 title: "Module 1 · Écoacoustique"
-lead: "A l'écoute des oiseaux et du paysage sonore"
+lead: "À l'écoute des oiseaux et du paysage sonore."
 sidebar_title: Module 1 · Écoacoustique
 toc:
   - id: paysage-sonore
     label: Le paysage sonore
+  - id: vue-ensemble
+    label: Vue d'ensemble
   - id: outils
     label: Les outils
   - id: avant
@@ -17,6 +19,8 @@ toc:
     label: Phase 2 · Exploration
   - id: phase3
     label: Phase 3 · Restitution
+  - id: sono-intro
+    label: Lire un sonogramme
 sidebar_links_title: Pour aller plus loin
 sidebar_links:
   - label: Ressources & fiches
@@ -52,6 +56,28 @@ soundscape:
   - icon: 🚗
     title: Anthrophonie
     desc: "Les bruits générés par les activités humaines : trafic routier, machines, musiques."
+
+timeline:
+  - phase: Avant
+    duration: J−7
+    title: Préparation
+    text: Repérage du site, installation des applis sur les smartphones, préparation du matériel et impression des fiches.
+  - phase: Phase 1
+    duration: 15 min
+    title: Mise en attention
+    text: Accueil, présentation des capteurs, écoute silencieuse de 30 secondes sans outil.
+  - phase: Phase 2
+    duration: 45 min
+    title: Exploration en sous-groupes
+    text: "Sortie sur site, identification des oiseaux, mesures sonores, prise de notes sur la fiche d'observation."
+  - phase: Phase 3
+    duration: 15 min
+    title: Restitution collective
+    text: Partage des observations, cartographie sensible et écologique du lieu exploré.
+  - phase: Après
+    duration: J+1
+    title: Prolongements
+    text: Analyse collective des observations, restitution écrite ou artistique, prolongements disciplinaires.
 ---
 
 {% include photo-band.html photos=page.photos %}
@@ -63,7 +89,6 @@ Le **paysage sonore** est l'ensemble des sons présents dans un lieu à un momen
 {% include concepts.html items=page.soundscape %}
 
 Apprendre à distinguer ces sons, c'est porter une **attention nouvelle** à un environnement souvent ignoré. C'est aussi la clé pour comprendre un enjeu écologique réel : la pollution sonore.
-
 
 <h2 id="vue-ensemble">Vue d'ensemble</h2>
 {% include timeline.html steps=page.timeline %}
@@ -176,8 +201,14 @@ Le sous-groupe explore le site librement, en respectant les **limites de la zone
 **Astuce d'animation** — Pendant la phase d'exploration, l'animateur·ice circule entre les sous-groupes en restant **discret·e**. Son rôle : débloquer une difficulté technique, relancer un groupe qui s'essouffle, attirer l'attention sur un détail. Surtout pas de cours magistral en pleine sortie.
 </div>
 
+### 55–60 min : Signal de retour
+
+Sifflet ou autre signal sonore convenu, 5 minutes avant la fin. Les sous-groupes finissent leur observation en cours et reviennent au point de regroupement.
+
 <h2 id="phase3">Phase 3 · Restitution collective (15 min)</h2>
 ### 60–70 min : Mise en commun
+
+En grand groupe (assis si possible) :
 
 - Tour des sous-groupes : *« Combien d'espèces avez-vous identifiées ? Lesquelles vous ont surpris·es ? »*
 - Recensement collectif au tableau : **liste des espèces totales** du groupe
@@ -188,11 +219,75 @@ Le sous-groupe explore le site librement, en respectant les **limites de la zone
 
 Si vous avez plus de temps, invitez les sous-groupes à produire une **cartographie** du lieu exploré, combinant données scientifiques (zones d'observation, espèces, mesures dB) et observations sensibles (ressentis, émotions, ambiance). Formats au choix : carte schématique annotée, tableau scientifique/sensible, collage de mots-clés, court texte poétique.
 
+### 70–75 min : Clôture
 
+Mot de clôture : remercier les participants, recueillir quelques impressions à chaud, et indiquer les prolongements possibles (applications à garder, sorties suggérées, ressources pour aller plus loin).
 
- - id: sono-intro
-    label: Lire un sonogramme
-    
+<h2 id="apres">Après l'atelier (prolongements)</h2>
+### Prolongements en classe (1–2 séances)
+
+- **SVT** : approfondir les espèces identifiées, leur écologie, leur statut de conservation
+- **Physique** : exploiter les mesures dB pour comprendre les échelles logarithmiques, la pollution sonore
+- **Géographie** : superposer les zones d'observation et les types d'occupation du sol
+- **Français / Arts** : production d'un texte ou d'une œuvre plastique à partir des observations sensibles
+- **EMC** : débat sur la pollution sonore comme enjeu de santé environnementale
+
+### Prolongements scientifiques (science citoyenne)
+
+Inviter les participants à poursuivre les observations en autonomie via les programmes présentés dans les [ressources]({{ '/module-oiseaux/ressources/' | relative_url }}) : Faune-France, Vigie-Nature École, Oiseaux des jardins.
+
+<h2 id="adaptations">Adaptations selon les contextes</h2>
+### Niveau collège (5e–3e)
+
+- Réduire la durée d'exploration à 30 minutes
+- Simplifier le vocabulaire (« sons du vivant » plutôt que « biophonie »)
+- Donner un parcours plus encadré, avec 3–4 points d'arrêt repérés à l'avance
+- Allouer plus de temps à la restitution collective et au dessin
+
+### Public adulte / animation grand public
+
+- Ajouter une dimension réflexive : *« Quel rôle joue cette technologie dans votre rapport à la nature ? »*
+- Mobiliser les connaissances naturalistes des participants (si présentes)
+- Élargir la palette des outils possibles (jumelles, lentille macro…)
+
+### Milieu urbain dense
+
+- Choisir un parc ou un jardin, même petit
+- Travailler aussi sur les sons humains (anthrophonie) comme objet d'étude, pas comme nuisance
+- Insister sur l'effet de surprise : « combien d'espèces a-t-on quand même trouvées ? »
+
+### Milieu rural / forêt
+
+- Élargir la zone d'exploration (mais s'assurer du retour à temps)
+- Possible d'ajouter d'autres sens (vue avec jumelles, toucher)
+- Attention à la couverture réseau pour les apps (Merlin et FizziQ ont un mode hors-ligne)
+
+### Saison hors-printemps
+
+- **Hiver** : moins d'oiseaux chanteurs, mais possible avec espèces sédentaires (mésanges, merles, pinsons, rouges-gorges)
+- **Été** : les chants déclinent après juillet, préférer l'aube
+- **Automne** : migration, sons de passage intéressants à entendre
+
+<h2 id="posture">Posture d'animation</h2>
+### Avant tout : le silence n'est pas une contrainte
+
+Beaucoup de participants ne sont pas habitués au silence en extérieur. Présenter cette consigne non comme une *règle* mais comme une **condition de découverte** : « si on parle, on n'entendra rien d'autre que nous-mêmes ». La métaphore du chasseur ou du photographe animalier fonctionne bien.
+
+### Accepter les « pannes » et les « rien »
+
+Il arrivera qu'un sous-groupe n'entende presque rien, que Merlin ne reconnaisse aucune espèce. Ces moments sont des occasions pédagogiques :
+
+- « Pourquoi à votre avis on n'entend rien ici ? » → discussion sur l'occupation du sol, la pollution sonore
+- « Pourquoi Merlin n'est pas sûr ? » → discussion sur les limites de l'IA, l'importance des conditions de mesure
+
+### Ne pas être un·e expert·e ornitho
+
+Vous n'avez **pas besoin** d'être ornithologue pour animer cet atelier. Merlin fait l'identification ; votre rôle est d'accompagner la rencontre, pas de vérifier. Si une espèce vous surprend, faites confiance à l'app — et apprenez avec les participants.
+
+### Valoriser l'expérience subjective
+
+L'atelier vaut autant pour ce qu'il fait observer que pour ce qu'il fait ressentir. Les phrases du type *« je ne savais pas que cet endroit était aussi vivant »* sont les indicateurs les plus précieux. Faites-les remonter dans la restitution.
+
 <h2 id="sono-intro">Lire un sonogramme</h2>
 
 Quand Merlin identifie un oiseau, il affiche à l'écran un **sonogramme** : l'image du son qui défile. Comprendre cette image enrichit beaucoup l'atelier. Voici un guide complet pour apprendre à la lire.
@@ -534,7 +629,7 @@ Quand Merlin identifie un oiseau, il affiche à l'écran un **sonogramme** : l'i
 </div>
 
 <h2 id="sono-especes">12 sonogrammes d'espèces commentés</h2>
-<p>Voici 12 sonogrammes stylisés représentant le chant ou le cri caractéristique d'espèces communes. À mettre en parallèle avec les <a href="#fiches">fiches espèces</a>.</p>
+<p>Voici 12 sonogrammes stylisés représentant le chant ou le cri caractéristique d'espèces communes. À mettre en parallèle avec les <a href="{{ '/module-oiseaux/ressources/' | relative_url }}#fiches">fiches espèces</a>.</p>
 
 <div class="sono-grid two-col">
 
@@ -861,9 +956,34 @@ Quand Merlin identifie un oiseau, il affiche à l'écran un **sonogramme** : l'i
 </ol>
 
 <div class="callout science">
+  <p class="callout-title">🔬 Une IA qui regarde, pas qui écoute</p>
   <p>C'est une subtilité importante : Merlin <strong>convertit le son en image, puis fait de la reconnaissance d'image</strong>. La même technologie qui sert à reconnaître un chat sur une photo sert à reconnaître un merle sur un sonogramme. C'est ce qui explique pourquoi un son tronqué, un bruit de fond fort, ou un chant inhabituel peuvent dérouter l'app : visuellement, le sonogramme ne ressemble plus assez aux exemples appris.</p>
 </div>
 
+<p>Pendant l'atelier, prenez 30 secondes pour montrer à un groupe ce qui défile sur l'écran de Merlin : <strong>chaque tache colorée correspond à un son réel</strong> dans l'environnement. Quand l'app détecte une espèce, demandez aux participants : <em>“laquelle des taches a déclenché l'identification ?”</em> — c'est très formateur.</p>
+
+<h2 id="sono-exercice">Exercice pédagogique : “devine l'espèce”</h2>
+<p>Voici un exercice de 10 minutes à faire en classe, après ou avant l'atelier :</p>
+
+<div class="callout tip">
+  <p class="callout-title">🎯 Atelier de lecture de sonogrammes</p>
+  <ol>
+    <li><strong>Préparation</strong> : imprimer 6 à 8 des sonogrammes ci-dessus en cachant les noms des espèces (1 par sous-groupe).</li>
+    <li><strong>Questions guides</strong> à projeter ou distribuer :
+      <ul>
+        <li>À quelle hauteur (aiguë ou grave) se situe le chant ?</li>
+        <li>Combien de “phrases” ou de motifs distincts voyez-vous ?</li>
+        <li>Y a-t-il une structure répétée ?</li>
+        <li>Le chant est-il dense ou clairsemé ?</li>
+        <li>Quelle “famille de motif” reconnaissez-vous ? (sifflet, trille, strophe…)</li>
+      </ul>
+    </li>
+    <li><strong>Mise en commun</strong> : chaque groupe présente son sonogramme et hypothétise sur l'espèce. Le reste de la classe valide ou propose autre chose.</li>
+    <li><strong>Révélation</strong> : on découvre l'espèce, on écoute le chant (via Merlin ou xeno-canto), on compare avec ce que les groupes ont déduit visuellement.</li>
+  </ol>
+</div>
+
+<p>Cet exercice fait passer les participants d'une posture <em>d'auditeur passif</em> à une posture <em>d'analyste visuel</em>, ce qui renforce considérablement l'attention au son réel quand ils retournent sur le terrain.</p>
 
 <h2 id="sono-outils">Pour aller plus loin : enregistrer et analyser ses propres sonogrammes</h2>
 
@@ -919,19 +1039,21 @@ Quand Merlin identifie un oiseau, il affiche à l'écran un **sonogramme** : l'i
   </tbody>
 </table>
 
-
-
+<div class="callout info">
+  <p class="callout-title">ℹ️ Prolongement scientifique en classe</p>
+  <p>Avec <strong>Audacity</strong> (gratuit), un enregistrement de 30 secondes effectué pendant l'atelier peut être ré-ouvert en classe, agrandi, analysé. C'est un excellent pont entre l'expérience sensible (vivre le son) et l'analyse scientifique (mesurer le son). Idéal pour un projet pluridisciplinaire SVT / Physique / Numérique.</p>
+</div>
 
 <p style="margin-top: 2.5rem; text-align: center;">
-  <a href="{{ '/' | relative_url }}" class="btn">← Retour à l'accueil</a>
+  <a href="{{ '/module-oiseaux/ressources/' | relative_url }}#fiches" class="btn">Voir les fiches à imprimer →</a>
 </p>
 
 
 
+<div class="callout info" markdown="1">
+**À propos de ces liens** — Ces ressources sont proposées à titre indicatif ; Cap Nature n'a aucun lien commercial avec ces sites. N'hésitez pas à explorer aussi les structures d'éducation à l'environnement de votre territoire, souvent les mieux placées pour un accompagnement local.
+</div>
 
-
-
-
-
-
-
+<p style="margin-top: 2.5rem; text-align: center;">
+  <a href="{{ '/module-oiseaux/ressources/' | relative_url }}" class="btn">Ressources & fiches à imprimer →</a>
+</p>
