@@ -3,10 +3,6 @@ layout: default
 title: Accueil
 show_photo_credits: true
 
-hero:
-  title: Cap Nature
-  subtitle: "(Re)découvrir la nature avec des capteurs participatifs"
-
 stat_urbain:
   - num: "45 %"
     label: vivent en grandes métropoles
@@ -15,8 +11,6 @@ stat_urbain:
   - num: "19 %"
     label: vivent encore en zone rurale
 ---
-
-{% include hero.html title=page.hero.title subtitle=page.hero.subtitle tags=page.hero.tags %}
 
 <section class="section-wide">
   <div class="section" style="max-width: 820px;">
