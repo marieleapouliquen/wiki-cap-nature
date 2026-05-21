@@ -52,7 +52,7 @@ soundscape:
   <h2>Quelques concepts</h2>
 
   <h3>Qu'est-ce qu'un paysage sonore ?</h3>
-  <p>Le paysage sonore (<em>soundscape</em>) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures. Les écoacousticiens classent ces signaux en <strong>trois grandes catégories</strong> :</p>
+  <p>Le paysage sonore (soundscape) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures. Les écoacousticiens classent ces sons en <strong>trois grandes catégories</strong> :</p>
 
   <div class="concept-grid">
     <div class="concept-card">
@@ -75,13 +75,13 @@ soundscape:
   <h3>Les pionniers de l'audionaturalisme</h3>
   
   <h4>Albert R. Brand (Années 1930)</h4>
-  <p>Dès les années 1930, des naturalistes passionnés ont entrepris de figer les voix de la nature en adaptant de grandes structures paraboliques de captation sur pied. Aux États-Unis, <strong>Albert R. Brand</strong> s'est imposé comme l'un des grands pionniers de la discipline en enregistrant les premiers inventaires sonores d'oiseaux pour la <em>Cornell University</em>. À cette époque, le matériel de terrain était particulièrement lourd, contraignant et encombrant : les réflecteurs en aluminium pouvaient mesurer plus d'un mètre de diamètre.</p>
+  <p>Dès les années 1930, des naturalistes passionnés ont entrepris de figer les voix de la nature en adaptant de grandes structures paraboliques de captation sur pied. Aux États-Unis, <strong>Albert R. Brand</strong> s'est imposé comme l'un des grands pionniers de la discipline en enregistrant les premiers inventaires sonores d'oiseaux pour la 100% de la Cornell University. À cette époque, le matériel de terrain était particulièrement lourd, contraignant et encombrant : les réflecteurs en aluminium pouvaient mesurer plus d'un mètre de diamètre.</p>
 
   <h4>Jean-Claude Roché (Années 1960)</h4>
   <p>En France, à partir des années 1960, <strong>Jean-Claude Roché</strong> popularise l'écoute de la faune sauvage en éditant des centaines d'enregistrements d'espèces captées au cœur de leurs habitats d'origine. Ses disques et guides audio pédagogiques ont accompagné des générations de curieux. Il envisageait l'audionaturalisme comme une démarche artistique et scientifique de partage, bien avant l'avènement des technologies numériques grand public.</p>
 
   <h4>Bernie Krause et le concept de niche acoustique (Années 1980 à nos jours)</h4>
-  <p>Musicien et chercheur américain, <strong>Bernie Krause</strong> a consacré plus de cinquante ans à enregistrer les écosystèmes de la planète entière. Il est à l'origine de la théorie de la <em>niche acoustique</em>&nbsp;: chaque espèce vivante d'un habitat s'établit sur une bande de fréquences et un rythme précis pour lancer ses appels sans être masquée par les autres. Krause a tristement documenté l'effondrement de ces structures symphoniques naturelles sous l'effet du réchauffement global et du développement de l'anthrophonie humaine.</p>
+  <p>Musicien et chercheur américain, <strong>Bernie Krause</strong> a consacré plus de cinquante ans à enregistrer les écosystèmes de la planète entière. Il est à l'origine de la théorie de la niche acoustique : chaque espèce vivante d'un habitat s'établit sur une bande de fréquences et un rythme précis pour lancer ses appels sans être masquée par les autres. Krause a tristement documenté l'effondrement de ces structures symphoniques naturelles sous l'effet du réchauffement global et du développement de l'anthrophonie humaine.</p>
 
   <h3>Les enjeux de la pollution sonore</h3>
   <p>Le bruit généré par les infrastructures humaines (transports, industries) masque les signaux de communication essentiels des animaux. Pour survivre en milieu anthropisé, de nombreuses espèces doivent adapter l'amplitude, la durée ou la fréquence de leurs vocalisations, un effort qui perturbe leur équilibre énergétique et leurs chances de reproduction. Le bioacousticien Bernie Krause a notamment documenté la disparition progressive de certaines niches acoustiques naturelles sous la pression humaine.</p>
@@ -122,7 +122,7 @@ soundscape:
     </div>
   </div>
 
-  <p>Pour approfondir la thématique de l'impact du bruit humain sur les écosystèmes terrestres et marins, vous pouvez consulter les ressources de la <a href="http://www.bruit.fr/" target="_blank">Centre d'information sur le Bruit (CIDB)</a> ou explorer les projets de cartographie de la pollution sonore menés par <a href="https://www.biotope.fr/" target="_blank">Biotope Écoacoustique</a>.</p>
+  <p>Pour approfondir la thématique de l'impact du bruit humain sur les écosystèmes terrestres et marins, vous pouvez consulter les ressources de la <a href="http://www.bruit.fr/" target="_blank">Centre d'information sur le Bruit (CIDB)</a> ou explorer les projets de cartographie de la pollution sonore menus par <a href="https://www.biotope.fr/" target="_blank">Biotope Écoacoustique</a>.</p>
 
   <div class="callout info">
     <div class="callout-title">Enjeu de la pollution sonore dans les parcs nationaux - Exemple des États-Unis</div>
@@ -130,7 +130,7 @@ soundscape:
   </div>
 
   <h3>Les bienfaits des sons de la nature pour la santé humaine</h3>
-  <p>Au-delà de l'intérêt écologique, l'écoute de la nature exerce une action thérapeutique avérée sur notre biologie. Une vaste synthèse scientifique menée par la chercheuse <strong>Rachel T. Buxton</strong> (<em>Colorado State University</em>) et son équipe en 2021 a démontré que l'exposition aux sons naturels (chants d'oiseaux, bruits d'eau) engendre des bénéfices de santé considérables : baisse significative du stress, diminution du taux de cortisol, réduction de la fréquence cardiaque et amélioration nette des performances cognitives.</p>
+  <p>Au-delà de l'intérêt écologique, l'écoute de la nature exerce une action thérapeutique avérée sur notre biologie. Une vaste synthèse scientifique menée par la chercheuse <strong>Rachel T. Buxton</strong> (Colorado State University) et son équipe en 2021 a démontré que l'exposition aux sons naturels (chants d'oiseaux, bruits d'eau) engendre des bénéfices de santé considérables : baisse significative du stress, diminution du taux de cortisol, réduction de la fréquence cardiaque et amélioration nette des performances cognitives.</p>
   <p>L'étude souligne ainsi que la préservation des paysages sonores sauvages dans les parcs nationaux relève autant de la protection de la biodiversité que d'un enjeu majeur de santé publique.</p>
 
   <hr>
@@ -171,11 +171,11 @@ soundscape:
   <h3>Le sonomètre portatif Fizziq</h3>
   <p>Fizziq est une application qui transforme le smartphone en un véritable laboratoire de poche. Dans le cadre de cette enquête, elle permet notamment de <strong>mesurer le niveau sonore en temps réel (décibels)</strong>, de géolocaliser son parcours grâce au GPS, ou d'enregistrer et annoter des données.</p>
   <ul>
-    <li><em>Installation :</em> Rechercher "Fizziq" dans l'App Store ou Google Play. L'application est entièrement gratuite.</li>
+    <li>Installation : Rechercher "Fizziq" dans l'App Store ou Google Play. L'application est entièrement gratuite.</li>
   </ul>
 
   <h3>Merlin Bird ID pour la reconnaissance des chants</h3>
-  <p>Développée par le <em>Cornell Lab of Ornithology</em>, cette application écoute l'environnement et propose en temps réel le nom des espèces d'oiseaux qui chantent. <strong>À préparer avant l'atelier</strong> : installer l'application, puis télécharger le pack gratuit « Europe occidentale » (≈ 200 Mo) pour un fonctionnement 100% hors-ligne. (D'autres alternatives comme <em>BirdNET</em> ou <em>BirdWeather</em> peuvent être explorées en complément).</p>
+  <p>Développée par le 100% de la Cornell Lab of Ornithology, cette application écoute l'environnement et propose en temps réel le nom des espèces d'oiseaux qui chantent. <strong>À préparer avant l'atelier</strong> : installer l'application, puis télécharger le pack gratuit « Europe occidentale » (≈ 200 Mo) pour un fonctionnement 100% hors-ligne. (D'autres alternatives comme BirdNET ou BirdWeather peuvent être explorées en complément).</p>
 
   <h3>Optionnel : Utiliser Merlin avec une parabole directionnelle</h3>
   <p>Une parabole directionnelle (comme <strong>BirdMic</strong>) est un dispositif qui concentre et amplifie les ondes acoustiques venant d'une direction précise.</p>
@@ -187,7 +187,7 @@ soundscape:
   <h4>Comment l'utiliser sur le terrain ?</h4>
   <ol>
     <li><strong>Brancher la parabole :</strong> Connecter le micro directionnel au port ou à l'adaptateur du smartphone.</li>
-    <li><strong>Lancer l'interface :</strong> Ouvrir l'application Merlin et activer l'onglet <em>Sound ID</em>.</li>
+    <li><strong>Lancer l'interface :</strong> Ouvrir l'application Merlin et activer l'onglet Sound ID.</li>
     <li><strong>Cibler :</strong> Pointer la parabole précisément vers l'oiseau ou le bosquet à analyser.</li>
     <li><strong>Capturer :</strong> Rester immobile et silencieux pendant que le tracé défile à l'écran.</li>
   </ol>
