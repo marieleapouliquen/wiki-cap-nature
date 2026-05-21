@@ -137,14 +137,16 @@ img { max-width: 100%; height: auto; }
 }
 
 .brand {
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important; /* Force l'alignement vertical */
+  align-items: flex-start;          /* Aligne le titre et le sous-titre à gauche */
   text-decoration: none;
   line-height: 1.2;
-  flex: 1;                     /* Autorise le titre à occuper l'espace requis à gauche */
+  flex: 1;
 }
 
 .brand-title {
+  display: block !important;        /* Interdit tout alignement en ligne */
   font-family: var(--font-serif);
   font-weight: 500;
   font-size: 1.4rem;
@@ -154,11 +156,12 @@ img { max-width: 100%; height: auto; }
 }
 
 .brand-sub {
+  display: block !important;        /* Force le retour à la ligne automatique */
   font-size: 0.85rem;
   color: var(--color-muted);
   font-weight: 400;
   margin-top: 0.3rem;
-  max-width: 480px;            /* Évite que le sous-titre ne s'étale trop loin vers la droite */
+  max-width: 480px;
 }
 
 /* Bouton hamburger responsive */
