@@ -111,6 +111,16 @@ hr {
 
 img { max-width: 100%; height: auto; }
 
+.content em, 
+p em, 
+li em {
+  font-style: italic !important;
+  text-decoration: none !important;  /* Supprime tout soulignement ou trait de texte */
+  border-top: none !important;       /* Supprime toute bordure supérieure parasite */
+  padding-right: 0.18em !important;  /* Espace de sécurité optimal pour la lettre "e" */
+  display: inline-block !important;  /* Permet l'application propre du padding */
+  line-height: 1 !important;         /* Stabilise la hauteur pour éviter les lignes fantômes */
+}
 
 /* ============================================================================
    3. STRUCTURATION SÉMANTIQUE (LAYOUT CENTRÉ)
