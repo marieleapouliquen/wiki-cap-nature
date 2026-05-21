@@ -276,7 +276,8 @@ main.content, .content {
   font-size: 1.15rem;
   line-height: 1.5;
   color: var(--color-muted);
-  margin: 0 0 2rem;
+  margin: 0 auto 2rem auto;      /* Le "auto" à gauche et à droite gère le centrage */
+  max-width: var(--readw);       /* Force la même largeur que le reste du texte (720px) */
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--color-border);
 }
