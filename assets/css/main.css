@@ -158,8 +158,8 @@ img { max-width: 100%; height: auto; }
 .brand-sub {
   display: block !important;        /* Force le retour à la ligne automatique */
   font-size: 0.85rem;
-  color: var(--color-muted);
-  font-weight: 400;
+  color: var(--green) !important;
+  font-weight: 600;
   margin-top: 0.3rem;
   max-width: 480px;
 }
