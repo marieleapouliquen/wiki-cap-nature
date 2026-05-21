@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Guide : Apprendre à lire un sonogramme
+title: Apprendre à lire un sonogramme
 ---
 
 <main class="content">
