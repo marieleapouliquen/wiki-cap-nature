@@ -1,22 +1,20 @@
 # -----------------------------------------------------------------------------
 # Réglages du site
 # -----------------------------------------------------------------------------
-title: Cap Nature
-tagline: Ateliers Birds
+title: Les Ateliers Cap Nature
 description: >-
-  Guide libre pour animer les ateliers Cap Nature — Birds :
-  (re)découvrir la nature avec des capteurs participatifs.
-  À destination des enseignants et éducateurs nature.
+  Les Ateliers Cap Nature :
+  (Re)découvrir la nature avec des capteurs participatifs.
 lang: fr
 timezone: Europe/Paris
 
 # URL de base : le site est publié sur https://<user>.github.io/wiki-cap-nature/
 # donc baseurl vaut "/wiki-cap-nature". Pour un domaine racine, mettre "".
 baseurl: "/wiki-cap-nature"
-url: "https://marieleapouliquen.github.io"
+url: ""
 
 # Crédits photos affichés dans le pied de page de l'accueil
-photo_credits: "Amee Fairbank-Brown, Don Coombez, Andrew Odintsov, Konstantin Nezhbert, Lex Melony, Vincent van Zalinge — Unsplash"
+# photo_credits: "Amee Fairbank-Brown, Don Coombez, Andrew Odintsov, Konstantin Nezhbert, Lex Melony, Vincent van Zalinge — Unsplash"
 
 # -----------------------------------------------------------------------------
 # Build
