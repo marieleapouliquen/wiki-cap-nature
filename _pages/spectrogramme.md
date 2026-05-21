@@ -702,21 +702,5 @@ Quand Merlin identifie un oiseau, il affiche à l'écran un **spectrogramme** : 
   <a href="{{ '/' | relative_url }}" class="btn">← Retour à l'accueil</a>
 </p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p style="margin-top: 2.5rem; text-align: center;">
-  <a href="{{ '/' | relative_url }}" class="btn">← Retour à l'accueil</a>
 </p>
 
