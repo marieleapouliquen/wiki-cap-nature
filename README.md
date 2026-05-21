@@ -35,7 +35,6 @@ Le contenu de chaque page est dans un fichier Markdown (`.md`) :
 |------|---------|
 | Accueil | `index.md` |
 | Protocole | `_pages/protocole.md` |
-| Matériel | `_pages/materiel.md` |
 | Ressources | `_pages/ressources.md` |
 
 Pour modifier un texte, ouvrez le `.md` correspondant et éditez-le directement

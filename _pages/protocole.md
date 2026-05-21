@@ -1,12 +1,14 @@
 ---
 layout: page
 permalink: /protocole/
-title: Protocole pas-à-pas
-lead: Le déroulé complet d'un atelier de 75 minutes, du repérage à la restitution.
+title: Protocole
+lead: "Le déroulé complet de l'atelier «&nbsp;Birds&nbsp;» — environ 75 minutes, du repérage à la restitution."
 sidebar_title: Le protocole
 toc:
   - id: vue-ensemble
     label: Vue d'ensemble
+  - id: outils
+    label: Les outils
   - id: avant
     label: Avant l'atelier
   - id: phase1
@@ -23,9 +25,7 @@ toc:
     label: Posture d'animation
 sidebar_links_title: Documents liés
 sidebar_links:
-  - label: Matériel & applis
-    url: /materiel/
-  - label: Ressources externes
+  - label: Ressources & fiches
     url: /ressources/
 
 timeline:
@@ -54,6 +54,26 @@ timeline:
 <h2 id="vue-ensemble">Vue d'ensemble</h2>
 {% include timeline.html steps=page.timeline %}
 
+<h2 id="outils">Les outils</h2>
+
+L'atelier repose sur trois capteurs simples, complémentaires, qui tiennent dans une poche. Aucune compétence technique préalable n'est nécessaire — ni pour l'animateur, ni pour les participants.
+
+### Merlin Bird ID — identifier les oiseaux par leur chant
+
+Application gratuite du Cornell Lab of Ornithology (iOS et Android). Elle écoute l'environnement et propose en temps réel le nom des oiseaux qui chantent. **À préparer avant l'atelier** : installer l'app, puis télécharger le pack «&nbsp;Europe occidentale&nbsp;» (≈ 200 Mo) pour un fonctionnement hors-ligne. Sur le terrain : ouvrir Merlin → **Sound ID** → bouton micro, et laisser écouter une à deux minutes.
+
+### Parabole directionnelle — amplifier les sons lointains
+
+Une coupole (type BirdMic) qui se branche au smartphone et concentre les sons venant de la direction visée, comme une oreille géante. Elle améliore nettement la détection de Merlin et crée un effet «&nbsp;waouh&nbsp;» très parlant. **Optionnelle** : l'atelier fonctionne aussi avec le simple micro du téléphone si le budget ne permet pas d'en acquérir.
+
+### FizziQ — mesurer le niveau sonore
+
+Application gratuite de la fondation La main à la pâte, sans publicité ni collecte de données. Elle transforme le smartphone en sonomètre&nbsp;: on lit le niveau en décibels (dB) pour comparer le calme d'une zone à l'autre. Repères utiles&nbsp;: une forêt calme tourne autour de 30 dB, une conversation 40–50 dB, une rue animée 70 dB.
+
+<div class="callout tip" markdown="1">
+**Pas besoin d'être ornithologue** — Merlin fait l'identification à votre place. Votre rôle d'animateur est d'accompagner la rencontre et l'attention, pas de vérifier les espèces. Des fiches de prise en main détaillées (installation, défis d'écoute) sont disponibles dans les [ressources]({{ '/ressources/' | relative_url }}).
+</div>
+
 <h2 id="avant">Avant l'atelier (préparation)</h2>
 ### J−7 à J−14 : Repérage du site
 
@@ -76,7 +96,7 @@ Sur les smartphones qui seront utilisés (ceux des participants ou ceux fournis)
 2. **Installer FizziQ** (gratuit). Ouvrir l'app et autoriser l'accès au micro.
 3. **Tester** chaque smartphone à l'extérieur avant l'atelier.
 
-Voir la [fiche matériel détaillée]({{ '/materiel/' | relative_url }}) pour les modes d'emploi des applications.
+Voir [la section «&nbsp;Les outils&nbsp;»](#outils) ci-dessus et les [fiches de prise en main]({{ '/ressources/' | relative_url }}#fiches) pour le détail.
 
 ### J−2 : Préparation matérielle
 
@@ -230,5 +250,5 @@ Vous n'avez **pas besoin** d'être ornithologue pour animer cet atelier. Merlin 
 L'atelier vaut autant pour ce qu'il fait observer que pour ce qu'il fait ressentir. Les phrases du type *« je ne savais pas que cet endroit était aussi vivant »* sont les indicateurs les plus précieux. Faites-les remonter dans la restitution.
 
 <p style="margin-top: 2.5rem; text-align: center;">
-  <a href="{{ '/materiel/' | relative_url }}" class="btn">Voir le matériel détaillé →</a>
+  <a href="{{ '/ressources/' | relative_url }}" class="btn">Ressources & fiches à imprimer →</a>
 </p>
