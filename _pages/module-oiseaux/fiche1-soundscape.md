@@ -1,4 +1,7 @@
-
+---
+layout: default
+title: Le Paysage Sonore
+---
 
 <main class="content">
 
