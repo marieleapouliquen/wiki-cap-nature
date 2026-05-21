@@ -50,8 +50,8 @@ soundscape:
   <h2>Quelques concepts</h2>
 
   <h3>Qu'est-ce qu'un paysage sonore ?</h3>
-  <p>Le paysage sonore (<em>soundscape</em>) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures.</p>
-  <p>Le paysage sonore est traditionnellement analysé et découpé en <strong>trois grandes catégories de sources acoustiques</strong> :</p>
+  
+  <p>Le paysage sonore (<em>soundscape</em>) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures. Les écoacousticiens classent ces sons en <strong>trois grandes catégories</strong>: </p>
 
   <div class="concept-grid">
     <div class="concept-card">
