@@ -37,8 +37,8 @@
   --font-sans:         'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono:         'SF Mono', Consolas, Monaco, monospace;
 
-  --maxw:              800px;  /* Largeur de page maximale stricte */
-  --readw:             720px;  /* Largeur de ligne de lecture optimale */
+  --maxw:              1000px;  /* Largeur de page maximale stricte */
+  --readw:             820px;  /* Largeur de ligne de lecture optimale */
   --text-base:         14px;
   --line-height:       1.4;
 }
@@ -412,7 +412,7 @@ main.content > p > em, main.content > em {
    ============================================================================ */
 
 /* Point de rupture anticipé (940px) car la page globale fait maintenant 800px au maximum */
-@media (max-width: 940px) {
+@media (max-width: 1040px) {
   .page-wrapper {
     grid-template-columns: 1fr;
     padding: 1.5rem 1.2rem;
