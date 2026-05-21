@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Le chant des oiseaux : un langage complexe
+title: Le chant des oiseaux
 ---
 
 <main class="content">
