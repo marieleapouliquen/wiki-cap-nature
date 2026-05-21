@@ -60,17 +60,17 @@ soundscape:
   <p>Retrouvez les fiches d'activités et guides d'identification complets à utiliser sur le terrain :</p>
   
   <div class="resource-links">
-    <a class="resource-link" href="{{ '/module-oiseaux/ressources/fiche1-soundscape/' | relative_url }}">
+    <a class="resource-link" href="{{ '/module-oiseaux/fiche1-soundscape/' | relative_url }}">
       <span class="resource-link-label">Fiche Activité 1</span>
       <span class="resource-link-title">Le Paysage Sonore & Soundmap</span>
       <span class="resource-link-desc">Découvrir la biophonie, utiliser Fizziq pour mesurer les décibels et réaliser une carte sonore.</span>
     </a>
-    <a class="resource-link" href="{{ '/module-oiseaux/ressources/fiche2-merlin/' | relative_url }}">
+    <a class="resource-link" href="{{ '/module-oiseaux/fiche2-merlin/' | relative_url }}">
       <span class="resource-link-label">Fiche Technique 2</span>
       <span class="resource-link-title">Identifier avec Merlin Bird ID</span>
       <span class="resource-link-desc">Guide pas-à-pas pour configurer l'application et réaliser les deux défis d'écoute sur le terrain.</span>
     </a>
-    <a class="resource-link" href="{{ '/module-oiseaux/ressources/fiche3-oiseaux/' | relative_url }}">
+    <a class="resource-link" href="{{ '/module-oiseaux/fiche3-oiseaux/' | relative_url }}">
       <span class="resource-link-label">Fiche Scientifique 3</span>
       <span class="resource-link-title">Le Langage des Oiseaux</span>
       <span class="resource-link-desc">Comprendre les fonctions du chant, l'apprentissage culturel et tester ses acquis avec le grand Quiz.</span>
