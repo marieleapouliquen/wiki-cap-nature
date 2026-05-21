@@ -153,9 +153,27 @@ img { max-width: 100%; height: auto; }
 }
 
 .main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.5rem; }
-.main-nav a { color: var(--color-muted); text-decoration: none; font-size: 0.95rem; font-weight: 400; transition: color 0.15s ease; }
-.main-nav a:hover, .main-nav a.active { color: var(--color-text); }
-.main-nav a.active { font-weight: 500; border-bottom: 1px solid var(--color-text); }
+.main-nav a {
+  color: var(--color-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 400;
+  padding: 0.4rem 0.8rem;   /* Ajoute un peu d'espace interne pour la couleur de fond */
+  border-radius: 4px;       /* Coins légèrement arrondis pour un effet propre et moderne */
+  transition: all 0.15s ease;
+}
+
+.main-nav a:hover {
+  color: var(--teal-deep);   /* Le texte passe au Teal foncé */
+  background: var(--mint);  /* Le fond passe au Menthe pâle */
+}
+
+.main-nav a.active {
+  color: var(--teal-dark);
+  font-weight: 500;
+  background: var(--mint-deep); /* Un fond menthe un peu plus soutenu pour l'élément actif */
+  border-bottom: none;          /* On retire la bordure pour privilégier l'effet de pastille épurée */
+}
 
 /* --- Conteneurs de pages globaux --- */
 .site-main {
