@@ -53,12 +53,10 @@ cards:
 </section>
 <div class="section" style="max-width: 820px;">
   <main class="content" style="max-width: none;">
-    <div class="callout info">
-      <p class="callout-title">Licence libre</p>
-      <p>Ce guide est partagé sous licence <strong>CC BY-SA 4.0</strong> : vous pouvez l'utiliser, l'adapter et le partager, à condition de citer la source et de partager vos versions sous la même licence.</p>
-    </div>
     <p style="text-align: center; margin-top: 2.5rem;">
       <a href="{{ '/protocole/' | relative_url }}" class="btn">Commencer →</a>
     </p>
   </main>
+
+  
 </div>
