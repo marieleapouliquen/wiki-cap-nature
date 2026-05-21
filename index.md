@@ -44,7 +44,7 @@ cards:
 
 {% include hero.html title=page.hero.title subtitle=page.hero.subtitle tags=page.hero.tags %}
 
-<div class="section" style="max-width: 760px;">
+<div class="section" style="max-width: 820px;">
   <main class="content" style="max-width: none;">
     <h2>Pourquoi ces ateliers ?</h2>
     <p>Les ateliers <strong>Cap Nature</strong> sont des dispositifs pédagogiques qui combinent l'usage de capteurs environnementaux et l'exploration sensible d'un site naturel ou urbain.</p>
@@ -61,7 +61,7 @@ cards:
   </div>
 </section>
 
-<div class="section" style="max-width: 760px;">
+<div class="section" style="max-width: 820px;">
   <main class="content" style="max-width: none;">
 
     <div class="callout info">
