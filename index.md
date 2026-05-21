@@ -1,12 +1,11 @@
 ---
 layout: default
 title: Accueil
-show_photo_credits: true
+show_photo_credits: false
 
 hero:
-  title: Écouter le vivant, ensemble
-  subtitle: "Un guide libre pour animer les ateliers Cap Nature — Birds : (re)découvrir la nature avec des capteurs participatifs. À destination des enseignants et éducateurs nature."
-  tags: "🕐 75 minutes|👥 15–35 participants|🌳 Tous milieux"
+  title: Wiki Cap Nature
+  subtitle: "Guide méthodologique et technique pour l'animation d'ateliers d'écoute des oiseaux."
 
 photos:
   - file: grive.jpg
@@ -29,71 +28,43 @@ photos:
     caption: Martin-pêcheur
 
 cards:
-  - icon: 🧭
-    title: Protocole
-    desc: "Le déroulé complet de l'atelier : avant, pendant, après. Timing, étapes, posture d'animation."
-    cta: Voir le protocole →
+  - title: 📁 Protocole
+    cta: Voir la méthodologie →
     url: /protocole/
-  - icon: 🎙️
-    title: Matériel
-    desc: "Les applications et capteurs : Merlin Bird ID, parabole directionnelle, FizziQ. Budgets et alternatives."
-    cta: Découvrir →
+  - title: 🛠️ Matériel
+    cta: Découvrir les outils →
     url: /materiel/
-  - icon: 🔗
-    title: Ressources
-    desc: Une sélection de sites, applications, associations et lectures pour prolonger l'expérience.
-    cta: Explorer →
+  - title: 📚 Ressources
+    cta: Explorer les fiches →
     url: /ressources/
 
-timeline:
-  - phase: Phase 1
-    duration: 15 min
-    title: Mise en attention
-    text: "Accueil, présentation des capteurs, écoute silencieuse de 30 secondes sans aucun outil : une mise en attention avant l'exploration instrumentée."
-  - phase: Phase 2
-    duration: 45 min
-    title: Exploration en sous-groupes
-    text: "Sous-groupes de 3–5 personnes partageant les capteurs : identification des oiseaux, amplification des sons, mesure des niveaux sonores. Exploration libre et auto-dirigée."
-  - phase: Phase 3
-    duration: 15 min
-    title: Restitution collective
-    text: "Partage en grand groupe : espèces identifiées, sons remarquables, mesures, ressentis. Co-construction d'une cartographie sensible du lieu."
 ---
 
 {% include hero.html title=page.hero.title subtitle=page.hero.subtitle tags=page.hero.tags %}
 
-{% include photo-band.html photos=page.photos %}
-
-<div class="section" style="max-width: 760px;">
-  <main class="content" style="max-width: none;">
-    <h2>Pourquoi ces ateliers ?</h2>
-    <p>Les ateliers <strong>Cap Nature — Birds</strong> sont des dispositifs pédagogiques d'environ 75 minutes qui combinent l'usage de capteurs numériques — parabole acoustique, application d'identification des chants d'oiseaux, sonomètre — et l'exploration sensible d'un site naturel ou urbain.</p>
-    <p>L'idée est simple : utiliser quelques outils accessibles pour <strong>réveiller l'attention au vivant</strong> qui nous entoure, même en ville. Identifier un chant, amplifier un son lointain, mesurer le calme d'un lieu : autant de portes d'entrée vers une nature ordinaire souvent ignorée.</p>
-    <p>Ce guide a pour but de permettre à toute personne intéressée — enseignant·e, animateur·ice nature, éducateur·ice à l'environnement — de <strong>mener l'atelier</strong> dans son propre contexte, avec ses propres outils et son propre public.</p>
-    <div class="callout tip">
-      <p class="callout-title">Démarrage rapide</p>
-      <p>Suivez le <a href="{{ '/protocole/' | relative_url }}">protocole pas-à-pas</a>, préparez le <a href="{{ '/materiel/' | relative_url }}">matériel</a>, et piochez dans les <a href="{{ '/ressources/' | relative_url }}">ressources externes</a> pour aller plus loin. Comptez environ une heure de préparation pour vous approprier le dispositif.</p>
-    </div>
-  </main>
-</div>
-
-<section class="section-wide tinted">
+<!-- 1. ACCÈS DIRECT AU CONTENU  -->
+<section class="section-wide">
   <div class="section">
-    <h2 style="text-align: center; margin-top: 0;">Le guide en trois temps</h2>
+    <p style="font-size: 1.15rem; margin-bottom: 2rem; max-width: 820px;">
+      Bienvenue sur le wiki open-source du projet <strong>Cap Nature</strong>. Ce guide fournit toutes les ressources nécessaires aux enseignant·es, animateur·ices et éducateur·ices pour concevoir et animer des ateliers d'écoute des paysages sonores à l'aide de capteurs participatifs.
+    </p>
+    
     {% include cards.html cards=page.cards %}
   </div>
 </section>
 
-<div class="section" style="max-width: 760px;">
+<!-- 2. LES PHOTOS -->
+{% include photo-band.html photos=page.photos %}
+
+<!-- 3. LE CONTEXTE ET LES INFOS SECONDAIRES -->
+<div class="section" style="max-width: 820px; margin-top: 2rem;">
   <main class="content" style="max-width: none;">
-    <h2>L'atelier en un coup d'œil</h2>
-    {% include timeline.html steps=page.timeline %}
-    <div class="callout info">
-      <p class="callout-title">Licence libre</p>
-      <p>Ce guide est partagé sous licence <strong>CC BY-SA 4.0</strong> : vous pouvez l'utiliser, l'adapter et le partager, à condition de citer la source et de partager vos versions sous la même licence.</p>
+    <h2>À propos des ateliers</h2>
+    <p>Les ateliers combine l'usage de capteurs environnementaux et l'exploration sensible d'un site naturel ou urbain. L'idée est simple : utiliser quelques outils accessibles pour <strong>réveiller l'attention au vivant</strong> qui nous entoure.</p>
+    
+    <div class="callout info" style="margin-top: 2rem;">
+      <p class="callout-title">Licence libre (CC BY-SA 4.0)</p>
+      <p>Ce guide est libre : vous pouvez l'utiliser, l'adapter et le partager, à condition de citer la source et de partager vos versions sous la même licence.</p>
     </div>
-    <p style="text-align: center; margin-top: 2.5rem;">
-      <a href="{{ '/protocole/' | relative_url }}" class="btn">Commencer →</a>
-    </p>
   </main>
 </div>

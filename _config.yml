@@ -1,14 +1,13 @@
 title: Cap Nature
 tagline: Ateliers Birds
 description: >-
-  Guide libre pour animer les ateliers Cap Nature — Birds :
-  (re)découvrir la nature avec des capteurs participatifs.
-  À destination des enseignants et éducateurs nature.
+  Guide pour animer les ateliers Cap Nature :
+  (Re)découvrir la nature avec des capteurs participatifs.
 lang: fr
 
 # URL de base : si le site est publié sur https://<user>.github.io/cap-nature/
 # alors baseurl doit valoir "/cap-nature". Si publié sur un domaine racine, laisser "".
-baseurl: ""
+baseurl: "/wiki-cap-nature"
 url: ""
 
 # Navigation principale (ordre des onglets)
