@@ -692,3 +692,41 @@ tr:last-child td { border-bottom: none; }
   text-transform: none;
   letter-spacing: 0;
 }
+
+/* ---------- BANDE PARTENAIRES ---------- */
+.partners {
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+.partners-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-soft);
+  font-weight: 600;
+  margin: 0 0 1.75rem;
+}
+.partners-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.partners-logos img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.75;
+  transition: opacity var(--transition);
+}
+.partners-logos img:hover { opacity: 1; }
+
+@media (max-width: 600px) {
+  .partners-logos { gap: 1.5rem 2rem; }
+  .partners-logos img { height: 42px; }
+}
