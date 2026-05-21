@@ -692,7 +692,6 @@ Quand Merlin identifie un oiseau, il affiche à l'écran un **sonogramme** : l'i
 </ol>
 
 <div class="callout science">
-  <p class="callout-title">🔬 Une IA qui regarde, pas qui écoute</p>
   <p>C'est une subtilité importante : Merlin <strong>convertit le son en image, puis fait de la reconnaissance d'image</strong>. La même technologie qui sert à reconnaître un chat sur une photo sert à reconnaître un merle sur un sonogramme. C'est ce qui explique pourquoi un son tronqué, un bruit de fond fort, ou un chant inhabituel peuvent dérouter l'app : visuellement, le sonogramme ne ressemble plus assez aux exemples appris.</p>
 </div>
 
