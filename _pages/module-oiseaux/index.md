@@ -51,31 +51,36 @@ soundscape:
 
   <h2>Contexte & Concepts</h2>
 
-  <h3>Qu'est-ce que le paysage sonore ?</h3>
-  <p>Le <strong>paysage sonore</strong> est l'ensemble des signaux acoustiques présents dans un lieu à un moment donné. C'est une signature unique, mouvante, que les chercheurs en bioacoustique décomposent en trois grandes familles de sources sonores :</p>
+<h2>Qu'est-ce qu'un paysage sonore ?</h2>
 
-  {% include concepts.html items=page.soundscape %}
-
-  <h3>Fiches pédagogiques pour aller plus loin</h3>
-  <p>Retrouvez les fiches d'activités et guides d'identification complets à utiliser sur le terrain :</p>
+  <p> Le paysage sonore (<em>soundscape</em>) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures.</p>
   
-  <div class="resource-links">
-    <a class="resource-link" href="{{ '/module-oiseaux/fiche1-soundscape/' | relative_url }}">
-      <span class="resource-link-label">Fiche Activité 1</span>
-      <span class="resource-link-title">Le Paysage Sonore & Soundmap</span>
-      <span class="resource-link-desc">Découvrir la biophonie, utiliser Fizziq pour mesurer les décibels et réaliser une carte sonore.</span>
-    </a>
-    <a class="resource-link" href="{{ '/module-oiseaux/fiche2-merlin/' | relative_url }}">
-      <span class="resource-link-label">Fiche Technique 2</span>
-      <span class="resource-link-title">Identifier avec Merlin Bird ID</span>
-      <span class="resource-link-desc">Guide pas-à-pas pour configurer l'application et réaliser les deux défis d'écoute sur le terrain.</span>
-    </a>
-    <a class="resource-link" href="{{ '/module-oiseaux/fiche3-oiseaux/' | relative_url }}">
-      <span class="resource-link-label">Fiche Scientifique 3</span>
-      <span class="resource-link-title">Le Langage des Oiseaux</span>
-      <span class="resource-link-desc">Comprendre les fonctions du chant, l'apprentissage culturel et tester ses acquis avec le grand Quiz.</span>
-    </a>
+  <p>Le paysage sonore est traditionnellement analysé et découpé en <strong>trois grandes catégories de sources acoustiques</strong> :</p>
+
+  <div class="concept-grid">
+    <div class="concept-card">
+      <span class="card-title">Biophonie</span>
+      <p class="concept-desc">Les manifestations sonores des êtres vivants non-humains (chants d'oiseaux, coassements d'amphibiens, stridulations d'insectes, mammifères).</p>
+    </div>
+    <div class="concept-card">
+      <span class="card-title">Géophonie</span>
+      <p class="concept-desc">Les sons de la nature non vivante, liés aux éléments naturels et à la météo (souffle du vent, clapotis de la pluie, grondement des rivières, vagues).</p>
+    </div>
+    <div class="concept-card">
+      <span class="card-title">Anthrophonie</span>
+      <p class="concept-desc">L'ensemble des bruits produits par l'activité humaine et le développement des infrastructures (paroles, moteurs, machines, circulation).</p>
+    </div>
   </div>
+
+  <h2>Pourquoi étudier les paysages sonores en écologie?</h2>
+  pour mesurer la biodiversité acoustique (indice d'activité) ou évaluer l'impact négatif de la pollution sonore sur la faune.
+  à développer avec les travaux de Bernie Krause etc.
+
+
+  Parler aussi de la pollution sonore
+
+  Une vidéo de contexte : https://www.youtube.com/watch?v=9X5JfGI0hr0 
+  
 
   <h2>Démarche et objectifs de l'atelier</h2>
   <p>L'atelier s'appuie sur une démarche scientifique active. Équipés de smartphones et de microphones portatifs, les sous-groupes partent sur le terrain avec trois objectifs&nbsp;: prêter <strong>attention</strong> au vivant proche, <strong>expérimenter</strong> par des outils accessibles, et <strong>réfléchir</strong> à notre cohabitation avec les autres espèces.</p>
@@ -354,6 +359,27 @@ Avec une parabole branchée au smartphone, l'application **Merlin Bird ID** bén
 
   </div>
 
-  <em>Les Ateliers Cap Nature</em>
+  
+  <h3>Fiches pédagogiques </h3>
+  <p>Retrouvez les fiches d'activités et guides d'identification complets à utiliser sur le terrain :</p>
+  
+  <div class="resource-links">
+    <a class="resource-link" href="{{ '/module-oiseaux/fiche1-soundscape/' | relative_url }}">
+      <span class="resource-link-label">Fiche Activité 1</span>
+      <span class="resource-link-title">Le Paysage Sonore & Soundmap</span>
+      <span class="resource-link-desc">Découvrir la biophonie, utiliser Fizziq pour mesurer les décibels et réaliser une carte sonore.</span>
+    </a>
+    <a class="resource-link" href="{{ '/module-oiseaux/fiche2-merlin/' | relative_url }}">
+      <span class="resource-link-label">Fiche Technique 2</span>
+      <span class="resource-link-title">Identifier avec Merlin Bird ID</span>
+      <span class="resource-link-desc">Guide pas-à-pas pour configurer l'application et réaliser les deux défis d'écoute sur le terrain.</span>
+    </a>
+    <a class="resource-link" href="{{ '/module-oiseaux/fiche3-oiseaux/' | relative_url }}">
+      <span class="resource-link-label">Fiche Scientifique 3</span>
+      <span class="resource-link-title">Le Langage des Oiseaux</span>
+      <span class="resource-link-desc">Comprendre les fonctions du chant, l'apprentissage culturel et tester ses acquis avec le grand Quiz.</span>
+    </a>
+  </div>
+
 
 </main>
