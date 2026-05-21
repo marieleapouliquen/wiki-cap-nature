@@ -2,15 +2,9 @@
 
 - title: Accueil
   url: /
-
-- title: Contexte
-  url: /contexte/
-
-- title: Protocole de terrain
-  url: /protocole/
-
-- title: Comment lire un spectrogramme ?
-  url: /spectrogramme/
-
-- title: Ressources pédagogiques
-  url: /ressources/
+  
+- title: Module "Ecoacoustique"
+  url: /module-oiseaux/
+  
+- title: Module "Caméras Thermiques"
+  url: /module-thermique/
