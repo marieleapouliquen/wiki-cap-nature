@@ -45,48 +45,7 @@ title: Le Paysage Sonore
   </blockquote>
 
   <hr>
-
-  <h2>Créer une Carte des Paysages Sonores</h2>
   
-  <h3>L'application Fizziq</h3>
-  <p>Fizziq est une application qui transforme le smartphone en un véritable laboratoire de poche. Dans le cadre de cette enquête, elle permet notamment de <strong>mesurer le niveau sonore en temps réel (décibels)</strong>, de géolocaliser son parcours grâce au GPS, ou d'enregistrer et annoter des données.</p>
-  <ul>
-    <li><em>Installation :</em> Rechercher "Fizziq" dans l'App Store ou Google Play. L'application est entièrement gratuite.</li>
-  </ul>
-
-  <h3>Comprendre les décibels</h3>
-  <p>Le décibel (dB) sert à quantifier le niveau de pression acoustique. L'échelle étant logarithmique, une petite variation en dB traduit un changement d'énergie considérable : <strong>+10 dB correspond à un son 10 fois plus puissant</strong> en énergie, bien que perçu environ 2 fois plus fort par notre oreille.</p>
-
-  <div class="db-chart">
-    <div class="db-row">
-      <span class="db-label">Seuil d'audition (0 dB)</span>
-      <div class="db-track"><div class="db-fill db-ok" style="width: 15%">0 dB</div></div>
-    </div>
-    <div class="db-row">
-      <span class="db-label">Chuchotement</span>
-      <div class="db-track"><div class="db-fill db-ok" style="width: 30%">25 dB</div></div>
-    </div>
-    <div class="db-row">
-      <span class="db-label">Conversation normale</span>
-      <div class="db-track"><div class="db-fill db-ok" style="width: 50%">45 dB</div></div>
-    </div>
-    <div class="db-row">
-      <span class="db-label">Rue animée, aspirateur</span>
-      <div class="db-track"><div class="db-fill db-warning" style="width: 70%">70 dB</div></div>
-    </div>
-    <div class="db-row">
-      <span class="db-label">Tondeuse, moto</span>
-      <div class="db-track"><div class="db-fill db-warning" style="width: 85%">90 dB</div></div>
-    </div>
-    <div class="db-row">
-      <span class="db-label">Concert rock</span>
-      <div class="db-track"><div class="db-fill db-danger" style="width: 95%">110 dB</div></div>
-    </div>
-    <div class="db-row">
-      <span class="db-label">Seuil de douleur</span>
-      <div class="db-track"><div class="db-fill db-danger" style="width: 100%">125 dB</div></div>
-    </div>
-  </div>
 
   <h3>Activité : Réaliser une soundmap</h3>
   <ol>
@@ -96,9 +55,5 @@ title: Le Paysage Sonore
     <li><strong>Cartographier :</strong> Pour conclure, positionnez vos relevés sur une carte géographique en attribuant des icônes thématiques à chaque type de son rencontré.</li>
   </ol>
 
-  <h3>La Radio Aporee Soundmap</h3>
-  <p>Créée à la fin des années 1990, la <em>Radio Aporee Soundmap</em> est l'une des toutes premières plateformes collaboratives dédiées à la cartographie sonore en ligne. Conçue comme une mémoire acoustique planétaire, elle démontre comment le simple fait d'écouter peut relier de manière étroite des lieux, des cultures et des récits pourtant très éloignés.</p>
-
-  <em>Les Ateliers Cap Nature</em>
 
 </main>
