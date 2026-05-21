@@ -1,7 +1,13 @@
 # Menu principal du site — modifiez l'ordre ou les libellés ici
+
 - title: Accueil
   url: /
+
 - title: Protocole
   url: /protocole/
-- title: Ressources
+
+- title: Comment lire un spectrogramme ?
+  url: /spectrogramme/
+
+- title: Ressources pédagogiques
   url: /ressources/
