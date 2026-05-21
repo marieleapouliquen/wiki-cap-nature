@@ -50,7 +50,29 @@ decibels:
     value: "jusqu'à 60 dB"
     pct: 48
     level: ok
+
+photos:
+  - file: grive.jpg
+    alt: Grive musicienne au sol
+    caption: Grive musicienne
+  - file: merle.jpg
+    alt: Merle noir chantant
+    caption: Merle noir
+  - file: mesange.jpg
+    alt: Mésange charbonnière sur une branche
+    caption: Mésange charbonnière
+  - file: pinson.jpg
+    alt: Pinson des arbres sur un piquet
+    caption: Pinson des arbres
+  - file: sittelle.jpg
+    alt: Sittelle torchepot sur une branche
+    caption: Sittelle torchepot
+  - file: martin-pecheur.jpg
+    alt: Martin-pêcheur d'Europe sortant de l'eau
+    caption: Martin-pêcheur
 ---
+
+{% include photo-band.html photos=page.photos %}
 
 <h2 id="en-bref">L'atelier en bref</h2>
 
