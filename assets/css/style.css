@@ -1,6 +1,6 @@
 /* ============================================================
    Cap Nature — Feuille de style
-   Direction : épuré, clair, minimal. Palette vert / teal.
+   Epuré, clair, minimal. Palette vert / teal.
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap');
@@ -280,26 +280,28 @@ tr:last-child td { border-bottom: none; }
 /* ---------- HERO (épuré, clair) ---------- */
 .hero {
   background: linear-gradient(135deg, var(--mint) 0%, #dcefe8 100%);
-  padding: clamp(3rem, 8vw, 6rem) 2rem;
+  padding: clamp(2.25rem, 4.5vw, 3.5rem) 2rem;
   text-align: center;
   border-bottom: 1px solid var(--line);
 }
 .hero h1 {
-  font-size: clamp(2.2rem, 6vw, 3.6rem);
+  font-size: clamp(1.9rem, 4.5vw, 2.9rem);
   color: var(--teal-dark);
-  margin: 0 auto 1.25rem;
-  max-width: 16ch;
-  line-height: 1.1;
+  margin: 0 auto 1rem;
+  max-width: 20ch;
+  line-height: 1.12;
 }
 .hero-sub {
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
   color: var(--ink-soft);
   font-weight: 400;
-  line-height: 1.6;
-  margin: 0 auto 2rem;
+  line-height: 1.55;
+  margin: 0 auto;
   max-width: 56ch;
 }
+.hero-meta:not(:empty) { margin-top: 1.5rem; }
 .hero-meta { display: flex; gap: 0.7rem; flex-wrap: wrap; justify-content: center; }
+
 .hero-tag {
   background: var(--paper);
   border: 1px solid var(--line);
