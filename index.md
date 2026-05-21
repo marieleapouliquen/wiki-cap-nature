@@ -51,8 +51,4 @@ cards:
   </div>
 </section>
 
-<p style="text-align: center; margin-top: 2.5rem;">
-  <a href="{{ '/protocole/' | relative_url }}" class="btn">Commencer →</a>
-</p>
-
 {% include photo-band.html photos=page.photos %}
