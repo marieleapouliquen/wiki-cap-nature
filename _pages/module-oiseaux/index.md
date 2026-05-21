@@ -51,10 +51,8 @@ soundscape:
 
   <h2>Contexte & Concepts</h2>
 
-<h2>Qu'est-ce qu'un paysage sonore ?</h2>
-
-  <p> Le paysage sonore (<em>soundscape</em>) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures.</p>
-  
+  <h3>Qu'est-ce qu'un paysage sonore ?</h3>
+  <p>Le paysage sonore (<em>soundscape</em>) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures.</p>
   <p>Le paysage sonore est traditionnellement analysé et découpé en <strong>trois grandes catégories de sources acoustiques</strong> :</p>
 
   <div class="concept-grid">
@@ -72,15 +70,26 @@ soundscape:
     </div>
   </div>
 
-  <h2>Pourquoi étudier les paysages sonores en écologie?</h2>
-  pour mesurer la biodiversité acoustique (indice d'activité) ou évaluer l'impact négatif de la pollution sonore sur la faune.
-  à développer avec les travaux de Bernie Krause etc.
+  <h3>Pourquoi étudier les paysages sonores en écologie ?</h3>
+  <p>L'analyse des indices acoustiques permet de mesurer l'état de santé d'un écosystème de manière non invasive. Les chercheurs étudient ces environnements pour quantifier la biodiversité, suivre l'évolution de l'activité animale (indices d'activité globale) ou évaluer l'impact négatif et fragmentaire de la pollution sonore sur la faune sauvage.</p>
 
+  <div class="callout warning">
+    <div class="callout-title">Les enjeux de la pollution sonore</div>
+    <p>Le bruit généré par les infrastructures humaines (transports, industries) masque les signaux de communication essentiels des animaux. Pour survivre en milieu anthropisé, de nombreuses espèces doivent adapter l'amplitude, la durée ou la fréquence de leurs vocalisations, un effort qui perturbe leur équilibre énergétique et leurs chances de reproduction. Le bioacousticien Bernie Krause a notamment documenté la disparition progressive de certaines niches acoustiques naturelles sous la pression humaine.</p>
+  </div>
 
-  Parler aussi de la pollution sonore
-
-  Une vidéo de contexte : https://www.youtube.com/watch?v=9X5JfGI0hr0 
+  <h3>Les pionniers de l'audionaturalisme</h3>
   
+  <h4>Albert R. Brand (Années 1930)</h4>
+  <p>Dès les années 1930, des naturalistes passionnés ont entrepris de figer les voix de la nature en adaptant de grandes structures paraboliques de captation sur pied. Aux États-Unis, <strong>Albert R. Brand</strong> s'est imposé comme l'un des grands pionniers de la discipline en enregistrant les premiers inventaires sonores d'oiseaux pour la <em>Cornell University</em>. À cette époque, le matériel de terrain était particulièrement lourd, contraignant et encombrant : les réflecteurs en aluminium pouvaient mesurer plus d'un mètre de diamètre.</p>
+
+  <h4>Jean-Claude Roché (Années 1960)</h4>
+  <p>En France, à partir des années 1960, l'audionaturaliste <strong>Jean-Claude Roché</strong> popularise l'écoute de la faune sauvage en éditant des centaines d'enregistrements d'espèces captées au cœur de leurs habitats d'origine. Ses disques et guides audio pédagogiques ont accompagné des générations de curieux. Il envisageait l'audionaturalisme comme une démarche artistique et scientifique de partage, bien avant l'avènement des technologies numériques grand public.</p>
+
+  <div class="callout info">
+    <div class="callout-title">Ressource vidéo</div>
+    <p>Pour introduire la séance ou approfondir la thématique en classe, vous pouvez visionner ce reportage de contexte : <a href="https://www.youtube.com/watch?v=9X5JfGI0hr0" target="_blank">L'écoute des paysages sonores sur YouTube</a>.</p>
+  </div>
 
   <h2>Démarche et objectifs de l'atelier</h2>
   <p>L'atelier s'appuie sur une démarche scientifique active. Équipés de smartphones et de microphones portatifs, les sous-groupes partent sur le terrain avec trois objectifs&nbsp;: prêter <strong>attention</strong> au vivant proche, <strong>expérimenter</strong> par des outils accessibles, et <strong>réfléchir</strong> à notre cohabitation avec les autres espèces.</p>
@@ -127,31 +136,23 @@ soundscape:
     </div>
   </div>
 
-
   <h3>Merlin Bird ID pour la reconnaissance des chants</h3>
-  <p>Développée par le <em>Cornell Lab of Ornithology</em>, cette application écoute l'environnement et propose en temps réel le nom des espèces d'oiseaux qui chantent. <strong>À préparer avant l'atelier</strong> : installer l'application, puis télécharger le pack gratuit « Europe occidentale » (≈ 200 Mo) pour un fonctionnement 100% hors-ligne.</p>
-
-  Autres applis à lister
-  
+  <p>Développée par le <em>Cornell Lab of Ornithology</em>, cette application écoute l'environnement et propose en temps réel le nom des espèces d'oiseaux qui chantent. <strong>À préparer avant l'atelier</strong> : installer l'application, puis télécharger le pack gratuit « Europe occidentale » (≈ 200 Mo) pour un fonctionnement 100% hors-ligne. (D'autres alternatives comme <em>BirdNET</em> ou <em>BirdWeather</em> peuvent être explorées en complément).</p>
 
   <h3>Optionnel : Utiliser Merlin avec une parabole directionnelle</h3>
+  <p>Une parabole directionnelle (comme <strong>BirdMic</strong>) est un dispositif qui concentre et amplifie les ondes acoustiques venant d'une direction précise.</p>
+  <ul>
+    <li><strong>Le principe du miroir :</strong> La grande coupole en forme de parabole agit comme un réflecteur ou miroir acoustique. Elle renvoie toutes les ondes incidentes de son axe vers un point focal central : le micro placé au foyer de la parabole.</li>
+    <li><strong>Résultat :</strong> Les signaux provenant de la cible visée sont fortement amplifiés tandis que les bruits parasites latéraux et arrières sont atténués. Branchée au smartphone, elle offre à l'application Merlin un signal épuré qui optimise l'identification en direct.</li>
+  </ul>
 
-## Qu'est-ce qu'une parabole directionnelle ?
-Une parabole directionnelle (comme **BirdMic**) est un dispositif qui concentre et amplifie les sons venant d'une direction précise.
-
-* **Le principe du miroir** : La grande coupole en forme de parabole agit comme un miroir acoustique. Elle réfléchit les ondes sonores et les renvoie toutes vers un point central : **le micro placé au foyer**.
-* **Résultat** : Les sons venant de la direction visée sont fortement amplifiés, tandis que les sons venant d'ailleurs (derrière, sur les côtés) sont atténués.
-
-Avec une parabole branchée au smartphone, l'application **Merlin Bird ID** bénéficie d'un son beaucoup plus net et plus focalisé, ce qui améliore considérablement la détection et l'identification des chants d'oiseaux.
-
-## Comment utiliser Merlin avec une parabole ?
-1.  **Brancher BirdMic** : Connecter le micro directionnel au smartphone (via prise jack ou adaptateur USB-C / Lightning).
-2.  **Ouvrir l'application** : Lancer Merlin → *Sound ID*.
-3.  **Viser** : Pointer la parabole vers l'oiseau ou la zone d'écoute choisie.
-4.  **Capturer** : Rester parfaitement immobile et silencieux pendant l'enregistrement.
-
-
-  
+  <h4>Comment l'utiliser sur le terrain ?</h4>
+  <ol>
+    <li><strong>Brancher la parabole :</strong> Connecter le micro directionnel au port ou à l'adaptateur du smartphone.</li>
+    <li><strong>Lancer l'interface :</strong> Ouvrir l'application Merlin et activer l'onglet <em>Sound ID</em>.</li>
+    <li><strong>Cibler :</strong> Pointer la parabole précisément vers l'oiseau ou le bosquet à analyser.</li>
+    <li><strong>Capturer :</strong> Rester immobile et silencieux pendant que le tracé défile à l'écran.</li>
+  </ol>
 
   <h2>Déroulement de l'atelier</h2>
 
@@ -314,7 +315,7 @@ Avec une parabole branchée au smartphone, l'application **Merlin Bird ID** bén
       <svg viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
         <rect x="35" y="10" width="260" height="90" fill="#fafbf6" stroke="#e2e6d8"/>
         <line x1="35" y1="10" x2="35" y2="100" stroke="#1f2a6b"/><line x1="35" y1="100" x2="295" y2="100" stroke="#1f2a6b"/>
-        <path d="M 60 60 Q 75 30 95 45 Q 110 60 125 40" stroke="#e8862a" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M 60 60 Q 75 30 95 45 Q 110 70 125 40" stroke="#e8862a" stroke-width="5" fill="none" stroke-linecap="round"/>
         <path d="M 150 55 Q 170 25 190 40 Q 210 65 230 35" stroke="#e8862a" stroke-width="5" fill="none" stroke-linecap="round"/>
       </svg>
       <p class="pattern">Typique des grands chanteurs flûtés comme le <strong>Merle noir</strong> ou la <strong>Fauvette à tête noire</strong>.</p>
@@ -359,8 +360,7 @@ Avec une parabole branchée au smartphone, l'application **Merlin Bird ID** bén
 
   </div>
 
-  
-  <h3>Fiches pédagogiques </h3>
+  <h3>Fiches pédagogiques</h3>
   <p>Retrouvez les fiches d'activités et guides d'identification complets à utiliser sur le terrain :</p>
   
   <div class="resource-links">
@@ -381,5 +381,6 @@ Avec une parabole branchée au smartphone, l'application **Merlin Bird ID** bén
     </a>
   </div>
 
+  <em>Les Ateliers Cap Nature</em>
 
 </main>
