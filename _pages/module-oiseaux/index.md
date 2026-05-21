@@ -45,11 +45,9 @@ soundscape:
 
 <main class="content">
 
-  <p class="page-lead">
-    Ce module d'écoacoustique invite les participant·es à mener une enquête sensible et instrumentée sur l'environnement. En utilisant des applications et capteurs numériques accessibles, ils apprennent à écouter le paysage sonore et à identifier la biodiversité locale.
-  </p>
+  <p class="page-lead"> Ce module d'écoacoustique invite les participant·es à mener une enquête sensible et instrumentée sur le paysage sonore et les oiseaux présents dans l'environnement. </p>
 
-  <h2>Contexte & Concepts</h2>
+  <h2>Quelques concepts</h2>
 
   <h3>Qu'est-ce qu'un paysage sonore ?</h3>
   <p>Le paysage sonore (<em>soundscape</em>) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures.</p>
