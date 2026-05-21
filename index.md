@@ -35,8 +35,8 @@ cards:
     cta: Explorer →
     url: /ressources/
 ---
-{% include photo-band.html photos=page.photos %}
 {% include hero.html title=page.hero.title subtitle=page.hero.subtitle tags=page.hero.tags %}
+
 <div class="section" style="max-width: 820px;">
   <main class="content" style="max-width: none;">
     <h2>Pourquoi ces ateliers ?</h2>
@@ -44,6 +44,7 @@ cards:
     <p>L'idée est simple : utiliser quelques outils accessibles pour <strong>réveiller l'attention au vivant</strong> qui nous entoure, même en ville.</p>
   </main>
 </div>
+
 <section class="section-wide tinted">
   <div class="section">
   <p>Ce guide a pour but de permettre à toute personne intéressée — enseignant·e, animateur·ice nature, éducateur·ice à l'environnement — de <strong>mener l'atelier</strong> dans son propre contexte, avec ses propres outils et son propre public.</p>
@@ -58,5 +59,6 @@ cards:
     </p>
   </main>
 
+{% include photo-band.html photos=page.photos %}
   
 </div>
