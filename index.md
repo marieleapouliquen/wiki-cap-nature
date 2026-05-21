@@ -7,26 +7,6 @@ hero:
   title: Cap Nature
   subtitle: "(Re)découvrir la nature avec des capteurs participatifs"
 
-photos:
-  - file: grive.jpg
-    alt: Grive musicienne au sol
-    caption: Grive musicienne
-  - file: merle.jpg
-    alt: Merle noir chantant
-    caption: Merle noir
-  - file: mesange.jpg
-    alt: Mésange charbonnière sur une branche
-    caption: Mésange charbonnière
-  - file: pinson.jpg
-    alt: Pinson des arbres sur un piquet
-    caption: Pinson des arbres
-  - file: sittelle.jpg
-    alt: Sittelle torchepot sur une branche
-    caption: Sittelle torchepot
-  - file: martin-pecheur.jpg
-    alt: Martin-pêcheur d'Europe sortant de l'eau
-    caption: Martin-pêcheur
-
 stat_urbain:
   - num: "45 %"
     label: vivent en grandes métropoles
@@ -45,8 +25,6 @@ stat_urbain:
     </p>
   </div>
 </section>
-
-{% include photo-band.html photos=page.photos %}
 
 <div class="section" style="max-width: 820px; margin-top: 2.5rem;">
   <main class="content" style="max-width: none;">
@@ -86,10 +64,6 @@ stat_urbain:
         <span class="card-desc">Voir l'environnement autrement : explorer la chaleur invisible et les îlots de chaleur avec des caméras thermiques portatives.</span>
         <span class="card-cta card-cta-soon">En préparation</span>
       </div>
-    </div>
-
-    <div class="callout info">
-      <p><strong>Licence libre (CC BY-SA 4.0)</strong> — Ce guide est entièrement libre : vous pouvez l'utiliser, l'adapter et le partager, à condition de citer la source et de partager vos versions sous la même licence.</p>
     </div>
 
   </main>
