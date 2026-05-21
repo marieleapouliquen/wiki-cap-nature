@@ -2,13 +2,6 @@
 layout: page
 permalink: /module-oiseaux/
 title: "À l'écoute des oiseaux et du paysage sonore"
-sidebar_title: Module · Écoacoustique
-
-sidebar_links_title: Pour aller plus loin
-sidebar_links:
-  - label: Ressources & fiches
-    url: /module-oiseaux/ressources/
-
 photos:
   - file: grive.jpg
     alt: Grive musicienne au sol
