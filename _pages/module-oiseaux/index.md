@@ -45,13 +45,14 @@ soundscape:
 
 <main class="content">
 
-  <p class="page-lead"> Ce module d'écoacoustique invite les participant·es à mener une enquête sensible et instrumentée sur le paysage sonore et les oiseaux présents dans l'environnement. </p>
+  <p class="page-lead">
+    Ce module d'écoacoustique invite les participant·es à mener une enquête sensible et instrumentée sur le paysage sonore et les oiseaux présents dans l'environnement.
+  </p>
 
   <h2>Quelques concepts</h2>
 
   <h3>Qu'est-ce qu'un paysage sonore ?</h3>
-  
-  <p>Le paysage sonore (<em>soundscape</em>) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures. Les écoacousticiens classent ces sons en <strong>trois grandes catégories</strong>: </p>
+  <p>Le paysage sonore (<em>soundscape</em>) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures. Les écoacousticiens classent ces signaux en <strong>trois grandes catégories</strong> :</p>
 
   <div class="concept-grid">
     <div class="concept-card">
@@ -71,68 +72,107 @@ soundscape:
   <h3>Pourquoi étudier les paysages sonores en écologie ?</h3>
   <p>L'analyse des indices acoustiques permet de mesurer l'état de santé d'un écosystème de manière non invasive. Les chercheurs étudient ces environnements pour quantifier la biodiversité, suivre l'évolution de l'activité animale (indices d'activité globale) ou évaluer l'impact négatif et fragmentaire de la pollution sonore sur la faune sauvage.</p>
 
-  <div class="callout warning">
-    <div class="callout-title">Les enjeux de la pollution sonore</div>
-    <p>Le bruit généré par les infrastructures humaines (transports, industries) masque les signaux de communication essentiels des animaux. Pour survivre en milieu anthropisé, de nombreuses espèces doivent adapter l'amplitude, la durée ou la fréquence de leurs vocalisations, un effort qui perturbe leur équilibre énergétique et leurs chances de reproduction. Le bioacousticien Bernie Krause a notamment documenté la disparition progressive de certaines niches acoustiques naturelles sous la pression humaine.</p>
-  </div>
-
   <h3>Les pionniers de l'audionaturalisme</h3>
   
   <h4>Albert R. Brand (Années 1930)</h4>
   <p>Dès les années 1930, des naturalistes passionnés ont entrepris de figer les voix de la nature en adaptant de grandes structures paraboliques de captation sur pied. Aux États-Unis, <strong>Albert R. Brand</strong> s'est imposé comme l'un des grands pionniers de la discipline en enregistrant les premiers inventaires sonores d'oiseaux pour la <em>Cornell University</em>. À cette époque, le matériel de terrain était particulièrement lourd, contraignant et encombrant : les réflecteurs en aluminium pouvaient mesurer plus d'un mètre de diamètre.</p>
 
   <h4>Jean-Claude Roché (Années 1960)</h4>
-  <p>En France, à partir des années 1960, l'audionaturaliste <strong>Jean-Claude Roché</strong> popularise l'écoute de la faune sauvage en éditant des centaines d'enregistrements d'espèces captées au cœur de leurs habitats d'origine. Ses disques et guides audio pédagogiques ont accompagné des générations de curieux. Il envisageait l'audionaturalisme comme une démarche artistique et scientifique de partage, bien avant l'avènement des technologies numériques grand public.</p>
+  <p>En France, à partir des années 1960, <strong>Jean-Claude Roché</strong> popularise l'écoute de la faune sauvage en éditant des centaines d'enregistrements d'espèces captées au cœur de leurs habitats d'origine. Ses disques et guides audio pédagogiques ont accompagné des générations de curieux. Il envisageait l'audionaturalisme comme une démarche artistique et scientifique de partage, bien avant l'avènement des technologies numériques grand public.</p>
+
+  <h4>Bernie Krause et le concept de niche acoustique (Années 1980 à nos jours)</h4>
+  <p>Musicien et chercheur américain, <strong>Bernie Krause</strong> a consacré plus de cinquante ans à enregistrer les écosystèmes de la planète entière. Il est à l'origine de la théorie de la <em>niche acoustique</em>&nbsp;: chaque espèce vivante d'un habitat s'établit sur une bande de fréquences et un rythme précis pour lancer ses appels sans être masquée par les autres. Krause a tristement documenté l'effondrement de ces structures symphoniques naturelles sous l'effet du réchauffement global et du développement de l'anthrophonie humaine.</p>
+
+  <h3>Les enjeux de la pollution sonore</h3>
+  <p>Le bruit généré par les infrastructures humaines (transports, industries) masque les signaux de communication essentiels des animaux. Pour survivre en milieu anthropisé, de nombreuses espèces doivent adapter l'amplitude, la durée ou la fréquence de leurs vocalisations, un effort qui perturbe leur équilibre énergétique et leurs chances de reproduction. Le bioacousticien Bernie Krause a notamment documenté la disparition progressive de certaines niches acoustiques naturelles sous la pression humaine.</p>
+
+  <div class="callout warning">
+    <div class="callout-title">Comprendre les décibels</div>
+    <p>Le décibel (dB) sert à quantifier le niveau de pression acoustique. L'échelle étant logarithmique, une petite variation en dB traduit un changement d'énergie considérable : <strong>+10 dB correspond à un son 10 fois plus puissant</strong> en énergie, bien que perçu environ 2 fois plus fort par notre oreille.</p>
+
+    <div class="db-chart">
+      <div class="db-row">
+        <span class="db-label">Seuil d'audition (0 dB)</span>
+        <div class="db-track"><div class="db-fill db-ok" style="width: 15%">0 dB</div></div>
+      </div>
+      <div class="db-row">
+        <span class="db-label">Chuchotement</span>
+        <div class="db-track"><div class="db-fill db-ok" style="width: 30%">25 dB</div></div>
+      </div>
+      <div class="db-row">
+        <span class="db-label">Conversation normale</span>
+        <div class="db-track"><div class="db-fill db-ok" style="width: 50%">45 dB</div></div>
+      </div>
+      <div class="db-row">
+        <span class="db-label">Rue animée, aspirateur</span>
+        <div class="db-track"><div class="db-fill db-warning" style="width: 70%">70 dB</div></div>
+      </div>
+      <div class="db-row">
+        <span class="db-label">Tondeuse, moto</span>
+        <div class="db-track"><div class="db-fill db-warning" style="width: 85%">90 dB</div></div>
+      </div>
+      <div class="db-row">
+        <span class="db-label">Concert rock</span>
+        <div class="db-track"><div class="db-fill db-danger" style="width: 95%">110 dB</div></div>
+      </div>
+      <div class="db-row">
+        <span class="db-label">Seuil de douleur</span>
+        <div class="db-track"><div class="db-fill db-danger" style="width: 100%">125 dB</div></div>
+      </div>
+    </div>
+  </div>
+
+  <p>Pour approfondir la thématique de l'impact du bruit humain sur les écosystèmes terrestres et marins, vous pouvez consulter les ressources de la <a href="http://www.bruit.fr/" target="_blank">Centre d'information sur le Bruit (CIDB)</a> ou explorer les projets de cartographie de la pollution sonore menés par <a href="https://www.biotope.fr/" target="_blank">Biotope Écoacoustique</a>.</p>
 
   <div class="callout info">
-    <div class="callout-title">Ressource vidéo</div>
-    <p>Pour introduire la séance ou approfondir la thématique en classe, vous pouvez visionner ce reportage de contexte : <a href="https://www.youtube.com/watch?v=9X5JfGI0hr0" target="_blank">L'écoute des paysages sonores sur YouTube</a>.</p>
+    <div class="callout-title">Enjeu de la pollution sonore dans les parcs nationaux - Exemple des États-Unis</div>
+    <p>Pour introduire la séance ou approfondir la thématique en classe, vous pouvez visionner ce reportage de contexte : <a href="https://www.youtube.com/watch?v=9X5JfGI0hr0" target="_blank">Soundscapes - Yosemite sur YouTube</a>.</p>
   </div>
+
+  <h3>Les bienfaits des sons de la nature pour la santé humaine</h3>
+  <p>Au-delà de l'intérêt écologique, l'écoute de la nature exerce une action thérapeutique avérée sur notre biologie. Une vaste synthèse scientifique menée par la chercheuse <strong>Rachel T. Buxton</strong> (<em>Colorado State University</em>) et son équipe en 2021 a démontré que l'exposition aux sons naturels (chants d'oiseaux, bruits d'eau) engendre des bénéfices de santé considérables : baisse significative du stress, diminution du taux de cortisol, réduction de la fréquence cardiaque et amélioration nette des performances cognitives.</p>
+  <p>L'étude souligne ainsi que la préservation des paysages sonores sauvages dans les parcs nationaux relève autant de la protection de la biodiversité que d'un enjeu majeur de santé publique.</p>
+
+  <hr>
 
   <h2>Démarche et objectifs de l'atelier</h2>
   <p>L'atelier s'appuie sur une démarche scientifique active. Équipés de smartphones et de microphones portatifs, les sous-groupes partent sur le terrain avec trois objectifs&nbsp;: prêter <strong>attention</strong> au vivant proche, <strong>expérimenter</strong> par des outils accessibles, et <strong>réfléchir</strong> à notre cohabitation avec les autres espèces.</p>
 
   <h2>Les outils de l'enquête</h2>
+  <p>Le tableau ci-dessous synthétise les solutions matérielles et logicielles mobilisées au cours de l'exploration :</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Outil / Solution</th>
+        <th>Type</th>
+        <th>Fonction principale dans l'atelier</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Fizziq</strong></td>
+        <td>Application mobile libre</td>
+        <td>Mesure précise de la pression acoustique en décibels (dB).</td>
+      </tr>
+      <tr>
+        <td><strong>Merlin Bird ID</strong></td>
+        <td>Application bioacoustique</td>
+        <td>Reconnaissance automatique et spectrogramme en temps réel.</td>
+      </tr>
+      <tr>
+        <td><strong>BirdMic (ou parabole)</strong></td>
+        <td>Accessoire matériel</td>
+        <td>Focalisation, isolation directionnelle et amplification des signaux.</td>
+      </tr>
+    </tbody>
+  </table>
 
   <h3>Le sonomètre portatif Fizziq</h3>
   <p>Fizziq est une application qui transforme le smartphone en un véritable laboratoire de poche. Dans le cadre de cette enquête, elle permet notamment de <strong>mesurer le niveau sonore en temps réel (décibels)</strong>, de géolocaliser son parcours grâce au GPS, ou d'enregistrer et annoter des données.</p>
   <ul>
     <li><em>Installation :</em> Rechercher "Fizziq" dans l'App Store ou Google Play. L'application est entièrement gratuite.</li>
   </ul>
-
-  <h3>Comprendre les décibels</h3>
-  <p>Le décibel (dB) sert à quantifier le niveau de pression acoustique. L'échelle étant logarithmique, une petite variation en dB traduit un changement d'énergie considérable : <strong>+10 dB correspond à un son 10 fois plus puissant</strong> en énergie, bien que perçu environ 2 fois plus fort par notre oreille.</p>
-
-  <div class="db-chart">
-    <div class="db-row">
-      <span class="db-label">Seuil d'audition (0 dB)</span>
-      <div class="db-track"><div class="db-fill db-ok" style="width: 15%">0 dB</div></div>
-    </div>
-    <div class="db-row">
-      <span class="db-label">Chuchotement</span>
-      <div class="db-track"><div class="db-fill db-ok" style="width: 30%">25 dB</div></div>
-    </div>
-    <div class="db-row">
-      <span class="db-label">Conversation normale</span>
-      <div class="db-track"><div class="db-fill db-ok" style="width: 50%">45 dB</div></div>
-    </div>
-    <div class="db-row">
-      <span class="db-label">Rue animée, aspirateur</span>
-      <div class="db-track"><div class="db-fill db-warning" style="width: 70%">70 dB</div></div>
-    </div>
-    <div class="db-row">
-      <span class="db-label">Tondeuse, moto</span>
-      <div class="db-track"><div class="db-fill db-warning" style="width: 85%">90 dB</div></div>
-    </div>
-    <div class="db-row">
-      <span class="db-label">Concert rock</span>
-      <div class="db-track"><div class="db-fill db-danger" style="width: 95%">110 dB</div></div>
-    </div>
-    <div class="db-row">
-      <span class="db-label">Seuil de douleur</span>
-      <div class="db-track"><div class="db-fill db-danger" style="width: 100%">125 dB</div></div>
-    </div>
-  </div>
 
   <h3>Merlin Bird ID pour la reconnaissance des chants</h3>
   <p>Développée par le <em>Cornell Lab of Ornithology</em>, cette application écoute l'environnement et propose en temps réel le nom des espèces d'oiseaux qui chantent. <strong>À préparer avant l'atelier</strong> : installer l'application, puis télécharger le pack gratuit « Europe occidentale » (≈ 200 Mo) pour un fonctionnement 100% hors-ligne. (D'autres alternatives comme <em>BirdNET</em> ou <em>BirdWeather</em> peuvent être explorées en complément).</p>
