@@ -82,14 +82,71 @@ soundscape:
 
   <h2>Les outils de l'enquête</h2>
 
-  <h3>Un sonomètre portatif : Fizziq</h3>
-  <p>Fizziq est une application gratuite développée par la fondation <em>La main à la pâte</em>. Elle transforme le smartphone en laboratoire de poche et en sonomètre&nbsp;: elle permet de lire le niveau en décibels (dB) pour évaluer et comparer le niveau sonore d'une zone à l'autre.</p>
+  <h3>Le sonomètre portatif Fizziq</h3>
+  <p>Fizziq est une application qui transforme le smartphone en un véritable laboratoire de poche. Dans le cadre de cette enquête, elle permet notamment de <strong>mesurer le niveau sonore en temps réel (décibels)</strong>, de géolocaliser son parcours grâce au GPS, ou d'enregistrer et annoter des données.</p>
+  <ul>
+    <li><em>Installation :</em> Rechercher "Fizziq" dans l'App Store ou Google Play. L'application est entièrement gratuite.</li>
+  </ul>
 
-  <h3>Reconnaissance des chants : Merlin Bird ID</h3>
+  <h3>Comprendre les décibels</h3>
+  <p>Le décibel (dB) sert à quantifier le niveau de pression acoustique. L'échelle étant logarithmique, une petite variation en dB traduit un changement d'énergie considérable : <strong>+10 dB correspond à un son 10 fois plus puissant</strong> en énergie, bien que perçu environ 2 fois plus fort par notre oreille.</p>
+
+  <div class="db-chart">
+    <div class="db-row">
+      <span class="db-label">Seuil d'audition (0 dB)</span>
+      <div class="db-track"><div class="db-fill db-ok" style="width: 15%">0 dB</div></div>
+    </div>
+    <div class="db-row">
+      <span class="db-label">Chuchotement</span>
+      <div class="db-track"><div class="db-fill db-ok" style="width: 30%">25 dB</div></div>
+    </div>
+    <div class="db-row">
+      <span class="db-label">Conversation normale</span>
+      <div class="db-track"><div class="db-fill db-ok" style="width: 50%">45 dB</div></div>
+    </div>
+    <div class="db-row">
+      <span class="db-label">Rue animée, aspirateur</span>
+      <div class="db-track"><div class="db-fill db-warning" style="width: 70%">70 dB</div></div>
+    </div>
+    <div class="db-row">
+      <span class="db-label">Tondeuse, moto</span>
+      <div class="db-track"><div class="db-fill db-warning" style="width: 85%">90 dB</div></div>
+    </div>
+    <div class="db-row">
+      <span class="db-label">Concert rock</span>
+      <div class="db-track"><div class="db-fill db-danger" style="width: 95%">110 dB</div></div>
+    </div>
+    <div class="db-row">
+      <span class="db-label">Seuil de douleur</span>
+      <div class="db-track"><div class="db-fill db-danger" style="width: 100%">125 dB</div></div>
+    </div>
+  </div>
+
+
+  <h3>Merlin Bird ID pour la reconnaissance des chants</h3>
   <p>Développée par le <em>Cornell Lab of Ornithology</em>, cette application écoute l'environnement et propose en temps réel le nom des espèces d'oiseaux qui chantent. <strong>À préparer avant l'atelier</strong> : installer l'application, puis télécharger le pack gratuit « Europe occidentale » (≈ 200 Mo) pour un fonctionnement 100% hors-ligne.</p>
 
-  <h3>Optionnel : La parabole directionnelle BirdMic</h3>
-  <p>La parabole BirdMic se branche directement sur la prise audio du smartphone. En agissant comme un miroir acoustique, elle concentre et amplifie les ondes sonores venant de la direction visée, isolant le chant de l'oiseau des bruits de fond urbains.</p>
+  Autres applis à lister
+  
+
+  <h3>Optionnel : Utiliser Merlin avec une parabole directionnelle</h3>
+
+## Qu'est-ce qu'une parabole directionnelle ?
+Une parabole directionnelle (comme **BirdMic**) est un dispositif qui concentre et amplifie les sons venant d'une direction précise.
+
+* **Le principe du miroir** : La grande coupole en forme de parabole agit comme un miroir acoustique. Elle réfléchit les ondes sonores et les renvoie toutes vers un point central : **le micro placé au foyer**.
+* **Résultat** : Les sons venant de la direction visée sont fortement amplifiés, tandis que les sons venant d'ailleurs (derrière, sur les côtés) sont atténués.
+
+Avec une parabole branchée au smartphone, l'application **Merlin Bird ID** bénéficie d'un son beaucoup plus net et plus focalisé, ce qui améliore considérablement la détection et l'identification des chants d'oiseaux.
+
+## Comment utiliser Merlin avec une parabole ?
+1.  **Brancher BirdMic** : Connecter le micro directionnel au smartphone (via prise jack ou adaptateur USB-C / Lightning).
+2.  **Ouvrir l'application** : Lancer Merlin → *Sound ID*.
+3.  **Viser** : Pointer la parabole vers l'oiseau ou la zone d'écoute choisie.
+4.  **Capturer** : Rester parfaitement immobile et silencieux pendant l'enregistrement.
+
+
+  
 
   <h2>Déroulement de l'atelier</h2>
 
