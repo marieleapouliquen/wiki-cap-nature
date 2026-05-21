@@ -123,7 +123,7 @@ img { max-width: 100%; height: auto; }
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 1.2rem 0; /* Un peu plus d'espace pour respirer */
+  padding: 1.2rem 0;
 }
 
 .header-inner {
@@ -131,16 +131,17 @@ img { max-width: 100%; height: auto; }
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
-  align-items: center;         /* Aligne verticalement le bloc titre et le menu */
-  justify-content: space-between; /* Pousse le titre à gauche et le menu à droite */
-  gap: 2rem;
+  align-items: flex-start;     /* Aligne le menu sur le haut du titre principal */
+  justify-content: space-between;
+  gap: 3rem;                   /* Crée un espace de sécurité entre le titre et le menu */
 }
 
 .brand {
   display: flex;
-  flex-direction: column;   /* Force le titre et le sous-titre à s'empiler */
+  flex-direction: column;
   text-decoration: none;
   line-height: 1.2;
+  flex: 1;                     /* Autorise le titre à occuper l'espace requis à gauche */
 }
 
 .brand-title {
@@ -156,10 +157,11 @@ img { max-width: 100%; height: auto; }
   font-size: 0.85rem;
   color: var(--color-muted);
   font-weight: 400;
-  margin-top: 0.2rem;
+  margin-top: 0.3rem;
+  max-width: 480px;            /* Évite que le sous-titre ne s'étale trop loin vers la droite */
 }
 
-/* Bouton hamburger pour le responsive mobile */
+/* Bouton hamburger responsive */
 .nav-toggle {
   display: none;
   background: none;
@@ -172,7 +174,8 @@ img { max-width: 100%; height: auto; }
 }
 
 .main-nav {
-  margin-left: auto;        /* Force le menu tout à droite */
+  flex-shrink: 0;              /* Empêche le menu de se rétrécir ou de se déformer */
+  margin-top: 0.2rem;          /* Aligne parfaitement les boutons du menu sur la ligne du grand titre */
 }
 
 .main-nav ul {
@@ -180,7 +183,7 @@ img { max-width: 100%; height: auto; }
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 0.5rem;              /* Espace optimal pour les boutons à pastilles */
+  gap: 0.5rem;
   align-items: center;
 }
 
@@ -189,20 +192,21 @@ img { max-width: 100%; height: auto; }
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 400;
-  padding: 0.4rem 0.8rem;   /* Espace interne pour la couleur de fond au survol */
-  border-radius: 4px;       /* Coins arrondis pour l'effet de pastille */
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
   transition: all 0.15s ease;
+  white-space: nowrap;         /* Empêche les mots du menu (ex: "A propos") de se couper en deux */
 }
 
 .main-nav a:hover {
-  color: var(--teal-deep);   /* Texte en teal foncé au survol */
-  background: var(--mint);  /* Fond menthe pâle au survol */
+  color: var(--teal-deep);
+  background: var(--mint);
 }
 
 .main-nav a.active {
   color: var(--teal-dark);
   font-weight: 500;
-  background: var(--mint-deep); /* Fond menthe soutenu pour l'élément actif */
+  background: var(--mint-deep);
 }
 
 /* --- Conteneurs de pages globaux --- */
