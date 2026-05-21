@@ -138,20 +138,20 @@ Exemple d'activité:
 
 
   <h3>Fiches pédagogiques</h3>
-  <p>Retrouvez les fiches d'activités et guides d'identification complets à utiliser sur le terrain :</p>
   
   <div class="resource-links">
     <a class="resource-link" href="{{ '/module-oiseaux/fiche1-soundscape/' | relative_url }}">
       <span class="resource-link-label">Fiche Scientifique 1</span>
       <span class="resource-link-title">Le Langage des Oiseaux</span>
-      <span class="resource-link-desc">Comprendre les fonctions du chant, l'apprentissage culturel et tester ses acquis avec le grand Quiz.</span>
     </a>
-    <a class="resource-link" href="{{ '/module-oiseaux/fiche2-merlin/' | relative_url }}">
+    <a class="resource-link" href="{{ '/module-oiseaux/fiche2-chant/' | relative_url }}">
       <span class="resource-link-label">Fiche Scientifique 2</span>
+      <span class="resource-link-title">Le Langage des Oiseaux</span>
+    </a>
+    <a class="resource-link" href="{{ '/module-oiseaux/fiche3-sonogramme/' | relative_url }}">
+      <span class="resource-link-label">Fiche Scientifique 3</span>
       <span class="resource-link-title">Lire un spectrogramme</span>
-      <span class="resource-link-desc"> ... </span>
     </a>
   </div>
-
 
 </main>
