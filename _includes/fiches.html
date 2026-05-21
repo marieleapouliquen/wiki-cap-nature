@@ -1,0 +1,13 @@
+<div class="fiche-grid">
+  {%- for fiche in include.fiches -%}
+  <div class="fiche-card">
+    <div class="fiche-body">
+      <h3 class="fiche-title">{{ fiche.title }}</h3>
+      <p class="fiche-desc">{{ fiche.desc }}</p>
+    </div>
+    <a href="{{ fiche.file | prepend: '/assets/fiches/' | relative_url }}" class="fiche-btn" download>
+      <span class="fiche-btn-icon">⬇</span> Télécharger la fiche (PDF)
+    </a>
+  </div>
+  {%- endfor -%}
+</div>

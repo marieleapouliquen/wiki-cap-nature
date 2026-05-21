@@ -1,34 +1,45 @@
+# -----------------------------------------------------------------------------
+# Réglages du site
+# -----------------------------------------------------------------------------
 title: Cap Nature
 tagline: Ateliers Birds
 description: >-
-  Guide pour animer les ateliers Cap Nature :
-  (Re)découvrir la nature avec des capteurs participatifs.
+  Guide libre pour animer les ateliers Cap Nature — Birds :
+  (re)découvrir la nature avec des capteurs participatifs.
+  À destination des enseignants et éducateurs nature.
 lang: fr
+timezone: Europe/Paris
 
-# URL de base : si le site est publié sur https://<user>.github.io/cap-nature/
-# alors baseurl doit valoir "/cap-nature". Si publié sur un domaine racine, laisser "".
+# URL de base : le site est publié sur https://<user>.github.io/wiki-cap-nature/
+# donc baseurl vaut "/wiki-cap-nature". Pour un domaine racine, mettre "".
 baseurl: "/wiki-cap-nature"
 url: ""
-
-# Navigation principale (ordre des onglets)
-nav:
-  - title: Accueil
-    url: /
-  - title: Protocole
-    url: /protocole/
-  - title: Matériel
-    url: /materiel/
-  - title: Ressources
-    url: /ressources/
 
 # Crédits photos affichés dans le pied de page de l'accueil
 photo_credits: "Amee Fairbank-Brown, Don Coombez, Andrew Odintsov, Konstantin Nezhbert, Lex Melony, Vincent van Zalinge — Unsplash"
 
-# Réglages Jekyll
+# -----------------------------------------------------------------------------
+# Build
+# -----------------------------------------------------------------------------
 markdown: kramdown
 permalink: pretty
 
-# Exclusions du build
+include:
+  - _pages
+
 exclude:
+  - Gemfile
+  - Gemfile.lock
   - README.md
   - LICENSE
+
+# Collections (les pages vivent dans _pages/)
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# -----------------------------------------------------------------------------
+# Navigation
+# -----------------------------------------------------------------------------
+# Le menu est défini dans _data/navigation.yml

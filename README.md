@@ -5,83 +5,50 @@ Site du guide **Cap Nature — Birds** : (re)découvrir la nature avec des capte
 
 Site statique généré avec **Jekyll** et publié sur **GitHub Pages**.
 
+## Structure du dépôt
+
+```
+_config.yml              ← réglages du site
+_data/
+└── navigation.yml       ← le menu (modifiez l'ordre/les libellés ici)
+_pages/                  ← les pages de contenu (.md)
+├── protocole.md
+├── materiel.md
+└── ressources.md
+index.md                 ← page d'accueil
+_layouts/                ← gabarits (squelette des pages)
+├── default.html
+└── page.html
+_includes/               ← composants réutilisables (header, footer, cartes…)
+assets/
+├── css/main.css         ← le design (couleurs, polices, mise en page)
+├── js/wiki.js           ← menu mobile
+├── img/                 ← photos d'oiseaux
+└── fiches/              ← fiches pédagogiques (PDF)
+```
+
 ## Comment éditer le site
 
-Le contenu de chaque page est dans un fichier Markdown (`.md`) à la racine :
+Le contenu de chaque page est dans un fichier Markdown (`.md`) :
 
 | Page | Fichier |
 |------|---------|
 | Accueil | `index.md` |
-| Protocole | `protocole.md` |
-| Matériel | `materiel.md` |
-| Ressources | `ressources.md` |
+| Protocole | `_pages/protocole.md` |
+| Matériel | `_pages/materiel.md` |
+| Ressources | `_pages/ressources.md` |
 
-Pour modifier un texte, ouvrez le `.md` correspondant et éditez-le directement (sur GitHub, le petit crayon ✏️ en haut à droite du fichier). Le Markdown s'écrit simplement :
-
-```markdown
-## Un titre de section
-
-Un paragraphe avec du **gras** et un [lien](https://exemple.fr).
-
-- Un élément de liste
-- Un autre
-```
-
-Les éléments visuels (couleurs, mise en page, hero, bande de photos) sont gérés
-ailleurs et s'appliquent automatiquement — vous n'avez pas à y toucher.
-
-## Modifier des éléments structurés
-
-Certaines données sont en haut du fichier `.md`, entre les deux lignes `---`
-(c'est le « front matter »). Par exemple, pour la page Ressources, chaque lien
-est une entrée facile à éditer :
-
-```yaml
-- name: Merlin Bird ID
-  tag: Gratuit
-  url: https://merlin.allaboutbirds.org/
-  desc: Description du lien…
-```
-
-Idem pour les photos de l'accueil (`index.md`), les cartes, et la timeline.
-
-## Structure du dépôt
-
-```
-_config.yml          ← réglages du site (titre, navigation, etc.)
-index.md             ← page d'accueil
-protocole.md         ← page Protocole
-materiel.md          ← page Matériel
-ressources.md        ← page Ressources
-_layouts/            ← gabarits (squelette des pages) — rarement à toucher
-_includes/           ← composants réutilisables (header, footer, cartes…)
-assets/
-├── css/style.css    ← le design (couleurs, polices, mise en page)
-├── js/wiki.js       ← menu mobile
-└── img/             ← les photos d'oiseaux
-```
+Pour modifier un texte, ouvrez le `.md` correspondant et éditez-le directement
+(sur GitHub, le crayon ✏️). Le menu se modifie dans `_data/navigation.yml`.
 
 ## Déployer sur GitHub Pages
 
-1. Pousser ce dépôt sur GitHub
-2. **Settings → Pages**
-3. Source : *Deploy from a branch*, branche `main`, dossier `/ (root)`
-4. GitHub détecte Jekyll et construit le site automatiquement
+1. **Settings → Pages**
+2. Source : *Deploy from a branch*, branche `main`, dossier `/ (root)`
+3. GitHub détecte Jekyll et construit le site automatiquement
 
-> Si le site est publié sur `https://<utilisateur>.github.io/cap-nature/`,
-> ouvrez `_config.yml` et mettez `baseurl: "/cap-nature"`.
-> S'il est sur un domaine racine, laissez `baseurl: ""`.
-
-## Tester en local (facultatif)
-
-Avec Ruby installé :
-
-```bash
-gem install bundler jekyll
-jekyll serve
-```
-
-Puis ouvrir `http://localhost:4000`.
+> Publié sur `https://<utilisateur>.github.io/wiki-cap-nature/`,
+> donc `baseurl: "/wiki-cap-nature"` dans `_config.yml`.
 
 ## Licence
 

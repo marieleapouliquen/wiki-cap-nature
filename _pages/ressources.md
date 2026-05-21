@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /ressources/
 title: Ressources externes
 lead: "Une sélection de sites, applications, associations et lectures pour prolonger l'expérience des ateliers — et continuer à écouter le vivant."
 toc:
@@ -17,6 +18,16 @@ toc:
     label: Lectures
   - id: boutiques
     label: Boutiques & matériel
+  - id: fiches
+    label: Fiches à imprimer
+
+fiches:
+  - title: Le paysage sonore
+    desc: "Comprendre la notion de paysage sonore (biophonie, géophonie, anthrophonie), l'échelle des décibels, et une activité de cartographie sonore avec Merlin et FizziQ."
+    file: paysage-sonore.pdf
+  - title: Le chant des oiseaux
+    desc: "Pourquoi et comment les oiseaux chantent, l'apprentissage du chant, l'effet de la pollution sonore — accompagné d'un quiz pour tester ses connaissances."
+    file: chant-oiseaux.pdf
 
 applis:
   - name: Merlin Bird ID
@@ -119,6 +130,12 @@ boutiques:
 
 <h2 id="boutiques">Boutiques & matériel</h2>
 {% include res-list.html items=page.boutiques %}
+
+<h2 id="fiches">Fiches à imprimer</h2>
+
+Deux fiches pédagogiques à distribuer pour approfondir l'écoute et la connaissance des oiseaux.
+
+{% include fiches.html fiches=page.fiches %}
 
 <div class="callout info" markdown="1">
 **À propos de ces liens** — Ces ressources sont proposées à titre indicatif ; Cap Nature n'a aucun lien commercial avec ces sites. N'hésitez pas à explorer aussi les structures d'éducation à l'environnement de votre territoire, souvent les mieux placées pour un accompagnement local.

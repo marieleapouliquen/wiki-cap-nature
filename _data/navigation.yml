@@ -1,0 +1,9 @@
+# Menu principal du site — modifiez l'ordre ou les libellés ici
+- title: Accueil
+  url: /
+- title: Protocole
+  url: /protocole/
+- title: Matériel
+  url: /materiel/
+- title: Ressources
+  url: /ressources/

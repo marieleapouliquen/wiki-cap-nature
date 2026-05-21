@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /materiel/
 title: Matériel & applications
 lead: "Trois capteurs complémentaires, des coûts raisonnables, des alternatives possibles."
 toc:
@@ -19,12 +20,22 @@ toc:
     label: Alternatives & low-tech
   - id: depannage
     label: Dépannage
+  - id: fiches
+    label: Fiches à imprimer
 sidebar_links_title: Liens utiles
 sidebar_links:
   - label: Protocole pas-à-pas
     url: /protocole/
   - label: Ressources externes
     url: /ressources/
+
+fiches:
+  - title: Identifier les oiseaux avec Merlin Bird ID
+    desc: "Installation de l'application, principe du sonagramme, et deux défis d'écoute à mener sur le terrain (balade silencieuse, milieu ouvert vs fermé)."
+    file: merlin-id.pdf
+  - title: Utiliser Merlin avec une parabole directionnelle
+    desc: "Comment brancher et utiliser une parabole pour amplifier les chants, et un éclairage historique sur les pionniers de l'audionaturalisme."
+    file: merlin-parabole.pdf
 ---
 
 <h2 id="vue-ensemble">Vue d'ensemble du dispositif</h2>
@@ -191,6 +202,12 @@ L'atelier peut être conduit en mode *low-tech* : identification à l'oreille à
 | La parabole ne « passe » pas | Vérifier le type de prise ; tester un autre adaptateur ; vérifier les paramètres audio |
 | Batterie qui chute | Prévoir des batteries externes ; baisser la luminosité d'écran |
 | Espèce détectée « bizarre » | Faux positif possible (sirène, alarme) ; vérifier visuellement ; relancer la session |
+
+<h2 id="fiches">Fiches à imprimer</h2>
+
+Deux fiches pédagogiques prêtes à imprimer et à distribuer aux participants pendant l'atelier.
+
+{% include fiches.html fiches=page.fiches %}
 
 <p style="margin-top: 2.5rem; text-align: center;">
   <a href="{{ '/ressources/' | relative_url }}" class="btn">Voir les ressources externes →</a>

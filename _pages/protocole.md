@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /protocole/
 title: Protocole pas-à-pas
 lead: Le déroulé complet d'un atelier de 75 minutes, du repérage à la restitution.
 sidebar_title: Le protocole

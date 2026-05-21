@@ -9,7 +9,7 @@
     <button class="nav-toggle" aria-label="Menu">☰</button>
     <nav class="main-nav">
       <ul>
-        {%- for item in site.nav -%}
+        {%- for item in site.data.navigation -%}
           {%- assign item_url = item.url | relative_url -%}
           {%- assign current = page.url | relative_url -%}
           <li><a href="{{ item_url }}"{% if current == item_url %} class="active"{% endif %}>{{ item.title }}</a></li>

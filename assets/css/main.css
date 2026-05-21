@@ -1,6 +1,6 @@
 /* ============================================================
    Cap Nature — Feuille de style
-   Epuré, clair, minimal. Palette vert / teal.
+   Direction : épuré, clair, minimal. Palette vert / teal.
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap');
@@ -299,9 +299,9 @@ tr:last-child td { border-bottom: none; }
   margin: 0 auto;
   max-width: 56ch;
 }
+/* n'ajoute l'espace au-dessus des pastilles que si elles existent */
 .hero-meta:not(:empty) { margin-top: 1.5rem; }
 .hero-meta { display: flex; gap: 0.7rem; flex-wrap: wrap; justify-content: center; }
-
 .hero-tag {
   background: var(--paper);
   border: 1px solid var(--line);
@@ -316,11 +316,12 @@ tr:last-child td { border-bottom: none; }
 .section-wide { padding: 3rem 2rem; }
 .section-wide.tinted { background: var(--mint); }
 
+/* Lisibilité : un paragraphe d'introduction dans une bande pleine largeur
+   reste dans une colonne de lecture centrée, comme le reste du contenu. */
 .section-wide .section > p {
   max-width: 820px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   font-size: 1.1rem;
   color: var(--ink);
 }
@@ -480,3 +481,46 @@ tr:last-child td { border-bottom: none; }
   font-weight: 700; color: var(--green); background: var(--mint); padding: 0.12rem 0.5rem;
   border-radius: 20px; margin-left: 0.5rem; vertical-align: middle;
 }
+
+/* ---------- FICHES TÉLÉCHARGEABLES ---------- */
+.fiche-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 1.75rem 0;
+}
+.fiche-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+.fiche-card:hover { border-color: var(--green-soft); box-shadow: var(--shadow); }
+.fiche-body { flex: 1; }
+.fiche-title {
+  font-family: var(--serif);
+  font-weight: 600;
+  color: var(--teal-dark);
+  font-size: 1.15rem;
+  margin: 0 0 0.5rem;
+}
+.fiche-desc { font-size: 0.92rem; color: var(--ink-soft); margin: 0 0 1.25rem; line-height: 1.55; }
+.fiche-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: flex-start;
+  background: var(--mint);
+  color: var(--teal-deep);
+  text-decoration: none;
+  padding: 0.6rem 1.1rem;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+.fiche-btn:hover { background: var(--teal); color: var(--paper); }
+.fiche-btn-icon { font-size: 1rem; line-height: 1; }
