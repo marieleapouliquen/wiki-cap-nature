@@ -216,12 +216,16 @@ Pour la mise en contexte, quelques idées :
   <p><strong>Mise en attention :</strong> Proposez une écoute silencieuse à oreilles nues pendant quelques minutes. Cet exercice introduit naturellement les notions de biophonie, géophonie et anthrophonie.</p>
   <p><strong>Enquête instrumentée :</strong> Chaque groupe explore la zone délimitée. À chaque station d'écoute, la consigne est simple : s'arrêter en silence, mesurer les décibels avec Fizziq, lancer Merlin Sound ID pour identifier les espèces, et consigner l'ensemble sur la fiche d'observation.</p>
 
+Exemple d'activité: 
 
+  <h3>Activité : Réaliser une soundmap</h3>
+  <ol>
+    <li><strong>Définir la zone d'étude :</strong> Divisez le terrain d'exploration en plusieurs secteurs distincts pour y établir des points d'écoute fixes.</li>
+    <li><strong>Prendre les mesures :</strong> À chaque station, restez immobile : utilisez Fizziq pour capter le niveau sonore (dB), lancez Merlin pour répertorier les oiseaux présents, et notez l'heure ainsi que la météo.</li>
+    <li><strong>Analyser :</strong> Prenez le temps d'étudier le profil de chaque point (dominance des sons, niveau moyen) et consignez votre ressenti qualitatif.</li>
+    <li><strong>Cartographier :</strong> Pour conclure, positionnez vos relevés sur une carte géographique en attribuant des icônes thématiques à chaque type de son rencontré.</li>
+  </ol>
 
-
-  <hr>
-
- 
 
   <h3>Fiches pédagogiques</h3>
   <p>Retrouvez les fiches d'activités et guides d'identification complets à utiliser sur le terrain :</p>
