@@ -60,7 +60,7 @@ cards:
 <div class="section" style="max-width: 820px; margin-top: 2rem;">
   <main class="content" style="max-width: none;">
     <h2>À propos des ateliers</h2>
-    <p>Les ateliers combine l'usage de capteurs environnementaux et l'exploration sensible d'un site naturel ou urbain. L'idée est simple : utiliser quelques outils accessibles pour <strong>réveiller l'attention au vivant</strong> qui nous entoure à travers l'écoute des oiseaux.</p>
+    <p>Les ateliers combine l'usage de capteurs environnementaux et l'exploration sensible d'un site naturel ou urbain. L'idée est simple : utiliser quelques outils accessibles pour <strong>réveiller l'attention au vivant</strong> qui nous entoure.</p>
     
     <div class="callout info" style="margin-top: 2rem;">
       <p class="callout-title">Licence libre (CC BY-SA 4.0)</p>
