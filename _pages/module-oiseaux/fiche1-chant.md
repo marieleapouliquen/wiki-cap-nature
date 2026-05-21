@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Le Paysage Sonore
+title: Le chant des oiseaux : un langage complexe
 ---
 
 <main class="content">
