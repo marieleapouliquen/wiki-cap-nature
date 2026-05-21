@@ -37,28 +37,22 @@ cards:
 ---
 {% include hero.html title=page.hero.title subtitle=page.hero.subtitle tags=page.hero.tags %}
 
-<div class="section" style="max-width: 820px;">
-  <main class="content" style="max-width: none;">
-    <h2>Pourquoi ces ateliers ?</h2>
-    <p>Les ateliers <strong>Cap Nature</strong> sont des dispositifs pédagogiques qui combinent l'usage de capteurs environnementaux et l'exploration sensible d'un site naturel ou urbain.</p>
-    <p>L'idée est simple : utiliser quelques outils accessibles pour <strong>réveiller l'attention au vivant</strong> qui nous entoure, même en ville.</p>
-  </main>
-</div>
+<h2>Le projet</h2>
+
+<p>Les ateliers <strong>Cap Nature</strong> sont des dispositifs pédagogiques qui combinent l'usage de capteurs environnementaux et l'exploration sensible d'un site naturel ou urbain. L'idée est simple : utiliser quelques outils accessibles pour <strong>réveiller l'attention au vivant</strong> qui nous entoure, même en ville.</p>
+
+<h2>Le WIKI</h2>
+
+<p>Ce guide a pour but de permettre à toute personne intéressée — enseignant·e, animateur·ice nature, éducateur·ice à l'environnement — de <strong>mener l'atelier</strong> dans son propre contexte, avec ses propres outils et son propre public.</p>
 
 <section class="section-wide tinted">
   <div class="section">
-  <p>Ce guide a pour but de permettre à toute personne intéressée — enseignant·e, animateur·ice nature, éducateur·ice à l'environnement — de <strong>mener l'atelier</strong> dans son propre contexte, avec ses propres outils et son propre public.</p>
-  
   {% include cards.html cards=page.cards %}
   </div>
 </section>
-<div class="section" style="max-width: 820px;">
-  <main class="content" style="max-width: none;">
-    <p style="text-align: center; margin-top: 2.5rem;">
-      <a href="{{ '/protocole/' | relative_url }}" class="btn">Commencer →</a>
-    </p>
-  </main>
+
+<p style="text-align: center; margin-top: 2.5rem;">
+  <a href="{{ '/protocole/' | relative_url }}" class="btn">Commencer →</a>
+</p>
 
 {% include photo-band.html photos=page.photos %}
-  
-</div>
