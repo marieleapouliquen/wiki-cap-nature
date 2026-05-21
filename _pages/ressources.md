@@ -4,24 +4,10 @@ permalink: /ressources/
 title: Ressources externes
 lead: "Une sélection de sites, applications, associations et lectures pour prolonger l'expérience des ateliers — et continuer à écouter le vivant."
 toc:
-  - id: applis
-    label: Applications
-  - id: identification
-    label: Identifier les oiseaux
-  - id: sciences
-    label: Sciences participatives
-  - id: associations
-    label: Associations & réseaux
-  - id: sons
-    label: Écouter la nature
-  - id: lectures
-    label: Lectures
-  - id: boutiques
-    label: Boutiques & matériel
-  - id: fiches
-    label: Fiches à imprimer
   - id: sono-intro
     label: Lire un sonogramme
+  - id: fiches
+    label: Fiches à imprimer
 
 fiches:
   - title: Identifier les oiseaux avec Merlin Bird ID
@@ -36,114 +22,7 @@ fiches:
   - title: Le chant des oiseaux
     desc: "Pourquoi et comment les oiseaux chantent, l'apprentissage du chant, l'effet de la pollution sonore — accompagné d'un quiz pour tester ses connaissances."
     file: chant-oiseaux.pdf
-
-applis:
-  - name: Merlin Bird ID
-    tag: Gratuit
-    url: https://merlin.allaboutbirds.org/
-    desc: "L'application du Cornell Lab of Ornithology qui identifie les oiseaux par leur chant en temps réel. Fonctionne hors-ligne après téléchargement du pack Europe occidentale."
-  - name: FizziQ
-    tag: Gratuit
-    url: https://www.fizziq.org/
-    desc: "Application de la fondation La main à la pâte. Transforme le smartphone en sonomètre et autres instruments de mesure. Sans publicité ni collecte de données."
-  - name: BirdNET
-    tag: Gratuit
-    url: https://www.birdnet.cornell.edu/
-    desc: "Une alternative à Merlin, également développée par Cornell. Permet aussi d'analyser des fichiers audio enregistrés."
-
-identification:
-  - name: Oiseaux.net
-    url: https://www.oiseaux.net/
-    desc: "Encyclopédie en ligne de référence sur les oiseaux, avec fiches descriptives, photos et enregistrements de chants pour chaque espèce."
-  - name: Xeno-canto
-    url: https://www.xeno-canto.org/
-    desc: "Banque collaborative mondiale de chants d'oiseaux. Chaque enregistrement est accompagné de son sonogramme — idéal pour s'entraîner à l'écoute."
-  - name: Guides d'identification LPO
-    url: https://www.lpo.fr/decouvrir-la-nature/apprendre-a-identifier
-    desc: "Fiches et affiches téléchargeables de la Ligue pour la Protection des Oiseaux, notamment sur les oiseaux des jardins."
-
-sciences:
-  - name: Faune-France
-    url: https://www.faune-france.org/
-    desc: "Plateforme nationale de saisie d'observations naturalistes. Vos observations contribuent à la connaissance de la biodiversité."
-  - name: Vigie-Nature École
-    url: https://www.vigienature-ecole.fr/
-    desc: "Programme de sciences participatives du Muséum national d'Histoire naturelle, conçu pour les enseignants et leurs classes."
-  - name: Oiseaux des jardins
-    url: https://oiseauxdesjardins.fr/
-    desc: "Observatoire participatif LPO + Muséum, parfait pour un suivi simple et régulier à la mangeoire ou dans la cour."
-
-associations:
-  - name: LPO — Ligue pour la Protection des Oiseaux
-    url: https://www.lpo.fr/
-    desc: "Réseau national avec des antennes locales proposant des animations, des formations et des ressources pédagogiques."
-  - name: Bretagne Vivante
-    url: https://www.bretagne-vivante.org/
-    desc: "Association naturaliste régionale proposant des animations scolaires et des sorties de découverte."
-  - name: Réseau des CPIE
-    url: https://www.cpie.fr/
-    desc: "Centres Permanents d'Initiatives pour l'Environnement, présents partout en France pour l'éducation à l'environnement."
-  - name: Réseau École et Nature
-    url: https://reseauecoleetnature.org/
-    desc: "Plateforme nationale d'éducation à l'environnement, riche en outils et retours d'expérience pédagogiques."
-
-sons:
-  - name: Sonothèque du Muséum
-    url: https://sonotheque.mnhn.fr/
-    desc: "Collection sonore du Muséum national d'Histoire naturelle : enregistrements naturalistes de référence."
-  - name: Boris Jollivet, audionaturaliste
-    url: https://www.borisjollivet.com/
-    desc: "Le travail d'un preneur de sons de la nature : une belle porte d'entrée vers l'écoute fine des paysages sonores."
-
-lectures:
-  - name: "R. Murray Schafer — Le paysage sonore"
-    url: https://www.wildproject.org/livres/le-paysage-sonore
-    desc: "Le livre fondateur de l'écologie sonore, qui a forgé la notion de « paysage sonore »."
-  - name: "Bernie Krause — Le grand orchestre animal"
-    url: https://www.actes-sud.fr/
-    desc: "Un classique accessible sur la bioacoustique et la richesse sonore du vivant."
-  - name: "Jérôme Sueur — Histoire naturelle du silence"
-    url: https://www.actes-sud.fr/
-    desc: "Une réflexion sur le silence et le bruit par un acousticien du Muséum."
-
-boutiques:
-  - name: Bird Collective
-    url: https://www.birdcollective.com/
-    desc: "Boutique engagée autour des oiseaux (guides, accessoires, vêtements), qui reverse une part de ses ventes à la conservation. Une belle source d'inspiration visuelle."
-  - name: LPO Boutique
-    url: https://www.lpo-boutique.com/
-    desc: "Jumelles, guides, mangeoires, nichoirs et matériel d'observation, avec des bénéfices au profit de la protection des oiseaux."
-  - name: Telinga
-    url: https://www.telinga.com/
-    desc: "Fabricant de microphones paraboliques pour l'enregistrement de la nature (modèles utilisés dans l'atelier)."
 ---
-
-<h2 id="applis">Applications utiles</h2>
-{% include res-list.html items=page.applis %}
-
-<h2 id="identification">Identifier les oiseaux</h2>
-{% include res-list.html items=page.identification %}
-
-<h2 id="sciences">Sciences participatives</h2>
-{% include res-list.html items=page.sciences %}
-
-<h2 id="associations">Associations & réseaux</h2>
-{% include res-list.html items=page.associations %}
-
-<h2 id="sons">Écouter la nature</h2>
-{% include res-list.html items=page.sons %}
-
-<h2 id="lectures">Lectures pour aller plus loin</h2>
-{% include res-list.html items=page.lectures %}
-
-<h2 id="boutiques">Boutiques & matériel</h2>
-{% include res-list.html items=page.boutiques %}
-
-<h2 id="fiches">Fiches à imprimer</h2>
-
-Deux fiches pédagogiques à distribuer pour approfondir l'écoute et la connaissance des oiseaux.
-
-{% include fiches.html fiches=page.fiches %}
 
 <h2 id="sono-intro">Lire un sonogramme</h2>
 
@@ -817,99 +696,14 @@ Quand Merlin identifie un oiseau, il affiche à l'écran un **sonogramme** : l'i
   <p>C'est une subtilité importante : Merlin <strong>convertit le son en image, puis fait de la reconnaissance d'image</strong>. La même technologie qui sert à reconnaître un chat sur une photo sert à reconnaître un merle sur un sonogramme. C'est ce qui explique pourquoi un son tronqué, un bruit de fond fort, ou un chant inhabituel peuvent dérouter l'app : visuellement, le sonogramme ne ressemble plus assez aux exemples appris.</p>
 </div>
 
-<p>Pendant l'atelier, prenez 30 secondes pour montrer à un groupe ce qui défile sur l'écran de Merlin : <strong>chaque tache colorée correspond à un son réel</strong> dans l'environnement. Quand l'app détecte une espèce, demandez aux participants : <em>“laquelle des taches a déclenché l'identification ?”</em> — c'est très formateur.</p>
+<h2 id="fiches">Fiches à imprimer</h2>
 
-<h2 id="sono-exercice">Exercice pédagogique : “devine l'espèce”</h2>
-<p>Voici un exercice de 10 minutes à faire en classe, après ou avant l'atelier :</p>
+Deux fiches pédagogiques à distribuer pour approfondir l'écoute et la connaissance des oiseaux.
 
-<div class="callout tip">
-  <p class="callout-title">🎯 Atelier de lecture de sonogrammes</p>
-  <ol>
-    <li><strong>Préparation</strong> : imprimer 6 à 8 des sonogrammes ci-dessus en cachant les noms des espèces (1 par sous-groupe).</li>
-    <li><strong>Questions guides</strong> à projeter ou distribuer :
-      <ul>
-        <li>À quelle hauteur (aiguë ou grave) se situe le chant ?</li>
-        <li>Combien de “phrases” ou de motifs distincts voyez-vous ?</li>
-        <li>Y a-t-il une structure répétée ?</li>
-        <li>Le chant est-il dense ou clairsemé ?</li>
-        <li>Quelle “famille de motif” reconnaissez-vous ? (sifflet, trille, strophe…)</li>
-      </ul>
-    </li>
-    <li><strong>Mise en commun</strong> : chaque groupe présente son sonogramme et hypothétise sur l'espèce. Le reste de la classe valide ou propose autre chose.</li>
-    <li><strong>Révélation</strong> : on découvre l'espèce, on écoute le chant (via Merlin ou xeno-canto), on compare avec ce que les groupes ont déduit visuellement.</li>
-  </ol>
-</div>
-
-<p>Cet exercice fait passer les participants d'une posture <em>d'auditeur passif</em> à une posture <em>d'analyste visuel</em>, ce qui renforce considérablement l'attention au son réel quand ils retournent sur le terrain.</p>
-
-<h2 id="sono-outils">Pour aller plus loin : enregistrer et analyser ses propres sonogrammes</h2>
-
-<p>Si vous souhaitez approfondir et générer des sonogrammes à partir de vos propres enregistrements (en classe, prolongement scientifique) :</p>
-
-<table>
-  <thead>
-    <tr><th>Outil</th><th>Plateforme</th><th>Niveau</th><th>Pour quoi</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Merlin Bird ID</strong></td>
-      <td>iOS / Android</td>
-      <td>Débutant</td>
-      <td>Affiche le sonogramme en direct pendant l'identification</td>
-    </tr>
-    <tr>
-      <td><strong>FizziQ</strong></td>
-      <td>iOS / Android / Web</td>
-      <td>Débutant</td>
-      <td>Affiche un sonogramme simple dans la fonction “Acoustique”</td>
-    </tr>
-    <tr>
-      <td><strong>Spectrogram (Pro)</strong></td>
-      <td>iOS / Android</td>
-      <td>Intermédiaire</td>
-      <td>Sonogrammes temps réel haute résolution, échelles ajustables</td>
-    </tr>
-    <tr>
-      <td><strong>Audacity</strong></td>
-      <td>Windows / Mac / Linux</td>
-      <td>Intermédiaire</td>
-      <td>Logiciel libre, ouvre un fichier audio et affiche son sonogramme (menu “Affichage du spectre”)</td>
-    </tr>
-    <tr>
-      <td><strong>Sonic Visualiser</strong></td>
-      <td>Windows / Mac / Linux</td>
-      <td>Avancé</td>
-      <td>Logiciel scientifique gratuit, conçu pour l'analyse acoustique fine</td>
-    </tr>
-    <tr>
-      <td><strong>Raven Lite</strong></td>
-      <td>Windows / Mac</td>
-      <td>Avancé</td>
-      <td>Logiciel du Cornell Lab (référence en bioacoustique), version gratuite pour usage pédagogique</td>
-    </tr>
-    <tr>
-      <td><strong>xeno-canto.org</strong></td>
-      <td>Web (navigateur)</td>
-      <td>Tout public</td>
-      <td>Base de données mondiale de chants : chaque enregistrement est affiché avec son sonogramme</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <p class="callout-title">ℹ️ Prolongement scientifique en classe</p>
-  <p>Avec <strong>Audacity</strong> (gratuit), un enregistrement de 30 secondes effectué pendant l'atelier peut être ré-ouvert en classe, agrandi, analysé. C'est un excellent pont entre l'expérience sensible (vivre le son) et l'analyse scientifique (mesurer le son). Idéal pour un projet pluridisciplinaire SVT / Physique / Numérique.</p>
-</div>
-
-<p style="margin-top: 2.5rem; text-align: center;">
-  <a href="#fiches" class="btn">Voir les fiches espèces →</a>
-</p>
+{% include fiches.html fiches=page.fiches %}
 
 
 
-<div class="callout info" markdown="1">
-**À propos de ces liens** — Ces ressources sont proposées à titre indicatif ; Cap Nature n'a aucun lien commercial avec ces sites. N'hésitez pas à explorer aussi les structures d'éducation à l'environnement de votre territoire, souvent les mieux placées pour un accompagnement local.
-</div>
 
 <p style="margin-top: 2.5rem; text-align: center;">
   <a href="{{ '/' | relative_url }}" class="btn">← Retour à l'accueil</a>
