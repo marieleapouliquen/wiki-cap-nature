@@ -47,13 +47,11 @@ stat_urbain:
 
     <div class="card-grid">
       <a class="card" href="{{ '/module-oiseaux/' | relative_url }}">
-        <span class="card-icon">🐦</span>
         <span class="card-title">Module 1 · Écoacoustique</span>
         <span class="card-desc">Initiation à l'écoute des oiseaux avec une application de reconnaissance des chants et des capteurs sonores.</span>
         <span class="card-cta">Découvrir le module →</span>
       </a>
       <div class="card card-soon">
-        <span class="card-icon">🌡️</span>
         <span class="card-title">Module 2 · Caméras thermiques</span>
         <span class="card-desc">Voir l'environnement autrement : explorer la chaleur invisible et les îlots de chaleur avec des caméras thermiques portatives.</span>
         <span class="card-cta card-cta-soon">En préparation</span>
