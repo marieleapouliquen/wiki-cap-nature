@@ -123,7 +123,7 @@ img { max-width: 100%; height: auto; }
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 1rem 0;
+  padding: 1.2rem 0; /* Un peu plus d'espace pour respirer */
 }
 
 .header-inner {
@@ -131,16 +131,35 @@ img { max-width: 100%; height: auto; }
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
+  align-items: center;         /* Aligne verticalement le bloc titre et le menu */
+  justify-content: space-between; /* Pousse le titre à gauche et le menu à droite */
+  gap: 2rem;
 }
 
-.brand { display: flex; flex-direction: column; text-decoration: none; line-height: 1.1; }
-.brand-title { font-family: var(--font-serif); font-weight: 500; font-size: 1.3rem; color: var(--teal-dark); letter-spacing: -0.01em; }
-.brand-sub { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--green); font-weight: 600; margin-top: 0.1rem; }
+.brand {
+  display: flex;
+  flex-direction: column;   /* Force le titre et le sous-titre à s'empiler */
+  text-decoration: none;
+  line-height: 1.2;
+}
 
+.brand-title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--teal-dark);
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.brand-sub {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  font-weight: 400;
+  margin-top: 0.2rem;
+}
+
+/* Bouton hamburger pour le responsive mobile */
 .nav-toggle {
   display: none;
   background: none;
@@ -152,27 +171,38 @@ img { max-width: 100%; height: auto; }
   font-size: 1.1rem;
 }
 
-.main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.5rem; }
+.main-nav {
+  margin-left: auto;        /* Force le menu tout à droite */
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;              /* Espace optimal pour les boutons à pastilles */
+  align-items: center;
+}
+
 .main-nav a {
   color: var(--color-muted);
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 400;
-  padding: 0.4rem 0.8rem;   /* Ajoute un peu d'espace interne pour la couleur de fond */
-  border-radius: 4px;       /* Coins légèrement arrondis pour un effet propre et moderne */
+  padding: 0.4rem 0.8rem;   /* Espace interne pour la couleur de fond au survol */
+  border-radius: 4px;       /* Coins arrondis pour l'effet de pastille */
   transition: all 0.15s ease;
 }
 
 .main-nav a:hover {
-  color: var(--teal-deep);   /* Le texte passe au Teal foncé */
-  background: var(--mint);  /* Le fond passe au Menthe pâle */
+  color: var(--teal-deep);   /* Texte en teal foncé au survol */
+  background: var(--mint);  /* Fond menthe pâle au survol */
 }
 
 .main-nav a.active {
   color: var(--teal-dark);
   font-weight: 500;
-  background: var(--mint-deep); /* Un fond menthe un peu plus soutenu pour l'élément actif */
-  border-bottom: none;          /* On retire la bordure pour privilégier l'effet de pastille épurée */
+  background: var(--mint-deep); /* Fond menthe soutenu pour l'élément actif */
 }
 
 /* --- Conteneurs de pages globaux --- */
