@@ -8,7 +8,7 @@ show_photo_credits: false
 
   <section class="section-full-bleed" style="background-color: #ffffff; padding: 2rem 0; margin: 0;">
     <div class="container">
-      <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
+      <div class="page-content content" style="padding-top: 0; padding-bottom: 0;">
         
         <section class="content">
           <h2 style="margin-top: 0; padding-top: 0;"><strong>Cap Nature</strong> est un dispositif d'ateliers participatifs qui invite les jeunes à renouer avec le vivant, en faisant des capteurs environnementaux des outils d'attention et de découverte du milieu naturel.</h2>
@@ -68,7 +68,7 @@ show_photo_credits: false
 
   <section class="section-full-bleed" style="background-color: #ffffff; padding: 2.5rem 0; margin: 0;">
     <div class="container">
-      <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
+      <div class="page-content content" style="padding-top: 0; padding-bottom: 0;">
         
         <section class="content">
           <h2 style="margin-top: 0; padding-top: 0;">Références bibliographiques</h2>
