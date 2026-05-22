@@ -31,58 +31,7 @@ photos:
     <h1>{{ page.title }}</h1>
     <p class="page-lead">Cet atelier d'écoacoustique participative invite les participant·es à mener une enquête sensible et instrumentée sur le paysage sonore et les oiseaux présents dans l'environnement.</p>
   </section>
-
-  <section class="content">
-    <h2>Les outils de l'enquête</h2>
-    
-    <h3>Le sonomètre portatif Fizziq</h3>
-    <p>Fizziq est une application qui transforme le smartphone en un véritable laboratoire de poche. Dans le cadre de cette enquête, elle permet notamment de <strong>mesurer le niveau sonore en temps réel (décibels)</strong>, de géolocaliser son parcours grâce au GPS, ou d'enregistrer et annoter des données.</p>
-
-    <h3>Merlin Bird ID pour la reconnaissance des chants</h3>
-    <p>Développée par le Cornell Lab of Ornithology, cette application écoute l'environnement et propose en temps réel le nom des espèces d'oiseaux qui chantent. <strong>À préparer avant l'atelier</strong> : installer l'application, puis télécharger le pack gratuit « Europe occidentale » (≈ 200 Mo) pour un fonctionnement 100% hors-ligne. (D'autres alternatives comme BirdNET ou BirdWeather peuvent être explorées en complément).</p>
-
-    <h3>Optionnel : Utiliser Merlin avec une parabole directionnelle</h3>
-    <p>Une parabole directionnelle (comme <strong>BirdMic</strong>) est un dispositif qui concentre et amplifie les ondes acoustiques venant d'une direction précise.</p>
-    <ul>
-      <li><strong>Le principe du miroir :</strong> La grande coupole en forme de parabole agit comme un réflecteur ou miroir acoustique. Elle renvoie toutes les ondes incidentes de son axe vers un point focal central : le micro placé au foyer de la parabole.</li>
-      <li><strong>Résultat :</strong> Les signaux provenant de la cible visée sont fortement amplifiés tandis que les bruits parasites latéraux et arrières sont atténués. Branchée au smartphone, elle offre à l'application Merlin un signal moins bruité qui optimise l'identification en direct.</li>
-    </ul>
-    
-    <h4>Comment utiliser la parabole sur le terrain ?</h4>
-    <ol>
-      <li>Connecter le micro directionnel au port ou à l'adaptateur du smartphone.</li>
-      <li>Lancer l'application Merlin et activer l'onglet Sound ID.</li>
-      <li>Diriger la parabole en direction des sons qui vous intriguent.</li>
-    </ol>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Outil / Solution</th>
-          <th>Type</th>
-          <th>Fonction principale dans l'atelier</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Fizziq</strong></td>
-          <td>Application mobile libre</td>
-          <td>Mesure précise de la pression acoustique en décibels (dB).</td>
-        </tr>
-        <tr>
-          <td><strong>Merlin Bird ID</strong></td>
-          <td>Application bioacoustique</td>
-          <td>Reconnaissance automatique et spectrogramme en temps réel.</td>
-        </tr>
-        <tr>
-          <td><strong>BirdMic (ou parabole)</strong></td>
-          <td>Accessoire matériel</td>
-          <td>Focalisation, isolation directionnelle et amplification des signaux.</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
+  
   <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
@@ -142,6 +91,58 @@ photos:
 
       </div>
     </div> 
+  </section>
+
+
+  <section class="content">
+    <h2>Les outils de l'enquête</h2>
+    
+    <h3>Le sonomètre portatif Fizziq</h3>
+    <p>Fizziq est une application qui transforme le smartphone en un véritable laboratoire de poche. Dans le cadre de cette enquête, elle permet notamment de <strong>mesurer le niveau sonore en temps réel (décibels)</strong>, de géolocaliser son parcours grâce au GPS, ou d'enregistrer et annoter des données.</p>
+
+    <h3>Merlin Bird ID pour la reconnaissance des chants</h3>
+    <p>Développée par le Cornell Lab of Ornithology, cette application écoute l'environnement et propose en temps réel le nom des espèces d'oiseaux qui chantent. <strong>À préparer avant l'atelier</strong> : installer l'application, puis télécharger le pack gratuit « Europe occidentale » (≈ 200 Mo) pour un fonctionnement 100% hors-ligne. (D'autres alternatives comme BirdNET ou BirdWeather peuvent être explorées en complément).</p>
+
+    <h3>Optionnel : Utiliser Merlin avec une parabole directionnelle</h3>
+    <p>Une parabole directionnelle (comme <strong>BirdMic</strong>) est un dispositif qui concentre et amplifie les ondes acoustiques venant d'une direction précise.</p>
+    <ul>
+      <li><strong>Le principe du miroir :</strong> La grande coupole en forme de parabole agit comme un réflecteur ou miroir acoustique. Elle renvoie toutes les ondes incidentes de son axe vers un point focal central : le micro placé au foyer de la parabole.</li>
+      <li><strong>Résultat :</strong> Les signaux provenant de la cible visée sont fortement amplifiés tandis que les bruits parasites latéraux et arrières sont atténués. Branchée au smartphone, elle offre à l'application Merlin un signal moins bruité qui optimise l'identification en direct.</li>
+    </ul>
+    
+    <h4>Comment utiliser la parabole sur le terrain ?</h4>
+    <ol>
+      <li>Connecter le micro directionnel au port ou à l'adaptateur du smartphone.</li>
+      <li>Lancer l'application Merlin et activer l'onglet Sound ID.</li>
+      <li>Diriger la parabole en direction des sons qui vous intriguent.</li>
+    </ol>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Outil / Solution</th>
+          <th>Type</th>
+          <th>Fonction principale dans l'atelier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Fizziq</strong></td>
+          <td>Application mobile libre</td>
+          <td>Mesure précise de la pression acoustique en décibels (dB).</td>
+        </tr>
+        <tr>
+          <td><strong>Merlin Bird ID</strong></td>
+          <td>Application bioacoustique</td>
+          <td>Reconnaissance automatique et spectrogramme en temps réel.</td>
+        </tr>
+        <tr>
+          <td><strong>BirdMic (ou parabole)</strong></td>
+          <td>Accessoire matériel</td>
+          <td>Focalisation, isolation directionnelle et amplification des signaux.</td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 
   <section class="content">
