@@ -114,7 +114,7 @@ photos:
     <p><strong>Enquête instrumentée :</strong> Chaque groupe explore la zone délimitée. À chaque station d'écoute, la consigne est simple : s'arrêter en silence, mesurer les décibels avec Fizziq, lancer Merlin Sound ID pour identifier les espèces, et consigner l'ensemble sur la fiche d'observation.</p>
   </section>
 
-  <section class="section-full-bleed" style="background-color: #F7F4E9; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 2rem 0; margin: 2rem 0; overflow: hidden;">
+  <section class="section-full-bleed" style="background-color: #F7F4E9; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0rem 0; overflow: hidden;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
 
