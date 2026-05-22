@@ -40,7 +40,7 @@ show_photo_credits: false
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
 
-        <div style="display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 2.5rem; align-items: start;">
+        <div style="display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 2.5rem; align-items: stretch;">
           
           <div>
             <h2>Cap Nature : une approche par l'expérimentation instrumentée</h2>
@@ -66,10 +66,10 @@ show_photo_credits: false
             <p style="margin-top: 2rem; font-size: 0.9rem;">Pour toute question, collaboration ou réutilisation, n'hésitez pas à contacter : <a href="mailto:marie-lea.pouliquen@univ-rennes.fr">marie-lea.pouliquen@univ-rennes.fr</a>.</p>
           </div>
 
-          <div style="width: 100%; min-height: 100%; padding-top: 1.5rem;">
-            <img src="{{ '/assets/img/atelier-kerinou.jpg' | relative_url }}" 
-                 alt="Élèves sur le terrain manipulant des capteurs en lisière de forêt" 
-                 style="width: 100%; height: auto; max-height: 520px; object-fit: cover; border-radius: 4px; border: 1px solid var(--color-border); display: block;">
+          <div style="width: 100%; position: relative;">
+            <img src="{{ '/assets/img/atelier-kerinou.jpg' | relative_url }}"  
+                 alt="Élèves sur le terrain manipulant des capteurs en lisière de forêt"  
+                 style="width: 100%; height: 100%; min-height: 380px; object-fit: cover; border-radius: 4px; border: 1px solid var(--color-border); display: block;">
           </div>
 
         </div>
