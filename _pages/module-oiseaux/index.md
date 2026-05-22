@@ -45,6 +45,12 @@ photos:
           <div class="concept-card" style="background: #ffffff; padding: 1rem; border-radius: 4px; border: 1px solid #e2e6d8;">
             <strong>Anthrophonie</strong>
             <p style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0;">L'ensemble des bruits produits par l'activité humaine et le développement des infrastructures (paroles, moteurs, machines, circulation).</p>
+          </div>
+        </div>
+
+  </section>
+
+            
 
   </section>
 
