@@ -83,7 +83,7 @@ photos:
 
           <a class="resource-link" href="https://www.radiofrance.fr/franceculture/podcasts/lsd-la-serie-documentaire/ecologie-la-nature-sur-ecoute-4781708" target="_blank" rel="noopener">
             <span class="resource-link-label">Série Documentaire · France Culture</span>
-            <span class="resource-link-title">LSD — Écologie : la nature sur écoute</span>
+            <span class="resource-link-title">Radio France - Écologie : la nature sur écoute</span>
           </a>
         </div>
 
@@ -112,6 +112,19 @@ photos:
     <h3>2. L'exploration sur le terrain</h3>
     <p><strong>Mise en attention :</strong> Proposez une écoute silencieuse à oreilles nues pendant quelques minutes. Cet exercice introduit naturellement les notions de biophonie, géophonie et anthrophonie.</p>
     <p><strong>Enquête instrumentée :</strong> Chaque groupe explore la zone délimitée. À chaque station d'écoute, la consigne est simple : s'arrêter en silence, mesurer les décibels avec Fizziq, lancer Merlin Sound ID pour identifier les espèces, et consigner l'ensemble sur la fiche d'observation.</p>
+
+    <h3 style="margin-top: 2.5rem;">Ressources Pédagogiques Cap Nature</h3>
+      <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem;">
+        <a class="resource-link" href="{{ '/module-oiseaux/fiche2-chant/' | relative_url }}">
+          <span class="resource-link-label">Fiche Scientifique 2</span>
+          <span class="resource-link-title">Quiz sur les Oiseaux</span>
+        </a>
+
+        <a class="resource-link" href="{{ '/module-oiseaux/fiche3-sonogramme/' | relative_url }}">
+          <span class="resource-link-label">Fiche Scientifique 3</span>
+          <span class="resource-link-title">Lire un spectrogramme</span>
+        </a>
+      </div>
   </section>
 
   <section class="section-full-bleed" style="background-color: #F7F4E9; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
@@ -129,19 +142,6 @@ photos:
         </ol>
 
         <p>Pour d'autres idées de manipulations de terrain, consultez la fiche du Réseau IDée : <a href="https://www.reseau-idee.be/fr/symbioses/lecoute-de-la-nature-7-activites-pour-tendre-loreille" target="_blank" rel="noopener">L'écoute de la nature : 7 activités pour tendre l'oreille</a>.</p>
-
-        <h3 style="margin-top: 2.5rem;">Fiches d'activités complémentaires Cap Nature</h3>
-        <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem;">
-          <a class="resource-link" href="{{ '/module-oiseaux/fiche2-chant/' | relative_url }}">
-            <span class="resource-link-label">Fiche Scientifique 2</span>
-            <span class="resource-link-title">Le Langage des Oiseaux</span>
-          </a>
-
-          <a class="resource-link" href="{{ '/module-oiseaux/fiche3-sonogramme/' | relative_url }}">
-            <span class="resource-link-label">Fiche Scientifique 3</span>
-            <span class="resource-link-title">Lire un spectrogramme</span>
-          </a>
-        </div>
 
       </div>
     </div>
