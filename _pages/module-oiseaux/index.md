@@ -141,33 +141,30 @@ photos:
     <p><strong>Mise en attention :</strong> Proposez une écoute silencieuse à oreilles nues pendant quelques minutes. Cet exercice introduit naturellement les notions de biophonie, géophonie et anthrophonie.</p>
     <p><strong>Enquête instrumentée :</strong> Chaque groupe explore la zone délimitée. À chaque station d'écoute, la consigne est simple : s'arrêter en silence, mesurer les décibels avec Fizziq, lancer Merlin Sound ID pour identifier les espèces, et consigner l'ensemble sur la fiche d'observation.</p>
 
-    <h3>Pistes d'activités sur le terrain</h4>
-        
-        <h4>Réaliser une soundmap collective</h4>
-        <ol>
-          <li><strong>Définir la zone d'étude :</strong> Divisez le terrain d'exploration en plusieurs secteurs distincts pour y établir des points d'écoute fixes.</li>
-          <li><strong>Prendre les mesures :</strong> À chaque station, restez immobile : utilisez Fizziq pour capter le niveau sonore (dB), lancez Merlin pour répertorier les oiseaux présents, et notez l'heure ainsi que la météo.</li>
-          <li><strong>Analyser :</strong> Prenez le temps d'étudier le profil de chaque point (dominance des sons, niveau moyen) et consignez votre ressenti qualitatif.</li>
-          <li><strong>Cartographier :</strong> Pour conclure, positionnez vos relevés sur une carte géographique en attribuant des icônes thématiques à chaque type de son rencontré.</li>
-        </ol>
+    <h3>Pistes d'activités sur le terrain</h3>
 
-        <h4 style="margin-top: 2.5rem;">Quelques Ressources Pédagogiques</h4>
-    
-            <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem;">
-              <a class="resource-link" href="{{ '/module-oiseaux/fiche2-chant/' | relative_url }}">
-                <span class="resource-link-label">Fiche Scientifique 2</span>
-                <span class="resource-link-title">Quiz sur les Oiseaux</span>
-              </a>
-        
-              <a class="resource-link" href="{{ '/module-oiseaux/fiche3-sonogramme/' | relative_url }}">
-                <span class="resource-link-label">Fiche Scientifique 3</span>
-                <span class="resource-link-title">Lire un spectrogramme</span>
-              </a>
-            </div>
+    <h4>Réaliser une soundmap collective</h4>
+    <ol>
+      <li><strong>Définir la zone d'étude :</strong> Divisez le terrain d'exploration en plusieurs secteurs distincts pour y établir des points d'écoute fixes.</li>
+      <li><strong>Prendre les mesures :</strong> À chaque station, restez immobile : utilisez Fizziq pour capter le niveau sonore (dB), lancez Merlin pour répertorier les oiseaux présents, et notez l'heure ainsi que la météo.</li>
+      <li><strong>Analyser :</strong> Prenez le temps d'étudier le profil de chaque point (dominance des sons, niveau moyen) et consignez votre ressenti qualitatif.</li>
+      <li><strong>Cartographier :</strong> Pour conclure, positionnez vos relevés sur une carte géographique en attribuant des icônes thématiques à chaque type de son rencontré.</li>
+    </ol>
 
-        <h4 style="margin-top: 2.5rem;">Idées supplémentaires</h4>
-        
-          <p style="margin-bottom: 0;">Pour d'autres idées d'activités sur le terrain, vous pouvez consulter la fiche du Réseau IDée : <a href="https://www.reseau-idee.be/fr/symbioses/lecoute-de-la-nature-7-activites-pour-tendre-loreille" target="_blank" rel="noopener">L'écoute de la nature : 7 activités pour tendre l'oreille</a>.</p>
+    <h4 style="margin-top: 2.5rem;">Quelques ressources pédagogiques</h4>
+    <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem;">
+      <a class="resource-link" href="{{ '/module-oiseaux/fiche2-chant/' | relative_url }}">
+        <span class="resource-link-label">Fiche Scientifique 2</span>
+        <span class="resource-link-title">Quiz sur les Oiseaux</span>
+      </a>
+      <a class="resource-link" href="{{ '/module-oiseaux/fiche3-sonogramme/' | relative_url }}">
+        <span class="resource-link-label">Fiche Scientifique 3</span>
+        <span class="resource-link-title">Lire un spectrogramme</span>
+      </a>
+    </div>
+
+    <h4 style="margin-top: 2.5rem;">Idées supplémentaires</h4>
+    <p style="margin-bottom: 0;">Pour d'autres idées d'activités sur le terrain, vous pouvez consulter la fiche du Réseau IDée : <a href="https://www.reseau-idee.be/fr/symbioses/lecoute-de-la-nature-7-activites-pour-tendre-loreille" target="_blank" rel="noopener">L'écoute de la nature : 7 activités pour tendre l'oreille</a>.</p>
 
   </section>
 
