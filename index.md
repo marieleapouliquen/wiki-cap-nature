@@ -22,30 +22,30 @@ show_photo_credits: false
     </div>
   </div> 
 
-  <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 3.5rem 0; margin: 2.5rem 0;">
+  <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 2rem 0; margin: 0;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
 
-        <h2>Reconnecter les jeunes à la nature</h2>
+        <h2 style="margin-top: 0; padding-top: 0;">Reconnecter les jeunes à la nature</h2>
         <p>Dans son évaluation mondiale de 2019,<sup><a href="#ref1">1</a></sup> la Plateforme intergouvernementale sur la biodiversité et les services écosystémiques (Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services – IPBES) dressait un constat alarmant : la biodiversité décline à un rythme sans précédent dans l'histoire humaine. Son rapport <em>Nexus</em>, publié fin 2024,<sup><a href="#ref2">2</a></sup> va plus loin en montrant que biodiversité, climat, eau, alimentation et santé humaine forment <strong>cinq crises interconnectées</strong> — interdépendantes dans leurs causes, leurs effets et les réponses à y apporter. Pour enrayer cet effondrement, l'IPBES appelle à des <strong>« changements transformateurs »</strong>, qui touchent aussi, comme le souligne l'Office français de la biodiversité (OFB),<sup><a href="#ref3">3</a></sup> <strong>nos représentations et nos relations au vivant</strong>.</p>
         <p>Or, à l'heure où l'urbanisation s'intensifie et où les loisirs se numérisent, le contact direct avec la nature se raréfie. Ce phénomène nourrit ce que les chercheurs nomment l'<strong>amnésie environnementale</strong> (ou <em>shifting baseline syndrome</em>) : chaque génération prend pour « normal » l'environnement appauvri de son enfance, si bien que l'ampleur réelle des pertes passe inaperçue d'une génération à l'autre.<sup><a href="#ref4">4</a></sup></p>
-        <p>Cette perte de lien n'est pas anodine. La recherche établit aujourd'hui que la <strong>connexion à la nature</strong> constitue un véritable levier de durabilité : elle prédit à la fois le bien-être des individus et l'adoption de comportements favorables à l'environnement.<sup><a href="#ref5">5</a></sup> Reconnecter les personnes au vivant est même décrit comme un « point de levier » pour transformer nos sociétés vers plus de soutenabilité.<sup><a href="#ref6">6</a></sup> Une part importante des jeunes exprimant aujourd'hui tristesse et anxiété face à l'effondrement de la biodiversité, l'expérience directe de la nature apparaît comme un antidote précieux à cette détresse. <strong>Promouvoir le lien des jeunes au vivant</strong> est ainsi un enjeu à la fois écologique, éducatif et de bien-être.</p>
+        <p>Cette perte de lien n'est pas anodine. La recherche établit aujourd'hui que la <strong>connexion à la nature</strong> constitue un véritable levier de durabilité : elle prédit à la fois le bien-être des individus et l'adoption de comportements favorables à l'environnement.<sup><a href="#ref5">5</a></sup> Reconnecter les personnes au vivant est même décrit comme un « point de levier » pour transformer nos societies vers plus de soutenabilité.<sup><a href="#ref6">6</a></sup> Une part importante des jeunes exprimant aujourd'hui tristesse et anxiété face à l'effondrement de la biodiversité, l'expérience directe de la nature apparaît comme un antidote précieux à cette détresse. <strong>Promouvoir le lien des jeunes au vivant</strong> est ainsi un enjeu à la fois écologique, éducatif et de bien-être.</p>
 
       </div>
     </div> 
   </section>
 
-  <section class="section-full-bleed" style="background-color: #C2DDCC; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 3.5rem 0; margin: 2.5rem 0;">
+  <section class="section-full-bleed" style="background-color: #C2DDCC; border-bottom: 0.2px solid #e2e6d8; padding: 2rem 0; margin: 0;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
 
-        <h2>Cap Nature : une approche par l'expérimentation instrumentée</h2>
+        <h2 style="margin-top: 0; padding-top: 0;">Cap Nature : une approche par l'expérimentation instrumentée</h2>
         <p>Cap Nature est développé dans le cadre du travail de thèse de Marie-Léa Pouliquen portant sur le lien des jeunes au vivant et sur l'usage des capteurs environnementaux comme outils d'attention au milieu naturel<sup><a href="#ref7">7</a></sup>. Pour en savoir plus : <a href="https://marieleapouliquen.github.io/recherche/" target="_blank" rel="noopener">le projet Cap Nature</a>.</p>
 
         <h3>Le wiki des Ateliers</h3>
         <p>Ce wiki rassemble les ressources pour mener les ateliers Cap Nature : protocoles d'observation, prise en main des capteurs, fiches d'activité et pistes pédagogiques. Le wiki documente chaque atelier pas à pas pour qu'un·e animateur·rice, un·e enseignant·e ou un collectif puisse s'en emparer et l'adapter à son contexte éducatif. Les ressources présentées ici sont issues de cette recherche en cours : elles sont partagées à des fins pédagogiques et de retour d'expérience. Pour toute question, collaboration ou réutilisation, n'hésitez pas à contacter : <a href="mailto:marie-lea.pouliquen@univ-rennes.fr">marie-lea.pouliquen@univ-rennes.fr</a>.</p>
         
-        <div class="card-grid" style="margin-top: 2rem;">
+        <div class="card-grid" style="margin-top: 1.5rem;">
           <a class="card" href="{{ '/module-oiseaux/' | relative_url }}">
             <span class="card-title">Atelier · Écoacoustique</span>
             <span class="card-desc">Initiation à l'écoute des oiseaux et des paysages sonores</span>
@@ -63,7 +63,7 @@ show_photo_credits: false
     </div> 
   </section>
 
-  <div class="container">
+  <div class="container" style="margin-top: 2.5rem;">
     <div class="page-content">
       
       <section class="content">
