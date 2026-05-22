@@ -28,10 +28,29 @@ photos:
 
 <main>
 
+<section>
     <p class="page-lead">
-    Cet atelier d'écoacoustique participative invite les participant·es à mener une enquête sensible et instrumentée sur le paysage sonore et les oiseaux présents dans l'environnement.
-  </p>
+    Cet atelier d'écoacoustique participative invite les participant·es à mener une enquête sensible et instrumentée sur le paysage sonore et les oiseaux présents dans l'environnement.</p>
 
+  <h2>Eléments de mise en contexte</h2>
+
+  <div class="resource-links">
+    <a class="resource-link" href="{{ '/module-oiseaux/fiche1-soundscape/' | relative_url }}">
+      <span class="resource-link-label">Fiche Scientifique 1</span>
+      <span class="resource-link-title">Le Paysage Sonore et ses enjeux</span>
+    </a>
+  </div>
+
+  Rajouter ce lien : https://www.reseau-idee.be/fr/symbioses/les-paysages-sonores-ont-beaucoup-nous-dire
+  Voir le site de Fernand Deroussen : https://www.naturo-phonia.com/ 
+  Podcast : https://www.radiofrance.fr/franceinter/podcasts/la-terre-au-carre/la-terre-au-carre-du-vendredi-28-novembre-2025-4700890 
+  https://www.radiofrance.fr/franceculture/podcasts/lsd-la-serie-documentaire/ecologie-la-nature-sur-ecoute-4781708
+
+</section>
+
+
+
+<section>
 
   <h2>Les outils de l'enquête</h2>
   
@@ -47,16 +66,13 @@ photos:
     <li><strong>Le principe du miroir :</strong> La grande coupole en forme de parabole agit comme un réflecteur ou miroir acoustique. Elle renvoie toutes les ondes incidentes de son axe vers un point focal central : le micro placé au foyer de la parabole.</li>
     <li><strong>Résultat :</strong> Les signaux provenant de la cible visée sont fortement amplifiés tandis que les bruits parasites latéraux et arrières sont atténués. Branchée au smartphone, elle offre à l'application Merlin un signal moins bruité qui optimise l'identification en direct.</li>
   </ul>
-
-  <h4>Comment l'utiliser sur le terrain ?</h4>
+  
+  <h4>Comment utiliser la parabole sur le terrain ?</h4>
   <ol>
-    <li><strong>Brancher la parabole :</strong> Connecter le micro directionnel au port ou à l'adaptateur du smartphone.</li>
-    <li><strong>Lancer l'interface :</strong> Ouvrir l'application Merlin et activer l'onglet Sound ID.</li>
-    <li><strong>Cibler :</strong> Diriger la parabole précisément vers l'oiseau ou le bosquet à analyser.</li>
-    <li><strong>Capturer :</strong> Rester immobile et silencieux pendant que le tracé défile à l'écran.</li>
+    <li>Connecter le micro directionnel au port ou à l'adaptateur du smartphone.</li>
+    <li>Lancer l'application Merlin et activer l'onglet Sound ID.</li>
+    <li>Diriger la parabole en direction des sons qui vous intriguent.</li>
   </ol>
-
-  <p>Le tableau ci-dessous synthétise les solutions matérielles mobilisées au cours de l'exploration :</p>
 
   <table>
     <thead>
@@ -85,6 +101,9 @@ photos:
     </tbody>
   </table>
 
+</section>
+
+<section>
 
   <h2>Déroulement de l'atelier</h2>
 
@@ -130,22 +149,7 @@ Exemple d'activité:
     <li><strong>Cartographier :</strong> Pour conclure, positionnez vos relevés sur une carte géographique en attribuant des icônes thématiques à chaque type de son rencontré.</li>
   </ol>
 
+</section>
 
-  <h3>Fiches pédagogiques</h3>
-  
-  <div class="resource-links">
-    <a class="resource-link" href="{{ '/module-oiseaux/fiche1-soundscape/' | relative_url }}">
-      <span class="resource-link-label">Fiche Scientifique 1</span>
-      <span class="resource-link-title">Le Langage des Oiseaux</span>
-    </a>
-    <a class="resource-link" href="{{ '/module-oiseaux/fiche2-chant/' | relative_url }}">
-      <span class="resource-link-label">Fiche Scientifique 2</span>
-      <span class="resource-link-title">Le Langage des Oiseaux</span>
-    </a>
-    <a class="resource-link" href="{{ '/module-oiseaux/fiche3-sonogramme/' | relative_url }}">
-      <span class="resource-link-label">Fiche Scientifique 3</span>
-      <span class="resource-link-title">Lire un spectrogramme</span>
-    </a>
-  </div>
 
 </main>
