@@ -67,7 +67,7 @@ show_photo_credits: false
           </div>
 
           <div style="width: 100%; min-height: 100%; padding-top: 1.5rem;">
-            <img src="{{ '/assets/img/nom-de-votre-photo.jpg' | relative_url }}" 
+            <img src="{{ '/assets/img/atelier-kerinou.jpg' | relative_url }}" 
                  alt="Élèves sur le terrain manipulant des capteurs en lisière de forêt" 
                  style="width: 100%; height: auto; max-height: 520px; object-fit: cover; border-radius: 4px; border: 1px solid var(--color-border); display: block;">
           </div>
