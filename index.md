@@ -1,15 +1,7 @@
 ---
 layout: default
 title: Accueil
-show_photo_credits: true
-
-stat_urbain:
-  - num: "45 %"
-    label: vivent en grandes métropoles
-  - num: "36 %"
-    label: habitent de petites villes
-  - num: "19 %"
-    label: vivent encore en zone rurale
+show_photo_credits: false
 ---
 
 <main class="site-main">
@@ -43,8 +35,10 @@ stat_urbain:
       </section>
 
       <section class="content">
-        <h2>Wiki des Ateliers Cap Nature</h2>
-         <p> expliquer le pourquoi </p>
+
+      <section class="content">
+        <h2>Wiki des ateliers Cap Nature</h2>
+        <p>Ce wiki rassemble les ressources pour mener les ateliers Cap Nature : protocoles d'observation, prise en main des capteurs, fiches d'activité et pistes pédagogiques. Pensé comme un bien commun, il documente chaque atelier pas à pas pour qu'un·e animateur·rice, un·e enseignant·e ou un collectif puisse s'en emparer et l'adapter à son territoire et à son public.</p>
 
         <div class="card-grid">
         
