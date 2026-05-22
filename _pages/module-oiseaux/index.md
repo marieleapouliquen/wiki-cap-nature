@@ -166,21 +166,13 @@ photos:
     <h4 style="margin-top: 2.5rem;">Idées supplémentaires</h4>
     <p style="margin-bottom: 0;">Pour d'autres idées d'activités sur le terrain, vous pouvez consulter la fiche du Réseau IDée : <a href="https://www.reseau-idee.be/fr/symbioses/lecoute-de-la-nature-7-activites-pour-tendre-loreille" target="_blank" rel="noopener">L'écoute de la nature : 7 activités pour tendre l'oreille</a>.</p>
 
+    <h3 style="margin-top: 2.5rem;">3. Retours réflexifs</h3>
+    <figure class="page-banner" style="margin-top: 1.5rem;">
+      <img src="{{ '/assets/img/atelier-retours.jpg' | relative_url }}"
+           alt="Ressenti des participants après l'exploration"
+           class="page-banner-img">
+      <figcaption class="page-banner-credit">© Marie-Léa Pouliquen</figcaption>
+    </figure>
+
   </section>
-
-  <section class="section-full-bleed" style="background-color: #F7F4E9; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
-    <div class="container">
-      <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
-
-          <h3 style="margin-top: 2.5rem;">3. Retours réflexifs</h3> 
-            <figure class="page-banner" style="margin-top: 1.5rem; margin-bottom: 0;">
-              <img src="{{ '/assets/img/atelier-retours.jpg' | relative_url }}"
-                   alt="Ressenti des participants après l'exploration"
-                   class="page-banner-img">
-              <figcaption class="page-banner-credit">© Marie-Léa Pouliquen</figcaption>
-            </figure>
-      </div>
-    </div>
-  </section>
-
 </main>
