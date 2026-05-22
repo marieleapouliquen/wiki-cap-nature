@@ -5,22 +5,25 @@ show_photo_credits: false
 ---
 
 <main class="site-main">
-  <div class="container">
-    <div class="page-content">
 
-      <section class="content">
-        <h2><strong>Cap Nature</strong> est un dispositif d'ateliers participatifs qui invite les jeunes à renouer avec le vivant, en faisant des capteurs environnementaux des outils d'attention et de découverte du milieu naturel.</h2>
+  <section class="section-full-bleed" style="background-color: #ffffff; padding: 2rem 0; margin: 0;">
+    <div class="container">
+      <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
+        
+        <section class="content">
+          <h2 style="margin-top: 0; padding-top: 0;"><strong>Cap Nature</strong> est un dispositif d'ateliers participatifs qui invite les jeunes à renouer avec le vivant, en faisant des capteurs environnementaux des outils d'attention et de découverte du milieu naturel.</h2>
 
-        <figure class="page-banner">
-          <img src="{{ '/assets/img/atelier-paroi-rocheuse.jpg' | relative_url }}"
-               alt="Atelier Cap Nature avec des Secondes du Lycée Jules Lesven"
-               class="page-banner-img">
-          <figcaption class="page-banner-credit">Atelier Cap Nature avec des Secondes du Lycée Jules Lesven — © Marie-Léa Pouliquen</figcaption>
-        </figure>
-      </section>
+          <figure class="page-banner" style="margin-bottom: 0;">
+            <img src="{{ '/assets/img/atelier-paroi-rocheuse.jpg' | relative_url }}"
+                 alt="Atelier Cap Nature avec des Secondes du Lycée Jules Lesven"
+                 class="page-banner-img">
+            <figcaption class="page-banner-credit">Atelier Cap Nature avec des Secondes du Lycée Jules Lesven — © Marie-Léa Pouliquen</figcaption>
+          </figure>
+        </section>
 
+      </div>
     </div>
-  </div> 
+  </section>
 
   <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 2rem 0; margin: 0;">
     <div class="container">
@@ -63,22 +66,25 @@ show_photo_credits: false
     </div> 
   </section>
 
-  <div class="container" style="margin-top: 2.5rem;">
-    <div class="page-content">
-      
-      <section class="content">
-        <h2>Références bibliographiques</h2>
-        <ol class="references">
-          <li id="ref1">IPBES (2019), <em>Résumé à l'intention des décideurs du rapport sur l'évaluation mondiale de la biodiversité et des services écosystémiques</em>. <a href="https://ofb.gouv.fr/doc/reference-urgence-pour-la-nature-et-humain-resume-a-intention-des-decideurs-du-rapport-sur" target="_blank" rel="noopener">Présentation et résumé en français (OFB)</a>.</li>
-          <li id="ref2">IPBES (2024), <em>Rapport Nexus — Évaluation des interactions entre biodiversité, eau, alimentation, santé et changement climatique</em>. <a href="https://www.ipbes.net/nexus-assessment" target="_blank" rel="noopener">https://www.ipbes.net/nexus-assessment</a>.</li>
-          <li id="ref3">Office français de la biodiversité, <a href="https://ofb.gouv.fr/transformer-la-relation-au-vivant-un-enjeu-de-societe-autant-que-de-biodiversite" target="_blank" rel="noopener">« Transformer la relation au vivant, un enjeu de société autant que de biodiversité »</a>.</li>
-          <li id="ref4">Concept proposé par Kahn &amp; Friedman (1995) et nommé « shifting baseline syndrome » par D. Pauly, « Anecdotes and the shifting baseline syndrome of fisheries », <em>Trends in Ecology &amp; Evolution</em>, 10(10), 1995, p. 430. <a href="https://doi.org/10.1016/S0169-5347(00)89171-5" target="_blank" rel="noopener">https://doi.org/10.1016/S0169-5347(00)89171-5</a>. Voir aussi la fiche OFB : <a href="https://ofb.gouv.fr/amnesie-environnementale-et-la-diminution-des-experiences-de-nature" target="_blank" rel="noopener">« L'amnésie environnementale et la diminution des expériences de nature »</a>.</li>
-          <li id="ref5">G. Barragan-Jason et al., « Human–nature connectedness as a pathway to sustainability: a global meta-analysis », <em>Conservation Letters</em>, 15(1), 2022, e12852. <a href="https://doi.org/10.1111/conl.12852" target="_blank" rel="noopener">https://doi.org/10.1111/conl.12852</a></li>
-          <li id="ref6">C. D. Ives et al., « Human–nature connection: a multidisciplinary review », <em>Current Opinion in Environmental Sustainability</em>, 26-27, 2017, p. 106-113. <a href="https://doi.org/10.1016/j.cosust.2017.05.005" target="_blank" rel="noopener">https://doi.org/10.1016/j.cosust.2017.05.005</a></li>
-          <li id="ref7"> Van Tilbeurgh V., Calvez M. et Laurent Longuevergne, « Le monitoring participatif, un dispositif entre production de données et implication des publics», <em>Revue d'Anthropologie des Connaissances</em>, 16-4, 2022, <a href="https://doi.org/10.4000/rac.29245" target="_blank" rel="noopener">https://doi.org/10.4000/rac.29245</a></li>
-        </ol>
-      </section>
+  <section class="section-full-bleed" style="background-color: #ffffff; padding: 2.5rem 0; margin: 0;">
+    <div class="container">
+      <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
+        
+        <section class="content">
+          <h2 style="margin-top: 0; padding-top: 0;">Références bibliographiques</h2>
+          <ol class="references">
+            <li id="ref1">IPBES (2019), <em>Résumé à l'intention des décideurs du rapport sur l'évaluation mondiale de la biodiversité et des services écosystémiques</em>. <a href="https://ofb.gouv.fr/doc/reference-urgence-pour-la-nature-et-humain-resume-a-intention-des-decideurs-du-rapport-sur" target="_blank" rel="noopener">Présentation et résumé en français (OFB)</a>.</li>
+            <li id="ref2">IPBES (2024), <em>Rapport Nexus — Évaluation des interactions entre biodiversité, eau, alimentation, santé et changement climatique</em>. <a href="https://www.ipbes.net/nexus-assessment" target="_blank" rel="noopener">https://www.ipbes.net/nexus-assessment</a>.</li>
+            <li id="ref3">Office français de la biodiversité, <a href="https://ofb.gouv.fr/transformer-la-relation-au-vivant-un-enjeu-de-societe-autant-que-de-biodiversite" target="_blank" rel="noopener">« Transformer la relation au vivant, un enjeu de société autant que de biodiversité »</a>.</li>
+            <li id="ref4">Concept proposé par Kahn &amp; Friedman (1995) et nommé « shifting baseline syndrome » par D. Pauly, « Anecdotes and the shifting baseline syndrome of fisheries », <em>Trends in Ecology &amp; Evolution</em>, 10(10), 1995, p. 430. <a href="https://doi.org/10.1016/S0169-5347(00)89171-5" target="_blank" rel="noopener">https://doi.org/10.1016/S0169-5347(00)89171-5</a>. Voir aussi la fiche OFB : <a href="https://ofb.gouv.fr/amnesie-environnementale-et-la-diminution-des-experiences-de-nature" target="_blank" rel="noopener">« L'amnésie environnementale et la diminution des expériences de nature »</a>.</li>
+            <li id="ref5">G. Barragan-Jason et al., « Human–nature connectedness as a pathway to sustainability: a global meta-analysis », <em>Conservation Letters</em>, 15(1), 2022, e12852. <a href="https://doi.org/10.1111/conl.12852" target="_blank" rel="noopener">https://doi.org/10.1111/conl.12852</a></li>
+            <li id="ref6">C. D. Ives et al., « Human–nature connection: a multidisciplinary review », <em>Current Opinion in Environmental Sustainability</em>, 26-27, 2017, p. 106-113. <a href="https://doi.org/10.1016/j.cosust.2017.05.005" target="_blank" rel="noopener">https://doi.org/10.1016/j.cosust.2017.05.005</a></li>
+            <li id="ref7"> Van Tilbeurgh V., Calvez M. et Laurent Longuevergne, « Le monitoring participatif, un dispositif entre production de données et implication des publics», <em>Revue d'Anthropologie des Connaissances</em>, 16-4, 2022, <a href="https://doi.org/10.4000/rac.29245" target="_blank" rel="noopener">https://doi.org/10.4000/rac.29245</a></li>
+          </ol>
+        </section>
 
-    </div> 
-  </div> 
+      </div>
+    </div>
+  </section>
+
 </main>
