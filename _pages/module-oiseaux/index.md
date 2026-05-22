@@ -27,9 +27,11 @@ photos:
 {% include photo-band.html photos=page.photos %}
 
 <main>
-  
-  <h2>Démarche et objectifs de l'atelier</h2>
-  <p>L'atelier s'appuie sur une démarche scientifique active.</p>
+
+    <p class="page-lead">
+    Cet atelier d'écoacoustique participative invite les participant·es à mener une enquête sensible et instrumentée sur le paysage sonore et les oiseaux présents dans l'environnement.
+  </p>
+
 
   <h2>Les outils de l'enquête</h2>
   
