@@ -128,9 +128,13 @@ photos:
 
       <h3>3. Retours réflexifs</h3> 
 
+        <figure class="page-banner" style="margin-bottom: 0;">
+          <img src="{{ '/assets/img/atelier-retours.jpg' | relative_url }}"
+               alt="Ressenti des participants après l'exploration"
+               class="page-banner-img">
+          <figcaption class="page-banner-credit">© Marie-Léa Pouliquen</figcaption>
+        </figure>
 
-
-      
   </section>
 
   <section class="section-full-bleed" style="background-color: #F7F4E9; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
