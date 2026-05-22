@@ -37,7 +37,7 @@ show_photo_credits: false
         </div>
       </section>
       
-      <section>
+      <section class="content">
       <h2>Références bibliographiques</h2>
 
         <ol class="references">
