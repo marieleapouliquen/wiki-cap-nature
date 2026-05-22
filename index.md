@@ -18,26 +18,6 @@ stat_urbain:
       <p class="page-lead"> <strong>Cap Nature</strong> est un dispositif d'ateliers participatifs qui invite les jeunes à renouer avec le vivant, en faisant des capteurs environnementaux des outils d'attention et de découverte du milieu naturel.</p>
 
       <section class="content">
-        <h2>Les modules proposés</h2>
-        <p>Chaque module est un atelier autonome, autour d'un capteur et d'un milieu. Ils partagent la même démarche d'exploration instrumentée, et peuvent être menés indépendamment.</p>
-
-        <div class="card-grid">
-        
-          <a class="card" href="{{ '/module-oiseaux/' | relative_url }}">
-            <span class="card-title">Atelier · Écoacoustique</span>
-            <span class="card-desc">Initiation à l'écoute des oiseaux et des paysages sonores</span>
-            <span class="btn">Découvrir l'atelier →</span>
-          </a>
-          
-          <div class="card">
-            <span class="card-title">Atelier · Caméras thermiques</span>
-            <span class="card-desc">Voir l'environnement autrement : explorer la chaleur invisible et les îlots de chaleur avec des caméras thermiques portatives.</span>
-            <span class="btn" style="opacity: 0.5; pointer-events: none;">En préparation</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="content">
         <h2>Reconnecter les jeunes à la nature</h2>
         <p>Dans son <a href="https://ofb.gouv.fr/doc/reference-urgence-pour-la-nature-et-humain-resume-a-intention-des-decideurs-du-rapport-sur" target="_blank" rel="noopener">évaluation mondiale de 2019</a>, la Plateforme intergouvernementale sur la biodiversité et les services écosystémiques (Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services – IPBES) dressait un constat alarmant : la biodiversité décline à un rythme sans précédent dans l'histoire humaine. Son <a href="https://www.ipbes.net/nexus-assessment" target="_blank" rel="noopener">rapport <em>Nexus</em></a>, publié fin 2024, va plus loin en montrant que biodiversité, climat, eau, alimentation et santé humaine forment <strong>cinq crises interconnectées</strong> — interdépendantes dans leurs causes, leurs effets et les réponses à y apporter. Pour enrayer cet effondrement, l'IPBES appelle à des <strong>« changements transformateurs »</strong>, qui touchent aussi, comme le souligne l'<a href="https://ofb.gouv.fr/transformer-la-relation-au-vivant-un-enjeu-de-societe-autant-que-de-biodiversite" target="_blank" rel="noopener">Office français de la biodiversité (OFB)</a>, <strong>nos représentations et nos relations au vivant</strong>.</p>
         <p>Or, à l'heure où l'urbanisation s'intensifie et où les loisirs se numérisent, le contact direct avec la nature se raréfie. La majorité de l'humanité réside désormais en ville, ce qui fragmente les habitats et éloigne, jour après jour, les jeunes générations des écosystèmes. Ce phénomène nourrit ce que les chercheurs nomment l'<a href="https://ofb.gouv.fr/amnesie-environnementale-et-la-diminution-des-experiences-de-nature" target="_blank" rel="noopener"><strong>amnésie environnementale</strong></a> (ou <em>shifting baseline syndrome</em>) : chaque génération prend pour « normal » l'environnement appauvri de son enfance, si bien que l'ampleur réelle des pertes passe inaperçue d'une génération à l'autre.<sup><a href="#ref1">1</a></sup></p>
@@ -61,6 +41,29 @@ stat_urbain:
           <li id="ref3">C. D. Ives et al., « Human–nature connection: a multidisciplinary review », <em>Current Opinion in Environmental Sustainability</em>, 26-27, 2017, p. 106-113. <a href="https://doi.org/10.1016/j.cosust.2017.05.005" target="_blank" rel="noopener">https://doi.org/10.1016/j.cosust.2017.05.005</a></li>
         </ol>
       </section>
+
+      <section class="content">
+        <h2>Wiki des Ateliers Cap Nature</h2>
+         <p> expliquer le pourquoi </p>
+
+        <div class="card-grid">
+        
+          <a class="card" href="{{ '/module-oiseaux/' | relative_url }}">
+            <span class="card-title">Atelier · Écoacoustique</span>
+            <span class="card-desc">Initiation à l'écoute des oiseaux et des paysages sonores</span>
+            <span class="btn">Découvrir l'atelier →</span>
+          </a>
+          
+          <div class="card">
+            <span class="card-title">Atelier · Caméras thermiques</span>
+            <span class="card-desc">Voir l'environnement autrement : explorer la chaleur invisible et les îlots de chaleur avec des caméras thermiques portatives.</span>
+            <span class="btn" style="opacity: 0.5; pointer-events: none;">En préparation</span>
+          </div>
+        </div>
+      </section>
+
+
+      
 
     </div>
   </div>
