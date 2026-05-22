@@ -55,39 +55,6 @@ photos:
           </div>
         </div>
 
-        <h3>Pourquoi étudier les paysages sonores en écologie ?</h3>
-        <p>L'analyse des indices acoustiques permet de mesurer l'état de santé d'un écosystème de manière non invasive. Les chercheurs étudient ces environnements pour quantifier la biodiversité, suivre l'évolution de l'activité animale ou évaluer l'impact négatif de la pollution sonore sur la faune sauvage. Le bruit généré par les infrastructures humaines masque les signaux de communication essentiels des animaux. Pour survivre, de nombreuses espèces doivent adapter l'amplitude, la durée ou la fréquence de leurs vocalisations, un effort qui perturbe leur équilibre énergétique et leurs chances de reproduction.</p>
-
-        <h3>Ressources, fiches et podcasts de référence</h3>
-        <p>Pour approfondir la thématique et introduire la séance, voici une sélection de supports et d'émissions scientifiques :</p>
-
-        <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; margin-bottom: 1.5rem;">
-          <a class="resource-link" href="{{ '/module-oiseaux/fiche1-soundscape/' | relative_url }}">
-            <span class="resource-link-label">Fiche Technique 1</span>
-            <span class="resource-link-title">Le Paysage Sonore et ses enjeux</span>
-          </a>
-
-          <a class="resource-link" href="https://www.reseau-idee.be/fr/symbioses/les-paysages-sonores-ont-beaucoup-nous-dire" target="_blank" rel="noopener">
-            <span class="resource-link-label">Article · Réseau IDée</span>
-            <span class="resource-link-title">Les paysages sonores ont beaucoup à nous dire</span>
-          </a>
-
-          <a class="resource-link" href="https://www.naturo-phonia.com/" target="_blank" rel="noopener">
-            <span class="resource-link-label">Audio Naturaliste</span>
-            <span class="resource-link-title">Naturophonia — Site de Fernand Deroussen</span>
-          </a>
-
-          <a class="resource-link" href="https://www.radiofrance.fr/franceinter/podcasts/la-terre-au-carre/la-terre-au-carre-du-vendredi-28-novembre-2025-4700890" target="_blank" rel="noopener">
-            <span class="resource-link-label">Émission · France Inter</span>
-            <span class="resource-link-title">La Terre au Carré — Écoacoustique</span>
-          </a>
-
-          <a class="resource-link" href="https://www.radiofrance.fr/franceculture/podcasts/lsd-la-serie-documentaire/ecologie-la-nature-sur-ecoute-4781708" target="_blank" rel="noopener">
-            <span class="resource-link-label">Série Documentaire · France Culture</span>
-            <span class="resource-link-title">Radio France - Écologie : la nature sur écoute</span>
-          </a>
-        </div>
-
       </div>
     </div> 
   </section>
@@ -201,7 +168,7 @@ photos:
         <h3>Pourquoi étudier les paysages sonores en écologie ?</h3>
         <p>L'analyse des indices acoustiques permet de mesurer l'état de santé d'un écosystème de manière non invasive. Les chercheurs étudient ces environnements pour quantifier la biodiversité, suivre l'évolution de l'activité animale ou évaluer l'impact négatif de la pollution sonore sur la faune sauvage. Le bruit généré par les infrastructures humaines masque les signaux de communication essentiels des animaux. Pour survivre, de nombreuses espèces doivent adapter l'amplitude, la durée ou la fréquence de leurs vocalisations, un effort qui perturbe leur équilibre énergétique et leurs chances de reproduction.</p>
 
-        <h3>Ressources, fiches et podcasts/h3>
+        <h3>Ressources, fiches et podcasts</h3>
         <p>Pour approfondir la thématique et introduire la séance, voici une sélection de supports et d'émissions scientifiques :</p>
 
         <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; margin-bottom: 1.5rem;">
