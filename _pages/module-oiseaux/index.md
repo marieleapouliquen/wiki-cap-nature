@@ -23,11 +23,11 @@ photos:
     caption: Martin-pêcheur
 ---
 
-{% include photo-band.html photos=page.photos %}
-
 <main class="content">
   
   <p class="page-lead">Cet atelier d'écoacoustique participative invite les participant·es à mener une enquête sensible et instrumentée sur le paysage sonore et les oiseaux présents dans l'environnement.</p>
+
+  {% include photo-band.html photos=page.photos %}
 
   <section class="content">
     <h2>Les outils de l'enquête</h2>
@@ -125,6 +125,12 @@ photos:
           <span class="resource-link-title">Lire un spectrogramme</span>
         </a>
       </div>
+
+      <h3>3. Retours réflexifs</h3> 
+
+
+
+      
   </section>
 
   <section class="section-full-bleed" style="background-color: #F7F4E9; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
