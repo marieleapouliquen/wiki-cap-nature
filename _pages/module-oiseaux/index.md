@@ -117,32 +117,6 @@ photos:
       <li>Diriger la parabole en direction des sons qui vous intriguent.</li>
     </ol>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Outil / Solution</th>
-          <th>Type</th>
-          <th>Fonction principale dans l'atelier</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Fizziq</strong></td>
-          <td>Application mobile libre</td>
-          <td>Mesure précise de la pression acoustique en décibels (dB).</td>
-        </tr>
-        <tr>
-          <td><strong>Merlin Bird ID</strong></td>
-          <td>Application bioacoustique</td>
-          <td>Reconnaissance automatique et spectrogramme en temps réel.</td>
-        </tr>
-        <tr>
-          <td><strong>BirdMic (ou parabole)</strong></td>
-          <td>Accessoire matériel</td>
-          <td>Focalisation, isolation directionnelle et amplification des signaux.</td>
-        </tr>
-      </tbody>
-    </table>
   </section>
 
   <section class="content">
