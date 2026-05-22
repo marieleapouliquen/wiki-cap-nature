@@ -31,7 +31,7 @@ show_photo_credits: false
 
       <section class="content">
         <h2>Wiki des ateliers Cap Nature</h2>
-        <p>Ce wiki rassemble les ressources pour mener les ateliers Cap Nature : protocoles d'observation, prise en main des capteurs, fiches d'activité et pistes pédagogiques. Pensé comme un bien commun, il documente chaque atelier pas à pas pour qu'un·e animateur·rice, un·e enseignant·e ou un collectif puisse s'en emparer et l'adapter à son territoire et à son public.</p>
+        <p>Ce wiki rassemble les ressources pour mener les ateliers Cap Nature : protocoles d'observation, prise en main des capteurs, fiches d'activité et pistes pédagogiques. Pensé comme un bien commun, il documente chaque atelier pas à pas pour qu'un·e animateur·rice, un·e enseignant·e ou un collectif puisse s'en emparer et l'adapter à son contexte éducatif.</p>
 
         <div class="card-grid">
         
