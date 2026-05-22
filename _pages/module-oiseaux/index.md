@@ -56,7 +56,7 @@ photos:
     </ol>
   </section>
 
-  <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 2rem 0; margin: 0; overflow: hidden;">
+  <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
         
@@ -139,7 +139,7 @@ photos:
     </figure>
   </section>
 
-  <section class="section-full-bleed" style="background-color: #F7F4E9; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 2rem 0; margin: 0; overflow: hidden;">
+  <section class="section-full-bleed" style="background-color: #F7F4E9; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
 
@@ -155,6 +155,8 @@ photos:
 
         <p style="margin-bottom: 0;">Pour d'autres idées de manipulations de terrain, consultez la fiche du Réseau IDée : <a href="https://www.reseau-idee.be/fr/symbioses/lecoute-de-la-nature-7-activites-pour-tendre-loreille" target="_blank" rel="noopener">L'écoute de la nature : 7 activités pour tendre l'oreille</a>.</p>
 
-      </div> </div> </section>
+      </div>
+    </div>
+  </section>
 
 </main>
