@@ -56,6 +56,7 @@ photos:
         
         <h2>Objectifs de l'atelier</h2>
         <ul>
+          <li>Découvrir les oiseaux locaux</li>
           <li>Réfléchir à la place de la biophonie dans l'environnement: où peut-on entendre les oiseaux ? À quelle heure ? Dans quel environnement sonore ?</li>
           <li>Conscientiser la place des bruits humains dans l'environnement.</li>
           <li>Mesurer le niveau de bruit ambiant, comprendre la notion de pollution sonore par la mesure.</li>
