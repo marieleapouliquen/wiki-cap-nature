@@ -8,21 +8,21 @@ show_photo_credits: false
   <div class="container">
     <div class="page-content">
 
-     <section class="content">
-     
-     <h2> <strong>Cap Nature</strong> est un dispositif d'ateliers participatifs qui invite les jeunes à renouer avec le vivant, en faisant des capteurs environnementaux des outils d'attention et de découverte du milieu naturel.</h2>
+      <section class="content">
+        <h2><strong>Cap Nature</strong> est un dispositif d'ateliers participatifs qui invite les jeunes à renouer avec le vivant, en faisant des capteurs environnementaux des outils d'attention et de découverte du milieu naturel.</h2>
 
         <figure class="page-banner">
-        <img src="{{ '/assets/img/atelier-paroi-rocheuse.jpg' | relative_url }}"
-             alt="Atelier Cap Nature avec des Secondes du Lycée Jules Lesven"
-             class="page-banner-img">
-        <figcaption class="page-banner-credit">Atelier Cap Nature avec des Secondes du Lycée Jules Lesven — © Marie-Léa Pouliquen</figcaption>
-      </figure>
-
+          <img src="{{ '/assets/img/atelier-paroi-rocheuse.jpg' | relative_url }}"
+               alt="Atelier Cap Nature avec des Secondes du Lycée Jules Lesven"
+               class="page-banner-img">
+          <figcaption class="page-banner-credit">Atelier Cap Nature avec des Secondes du Lycée Jules Lesven — © Marie-Léa Pouliquen</figcaption>
+        </figure>
       </section>
-        
 
-    </div> </div> <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 3.5rem 0; margin: 2.5rem 0;">
+    </div>
+  </div> 
+
+  <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 3.5rem 0; margin: 2.5rem 0;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
 
@@ -31,17 +31,18 @@ show_photo_credits: false
         <p>Or, à l'heure où l'urbanisation s'intensifie et où les loisirs se numérisent, le contact direct avec la nature se raréfie. Ce phénomène nourrit ce que les chercheurs nomment l'<strong>amnésie environnementale</strong> (ou <em>shifting baseline syndrome</em>) : chaque génération prend pour « normal » l'environnement appauvri de son enfance, si bien que l'ampleur réelle des pertes passe inaperçue d'une génération à l'autre.<sup><a href="#ref4">4</a></sup></p>
         <p>Cette perte de lien n'est pas anodine. La recherche établit aujourd'hui que la <strong>connexion à la nature</strong> constitue un véritable levier de durabilité : elle prédit à la fois le bien-être des individus et l'adoption de comportements favorables à l'environnement.<sup><a href="#ref5">5</a></sup> Reconnecter les personnes au vivant est même décrit comme un « point de levier » pour transformer nos sociétés vers plus de soutenabilité.<sup><a href="#ref6">6</a></sup> Une part importante des jeunes exprimant aujourd'hui tristesse et anxiété face à l'effondrement de la biodiversité, l'expérience directe de la nature apparaît comme un antidote précieux à cette détresse. <strong>Promouvoir le lien des jeunes au vivant</strong> est ainsi un enjeu à la fois écologique, éducatif et de bien-être.</p>
 
-      </div> </div> </section>
+      </div>
+    </div> 
+  </section>
 
-      </div> </div> <section class="section-full-bleed" style="background-color: #C2DDCC; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 3.5rem 0; margin: 2.5rem 0;">
+  <section class="section-full-bleed" style="background-color: #C2DDCC; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 3.5rem 0; margin: 2.5rem 0;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
-      
 
-  <h2>Cap Nature : une approche par l'expérimentation instrumentée</h2>
+        <h2>Cap Nature : une approche par l'expérimentation instrumentée</h2>
         <p>Cap Nature est développé dans le cadre du travail de thèse de Marie-Léa Pouliquen portant sur le lien des jeunes au vivant et sur l'usage des capteurs environnementaux comme outils d'attention au milieu naturel<sup><a href="#ref7">7</a></sup>. Pour en savoir plus : <a href="https://marieleapouliquen.github.io/recherche/" target="_blank" rel="noopener">le projet Cap Nature</a>.</p>
 
-      <h3>Le wiki des Ateliers</h3>
+        <h3>Le wiki des Ateliers</h3>
         <p>Ce wiki rassemble les ressources pour mener les ateliers Cap Nature : protocoles d'observation, prise en main des capteurs, fiches d'activité et pistes pédagogiques. Le wiki documente chaque atelier pas à pas pour qu'un·e animateur·rice, un·e enseignant·e ou un collectif puisse s'en emparer et l'adapter à son contexte éducatif. Les ressources présentées ici sont issues de cette recherche en cours : elles sont partagées à des fins pédagogiques et de retour d'expérience. Pour toute question, collaboration ou réutilisation, n'hésitez pas à contacter : <a href="mailto:marie-lea.pouliquen@univ-rennes.fr">marie-lea.pouliquen@univ-rennes.fr</a>.</p>
         
         <div class="card-grid" style="margin-top: 2rem;">
@@ -58,7 +59,9 @@ show_photo_credits: false
           </div>
         </div>
 
-</div> </div> </section>
+      </div>
+    </div> 
+  </section>
 
   <div class="container">
     <div class="page-content">
@@ -76,4 +79,6 @@ show_photo_credits: false
         </ol>
       </section>
 
-    </div> </div> </main>
+    </div> 
+  </div> 
+</main>
