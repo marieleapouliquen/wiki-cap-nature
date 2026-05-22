@@ -97,7 +97,7 @@ photos:
     <h3>1. Avant l'exploration : Organisation des équipes</h3>
     <p>Le bon fonctionnement de l'enquête repose sur une répartition claire des tâches au sein des équipes :</p>
     <ul>
-      <li><strong>Taille des équipes :</strong> Formez des sous-groupes de 3 à 5 personnes (4 étant la configuration idéale).</li>
+      <li><strong>Taille des équipes :</strong> Formez des sous-groupes de 3 à 5 personnes.</li>
       <li><strong>Distribution des rôles :</strong> Attribuez un rôle précis à chaque participant (les rôles tourneront au cours de la sortie) :
         <ul>
           <li>Le <em>porteur de parabole</em> guide la visée vers les sources sonores.</li>
