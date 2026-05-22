@@ -54,6 +54,33 @@ photos:
       <li>Lancer l'application Merlin et activer l'onglet Sound ID.</li>
       <li>Diriger la parabole en direction des sons qui vous intriguent.</li>
     </ol>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Outil / Solution</th>
+          <th>Type</th>
+          <th>Fonction principale dans l'atelier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Fizziq</strong></td>
+          <td>Application mobile libre</td>
+          <td>Mesure précise de la pression acoustique en décibels (dB).</td>
+        </tr>
+        <tr>
+          <td><strong>Merlin Bird ID</strong></td>
+          <td>Application bioacoustique</td>
+          <td>Reconnaissance automatique et spectrogramme en temps réel.</td>
+        </tr>
+        <tr>
+          <td><strong>BirdMic (ou parabole)</strong></td>
+          <td>Accessoire matériel</td>
+          <td>Focalisation, isolation directionnelle et amplification des signaux.</td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 
   <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
@@ -61,9 +88,32 @@ photos:
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
         
         <h2>Éléments de mise en contexte</h2>
-        <p>Pour introduire la séance ou nourrir vos préparations, voici une sélection de ressources, podcasts et fiches scientifiques de référence :</p>
+        
+        <h3>Qu'est-ce qu'un paysage sonore ?</h3>
+        <p>Le paysage sonore (soundscape) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures. Les écoacousticiens classent ces sons en <strong>trois grandes catégories</strong> :</p>
 
-        <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+        <div class="concept-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+          <div class="concept-card" style="background: #ffffff; padding: 1rem; border-radius: 4px; border: 1px solid #e2e6d8;">
+            <strong>Biophonie</strong>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0;">Les manifestations sonores des êtres vivants non-humains (chants d'oiseaux, coassements d'amphibiens, stridulations d'insectes, mammifères).</p>
+          </div>
+          <div class="concept-card" style="background: #ffffff; padding: 1rem; border-radius: 4px; border: 1px solid #e2e6d8;">
+            <strong>Géophonie</strong>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0;">Les sons de la nature non vivante, liés aux éléments naturels et à la météo (souffle du vent, clapotis de la pluie, grondement des rivières).</p>
+          </div>
+          <div class="concept-card" style="background: #ffffff; padding: 1rem; border-radius: 4px; border: 1px solid #e2e6d8;">
+            <strong>Anthrophonie</strong>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0;">L'ensemble des bruits produits par l'activité humaine et le développement des infrastructures (paroles, moteurs, machines, circulation).</p>
+          </div>
+        </div>
+
+        <h3>Pourquoi étudier les paysages sonores en écologie ?</h3>
+        <p>L'analyse des indices acoustiques permet de mesurer l'état de santé d'un écosystème de manière non invasive. Les chercheurs étudient ces environnements pour quantifier la biodiversité, suivre l'évolution de l'activité animale ou évaluer l'impact négatif de la pollution sonore sur la faune sauvage. Le bruit généré par les infrastructures humaines masque les signaux de communication essentiels des animaux. Pour survivre, de nombreuses espèces doivent adapter l'amplitude, la durée ou la fréquence de leurs vocalisations, un effort qui perturbe leur équilibre énergétique et leurs chances de reproduction.</p>
+
+        <h3>Ressources, fiches et podcasts de référence</h3>
+        <p>Pour approfondir la thématique et introduire la séance, voici une sélection de supports et d'émissions scientifiques :</p>
+
+        <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; margin-bottom: 1.5rem;">
           <a class="resource-link" href="{{ '/module-oiseaux/fiche1-soundscape/' | relative_url }}">
             <span class="resource-link-label">Fiche Technique 1</span>
             <span class="resource-link-title">Le Paysage Sonore et ses enjeux</span>
