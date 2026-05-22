@@ -23,11 +23,14 @@ photos:
     caption: Martin-pêcheur
 ---
 
+{% include photo-band.html photos=page.photos %}
+
 <main class="content">
   
-  <p class="page-lead">Cet atelier d'écoacoustique participative invite les participant·es à mener une enquête sensible et instrumentée sur le paysage sonore et les oiseaux présents dans l'environnement.</p>
-
-  {% include photo-band.html photos=page.photos %}
+  <section class="content" style="padding-bottom: 0;">
+    <h1>{{ page.title }}</h1>
+    <p class="page-lead">Cet atelier d'écoacoustique participative invite les participant·es à mener une enquête sensible et instrumentée sur le paysage sonore et les oiseaux présents dans l'environnement.</p>
+  </section>
 
   <section class="content">
     <h2>Les outils de l'enquête</h2>
@@ -53,7 +56,7 @@ photos:
     </ol>
   </section>
 
-  <section class="section-full-bleed" style="background-color: #F7F4E9; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
+  <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 2rem 0; margin: 0; overflow: hidden;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
         
@@ -114,30 +117,29 @@ photos:
     <p><strong>Enquête instrumentée :</strong> Chaque groupe explore la zone délimitée. À chaque station d'écoute, la consigne est simple : s'arrêter en silence, mesurer les décibels avec Fizziq, lancer Merlin Sound ID pour identifier les espèces, et consigner l'ensemble sur la fiche d'observation.</p>
 
     <h3 style="margin-top: 2.5rem;">Ressources Pédagogiques Cap Nature</h3>
-      <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem;">
-        <a class="resource-link" href="{{ '/module-oiseaux/fiche2-chant/' | relative_url }}">
-          <span class="resource-link-label">Fiche Scientifique 2</span>
-          <span class="resource-link-title">Quiz sur les Oiseaux</span>
-        </a>
+    <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem;">
+      <a class="resource-link" href="{{ '/module-oiseaux/fiche2-chant/' | relative_url }}">
+        <span class="resource-link-label">Fiche Scientifique 2</span>
+        <span class="resource-link-title">Quiz sur les Oiseaux</span>
+      </a>
 
-        <a class="resource-link" href="{{ '/module-oiseaux/fiche3-sonogramme/' | relative_url }}">
-          <span class="resource-link-label">Fiche Scientifique 3</span>
-          <span class="resource-link-title">Lire un spectrogramme</span>
-        </a>
-      </div>
+      <a class="resource-link" href="{{ '/module-oiseaux/fiche3-sonogramme/' | relative_url }}">
+        <span class="resource-link-label">Fiche Scientifique 3</span>
+        <span class="resource-link-title">Lire un spectrogramme</span>
+      </a>
+    </div>
 
-      <h3>3. Retours réflexifs</h3> 
+    <h3 style="margin-top: 2.5rem;">3. Retours réflexifs</h3> 
 
-        <figure class="page-banner" style="margin-bottom: 0;">
-          <img src="{{ '/assets/img/atelier-retours.jpg' | relative_url }}"
-               alt="Ressenti des participants après l'exploration"
-               class="page-banner-img">
-          <figcaption class="page-banner-credit">© Marie-Léa Pouliquen</figcaption>
-        </figure>
-
+    <figure class="page-banner" style="margin-top: 1.5rem; margin-bottom: 0;">
+      <img src="{{ '/assets/img/atelier-retours.jpg' | relative_url }}"
+           alt="Ressenti des participants après l'exploration"
+           class="page-banner-img">
+      <figcaption class="page-banner-credit">© Marie-Léa Pouliquen</figcaption>
+    </figure>
   </section>
 
-  <section class="section-full-bleed" style="background-color: #F7F4E9; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
+  <section class="section-full-bleed" style="background-color: #F7F4E9; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 2rem 0; margin: 0; overflow: hidden;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
 
@@ -151,10 +153,8 @@ photos:
           <li><strong>Cartographier :</strong> Pour conclure, positionnez vos relevés sur une carte géographique en attribuant des icônes thématiques à chaque type de son rencontré.</li>
         </ol>
 
-        <p>Pour d'autres idées de manipulations de terrain, consultez la fiche du Réseau IDée : <a href="https://www.reseau-idee.be/fr/symbioses/lecoute-de-la-nature-7-activites-pour-tendre-loreille" target="_blank" rel="noopener">L'écoute de la nature : 7 activités pour tendre l'oreille</a>.</p>
+        <p style="margin-bottom: 0;">Pour d'autres idées de manipulations de terrain, consultez la fiche du Réseau IDée : <a href="https://www.reseau-idee.be/fr/symbioses/lecoute-de-la-nature-7-activites-pour-tendre-loreille" target="_blank" rel="noopener">L'écoute de la nature : 7 activités pour tendre l'oreille</a>.</p>
 
-      </div>
-    </div>
-  </section>
+      </div> </div> </section>
 
 </main>
