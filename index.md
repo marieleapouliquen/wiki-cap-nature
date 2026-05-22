@@ -36,48 +36,49 @@ show_photo_credits: false
     </div> 
   </section>
 
-<section class="section-full-bleed" style="background-color: #F7F4E9; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
-    <div class="container">
-      <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
+<section class="section-full-bleed" style="background-color: #F7F4E9; border-bottom: 0.2px solid #e2e6d8; padding: 2rem 0; margin: 0; overflow: hidden;">
+  <div class="container">
+    <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
 
-        <div style="display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 2.5rem; align-items: stretch;">
+      <div style="display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 2.5rem; align-items: stretch;">
+        
+        <div>
+          <h2>Cap Nature : une approche par l'expérimentation instrumentée</h2>
+          <p>Cap Nature est développé dans le cadre du travail de thèse de Marie-Léa Pouliquen portant sur le lien des jeunes au vivant et sur l'usage des capteurs environnementaux comme outils d'attention au milieu naturel<sup><a href="#ref7">7</a></sup>.</p> 
           
-          <div>
-            <h2>Cap Nature : une approche par l'expérimentation instrumentée</h2>
-            <p>Cap Nature est développé dans le cadre du travail de thèse de Marie-Léa Pouliquen portant sur le lien des jeunes au vivant et sur l'usage des capteurs environnementaux comme outils d'attention au milieu naturel<sup><a href="#ref7">7</a></sup>. 
-            <p> Pour en savoir plus sur <a href="https://marieleapouliquen.github.io/recherche/" target="_blank" rel="noopener">le projet de recherche</a>. Voir aussi : <a href="https://terra-forma-web.osug.fr/Les-ateliers-Cap-Nature-Presentation-du-cycle-d-automne-2025" target="_blank" rel="noopener">Les Ateliers : Cycle de l'automne 2025</a>. </p> 
+          <p>Pour en savoir plus sur <a href="https://marieleapouliquen.github.io/recherche/" target="_blank" rel="noopener">le projet de recherche</a>. Voir aussi : <a href="https://terra-forma-web.osug.fr/Les-ateliers-Cap-Nature-Presentation-du-cycle-d-automne-2025" target="_blank" rel="noopener">Les Ateliers : Cycle de l'automne 2025</a>.</p> 
 
-            <h3>Le wiki des Ateliers</h3>
-            <p>Ce wiki rassemble les ressources pour mener les ateliers Cap Nature : protocoles d'observation, prise en main des capteurs, fiches d'activité et pistes pédagogiques. Le wiki documente chaque atelier pas à pas pour qu'un·e animateur·rice, un·e enseignant·e ou un collectif puisse s'en emparer et l'adapter à son contexte éducatif.</p>
+          <h3>Le wiki des Ateliers</h3>
+          <p>Ce wiki rassemble les ressources pour mener les ateliers Cap Nature : protocoles d'observation, prise en main des capteurs, fiches d'activité et pistes pédagogiques. Le wiki documente chaque atelier pas à pas pour qu'un·e animateur·rice, un·e enseignant·e ou un collectif puisse s'en emparer et l'adapter à son contexte éducatif.</p>
+          
+          <div class="card-grid" style="margin-top: 1.5rem;">
+            <a class="card" href="{{ '/module-oiseaux/' | relative_url }}">
+              <span class="card-title">Atelier · Écoacoustique</span>
+              <span class="card-desc">Initiation à l'écoute des oiseaux et des paysages sonores</span>
+              <span class="btn">Découvrir l'atelier →</span>
+            </a>
             
-            <div class="card-grid" style="margin-top: 1.5rem;">
-              <a class="card" href="{{ '/module-oiseaux/' | relative_url }}">
-                <span class="card-title">Atelier · Écoacoustique</span>
-                <span class="card-desc">Initiation à l'écoute des oiseaux et des paysages sonores</span>
-                <span class="btn">Découvrir l'atelier →</span>
-              </a>
-              
-              <div class="card">
-                <span class="card-title">Atelier · Caméras thermiques</span>
-                <span class="card-desc">Voir l'environnement autrement : explorer la chaleur invisible avec des caméras thermiques.</span>
-                <span class="btn" style="opacity: 0.5; pointer-events: none;">En préparation</span>
-              </div>
+            <div class="card">
+              <span class="card-title">Atelier · Caméras thermiques</span>
+              <span class="card-desc">Voir l'environnement autrement : explorer la chaleur invisible avec des caméras thermiques.</span>
+              <span class="btn" style="opacity: 0.5; pointer-events: none;">En préparation</span>
             </div>
-            
-            <p style="margin-top: 2rem; font-size: 0.9rem;">Pour toute question, collaboration ou réutilisation, n'hésitez pas à contacter : <a href="mailto:marie-lea.pouliquen@univ-rennes.fr">marie-lea.pouliquen@univ-rennes.fr</a>.</p>
           </div>
+          
+          <p style="margin-top: 2rem; font-size: 0.9rem;">Pour toute question, collaboration ou réutilisation, n'hésitez pas à contacter : <a href="mailto:marie-lea.pouliquen@univ-rennes.fr">marie-lea.pouliquen@univ-rennes.fr</a>.</p>
+        </div>
 
-          <div style="width: 100%; position: relative;">
-            <img src="{{ '/assets/img/atelier-kerinou.jpg' | relative_url }}"  
-                 alt="Élèves sur le terrain manipulant des capteurs en lisière de forêt"  
-                 style="width: 100%; height: 100%; min-height: 380px; object-fit: cover; border-radius: 4px; border: 1px solid var(--color-border); display: block;">
-          </div>
-
+        <div style="width: 100%; position: relative;">
+          <img src="{{ '/assets/img/atelier-kerinou.jpg' | relative_url }}"  
+               alt="Élèves sur le terrain manipulant des capteurs en lisière de forêt"  
+               style="width: 100%; height: 100%; min-height: 380px; object-fit: cover; border-radius: 4px; border: 1px solid var(--color-border); display: block;">
         </div>
 
       </div>
-    </div> 
-  </section>
+
+    </div>
+  </div> 
+</section>
 
   <section class="section-full-bleed" style="background-color: #ffffff; padding: 2.5rem 0; margin: 0;">
     <div class="container">
