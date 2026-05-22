@@ -10,7 +10,7 @@ show_photo_credits: false
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
         
-        <h2 style="margin-top: 0; padding-top: 0;"><strong>Cap Nature</strong> est un dispositif d'ateliers participatifs qui invite les jeunes à renouer avec le vivant, en faisant des capteurs environnementaux des outils d'attention et de découverte du milieu naturel.</h2>
+        <h2 style="margin-top: 0; padding-top: 0;"><strong>Cap Nature</strong> est un dispositif d'ateliers participatifs qui invite les jeunes à renouer avec la nature, en faisant des capteurs environnementaux des outils d'attention et de découverte du milieu naturel.</h2>
 
         <figure class="page-banner" style="margin-bottom: 0;">
           <img src="{{ '/assets/img/atelier-paroi-rocheuse.jpg' | relative_url }}"
