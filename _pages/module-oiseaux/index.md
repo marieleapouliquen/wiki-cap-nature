@@ -50,10 +50,6 @@ photos:
 
   </section>
 
-            
-
-  </section>
-
   <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
