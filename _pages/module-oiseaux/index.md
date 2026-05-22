@@ -56,10 +56,9 @@ photos:
         
         <h2>Objectifs de l'atelier</h2>
         <ul>
-          <li>Focus sur la <strong>biophonie</strong> : apprendre à écouter un paysage sonore.</li>
-          <li>Prendre conscience des interactions sonores entre les espèces.</li>
-          <li>Conscientiser la place des bruits humains dans l'environnement et mesurer la pollution sonore.</li>
-          <li>Réfléchir aux interactions humains-nature : où peut-on entendre les oiseaux ? À quelle heure ? Dans quel environnement sonore ?</li>
+          <li>Réfléchir à la place de la biophonie dans l'environnement: où peut-on entendre les oiseaux ? À quelle heure ? Dans quel environnement sonore ?</li>
+          <li>Conscientiser la place des bruits humains dans l'environnement.</li>
+          <li>Mesurer le niveau de bruit ambiant, comprendre la notion de pollution sonore par la mesure.</li>
         </ul>
 
       {% include photo-band.html photos=page.photos %}
