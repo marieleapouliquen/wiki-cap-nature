@@ -9,7 +9,14 @@ show_photo_credits: false
     <div class="page-content">
       
       <p class="page-lead"> <strong>Cap Nature</strong> est un dispositif d'ateliers participatifs qui invite les jeunes à renouer avec le vivant, en faisant des capteurs environnementaux des outils d'attention et de découverte du milieu naturel.</p>
-      
+
+      <figure class="page-banner">
+        <img src="{{ '/assets/img/atelier-paroi-rocheuse.jpg' | relative_url }}"
+             alt="Atelier Cap Nature avec des Secondes du Lycée Jules Lesven"
+             class="page-banner-img">
+        <figcaption class="page-banner-credit">Atelier Cap Nature avec des Secondes du Lycée Jules Lesven — © Marie-Léa Pouliquen</figcaption>
+      </figure>
+   
       <section class="content">
       <h2>Reconnecter les jeunes à la nature</h2>
         <p>Dans son évaluation mondiale de 2019,<sup><a href="#ref1">1</a></sup> la Plateforme intergouvernementale sur la biodiversité et les services écosystémiques (Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services – IPBES) dressait un constat alarmant : la biodiversité décline à un rythme sans précédent dans l'histoire humaine. Son rapport <em>Nexus</em>, publié fin 2024,<sup><a href="#ref2">2</a></sup> va plus loin en montrant que biodiversité, climat, eau, alimentation et santé humaine forment <strong>cinq crises interconnectées</strong> — interdépendantes dans leurs causes, leurs effets et les réponses à y apporter. Pour enrayer cet effondrement, l'IPBES appelle à des <strong>« changements transformateurs »</strong>, qui touchent aussi, comme le souligne l'Office français de la biodiversité (OFB),<sup><a href="#ref3">3</a></sup> <strong>nos représentations et nos relations au vivant</strong>.</p>
