@@ -24,7 +24,6 @@ show_photo_credits: false
           <li id="ref6">G. Barragan-Jason et al., « Human–nature connectedness as a pathway to sustainability: a global meta-analysis », <em>Conservation Letters</em>, 15(1), 2022, e12852. <a href="https://doi.org/10.1111/conl.12852" target="_blank" rel="noopener">https://doi.org/10.1111/conl.12852</a></li>
           <li id="ref7">C. D. Ives et al., « Human–nature connection: a multidisciplinary review », <em>Current Opinion in Environmental Sustainability</em>, 26-27, 2017, p. 106-113. <a href="https://doi.org/10.1016/j.cosust.2017.05.005" target="_blank" rel="noopener">https://doi.org/10.1016/j.cosust.2017.05.005</a></li>
         </ol>
-      </section>
 
         <h2>Cap Nature : une approche par l'expérimentation instrumentée</h2>
         <p>Cap Nature est développé dans le cadre du travail de thèse de Marie-Léa Pouliquen portant sur le lien des jeunes au vivant et sur l'usage des capteurs environnementaux comme outils d'attention au milieu naturel. Pour en savoir plus : <a href="https://marieleapouliquen.github.io/recherche/" target="_blank" rel="noopener">le projet Cap Nature</a>.</p>
@@ -46,10 +45,8 @@ show_photo_credits: false
             <span class="btn" style="opacity: 0.5; pointer-events: none;">En préparation</span>
           </div>
         </div>
+        
       </section>
-
-
-
     </div>
   </div>
 </main>
