@@ -38,7 +38,7 @@ show_photo_credits: false
     </div> 
   </section>
 
-  <section class="section-full-bleed" style="background-color: #C2DDCC; border-bottom: 0.2px solid #e2e6d8; padding: 2rem 0; margin: 0;">
+  <section class="section-full-bleed" style="background-color: #FAF5FF; border-bottom: 0.2px solid #e2e6d8; padding: 2rem 0; margin: 0;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
 
