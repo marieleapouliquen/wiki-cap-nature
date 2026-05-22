@@ -63,9 +63,6 @@ photos:
 
   <h3>Le sonomètre portatif Fizziq</h3>
   <p>Fizziq est une application qui transforme le smartphone en un véritable laboratoire de poche. Dans le cadre de cette enquête, elle permet notamment de <strong>mesurer le niveau sonore en temps réel (décibels)</strong>, de géolocaliser son parcours grâce au GPS, ou d'enregistrer et annoter des données.</p>
-  <ul>
-    <li>Installation : Rechercher "Fizziq" dans l'App Store ou Google Play. L'application est entièrement gratuite.</li>
-  </ul>
 
   <h3>Merlin Bird ID pour la reconnaissance des chants</h3>
   <p>Développée par le 100% de la Cornell Lab of Ornithology, cette application écoute l'environnement et propose en temps réel le nom des espèces d'oiseaux qui chantent. <strong>À préparer avant l'atelier</strong> : installer l'application, puis télécharger le pack gratuit « Europe occidentale » (≈ 200 Mo) pour un fonctionnement 100% hors-ligne. (D'autres alternatives comme BirdNET ou BirdWeather peuvent être explorées en complément).</p>
