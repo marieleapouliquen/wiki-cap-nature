@@ -23,8 +23,6 @@ photos:
     caption: Martin-pêcheur
 ---
 
-{% include photo-band.html photos=page.photos %}
-
 <main class="content">
   
   <section class="content" style="padding-bottom: 0;">
@@ -55,6 +53,24 @@ photos:
           </div>
         </div>
 
+       {% include photo-band.html photos=page.photos %}
+
+      </div>
+    </div> 
+  </section>
+
+  <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
+    <div class="container">
+      <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
+        
+        <h2>Objectifs de l'atelier</h2>
+        <ul>
+          <li>Focus sur la <strong>biophonie</strong> : apprendre à écouter un paysage sonore.</li>
+          <li>Prendre conscience des interactions sonores entre les espèces.</li>
+          <li>Conscientiser la place des bruits humains dans l'environnement et mesurer la pollution sonore.</li>
+          <li>Réfléchir aux interactions humains-nature : où peut-on entendre les oiseaux ? À quelle heure ? Dans quel environnement sonore ?</li>
+        </ul>
+        
       </div>
     </div> 
   </section>
