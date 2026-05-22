@@ -29,10 +29,32 @@ photos:
 <main>
   
   <h2>Démarche et objectifs de l'atelier</h2>
-  <p>L'atelier s'appuie sur une démarche scientifique active. Équipés de smartphones et de microphones portatifs, les sous-groupes partent sur le terrain avec trois objectifs&nbsp;: prêter <strong>attention</strong> au vivant proche, <strong>expérimenter</strong> par des outils accessibles, et <strong>réfléchir</strong> à notre cohabitation avec les autres espèces.</p>
+  <p>L'atelier s'appuie sur une démarche scientifique active.</p>
 
   <h2>Les outils de l'enquête</h2>
-  <p>Le tableau ci-dessous synthétise les solutions matérielles et logicielles mobilisées au cours de l'exploration :</p>
+  
+  <h3>Le sonomètre portatif Fizziq</h3>
+  <p>Fizziq est une application qui transforme le smartphone en un véritable laboratoire de poche. Dans le cadre de cette enquête, elle permet notamment de <strong>mesurer le niveau sonore en temps réel (décibels)</strong>, de géolocaliser son parcours grâce au GPS, ou d'enregistrer et annoter des données.</p>
+
+  <h3>Merlin Bird ID pour la reconnaissance des chants</h3>
+  <p>Développée par le 100% de la Cornell Lab of Ornithology, cette application écoute l'environnement et propose en temps réel le nom des espèces d'oiseaux qui chantent. <strong>À préparer avant l'atelier</strong> : installer l'application, puis télécharger le pack gratuit « Europe occidentale » (≈ 200 Mo) pour un fonctionnement 100% hors-ligne. (D'autres alternatives comme BirdNET ou BirdWeather peuvent être explorées en complément).</p>
+
+  <h3>Optionnel : Utiliser Merlin avec une parabole directionnelle</h3>
+  <p>Une parabole directionnelle (comme <strong>BirdMic</strong>) est un dispositif qui concentre et amplifie les ondes acoustiques venant d'une direction précise.</p>
+  <ul>
+    <li><strong>Le principe du miroir :</strong> La grande coupole en forme de parabole agit comme un réflecteur ou miroir acoustique. Elle renvoie toutes les ondes incidentes de son axe vers un point focal central : le micro placé au foyer de la parabole.</li>
+    <li><strong>Résultat :</strong> Les signaux provenant de la cible visée sont fortement amplifiés tandis que les bruits parasites latéraux et arrières sont atténués. Branchée au smartphone, elle offre à l'application Merlin un signal moins bruité qui optimise l'identification en direct.</li>
+  </ul>
+
+  <h4>Comment l'utiliser sur le terrain ?</h4>
+  <ol>
+    <li><strong>Brancher la parabole :</strong> Connecter le micro directionnel au port ou à l'adaptateur du smartphone.</li>
+    <li><strong>Lancer l'interface :</strong> Ouvrir l'application Merlin et activer l'onglet Sound ID.</li>
+    <li><strong>Cibler :</strong> Diriger la parabole précisément vers l'oiseau ou le bosquet à analyser.</li>
+    <li><strong>Capturer :</strong> Rester immobile et silencieux pendant que le tracé défile à l'écran.</li>
+  </ol>
+
+  <p>Le tableau ci-dessous synthétise les solutions matérielles mobilisées au cours de l'exploration :</p>
 
   <table>
     <thead>
@@ -61,26 +83,6 @@ photos:
     </tbody>
   </table>
 
-  <h3>Le sonomètre portatif Fizziq</h3>
-  <p>Fizziq est une application qui transforme le smartphone en un véritable laboratoire de poche. Dans le cadre de cette enquête, elle permet notamment de <strong>mesurer le niveau sonore en temps réel (décibels)</strong>, de géolocaliser son parcours grâce au GPS, ou d'enregistrer et annoter des données.</p>
-
-  <h3>Merlin Bird ID pour la reconnaissance des chants</h3>
-  <p>Développée par le 100% de la Cornell Lab of Ornithology, cette application écoute l'environnement et propose en temps réel le nom des espèces d'oiseaux qui chantent. <strong>À préparer avant l'atelier</strong> : installer l'application, puis télécharger le pack gratuit « Europe occidentale » (≈ 200 Mo) pour un fonctionnement 100% hors-ligne. (D'autres alternatives comme BirdNET ou BirdWeather peuvent être explorées en complément).</p>
-
-  <h3>Optionnel : Utiliser Merlin avec une parabole directionnelle</h3>
-  <p>Une parabole directionnelle (comme <strong>BirdMic</strong>) est un dispositif qui concentre et amplifie les ondes acoustiques venant d'une direction précise.</p>
-  <ul>
-    <li><strong>Le principe du miroir :</strong> La grande coupole en forme de parabole agit comme un réflecteur ou miroir acoustique. Elle renvoie toutes les ondes incidentes de son axe vers un point focal central : le micro placé au foyer de la parabole.</li>
-    <li><strong>Résultat :</strong> Les signaux provenant de la cible visée sont fortement amplifiés tandis que les bruits parasites latéraux et arrières sont atténués. Branchée au smartphone, elle offre à l'application Merlin un signal épuré qui optimise l'identification en direct.</li>
-  </ul>
-
-  <h4>Comment l'utiliser sur le terrain ?</h4>
-  <ol>
-    <li><strong>Brancher la parabole :</strong> Connecter le micro directionnel au port ou à l'adaptateur du smartphone.</li>
-    <li><strong>Lancer l'interface :</strong> Ouvrir l'application Merlin et activer l'onglet Sound ID.</li>
-    <li><strong>Cibler :</strong> Pointer la parabole précisément vers l'oiseau ou le bosquet à analyser.</li>
-    <li><strong>Capturer :</strong> Rester immobile et silencieux pendant que le tracé défile à l'écran.</li>
-  </ol>
 
   <h2>Déroulement de l'atelier</h2>
 
