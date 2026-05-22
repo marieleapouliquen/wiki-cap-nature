@@ -28,13 +28,8 @@ photos:
   <section class="content" style="padding-bottom: 0;">
     <h1>{{ page.title }}</h1>
     <p class="page-lead">Cet atelier d'écoacoustique participative invite les participant·es à mener une enquête sensible et instrumentée sur le paysage sonore et les oiseaux présents dans l'environnement.</p>
-  </section>
-  
-  <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
-    <div class="container">
-      <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
-        
-        <h2>Qu'est-ce qu'un paysage sonore ?</h2>
+
+    <h2>Qu'est-ce qu'un paysage sonore ?</h2>
         
         <p>Le paysage sonore (soundscape) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures. Les écoacousticiens classent ces sons en <strong>trois grandes catégories</strong> :</p>
 
@@ -50,13 +45,7 @@ photos:
           <div class="concept-card" style="background: #ffffff; padding: 1rem; border-radius: 4px; border: 1px solid #e2e6d8;">
             <strong>Anthrophonie</strong>
             <p style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0;">L'ensemble des bruits produits par l'activité humaine et le développement des infrastructures (paroles, moteurs, machines, circulation).</p>
-          </div>
-        </div>
 
-       {% include photo-band.html photos=page.photos %}
-
-      </div>
-    </div> 
   </section>
 
   <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
@@ -70,7 +59,9 @@ photos:
           <li>Conscientiser la place des bruits humains dans l'environnement et mesurer la pollution sonore.</li>
           <li>Réfléchir aux interactions humains-nature : où peut-on entendre les oiseaux ? À quelle heure ? Dans quel environnement sonore ?</li>
         </ul>
-        
+
+      {% include photo-band.html photos=page.photos %}
+
       </div>
     </div> 
   </section>
