@@ -18,16 +18,15 @@ show_photo_credits: false
       </figure>
    
       <section class="content">
-      <h2>Reconnecter les jeunes à la nature</h2>
+        <h2>Reconnecter les jeunes à la nature</h2>
         <p>Dans son évaluation mondiale de 2019,<sup><a href="#ref1">1</a></sup> la Plateforme intergouvernementale sur la biodiversité et les services écosystémiques (Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services – IPBES) dressait un constat alarmant : la biodiversité décline à un rythme sans précédent dans l'histoire humaine. Son rapport <em>Nexus</em>, publié fin 2024,<sup><a href="#ref2">2</a></sup> va plus loin en montrant que biodiversité, climat, eau, alimentation et santé humaine forment <strong>cinq crises interconnectées</strong> — interdépendantes dans leurs causes, leurs effets et les réponses à y apporter. Pour enrayer cet effondrement, l'IPBES appelle à des <strong>« changements transformateurs »</strong>, qui touchent aussi, comme le souligne l'Office français de la biodiversité (OFB),<sup><a href="#ref3">3</a></sup> <strong>nos représentations et nos relations au vivant</strong>.</p>
         <p>Or, à l'heure où l'urbanisation s'intensifie et où les loisirs se numérisent, le contact direct avec la nature se raréfie. Ce phénomène nourrit ce que les chercheurs nomment l'<strong>amnésie environnementale</strong> (ou <em>shifting baseline syndrome</em>) : chaque génération prend pour « normal » l'environnement appauvri de son enfance, si bien que l'ampleur réelle des pertes passe inaperçue d'une génération à l'autre.<sup><a href="#ref4">4</a></sup></p>
         <p>Cette perte de lien n'est pas anodine. La recherche établit aujourd'hui que la <strong>connexion à la nature</strong> constitue un véritable levier de durabilité : elle prédit à la fois le bien-être des individus et l'adoption de comportements favorables à l'environnement.<sup><a href="#ref5">5</a></sup> Reconnecter les personnes au vivant est même décrit comme un « point de levier » pour transformer nos sociétés vers plus de soutenabilité.<sup><a href="#ref6">6</a></sup> Une part importante des jeunes exprimant aujourd'hui tristesse et anxiété face à l'effondrement de la biodiversité, l'expérience directe de la nature apparaît comme un antidote précieux à cette détresse. <strong>Promouvoir le lien des jeunes au vivant</strong> est ainsi un enjeu à la fois écologique, éducatif et de bien-être.</p>
-        
       </section> 
-        
-      <section class="section-full-bleed" style="background-color: #f4f8f7; border-top: 1px solid #e2e6d8; border-bottom: 1px solid #e2e6d8; padding: 3.5rem 0; margin: 2.5rem 0;">
-        <div class="container">
-        <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
+
+    </div> </div> <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 3.5rem 0; margin: 2.5rem 0;">
+    <div class="container">
+      <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
         
         <h2>Cap Nature : une approche par l'expérimentation instrumentée</h2>
         <p>Cap Nature est développé dans le cadre du travail de thèse de Marie-Léa Pouliquen portant sur le lien des jeunes au vivant et sur l'usage des capteurs environnementaux comme outils d'attention au milieu naturel<sup><a href="#ref7">7</a></sup>. Pour en savoir plus : <a href="https://marieleapouliquen.github.io/recherche/" target="_blank" rel="noopener">le projet Cap Nature</a>.</p>
@@ -42,18 +41,20 @@ show_photo_credits: false
             <span class="btn">Découvrir l'atelier →</span>
           </a>
           
-         <div class="card">
+          <div class="card">
             <span class="card-title">Atelier · Caméras thermiques</span>
             <span class="card-desc">Voir l'environnement autrement : explorer la chaleur invisible et les îlots de chaleur avec des caméras thermiques portatives.</span>
             <span class="btn" style="opacity: 0.5; pointer-events: none;">En préparation</span>
           </div>
         </div>
-        </div>
-      </section>
+
+      </div> </div> </section>
+
+  <div class="container">
+    <div class="page-content">
       
       <section class="content">
-      <h2>Références bibliographiques</h2>
-
+        <h2>Références bibliographiques</h2>
         <ol class="references">
           <li id="ref1">IPBES (2019), <em>Résumé à l'intention des décideurs du rapport sur l'évaluation mondiale de la biodiversité et des services écosystémiques</em>. <a href="https://ofb.gouv.fr/doc/reference-urgence-pour-la-nature-et-humain-resume-a-intention-des-decideurs-du-rapport-sur" target="_blank" rel="noopener">Présentation et résumé en français (OFB)</a>.</li>
           <li id="ref2">IPBES (2024), <em>Rapport Nexus — Évaluation des interactions entre biodiversité, eau, alimentation, santé et changement climatique</em>. <a href="https://www.ipbes.net/nexus-assessment" target="_blank" rel="noopener">https://www.ipbes.net/nexus-assessment</a>.</li>
@@ -65,15 +66,4 @@ show_photo_credits: false
         </ol>
       </section>
 
-    </div>
-  </div>
-</main>
-
-
-
-
-
-
-
-
-
+    </div> </div> </main>
