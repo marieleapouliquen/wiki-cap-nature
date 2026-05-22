@@ -103,26 +103,42 @@ photos:
     <h3>Merlin Bird ID pour la reconnaissance des chants</h3>
     <p>Développée par le Cornell Lab of Ornithology, cette application écoute l'environnement et propose en temps réel le nom des espèces d'oiseaux qui chantent. <strong>À préparer avant l'atelier</strong> : installer l'application, puis télécharger le pack gratuit « Europe occidentale » (≈ 200 Mo) pour un fonctionnement 100% hors-ligne. (D'autres alternatives comme BirdNET ou BirdWeather peuvent être explorées en complément).</p>
 
-    <h3>Optionnel : Utiliser Merlin avec une parabole directionnelle</h3>
-    <p>Une parabole directionnelle (comme <strong>BirdMic</strong>) est un dispositif qui concentre et amplifie les ondes acoustiques venant d'une direction précise.</p>
-    <ul>
-      <li><strong>Le principe du miroir :</strong> La grande coupole en forme de parabole agit comme un réflecteur ou miroir acoustique. Elle renvoie toutes les ondes incidentes de son axe vers un point focal central : le micro placé au foyer de la parabole.</li>
-      <li><strong>Résultat :</strong> Les signaux provenant de la cible visée sont fortement amplifiés tandis que les bruits parasites latéraux et arrières sont atténués. Branchée au smartphone, elle offre à l'application Merlin un signal moins bruité qui optimise l'identification en direct.</li>
-    </ul>
-    
-    <h4>Comment utiliser la parabole sur le terrain ?</h4>
-    <ol>
-      <li>Connecter le micro directionnel au port ou à l'adaptateur du smartphone.</li>
-      <li>Lancer l'application Merlin et activer l'onglet Sound ID.</li>
-      <li>Diriger la parabole en direction des sons qui vous intriguent.</li>
-    </ol>
+    <div class="text-image-split">
+      <div class="tis-text">
+        <h3 style="margin-top: 0;">Optionnel : utiliser Merlin avec une parabole directionnelle</h3>
+        <p>Une parabole directionnelle (comme <strong>BirdMic</strong>) est un dispositif qui concentre et amplifie les ondes acoustiques venant d'une direction précise.</p>
+        <ul>
+          <li><strong>Le principe du miroir :</strong> La grande coupole en forme de parabole agit comme un réflecteur ou miroir acoustique. Elle renvoie toutes les ondes incidentes de son axe vers un point focal central : le micro placé au foyer de la parabole.</li>
+          <li><strong>Résultat :</strong> Les signaux provenant de la cible visée sont fortement amplifiés tandis que les bruits parasites latéraux et arrières sont atténués. Branchée au smartphone, elle offre à l'application Merlin un signal moins bruité qui optimise l'identification en direct.</li>
+        </ul>
+
+        <h4>Comment utiliser la parabole sur le terrain ?</h4>
+        <ol>
+          <li>Connecter le micro directionnel au port ou à l'adaptateur du smartphone.</li>
+          <li>Lancer l'application Merlin et activer l'onglet Sound ID.</li>
+          <li>Diriger la parabole en direction des sons qui vous intriguent.</li>
+        </ol>
+      </div>
+
+      <figure class="tis-image">
+        <img src="{{ '/assets/img/atelier-caps.jpg' | relative_url }}"
+             alt="Participant·es captant les sons à l'aide d'une parabole directionnelle">
+        <figcaption>© Marie-Léa Pouliquen</figcaption>
+      </figure>
+    </div>
 
   </section>
 
   <section class="content">
     <h2>Déroulement de l'atelier</h2>
 
-    <h3>1. Avant l'exploration : Organisation des équipes</h3>
+    <h3>1. Avant l'exploration</h3>
+
+    <h4>Mise en contexte</h4>
+
+    Développer ici
+
+    <h4>Formation des équipes et distribution du matériel</h4>
     <p>Le bon fonctionnement de l'enquête repose sur une répartition claire des tâches au sein des équipes :</p>
     <ul>
       <li><strong>Taille des équipes :</strong> Formez des sous-groupes de 3 à 5 personnes.</li>
