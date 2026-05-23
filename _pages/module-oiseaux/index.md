@@ -162,18 +162,20 @@ title: "À l'écoute des oiseaux et du paysage sonore"
 <section id="outils" class="section-full-bleed band-white section-pad">
   <div class="container">
     <div class="page-content">
-      <h2>Les outils de terrain</h2>
+      <h2 style="margin-top: 0;">Les outils de terrain</h2>
 
       <h3>Le sonomètre portatif Fizziq</h3>
       <p><a href="https://www.fizziq.org/" target="_blank" rel="noopener">Fizziq</a> est une application qui transforme le smartphone en un véritable laboratoire de mesure. Dans le cadre de cet atelier, nous l'utilisons pour mesurer le niveau sonore en temps réel (décibels). Elle peut aussi servir à géolocaliser son parcours grâce au GPS.</p>
 
       <h3>Une application pour la reconnaissance des chants</h3>
-      <p>Il existe beaucoup d'applications permettant d'identifier les oiseaux par le chant. Dans le cadre de cet atelier, nous avons utilisé <a href="https://merlin.allaboutbirds.org/" target="_blank" rel="noopener">Merlin Bird ID</a>, une application gratuite développée par le Cornell Lab of Ornithology pour identifier les oiseaux à partir de leur chant ou de leur apparence. <strong>Comment ça marche ?</strong> Lorsque la fonction « Sound ID » est activée, l'application capte les vocalisations des oiseaux enregistrées via le micro du téléphone. L'<a href="https://birdnet.cornell.edu/" target="_blank" rel="noopener">algorithme de traitement</a> convertit alors le signal en image (le spectrogramme), puis applique une reconnaissance d'image grâce à un réseau de neurones entraîné sur des millions de fichiers audio de référence. Vous pouvez bien sûr utiliser une autre application si vous le souhaitez (BirdNET, BirdWeather, etc.).</p>
+      <p>Il existe beaucoup d'applications permettant d'identifier les oiseaux par le chant. Dans le cadre de cet atelier, nous avons utilisé <a href="https://merlin.allaboutbirds.org/" target="_blank" rel="noopener">Merlin Bird ID</a>, une application gratuite développée par le Cornell Lab of Ornithology pour identifier les oiseaux à partir de leur chant ou de leur apparence.</p> 
+      <p><strong>Comment ça marche ?</strong> Lorsque la fonction « Sound ID » est activée, l'application capte les vocalisations des oiseaux enregistrées via le micro du téléphone. L'<a href="https://birdnet.cornell.edu/" target="_blank" rel="noopener">algorithme de traitement</a> convertit alors le signal en image (le spectrogramme), puis applique une reconnaissance d'image grâce à un réseau de neurones entraîné sur des millions de fichiers audio de référence. Vous pouvez bien sûr utiliser une autre application si vous le souhaitez (BirdNET, BirdWeather, etc.).</p>
+
+      <h3 style="margin-top: 0;">Optionnel : une parabole directionnelle</h3>
+      <p>Pour les ateliers, nous avons décidé d'ajouter au dispositif instrumenté la parabole directionnelle <a href="https://www.birdmic.com/" target="_blank" rel="noopener">BirdMic</a>. Une parabole directionnelle est un dispositif qui concentre et amplifie les ondes acoustiques venant d'une direction précise.</p>
 
       <div class="text-image-split">
         <div class="tis-text">
-          <h3 style="margin-top: 0;">Optionnel : une parabole directionnelle</h3>
-          <p>Pour les ateliers, nous avons décidé d'ajouter au dispositif instrumenté la parabole directionnelle <a href="https://www.birdmic.com/" target="_blank" rel="noopener">BirdMic</a>. Une parabole directionnelle est un dispositif qui concentre et amplifie les ondes acoustiques venant d'une direction précise. La parabole BirdMic permet en plus de brancher un casque et de percevoir les sons de façon amplifiée (ce qui crée souvent un effet « whaou » chez les participants). Ce dispositif est très utilisé par les preneurs de sons (les audio-naturalistes) pour repérer plus facilement les chants d'oiseaux mais aussi pour améliorer la qualité de leur enregistrement.</p>
 
           <h4>Comment ça marche ?</h4>
           <ul>
@@ -181,6 +183,8 @@ title: "À l'écoute des oiseaux et du paysage sonore"
             <li><strong>Résultat :</strong> Les signaux provenant de la cible visée sont fortement amplifiés tandis que les bruits parasites latéraux et arrières sont atténués. Branchée au smartphone, elle offre à l'application Merlin un signal moins bruité qui optimise l'identification en direct.</li>
           </ul>
 
+          <p>La parabole BirdMic permet en plus de brancher un casque et de percevoir les sons de façon amplifiée. Ce dispositif est très utilisé par les preneurs de sons (les audio-naturalistes) pour repérer plus facilement les chants d'oiseaux mais aussi pour améliorer la qualité de leur enregistrement.</p>
+          
           <h4>Comment utiliser la parabole sur le terrain ?</h4>
           <ol>
             <li>Connecter le micro directionnel au port ou à l'adaptateur du smartphone.</li>
@@ -194,14 +198,6 @@ title: "À l'écoute des oiseaux et du paysage sonore"
           <figcaption>© Marie-Léa Pouliquen</figcaption>
         </figure>
       </div>
-
-      <h3>Matériel complémentaire</h3>
-      <div class="resource-links">
-        <a class="resource-link" href="{{ '/assets/pdf/fiche-observation.pdf' | relative_url }}" target="_blank" rel="noopener">
-          <span class="resource-link-label">Fiche d'observation</span>
-          <span class="resource-link-title">Télécharger la fiche d'observation terrain (PDF)</span>
-        </a>
-      </div>
     </div>
   </div>
 </section>
@@ -209,14 +205,22 @@ title: "À l'écoute des oiseaux et du paysage sonore"
 <section id="deroulement" class="section-full-bleed band-alt section-pad">
   <div class="container">
     <div class="page-content">
-      <h2>Avant l'atelier</h2>
+      <h2 style="margin-top: 0;">Avant l'atelier</h2>
       <ul>
-        <li>Préparer une brève mise en contexte (quelques ressources sont mises à disposition en bas de la page).</li>
-        <li>Imprimer les fiches d'observation (1 par groupe d'exploration suffit).</li>
-        <li>Si vous utilisez des paraboles : chargez les batteries au moins 1 h avant l'exploration.</li>
-        <li>Pensez à prévenir les participants que leurs téléphones devront être bien chargés le jour de l'atelier.</li>
         <li>Choisissez un site pour l'exploration — si vous êtes en pleine ville, privilégiez un lieu avec des arbres et des bosquets.</li>
+        <li>Faites si possible, un test des outils avant la séance</li>
+        <li>Pensez à prévenir les participants que leurs téléphones devront être bien chargés le jour de l'atelier.</li>
+        <li>Si vous utilisez des paraboles : chargez les batteries au moins 1 h avant l'exploration.</li>
+        <li>Préparez une brève mise en contexte.</li>
+        <li>Imprimez les fiches d'observation (1 par groupe d'exploration suffit).</li>
       </ul>
+
+      <div class="resource-links">
+        <a class="resource-link" href="{{ '/assets/pdf/fiche-observation.pdf' | relative_url }}" target="_blank" rel="noopener">
+          <span class="resource-link-label">Fiche d'observation</span>
+          <span class="resource-link-title">Télécharger la fiche d'observation terrain (PDF)</span>
+        </a>
+      </div>
 
       <h2>Déroulement de l'atelier</h2>
 
