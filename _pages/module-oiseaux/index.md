@@ -209,22 +209,24 @@ toc:
     <li>Imprimez les fiches d'observation (1 par groupe d'exploration suffit).</li>
   </ul>
 
+  <h2>Fiches pédagogiques (PDF à télécharger)</h2>
+
   <div class="resource-links">
     <a class="resource-link" href="{{ '/assets/pdf/fiche-observation.pdf' | relative_url }}" target="_blank" rel="noopener">
-      <span class="resource-link-label">Fiche d'observation terrain</span>
-      <span class="resource-link-title">Télécharger la fiche n°1(PDF)</span>
+      <span class="resource-link-label">Fiche n°1</span>
+      <span class="resource-link-title">Fiche d'observation terrain</span>
     </a>
     <a class="resource-link" href="{{ '/assets/pdf/fiche-merlin.pdf' | relative_url }}" target="_blank" rel="noopener">
-      <span class="resource-link-label">Fiche Merlin Bird ID</span>
-      <span class="resource-link-title">Télécharger la fiche n°2(PDF)</span>
+      <span class="resource-link-label">Fiche n°2</span>
+      <span class="resource-link-title">Fiche Merlin Bird ID</span>
     </a>
     <a class="resource-link" href="{{ '/assets/pdf/fiche-parabole.pdf' | relative_url }}" target="_blank" rel="noopener">
-      <span class="resource-link-label">Fiche "Utiliser Merlin avec une parabole"</span>
-      <span class="resource-link-title">Télécharger la fiche n°3(PDF)</span>
+      <span class="resource-link-label">Fiche n°3</span>
+      <span class="resource-link-title">Utiliser Merlin avec une parabole</span>
     </a>
     <a class="resource-link" href="{{ '/assets/pdf/fiche-test-oiseaux.pdf' | relative_url }}" target="_blank" rel="noopener">
-      <span class="resource-link-label">Fiche "Testez vos connaissances sur les oiseaux"</span>
-      <span class="resource-link-title">Télécharger la fiche n°4(PDF)</span>
+      <span class="resource-link-label">Fiche n°4</span>
+      <span class="resource-link-title">Le langage des oiseaux</span>
     </a>
   </div>
 </section>
