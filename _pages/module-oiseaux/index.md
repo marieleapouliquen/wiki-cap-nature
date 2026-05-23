@@ -180,7 +180,7 @@ title: "À l'écoute des oiseaux et du paysage sonore"
     </div> </details> 
 
 
-<section id="objectifs" class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 2rem 0; margin: 0;">
+<section id="objectifs" class="section-full-bleed" style="background-color: #fafbf6; border-top: 0px solid #e2e6d8; border-bottom: 0px solid #e2e6d8; padding: 2rem 0; margin: 0;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
         
