@@ -241,14 +241,19 @@ li em {
 
 /* Zone double colonne (uniquement sur grands écrans, sinon s'empile) */
 .page-wrapper {
-  max-width: var(--maxw);
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 2rem 2rem;
+  padding: 2rem;
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 200px minmax(0, 1fr);
   gap: 2.5rem;
 }
 .page-wrapper[style*="1fr"] { display: block; max-width: none; padding: 0; }
+
+.page-wrapper main.content {
+  max-width: none;
+  margin: 0;
+}
 
 /* Menu latéral (Sidebar) */
 .sidebar {
