@@ -294,7 +294,7 @@ toc:
       <img src="{{ '/assets/img/production-carnet-oiseaux.jpg' | relative_url }}" alt="Carnet d'observation des oiseaux réalisé par les participants">
       <img src="{{ '/assets/img/production-carte-sensible.jpg' | relative_url }}" alt="Carte sensible collective réalisée en fin d'atelier">
     </div>
-    <figcaption>© Marie-Léa Pouliquen</figcaption>
+    <figcaption>Retours d'Atelier Cap Nature (ressenti des participants, carnet d'observation et cartographie collective) - Photo : Marie-Léa Pouliquen</figcaption>
   </figure>
   
 </section>
