@@ -5,49 +5,34 @@ title: "À l'écoute des oiseaux et du paysage sonore"
 ---
 
 <main class="content">
+
+  <h1>{{ page.title }}</h1>
+  <p class="page-lead" style="margin-top: 0;">Cet atelier d'écoacoustique participative invite les participant·es à mener une enquête sensible et instrumentée sur le paysage sonore et les oiseaux présents dans l'environnement.</p>
+
+
+<section id="paysage-sonore" class="section-full-bleed" style="background-color: #fafbf6; border-top: 0px solid #e2e6d8; border-bottom: 0px solid #e2e6d8; padding: 0rem 0; margin: 0;">
+    <div class="container">
+      <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
+
+      <h2 id="definition" style="margin-top: 3rem;">Qu'est-ce qu'un paysage sonore ?</h2>
+      <p>Le paysage sonore (soundscape) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures, classés en <strong>trois grandes catégories</strong> :</p>
   
-
-<section class="content" style="padding-bottom: 0;">
-    <h1>{{ page.title }}</h1>
-    
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; align-items: start; margin-top: 2rem;">
-      
-      <nav class="table-of-contents" style="background: #fafbf6; padding: 1.25rem; border-radius: 4px; border: 1px solid #e2e6d8;">
-        <strong style="display: block; margin-bottom: 0.75rem; color: var(--color-text-dark); font-size: 1.1rem;">Sommaire</strong>
-        <ul style="list-style: none; padding-left: 0; margin: 0; font-size: 0.95rem; line-height: 1.6;">
-          <li style="margin-bottom: 0.4rem;"><a href="#definition" style="text-decoration: none; color: inherit; font-weight: bold;">1. Qu'est-ce qu'un paysage sonore ?</a></li>
-          <li style="margin-bottom: 0.4rem;"><a href="#interet" style="text-decoration: none; color: inherit; font-weight: bold;">2. Pourquoi l'étudier ?</a></li>
-          <li style="margin-bottom: 0.4rem;"><a href="#objectifs" style="text-decoration: none; color: inherit; font-weight: bold;">3. Objectifs pédagogiques</a></li>
-          <li style="margin-bottom: 0.4rem;"><a href="#outils" style="text-decoration: none; color: inherit; font-weight: bold;">4. Les outils de terrain</a></li>
-          <li style="margin-bottom: 0.4rem;"><a href="#deroulement" style="text-decoration: none; color: inherit; font-weight: bold;">5. Déroulement de l'atelier</a></li>
-          <li><a href="#ressources" style="text-decoration: none; color: inherit; font-weight: bold;">6. Ressources complémentaires</a></li>
-        </ul>
-      </nav>
-
-      <div style="flex: 1;">
-        <p class="page-lead" style="margin-top: 0;">Cet atelier d'écoacoustique participative invite les participant·es à mener une enquête sensible et instrumentée sur le paysage sonore et les oiseaux présents dans l'environnement.</p>
-      </div>
-
-    </div>
-
-    <h2 id="definition" style="margin-top: 3rem;">Qu'est-ce qu'un paysage sonore ?</h2>
-    <p>Le paysage sonore (soundscape) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures, classés en <strong>trois grandes catégories</strong> :</p>
-
-    <div class="concept-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
-      <div class="concept-card" style="background: #ffffff; padding: 1rem; border-radius: 4px; border: 1px solid #e2e6d8;">
-        <strong>Biophonie</strong>
-        <p style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0;">Les manifestations sonores des êtres vivants non-humains (chants d'oiseaux, coassements d'amphibiens, stridulations d'insectes, mammifères).</p>
-      </div>
-      <div class="concept-card" style="background: #ffffff; padding: 1rem; border-radius: 4px; border: 1px solid #e2e6d8;">
-        <strong>Géophonie</strong>
-        <p style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0;">Les sons de la nature non vivante, liés aux éléments naturels et à la météo (souffle du vent, clapotis de la pluie, grondement des rivières).</p>
-      </div>
-      <div class="concept-card" style="background: #ffffff; padding: 1rem; border-radius: 4px; border: 1px solid #e2e6d8;">
-        <strong>Anthrophonie</strong>
-        <p style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0;">L'ensemble des bruits produits par l'activité humaine et le développement des infrastructures (paroles, moteurs, machines, circulation).</p>
+      <div class="concept-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+        <div class="concept-card" style="background: #ffffff; padding: 1rem; border-radius: 4px; border: 1px solid #e2e6d8;">
+          <strong>Biophonie</strong>
+          <p style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0;">Les manifestations sonores des êtres vivants non-humains (chants d'oiseaux, coassements d'amphibiens, stridulations d'insectes, mammifères).</p>
+        </div>
+        <div class="concept-card" style="background: #ffffff; padding: 1rem; border-radius: 4px; border: 1px solid #e2e6d8;">
+          <strong>Géophonie</strong>
+          <p style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0;">Les sons de la nature non vivante, liés aux éléments naturels et à la météo (souffle du vent, clapotis de la pluie, grondement des rivières).</p>
+        </div>
+        <div class="concept-card" style="background: #ffffff; padding: 1rem; border-radius: 4px; border: 1px solid #e2e6d8;">
+          <strong>Anthrophonie</strong>
+          <p style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0;">L'ensemble des bruits produits par l'activité humaine et le développement des infrastructures (paroles, moteurs, machines, circulation).</p>
       </div>
     </div>
-  </section>
+</section>
+
 
 
 <details id="interet" class="content" style="outline: none; transition: all 0.2s ease;">
@@ -197,6 +182,8 @@ title: "À l'écoute des oiseaux et du paysage sonore"
       </div>
     </div> 
 </section>
+
+
 
 <section id="outils" class="content">
     <h2>Les outils de terrain</h2>
