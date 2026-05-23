@@ -160,8 +160,6 @@ title: "À l'écoute des oiseaux et du paysage sonore"
       
       
 
-
-
   <section id="objectifs" class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
@@ -187,7 +185,7 @@ title: "À l'écoute des oiseaux et du paysage sonore"
     <p><a href="https://www.fizziq.org/" target="_blank" rel="noopener">Fizziq</a> est une application qui transforme le smartphone en un véritable laboratoire de mesure. Dans le cadre de cet atelier, nous l'utilisons pour mesurer le niveau sonore en temps réel (décibels). Elle peut aussi servir à géolocaliser son parcours grâce au GPS.</p>
     
     <h3>Une application pour la reconnaissance des chants</h3>
-    <p>Il existe beaucoup d'applications permettant d'identification des oiseaux par le chant. Dans le cadre de cet atelier, nous avons utilisé Merlin Bird ID, une application gratuite développée par le Cornell Lab of Ornithology pour identifier les oiseaux à partir de leur chant ou de leur apparence. <strong>Comment ça marche ?</strong> Lorsque la fonction "Sound ID" est activée, l’application capte les vocalisations des oiseaux enregistrées via le micro du téléphone. L'algorithme de traitement convertit alors le signal en image (le spectrogramme), puis applique une reconnaissance d'image grâce à un réseau de neurones entraîné sur des millions de fichiers audio de référence.</p>
+    <p>Il existe beaucoup d'applications permettant d'identification des oiseaux par le chant. Dans le cadre de cet atelier, nous avons utilisé <a href="https://merlin.allaboutbirds.org/" target="_blank" rel="noopener">Merlin Bird ID</a>, une application gratuite développée par le Cornell Lab of Ornithology pour identifier les oiseaux à partir de leur chant ou de leur apparence. <strong>Comment ça marche ?</strong> Lorsque la fonction "Sound ID" est activée, l’application capte les vocalisations des oiseaux enregistrées via le micro du téléphone. L'algorithme de traitement convertit alors le signal en image (le spectrogramme), puis applique une reconnaissance d'image grâce à un réseau de neurones entraîné sur des millions de fichiers audio de référence.</p>
 
     <p>Vous pouvez bien sûr utiliser une autre application si vous le souhaitez (BirdNET, BirdWeather, etc.) pour compléter l'approche.</p>
 
