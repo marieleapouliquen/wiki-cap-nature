@@ -57,7 +57,7 @@ photos:
         <h2>Objectifs de l'atelier</h2>
         <ul>
           <li>Se familiariser avec le nom des espèces d'oiseaux présents dans l'environnement</li>
-          <li>Adopter une démarche d'investigation sur le milieu (ex : où peut-on entendre les oiseaux ? À quelle heure ? Dans quel environnement sonore ?)
+          <li>Adopter une démarche d'investigation sur le milieu (ex : où peut-on entendre les oiseaux ? À quelle heure ? Dans quel environnement sonore ?)</li>
           <li>Mesurer le niveau de bruit ambiant</li>
           <li>Conscientiser la place des bruits humains dans l'environnement</li>
           <li>Se questionner sur l'impact du bruit sur la faune</li>
@@ -72,8 +72,13 @@ photos:
   <section class="content">
     <h2>Les outils de l'enquête</h2>
     
-    <h3>Le sonomètre portatif Fizziq</h3>
-    <p>Fizziq est une application qui transforme le smartphone en un véritable laboratoire de poche. Dans le cadre de cette enquête, elle permet notamment de <strong>mesurer le niveau sonore en temps réel (décibels)</strong>, de géolocaliser son parcours grâce au GPS, ou d'enregistrer et annoter des données.</p>
+    <h3>Le sonomètre portatif de <i>Fizziq</i></h3>
+    <p><a class="resource-link" https://www.fizziq.org/" target="_blank" rel="noopener">Fizziq</a> est une application qui transforme le smartphone en un véritable laboratoire de mesure. Dans le cadre de cet atelier, nous l'utilisons pour mesurer le niveau sonore en temps réel (décibels). Elle peut aussi servir à géolocaliser son parcours grâce au GPS, ou bien à enregistrer et annoter des données.</p>
+
+
+    
+
+    
 
     <h3>Merlin Bird ID pour la reconnaissance des chants</h3>
     <p>Développée par le Cornell Lab of Ornithology, cette application écoute l'environnement et propose en temps réel le nom des espèces d'oiseaux qui chantent. <strong>À préparer avant l'atelier</strong> : installer l'application, puis télécharger le pack gratuit « Europe occidentale » (≈ 200 Mo) pour un fonctionnement 100% hors-ligne. (D'autres alternatives comme BirdNET ou BirdWeather peuvent être explorées en complément).</p>
