@@ -55,12 +55,12 @@ title: "À l'écoute des oiseaux et du paysage sonore"
     onmouseover="this.style.color='var(--color-link, #2b6cb0)';" 
     onmouseout="this.style.color='inherit';">
     
-    <h2 style="display: inline-block; margin-top: 0; margin-bottom: 0; color: inherit;">
+    <h3 style="display: inline-block; margin-top: 0; margin-bottom: 0; color: inherit;">
       Pourquoi étudier les paysages sonores ? 
       <span style="font-size: 1.1rem; color: var(--color-text-muted, #718096); margin-left: 0.5rem; font-weight: normal;">
         (Cliquez pour déplier)
       </span>
-    </h2>
+    </h3>
   </summary>
 
     <div style="margin-top: 1.5rem; cursor: default;" onclick="event.stopPropagation();">
@@ -146,12 +146,12 @@ title: "À l'écoute des oiseaux et du paysage sonore"
     onmouseover="this.style.color='var(--color-link, #2b6cb0)';" 
     onmouseout="this.style.color='inherit';">
     
-    <h2 style="display: inline-block; margin-top: 0; margin-bottom: 0; color: inherit;">
+    <h3 style="display: inline-block; margin-top: 0; margin-bottom: 0; color: inherit;">
       Les bienfaits des sons de la nature 
       <span style="font-size: 1.1rem; color: var(--color-text-muted, #718096); margin-left: 0.5rem; font-weight: normal;">
         (Cliquez pour déplier)
       </span>
-    </h2>
+    </h3>
   </summary>
   
   <div style="margin-top: 1.5rem; cursor: default;" onclick="event.stopPropagation();">
