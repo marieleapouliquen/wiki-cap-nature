@@ -31,7 +31,7 @@ photos:
 
     <h2>Qu'est-ce qu'un paysage sonore ?</h2>
         
-        <p>Le paysage sonore (soundscape) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures. Les écoacousticiens classent ces sons en <strong>trois grandes catégories</strong> :</p>
+        <p>Le paysage sonore (soundscape) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures, classés en <strong>trois grandes catégories</strong> :</p>
 
         <div class="concept-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
           <div class="concept-card" style="background: #ffffff; padding: 1rem; border-radius: 4px; border: 1px solid #e2e6d8;">
@@ -56,10 +56,11 @@ photos:
         
         <h2>Objectifs de l'atelier</h2>
         <ul>
-          <li>Découvrir les oiseaux locaux</li>
-          <li>Réfléchir à la place de la biophonie dans l'environnement: où peut-on entendre les oiseaux ? À quelle heure ? Dans quel environnement sonore ?</li>
-          <li>Conscientiser la place des bruits humains dans l'environnement.</li>
-          <li>Mesurer le niveau de bruit ambiant, comprendre la notion de pollution sonore par la mesure.</li>
+          <li>Se familiariser avec le nom des espèces d'oiseaux présents dans l'environnement</li>
+          <li>Adopter une démarche d'investigation sur le milieu (ex : où peut-on entendre les oiseaux ? À quelle heure ? Dans quel environnement sonore ?)
+          <li>Mesurer le niveau de bruit ambiant</li>
+          <li>Conscientiser la place des bruits humains dans l'environnement</li>
+          <li>Se questionner sur l'impact du bruit sur la faune</li>
         </ul>
 
       {% include photo-band.html photos=page.photos %}
@@ -67,7 +68,6 @@ photos:
       </div>
     </div> 
   </section>
-
 
   <section class="content">
     <h2>Les outils de l'enquête</h2>
