@@ -48,6 +48,9 @@ photos:
           </div>
         </div>
 
+        <h3>Pourquoi étudier les paysages sonores en écologie ?</h3>
+        <p>L'analyse des indices acoustiques permet de mesurer l'état de santé d'un écosystème de manière non invasive. Les chercheurs étudient ces environnements pour quantifier la biodiversité, suivre l'évolution de l'activité animale ou évaluer l'impact négatif de la pollution sonore sur la faune sauvage. Le bruit généré par les infrastructures humaines masque les signaux de communication essentiels des animaux. Pour survivre, de nombreuses espèces doivent adapter l'amplitude, la durée ou la fréquence de leurs vocalisations, un effort qui perturbe leur équilibre énergétique et leurs chances de reproduction.</p>
+
   </section>
 
   <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
@@ -70,23 +73,36 @@ photos:
   </section>
 
   <section class="content">
-    <h2>Les outils de l'enquête</h2>
+    <h2>Les outils de terrain</h2>
     
     <h3>Le sonomètre portatif de <i>Fizziq</i></h3>
-    <p><a class="resource-link" https://www.fizziq.org/" target="_blank" rel="noopener">Fizziq</a> est une application qui transforme le smartphone en un véritable laboratoire de mesure. Dans le cadre de cet atelier, nous l'utilisons pour mesurer le niveau sonore en temps réel (décibels). Elle peut aussi servir à géolocaliser son parcours grâce au GPS, ou bien à enregistrer et annoter des données.</p>
-
-
+    <p><a class="resource-link" https://www.fizziq.org/" target="_blank" rel="noopener">Fizziq</a> est une application qui transforme le smartphone en un véritable laboratoire de mesure. Dans le cadre de cet atelier, nous l'utilisons pour mesurer le niveau sonore en temps réel (décibels). Elle peut aussi servir à géolocaliser son parcours grâce au GPS.</p>
     
+    <h3>Une application pour la reconnaissance des chants</h3>
+    <p>Il existe beaucoup d'application permettant d'identifier les oiseaux par le chant. Dans le cadre de cet atelier, nous avons utilisé Merlin Bird ID, une application gratuite développée par le Cornell Lab of Ornithology pour identifier les oiseaux à partir de leur chant ou de leur apparence.<strong>Comment ça marche ?</strong> Lorsque la fonction "Sound ID" est activée, l’application capte les vocalisations des oiseaux enregistrées via le micro du téléphone. L'algorithme de traitement convertit alors le signal en image (le spectrogramme), puis applique une reconnaissance d'image grâce à un réseau de neurones entraîné sur des millions de fichiers audio de référence. 
+</p>
 
-    
+<p>Vous pouvez bien sûr utiliser une autre application si vous le souhaitez (BirdNET, BirdMelody, </p>
 
-    <h3>Merlin Bird ID pour la reconnaissance des chants</h3>
-    <p>Développée par le Cornell Lab of Ornithology, cette application écoute l'environnement et propose en temps réel le nom des espèces d'oiseaux qui chantent. <strong>À préparer avant l'atelier</strong> : installer l'application, puis télécharger le pack gratuit « Europe occidentale » (≈ 200 Mo) pour un fonctionnement 100% hors-ligne. (D'autres alternatives comme BirdNET ou BirdWeather peuvent être explorées en complément).</p>
+Pour en savoir plus sur la lecture de spectrogramme : 
+
+    <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem;">
+      <a class="resource-link" href="{{ '/module-oiseaux/fiche3-sonogramme/' | relative_url }}">
+        <span class="resource-link-label">Fiche Scientifique 3</span>
+        <span class="resource-link-title">Lire un spectrogramme</span>
+      </a>
+    </div>
+
+Pour en savoir plus sur l'algorithme de traitement de type d'outils : https://birdnet.cornell.edu/ 
 
     <div class="text-image-split">
       <div class="tis-text">
-        <h3 style="margin-top: 0;">Optionnel : utiliser Merlin avec une parabole directionnelle</h3>
-        <p>Une parabole directionnelle (comme <strong>BirdMic</strong>) est un dispositif qui concentre et amplifie les ondes acoustiques venant d'une direction précise.</p>
+        <h3 style="margin-top: 0;">Optionnel : Une parabole directionnelle</h3>
+        <p>Pour les ateliers, nous avons décidé d'ajouter la parabole directionnelle BirdMic (rajouter lien) au dispositif instrumenté.</p>
+
+        <p>Une parabole directionnelle est un dispositif qui concentre et amplifie les ondes acoustiques venant d'une direction précise. La parabole BirdMic permet en plus de brancher un casque et de percevoir les sons de façon amplifiée (ce qui crée souvent un effet "whaou" chez les participants"). Ce dispositif est très utilisé par les preneurs de sons (ie, les audio-naturalistes) pour repérer plus facilement les chants d'oiseaux mais aussi pour améliorer la qualité de leur enregistrement. </p>
+        
+        <h4>Comment ça marche ?</h4>
         <ul>
           <li><strong>Le principe du miroir :</strong> La grande coupole en forme de parabole agit comme un réflecteur ou miroir acoustique. Elle renvoie toutes les ondes incidentes de son axe vers un point focal central : le micro placé au foyer de la parabole.</li>
           <li><strong>Résultat :</strong> Les signaux provenant de la cible visée sont fortement amplifiés tandis que les bruits parasites latéraux et arrières sont atténués. Branchée au smartphone, elle offre à l'application Merlin un signal moins bruité qui optimise l'identification en direct.</li>
@@ -107,49 +123,47 @@ photos:
       </figure>
     </div>
 
-  </section>
+    <h3>Matériel complémentaire</h3>
 
-  <section class="content">
-    <h2>Déroulement de l'atelier</h2>
+    Fiche d'observation, crayons
 
-    <h3>1. Avant l'exploration</h3>
-
-    <h4>Mise en contexte</h4>
-
-    Développer ici
-
-    <h4 style="margin-top: 2.5rem;">Quelques ressources pédagogiques</h4>
-    <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem;">
-      <a class="resource-link" href="{{ '/module-oiseaux/fiche2-chant/' | relative_url }}">
-        <span class="resource-link-label">Fiche Scientifique 2</span>
-        <span class="resource-link-title">Quiz sur les Oiseaux</span>
-      </a>
-      <a class="resource-link" href="{{ '/module-oiseaux/fiche3-sonogramme/' | relative_url }}">
-        <span class="resource-link-label">Fiche Scientifique 3</span>
-        <span class="resource-link-title">Lire un spectrogramme</span>
+    <div class="course-downloads">
+      <a href="{{ '/assets/pdf/fiche-observation.pdf' | relative_url }}" class="download-card" target="_blank" rel="noopener">
+      <span class="download-num">Fiche d'observation</span>
+      <span class="download-title">... </span>
       </a>
     </div>
 
-    <h4>Constitution des équipes et distribution du matériel</h4>
-    <p>Le bon fonctionnement de l'enquête repose sur une répartition claire des tâches au sein des équipes :</p>
+    
+  </section>
+
+
+  <section class="content">
+
+    <h2>Avantl'atelier</h2>
+
+        - Préparer une brève mise en contexte (quelques ressources sont mises à disposition en bas de la page...)
+        - Imprimer les fiches d'observation (1 par groupe d'exploration suffit)
+        - Si vous utilisez des paraboles : chargez les batteries minimum 1h avant l'exploration
+        - Pensez à prévenir les participants que leur téléphone devront être bien chargés le jour de l'atelier
+        - Choisissez un site pour l'exploration - si vous êtes en pleine ville, privilégiez, un lieu avec des arbres et bosquets
+        
+    <h2>Déroulement de l'atelier</h2>
+
+    <h3>1. En classe (env. 30 minutes)</h3>
+
     <ul>
-      <li><strong>Taille des équipes :</strong> Formez des sous-groupes de 3 à 5 personnes.</li>
-      <li><strong>Distribution des rôles :</strong> Attribuez un rôle précis à chaque participant (les rôles tourneront au cours de la sortie) :
-        <ul>
-          <li>Le <em>porteur de parabole</em> guide la visée vers les sources sonores.</li>
-          <li>Le <em>capteur Fizziq</em> prend en charge la lecture et le suivi des décibels.</li>
-          <li>Le <em>scribe</em> consigne l'ensemble des données relevées sur la fiche d'observation papier.</li>
-          <li>Le <em>superviseur visuel</em> tente de repérer l'oiseau à l'œil ou aux jumelles.</li>
-        </ul>
-      </li>
-      <li><strong>Mise en route des applications :</strong> Demandez aux participants d'ouvrir simultanément leurs smartphones pour lancer l'interface Merlin (onglet Sound ID) et activer le sonomètre Fizziq.</li>
+      <li>Mise en contexte</li>
+      <li><strong>Constitution des groupes d'exploration :</strong> Formez des sous-groupes (3 à 5 personnes idéalement).</li>
+      <li>Préparation du matériel :</li> Demandez aux participants d'installer les applications (Fizziq / Merlin) sur leur téléphone. Min : 2 téléphones - Si vous utilisez les paraboles: donnez en 1 par groupe</li>
+      <li>Distribution des fiches d'observation</li>
     </ul>
 
-    <h3>2. L'exploration sur le terrain</h3>
+    <h3>2. L'exploration sur le terrain (30-45 min)</h3>
     <p><strong>Mise en attention :</strong> Proposez une écoute silencieuse à oreilles nues pendant quelques minutes. Cet exercice introduit naturellement les notions de biophonie, géophonie et anthrophonie.</p>
-    <p><strong>Enquête instrumentée :</strong> Chaque groupe explore la zone délimitée. À chaque station d'écoute, la consigne est simple : s'arrêter en silence, mesurer les décibels avec Fizziq, lancer Merlin Sound ID pour identifier les espèces, et consigner l'ensemble sur la fiche d'observation.</p>
+    <p><strong>Enquête instrumentée :</strong> Chaque groupe explore la zone en autonomie. La consigne est simple : (essayer de) faire silence, mesurer les décibels avec Fizziq, lancer Merlin Sound ID pour identifier les espèces, et consigner l'ensemble sur la fiche d'observation.</p>
 
-    <h3>Pistes d'activités sur le terrain</h3>
+    <h3>Quelques pistes d'activités sur le terrain</h3>
 
     <h4>Réaliser une soundmap collective</h4>
     <ol>
@@ -173,15 +187,14 @@ photos:
   </section>
 
 
+
+
   <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
 
       <h2>Pour aller + loin</h2>
         
-        <h3>Pourquoi étudier les paysages sonores en écologie ?</h3>
-        <p>L'analyse des indices acoustiques permet de mesurer l'état de santé d'un écosystème de manière non invasive. Les chercheurs étudient ces environnements pour quantifier la biodiversité, suivre l'évolution de l'activité animale ou évaluer l'impact négatif de la pollution sonore sur la faune sauvage. Le bruit généré par les infrastructures humaines masque les signaux de communication essentiels des animaux. Pour survivre, de nombreuses espèces doivent adapter l'amplitude, la durée ou la fréquence de leurs vocalisations, un effort qui perturbe leur équilibre énergétique et leurs chances de reproduction.</p>
-
         <h3>Ressources, fiches et podcasts</h3>
         <p>Pour approfondir la thématique et introduire la séance, voici une sélection de supports et d'émissions scientifiques :</p>
 
