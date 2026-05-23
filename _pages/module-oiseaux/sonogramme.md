@@ -5,16 +5,6 @@ title: Apprendre à lire un sonogramme
 
 <main class="content">
 
-<nav class="back-navigation" style="margin-bottom: 2rem;">
-    <a href="{{ '/module-oiseaux/' | relative_url }}" 
-       style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--color-text-muted, #718096); font-weight: bold; font-size: 0.95rem; transition: color 0.2s ease;"
-       onmouseover="this.style.color='var(--color-link, #2b6cb0)'; this.querySelector('.arrow').style.transform='translateX(-3px)';" 
-       onmouseout="this.style.color='var(--color-text-muted, #718096)'; this.querySelector('.arrow').style.transform='translateX(0)';">
-      <span class="arrow" style="display: inline-block; transition: transform 0.2s ease;">←</span> 
-      Retour à la page "Atelier Écoacoustique"
-    </a>
- </nav>
-
  <h2>Guide : Apprendre à lire un sonogramme</h2>
   <p>Quand l'application Merlin identifie un oiseau, elle affiche un <strong>sonogramme</strong> (ou spectrogramme) qui défile en temps réel. Comprendre cette image enrichit considérablement l'analyse pédagogique en transformant une onde sonore invisible en repère visuel.</p>
 
