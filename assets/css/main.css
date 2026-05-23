@@ -607,6 +607,14 @@ main.content > p > em, main.content > em {
 .section-full-bleed > .container { max-width: var(--maxw); margin: 0 auto; padding: 0 2rem; }
 .section-full-bleed .page-content { max-width: var(--readw); margin: 0 auto; }
 
+/* Sections de la page atelier (layout page + sidebar) */
+.page-section { padding: 2rem 1.75rem; border-radius: 6px; margin: 0 0 1rem 0; }
+.page-section > *:first-child { margin-top: 0; }
+
+/* Alternance automatique : 1re blanche, 2e sable, etc. */
+.page-section:nth-of-type(odd)  { background: #ffffff; }
+.page-section:nth-of-type(even) { background: #f7f4e9; }
+
 /* Fonds alternés */
 .band-white { background: var(--color-bg); }
 .band-alt   { background: var(--color-bg-alt); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
