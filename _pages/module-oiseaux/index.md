@@ -50,7 +50,7 @@ toc:
       <h3>Les enjeux de la pollution sonore</h3>
       <p>Si les effets de la pollution sonore sur la santé humaine sont bien connus (perturbation du sommeil, stress...), son impact écologique est souvent sous-estimé. Or le bruit généré par les infrastructures humaines (transports, industries) a un véritable effet sur la faune sauvage, que ce soit en milieu terrestre ou en milieu aquatique. Le bruit anthropique tend à masquer les signaux de communication essentiels des animaux.</p>
 
-      <p>Pour faire face à cette pression et survivre en milieu anthropisé, de nombreuses espèces doivent adapter l'amplitude, la durée ou la fréquence de leurs vocalisations. C'est le cas par exemple de la <strong>mésange bleue</strong> ou du <strong>merle noir</strong>, qui chantent plus fort ou décalent leurs plages horaires en ville pour surmonter le vrombissement urbain. Cet effort constant perturbe leur équilibre énergétique et leurs chances de reproduction. Le bioacousticien Bernie Krause a notamment documenté la disparition progressive de ces structures symphoniques naturelles sous l'effet du développement des infrastructures.</p>
+      <p>Pour faire face à cette pression et survivre en milieu anthropisé, de nombreuses espèces doivent adapter l'amplitude, la durée ou la fréquence de leurs vocalisations. C'est le cas par exemple de la <strong>mésange bleue</strong>, qui chante plus fort pour surmonter le vrombissement urbain. Cet effort constant perturbe leur équilibre énergétique et leurs chances de reproduction. Le bioacousticien Bernie Krause a notamment documenté la disparition progressive de ces structures symphoniques naturelles sous l'effet du développement des infrastructures.</p>
 
       <div class="callout warning">
         <div class="callout-title">Comprendre les décibels</div>
@@ -211,8 +211,20 @@ toc:
 
   <div class="resource-links">
     <a class="resource-link" href="{{ '/assets/pdf/fiche-observation.pdf' | relative_url }}" target="_blank" rel="noopener">
-      <span class="resource-link-label">Fiche d'observation</span>
-      <span class="resource-link-title">Télécharger la fiche d'observation terrain (PDF)</span>
+      <span class="resource-link-label">Fiche d'observation terrain</span>
+      <span class="resource-link-title">Télécharger la fiche n°1(PDF)</span>
+    </a>
+    <a class="resource-link" href="{{ '/assets/pdf/fiche-merlin.pdf' | relative_url }}" target="_blank" rel="noopener">
+      <span class="resource-link-label">Fiche Merlin Bird ID</span>
+      <span class="resource-link-title">Télécharger la fiche n°2(PDF)</span>
+    </a>
+    <a class="resource-link" href="{{ '/assets/pdf/fiche-parabole.pdf' | relative_url }}" target="_blank" rel="noopener">
+      <span class="resource-link-label">Fiche "Utiliser Merlin avec une parabole"</span>
+      <span class="resource-link-title">Télécharger la fiche n°3(PDF)</span>
+    </a>
+    <a class="resource-link" href="{{ '/assets/pdf/fiche-test-oiseaux.pdf' | relative_url }}" target="_blank" rel="noopener">
+      <span class="resource-link-label">Fiche "Testez vos connaissances sur les oiseaux"</span>
+      <span class="resource-link-title">Télécharger la fiche n°4(PDF)</span>
     </a>
   </div>
 </section>
