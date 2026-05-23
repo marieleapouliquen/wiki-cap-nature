@@ -435,19 +435,13 @@ main.content > p > em, main.content > em {
 }
 
 /* Ajustement de la carte pour éviter les collisions de texte */
-.resource-link {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: flex-start;
-  background: var(--color-bg) !important;
-  border: 1px solid var(--color-border) !important;
-  border-radius: 4px !important;
-  padding: 1.2rem !important;
-  text-decoration: none !important;
-  color: var(--color-text) !important;
-  transition: all 0.15s ease;
-  min-height: 140px;          /* Donne une hauteur minimale commune pour aligner les boîtes */
-  height: 100%;               /* Force toutes les cartes à avoir la même hauteur dans la ligne */
+.resource-links {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important;
+  gap: 1.25rem !important;
+  margin: 2rem auto !important;
+  width: 100% !important;
+  clear: both;
 }
 
 .resource-link:hover {
@@ -602,6 +596,28 @@ main.content > p > em, main.content > em {
   .text-image-split { grid-template-columns: 1fr; gap: 1rem; }
 }
 
+/* --- Sections pleine largeur, contenu ramené à la largeur de lecture --- */
+.section-full-bleed { width: 100%; }
+.section-pad { padding: 2.5rem 0; margin: 0; }
+.section-full-bleed > .container { max-width: var(--maxw); margin: 0 auto; padding: 0 2rem; }
+.section-full-bleed .page-content { max-width: var(--readw); margin: 0 auto; }
+
+/* Fonds alternés */
+.band-white { background: var(--color-bg); }
+.band-alt   { background: var(--color-bg-alt); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+.band-sand  { background: #f7f4e9; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+
+/* --- Blocs dépliables --- */
+.disclosure { border: 1px solid var(--color-border); border-radius: 4px; margin: 1.5rem 0; background: var(--color-bg); }
+.disclosure > summary { list-style: none; cursor: pointer; padding: 1rem 1.25rem; display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap; transition: color 0.15s ease; }
+.disclosure > summary::-webkit-details-marker { display: none; }
+.disclosure > summary::before { content: "\25B8"; color: var(--green); font-size: 0.9rem; transition: transform 0.15s ease; align-self: center; }
+.disclosure[open] > summary::before { transform: rotate(90deg); }
+.disclosure > summary:hover { color: var(--teal-deep); }
+.disclosure-title { font-family: var(--font-serif); font-size: 1.25rem; color: var(--teal-deep); font-weight: 500; }
+.disclosure-hint { font-size: 0.9rem; color: var(--color-muted); font-weight: normal; }
+.disclosure-body { padding: 0 1.25rem 1.25rem; }
+.disclosure-body > *:first-child { margin-top: 0; }
 
 /* ============================================================================
    7. RESPONSIVE GLOBAL & ADAPTATION DU LAYOUT DOUBLE COLONNE
