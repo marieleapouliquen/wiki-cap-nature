@@ -289,7 +289,7 @@ title: "À l'écoute des oiseaux et du paysage sonore"
 
       <p><strong>Reclasser les sons entendus.</strong> En petits groupes, reclassez les sons de l'exploration dans les trois catégories vues en début d'atelier (biophonie, géophonie, anthrophonie), puis discutez : quelle catégorie dominait ? Était-ce attendu ? Qu'est-ce que cela révèle de la place de l'humain dans ce paysage sonore ?</p>
 
-      <p><strong>L'engagement minuscule.</strong> Pour clore sur une note positive et tournée vers l'action, sans culpabiliser : chacun·e formule un petit geste concret et réaliste — « je vais retourner écouter ce parc », « je vais repérer les oiseaux près de chez moi ».</p>
+      <p><strong>L'engagement individuel.</strong> Pour clore sur une note positive et tournée vers l'action, sans culpabiliser : chacun·e peut aussi formuler un petit geste concret et réaliste : « je vais retourner écouter ce parc », « je vais repérer les oiseaux près de chez moi » etc.</p>
 
       <div class="callout tip" style="margin-top: 2rem;">
         <div class="callout-title">Conseil</div>
@@ -301,11 +301,6 @@ title: "À l'écoute des oiseaux et du paysage sonore"
         <figcaption class="page-banner-credit">© Marie-Léa Pouliquen</figcaption>
       </figure>
 
-
-      <h3 style="margin-top: 2.5rem;">4. Pour aller + loin en classe</h3>
-
-      
-
     </div>
   </div>
 </section>
@@ -315,7 +310,24 @@ title: "À l'écoute des oiseaux et du paysage sonore"
   <div class="container">
     <div class="page-content">
       <h2 style="margin-top: 0;">Ressources pour aller + loin</h2>
+      
+      <h3>L'analyse des signaux audio</h3>
+      <p>Pour prolonger l'atelier, l'outil <a href="https://fizziqweb.web.app/audio" target="_blank" rel="noopener">FizziQ Web — Analyse audio</a> permet de visualiser un son directement dans le navigateur, sans rien installer. On peut y charger un enregistrement (par exemple un chant d'oiseau capté sur le terrain) et l'explorer selon plusieurs représentations : <strong>amplitude</strong>, <strong>niveau sonore</strong>, <strong>fréquence fondamentale</strong>, <strong>spectre de fréquences</strong> et <strong>spectrogramme</strong>. C'est une excellente manière de relier l'écoute sensible à une démarche d'analyse scientifique, et de prolonger la lecture de spectrogramme abordée dans la fiche <a href="{{ '/module-oiseaux/fiche3-sonogramme/' | relative_url }}">« Lire un spectrogramme »</a>.</p>
 
+      <p>Les observations peuvent être consignées dans un <em>cahier d'expériences</em> intégré, puis rassemblées dans un rapport — utile pour comparer les chants de plusieurs espèces ou pour mettre en évidence la signature acoustique d'un oiseau.</p>
+
+      <div class="resource-links">
+        <a class="resource-link" href="{{ '/module-oiseaux/fiche3-sonogramme/' | relative_url }}">
+          <span class="resource-link-label">Fiche Scientifique 3</span>
+          <span class="resource-link-title">Comment lire un spectrogramme?</span>
+        </a>
+        <a class="resource-link" href="https://fizziqweb.web.app/audio" target="_blank" rel="noopener">
+          <span class="resource-link-label">Outil en ligne · FizziQ Web</span>
+          <span class="resource-link-title">Analyser un signal audio dans le navigateur</span>
+        </a>
+      </div>
+
+      <h3>Ressources complémentaires sur les paysages sonores</h3>
       <div class="resource-links">
         <a class="resource-link" href="https://www.reseau-idee.be/fr/symbioses/les-paysages-sonores-ont-beaucoup-nous-dire" target="_blank" rel="noopener">
           <span class="resource-link-label">Article · Réseau IDée</span>
