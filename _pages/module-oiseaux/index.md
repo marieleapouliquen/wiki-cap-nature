@@ -252,8 +252,49 @@ title: "À l'écoute des oiseaux et du paysage sonore"
 
           <p>Pour d'autres idées d'activités sur le terrain, vous pouvez consulter la fiche du Réseau IDée : <a href="https://www.reseau-idee.be/fr/symbioses/lecoute-de-la-nature-7-activites-pour-tendre-loreille" target="_blank" rel="noopener">L'écoute de la nature : 7 activités pour tendre l'oreille</a>.</p>
 
-      <h3 style="margin-top: 2.5rem;">3. Retours réflexifs</h3>
+      <h3 style="margin-top: 2.5rem;">3. Retours réflexifs (15 min environ)</h3>
 
+      <p>Ce temps de clôture invite les participant·es à mettre des mots sur leur expérience et à interroger leur rapport au vivant. L'objectif n'est pas d'évaluer des connaissances, mais de faire émerger des ressentis : il n'y a pas de « bonne » réponse. Voici plusieurs activités, de la plus simple à la plus engageante — à piocher selon le temps disponible.</p>
+
+      <h4 style="margin-top: 2rem;">Partager à l'oral</h4>
+
+      <p><strong>Le tour de cercle des ressentis.</strong> En cercle, chacun·e partage en un mot ou une phrase ce qu'il a ressenti pendant l'écoute. Pour amorcer, proposez une phrase à compléter : « Avant, je n'avais jamais remarqué que… » ou « Le son qui m'a le plus surpris·e, c'est… ». Rapide, inclusif, sans matériel.</p>
+
+      <p><strong>Le débat mouvant.</strong> Énoncez une affirmation : les participant·es se déplacent d'un côté de l'espace s'ils sont d'accord, de l'autre s'ils ne le sont pas. Après chaque déplacement, deux ou trois personnes justifient leur position. Quelques affirmations pour nourrir la réflexion :</p>
+      <ul>
+        <li>« On entend mieux les oiseaux qu'on ne les voit. »</li>
+        <li>« Le bruit humain a sa place dans la nature. »</li>
+        <li>« Les oiseaux s'adaptent très bien à la ville. »</li>
+        <li>« Protéger le silence, c'est protéger la biodiversité. »</li>
+      </ul>
+
+      <p><strong>Comparer deux lieux.</strong> Si l'exploration a couvert plusieurs points d'écoute, comparez leurs profils sonores : où entendait-on le plus d'oiseaux ? Pourquoi ? Qu'est-ce qui les fait fuir ou rester ? La discussion glisse naturellement vers les notions d'habitat, de pollution sonore et d'aménagement.</p>
+
+      <h4 style="margin-top: 2rem;">Garder une trace écrite</h4>
+
+      <p><strong>La carte sensible collective.</strong> Chaque participant·e écrit deux ou trois mots décrivant son expérience (émotions, surprises, sons identifiés). On regroupe l'ensemble sur une grande feuille ou au tableau pour faire émerger un paysage sonore <em>vécu</em>, partagé par le groupe.</p>
+
+      <p><strong>Le journal d'écoute.</strong> Un court écrit individuel, à partir d'amorces de phrases :</p>
+      <ul>
+        <li>« Aujourd'hui, j'ai entendu… »</li>
+        <li>« Ce qui m'a le plus étonné·e, c'est… »</li>
+        <li>« Ça m'a fait penser que… »</li>
+        <li>« La prochaine fois que je serai dehors, je… »</li>
+      </ul>
+      <p>L'écrit personnel laisse une trace durable et favorise une réflexion plus intime que l'oral en groupe.</p>
+
+      <h4 style="margin-top: 2rem;">Changer de perspective</h4>
+
+      <p><strong>La question « et si… ».</strong> Une invitation à se décentrer vers le point de vue du vivant non-humain : « Si tu étais un merle vivant ici, qu'est-ce qui te dérangerait ? De quoi aurais-tu besoin ? ». À l'oral ou en quelques lignes, cette activité travaille le changement de regard sur les relations entre humains et non-humains.</p>
+
+      <p><strong>Reclasser les sons entendus.</strong> En petits groupes, reclassez les sons de l'exploration dans les trois catégories vues en début d'atelier (biophonie, géophonie, anthrophonie), puis discutez : quelle catégorie dominait ? Était-ce attendu ? Qu'est-ce que cela révèle de la place de l'humain dans ce paysage sonore ?</p>
+
+      <p><strong>L'engagement minuscule.</strong> Pour clore sur une note positive et tournée vers l'action, sans culpabiliser : chacun·e formule un petit geste concret et réaliste — « je vais retourner écouter ce parc », « je vais repérer les oiseaux près de chez moi ».</p>
+
+      <div class="callout tip" style="margin-top: 2rem;">
+        <div class="callout-title">Conseil</div>
+        <p>Veillez à maintenir un cadre bienveillant où le ressenti prime sur la performance. Si vous souhaitez conserver une trace exploitable de la séance, le journal d'écoute et la carte sensible collective se prêtent particulièrement bien à une analyse a posteriori.</p>
+      </div>
       
       <figure class="page-banner" style="margin-top: 1.5rem;">
         <img src="{{ '/assets/img/atelier-retours.jpg' | relative_url }}" alt="Ressenti des participants après l'exploration" class="page-banner-img">
@@ -269,11 +310,11 @@ title: "À l'écoute des oiseaux et du paysage sonore"
   </div>
 </section>
 
+
 <section id="ressources" class="section-full-bleed band-sand section-pad">
   <div class="container">
     <div class="page-content">
-      <h2>Ressources pour aller plus loin</h2>
-      <p>Pour approfondir la thématique et introduire la séance, voici une sélection de supports et d'émissions scientifiques :</p>
+      <h2 style="margin-top: 0;">Ressources pour aller + loin</h2>
 
       <div class="resource-links">
         <a class="resource-link" href="https://www.reseau-idee.be/fr/symbioses/les-paysages-sonores-ont-beaucoup-nous-dire" target="_blank" rel="noopener">
