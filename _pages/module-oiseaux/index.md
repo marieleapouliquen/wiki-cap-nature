@@ -248,6 +248,16 @@ toc:
 
   <p>Ce temps de clôture invite les participant·es à mettre des mots sur leur expérience et à interroger leur rapport au vivant. L'objectif n'est pas d'évaluer des connaissances, mais de faire émerger des ressentis : il n'y a pas de « bonne » réponse. Voici plusieurs activités, de la plus simple à la plus engageante — à piocher selon le temps disponible.</p>
 
+  <figure class="reflexion-gallery" style="margin-top: 1.5rem;">
+    <div class="gallery-grid">
+      <img src="{{ '/assets/img/atelier-retours.jpg' | relative_url }}" alt="Ressenti des participants après l'exploration">
+      <img src="{{ '/assets/img/production-carnet-oiseaux.jpg' | relative_url }}" alt="Carnet d'observation des oiseaux réalisé par les participants">
+      <img src="{{ '/assets/img/production-carte-sensible.jpg' | relative_url }}" alt="Carte sensible collective réalisée en fin d'atelier">
+    </div>
+    <figcaption>Retours d'Atelier Cap Nature (ressenti des participants, carnet d'observation et cartographie collective) - Photo : Marie-Léa Pouliquen</figcaption>
+  </figure>
+
+
   <h4 style="margin-top: 2rem;">Partager à l'oral</h4>
 
   <p><strong>Le tour de cercle des ressentis.</strong> En cercle, chacun·e partage en un mot ou une phrase ce qu'il a ressenti pendant l'écoute. Pour amorcer, proposez une phrase à compléter : « Avant, je n'avais jamais remarqué que… » ou « Le son qui m'a le plus surpris·e, c'est… ». Rapide, inclusif, sans matériel.</p>
@@ -284,18 +294,9 @@ toc:
   <p><strong>L'engagement individuel.</strong> Pour clore sur une note positive et tournée vers l'action, sans culpabiliser : chacun·e peut aussi formuler un petit geste concret et réaliste : « je vais retourner écouter ce parc », « je vais repérer les oiseaux près de chez moi », etc.</p>
 
   <div class="callout tip" style="margin-top: 2rem;">
-    <div class="callout-title">Conseil</div>
+    <div class="callout-title">Conseils</div>
     <p>Veillez à maintenir un cadre bienveillant où le ressenti prime sur la performance. Si vous souhaitez conserver une trace exploitable de la séance, le journal d'écoute et la carte sensible collective se prêtent particulièrement bien à une analyse a posteriori.</p>
   </div>
-
-  <figure class="reflexion-gallery" style="margin-top: 1.5rem;">
-    <div class="gallery-grid">
-      <img src="{{ '/assets/img/atelier-retours.jpg' | relative_url }}" alt="Ressenti des participants après l'exploration">
-      <img src="{{ '/assets/img/production-carnet-oiseaux.jpg' | relative_url }}" alt="Carnet d'observation des oiseaux réalisé par les participants">
-      <img src="{{ '/assets/img/production-carte-sensible.jpg' | relative_url }}" alt="Carte sensible collective réalisée en fin d'atelier">
-    </div>
-    <figcaption>Retours d'Atelier Cap Nature (ressenti des participants, carnet d'observation et cartographie collective) - Photo : Marie-Léa Pouliquen</figcaption>
-  </figure>
   
 </section>
 
