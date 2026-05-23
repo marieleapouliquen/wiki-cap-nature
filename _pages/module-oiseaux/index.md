@@ -146,7 +146,7 @@ title: "À l'écoute des oiseaux et du paysage sonore"
 <section id="objectifs" class="section-full-bleed band-alt section-pad">
   <div class="container">
     <div class="page-content">
-      <h2>Les objectifs pédagogiques de l'atelier</h2>
+      <h2 style="margin-top: 0;">Les objectifs pédagogiques de l'atelier</h2>
       <p>Cet atelier a pour objectifs de permettre aux participants de :</p>
       <ul>
         <li>Se familiariser avec le nom des espèces d'oiseaux présents dans l'environnement.</li>
