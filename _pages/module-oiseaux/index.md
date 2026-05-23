@@ -209,7 +209,7 @@ toc:
     <li>Imprimez les fiches d'observation (1 par groupe d'exploration suffit).</li>
   </ul>
 
-  <h2>Fiches pédagogiques (PDF à télécharger)</h2>
+  <h3>Fiches pédagogiques (PDF à télécharger)</h3>
 
   <div class="resource-links">
     <a class="resource-link" href="{{ '/assets/pdf/fiche-observation.pdf' | relative_url }}" target="_blank" rel="noopener">
