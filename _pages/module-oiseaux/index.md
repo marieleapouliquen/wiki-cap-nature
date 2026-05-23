@@ -29,10 +29,29 @@ photos:
   
   <section class="content" style="padding-bottom: 0;">
     <h1>{{ page.title }}</h1>
-    <p class="page-lead">Cet atelier d'écoacoustique participative invite les participant·es à mener une enquête sensible et instrumentée sur le paysage sonore et les oiseaux présents dans l'environnement.</p>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; align-items: start; margin-top: 2rem;">
+      
+      <nav class="table-of-contents" style="background: #fafbf6; padding: 1.25rem; border-radius: 4px; border: 1px solid #e2e6d8;">
+        <strong style="display: block; margin-bottom: 0.75rem; color: var(--color-text-dark); font-size: 1.1rem;">Sommaire</strong>
+        <ul style="list-style: none; padding-left: 0; margin: 0; font-size: 0.95rem; line-height: 1.6;">
+          <li style="margin-bottom: 0.4rem;"><a href="#definition" style="text-decoration: none; color: inherit; font-weight: bold;">1. Qu'est-ce qu'un paysage sonore ?</a></li>
+          <li style="margin-bottom: 0.4rem;"><a href="#interet" style="text-decoration: none; color: inherit; font-weight: bold;">2. Pourquoi l'étudier ?</a></li>
+          <li style="margin-bottom: 0.4rem;"><a href="#objectifs" style="text-decoration: none; color: inherit; font-weight: bold;">3. Objectifs pédagogiques</a></li>
+          <li style="margin-bottom: 0.4rem;"><a href="#outils" style="text-decoration: none; color: inherit; font-weight: bold;">4. Les outils de terrain</a></li>
+          <li style="margin-bottom: 0.4rem;"><a href="#deroulement" style="text-decoration: none; color: inherit; font-weight: bold;">5. Déroulement de l'atelier</a></li>
+          <li><a href="#ressources" style="text-decoration: none; color: inherit; font-weight: bold;">6. Ressources complémentaires</a></li>
+        </ul>
+      </nav>
 
-    <h2>Qu'est-ce qu'un paysage sonore ?</h2>
-    <p>Le paysage sonore (soundscape) is l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures, classés en <strong>trois grandes catégories</strong> :</p>
+      <div style="flex: 1;">
+        <p class="page-lead" style="margin-top: 0;">Cet atelier d'écoacoustique participative invite les participant·es à mener une enquête sensible et instrumentée sur le paysage sonore et les oiseaux présents dans l'environnement.</p>
+      </div>
+
+    </div>
+
+    <h2 id="definition" style="margin-top: 3rem;">Qu'est-ce qu'un paysage sonore ?</h2>
+    <p>Le paysage sonore (soundscape) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures, classés en <strong>trois grandes catégories</strong> :</p>
 
     <div class="concept-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
       <div class="concept-card" style="background: #ffffff; padding: 1rem; border-radius: 4px; border: 1px solid #e2e6d8;">
@@ -50,14 +69,16 @@ photos:
     </div>
   </section>
 
-  <section class="content">
+  <section id="interet" class="content">
     <h2>Pourquoi étudier les paysages sonores ?</h2>
 
     <h3>Le paysage sonore comme indicateur écologique</h3>
-    <p>L'analyse des indices acoustiques permet de mesurer l'état de santé d'un écosystème de manière non invasive. Les chercheurs étudient ces environnements pour quantifier la biodiversité, suivre l'évolution de l'activité animale ou évaluer l'impact négatif de la pollution sonore sur la faune sauvage. Le bruit généré par les infrastructures humaines masque les signaux de communication essentiels des animaux. Pour survivre, de nombreuses espèces doivent adapter l'amplitude, la durée ou la fréquence de leurs vocalisations, un effort qui perturbe leur équilibre énergétique et leurs chances de reproduction.</p>
+    <p>L'analyse des indices acoustiques permet de mesurer l'état de santé d'un écosystème de manière non invasive. Les chercheurs étudient ces environnements pour quantifier la biodiversité, suivre l'évolution de l'activité animale ou évaluer l'impact négatif de la pollution sonore sur la faune sauvage.</p>
 
     <h3>Les enjeux de la pollution sonore</h3>
-    <p>Le bruit généré par les infrastructures humaines (transports, industries) masque les signaux de communication essentiels des animaux. Pour survivre en milieu anthropisé, de nombreuses espèces doivent adapter l'amplitude, la durée ou la fréquence de leurs vocalisations, un effort qui perturbe leur équilibre énergétique et leurs chances de reproduction. Le bioacousticien Bernie Krause a notamment documenté la disparition progressive de certaines niches acoustiques naturelles sous la pression humaine.</p>
+    <p>Si les effets de la pollution sonore sur la santé humaine sont bien connus (perturbation du sommeil, stress...), son impact écologique est souvent sous-estimé. Or le bruit généré par les infrastructures humaines (transports, industries) a un véritable effet sur la faune sauvage, que ce soit en milieu terrestre ou en milieu aquatique. Le bruit anthropique tend à masquer les signaux de communication essentiels des animaux.</p>
+    
+    <p>Pour faire face à cette pression et survivre en milieu anthropisé, de nombreuses espèces doivent adapter l'amplitude, la durée ou la fréquence de leurs vocalisations. C'est le cas par exemple de la <strong>mésange bleue</strong> ou du <strong>merle noir</strong>, qui chantent plus fort ou décalent leurs plages horaires en ville pour surmonter le vrombissement urbain. Cet effort constant perturbe leur équilibre énergétique et leurs chances de reproduction. Le bioacousticien Bernie Krause a notamment documenté la disparition progressive de ces structures symphoniques naturelles sous l'effet du développement des infrastructures.</p>
 
     <div class="callout warning">
       <div class="callout-title">Comprendre les décibels</div>
@@ -95,7 +116,27 @@ photos:
       </div>
     </div>
 
-    <p>Pour approfondir la thématique de l'impact du bruit humain sur les écosystèmes terrestres et marins, vous pouvez consulter les ressources du <a href="http://www.bruit.fr/" target="_blank" rel="noopener">Centre d'information sur le Bruit (CIDB)</a> ou explorer les projets de cartographie de la pollution sonore menés par <a href="https://www.biotope.fr/" target="_blank" rel="noopener">Biotope Écoacoustique</a>.</p>
+    <div class="callout info" style="margin-top: 2rem;">
+      <div class="callout-title">Capsule vidéo : La pollution sonore et la faune</div>
+      <p>Pour introduire la séance et observer concrètement l'effet du bruit sur les milieux naturels, vous pouvez visionner cet extrait : <a href="https://www.youtube.com/watch?v=hmhTfwy3K3k&t=1s" target="_blank" rel="noopener">L'impact de la pollution sonore sur la biodiversité sur YouTube</a>.</p>
+    </div>
+
+    <p>Pour approfondir la thématique du bruit sur la biodiversité, vous pouvez consulter les études du <a href="http://www.bruit.fr/" target="_blank" rel="noopener">Centre d'information sur le Bruit (CIDB)</a> et en particulier sa revue dédiée <a href="https://www.bruit.fr/?view=article&id=24591:vient-de-paraitre-echo-bruit-n-185-entendre-la-nature-en-ville&catid=592" target="_blank" rel="noopener">Echo Bruit n°185 : Entendre la nature en ville</a>.</p>
+
+    <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; margin-bottom: 2rem;">
+      <a class="resource-link" href="https://www.cerema.fr/fr/actualites/sons-biodiversite-ville-favoriser-paysages-sonores-qualite" target="_blank" rel="noopener">
+        <span class="resource-link-label">Étude · Cerema</span>
+        <span class="resource-link-title">Sons et biodiversité en ville — Favoriser les paysages sonores</span>
+      </a>
+      <a class="resource-link" href="https://revue-set.fr/article/view/7512" target="_blank" rel="noopener">
+        <span class="resource-link-label">Revue Scientifique · SET</span>
+        <span class="resource-link-title">Écoacoustique et suivi de la biodiversité animale</span>
+      </a>
+      <a class="resource-link" href="https://biodiversite.gouv.fr/mesure-9-reduire-les-pollutions-lumineuses-et-sonores" target="_blank" rel="noopener">
+        <span class="resource-link-label">Action Publique · Plan Biodiversité</span>
+        <span class="resource-link-title">Mesure 9 — Réduire les pollutions lumineuses et sonores</span>
+      </a>
+    </div>
 
     <div class="callout info">
       <div class="callout-title">Enjeu de la pollution sonore dans les parcs nationaux - Exemple des États-Unis</div>
@@ -103,14 +144,30 @@ photos:
     </div>
 
     <h3>Les bienfaits des sons de la nature pour la santé humaine</h3>
-    <p>Au-delà de l'intérêt écologique, l'écoute de la nature exerce une action thérapeutique avérée sur notre biologie. Une vaste synthèse scientifique menée par la chercheuse <strong>Rachel T. Buxton</strong> (Colorado State University) et son équipe en 2021 a démontré que l'exposition aux sons naturels (chants d'oiseaux, bruits d'eau) engendre des bénéfices de santé considérables : baisse significative du stress, diminution du taux de cortisol, réduction de la fréquence cardiaque et amélioration nette des performances cognitives.</p>
+    <p>Alors que la pollution sonore affecte tant la santé humaine que la biodiversité, l'écoute de la nature exerce une action thérapeutique avérée sur notre organisme. Une vaste synthèse scientifique menée par la chercheuse <strong>Rachel T. Buxton</strong> (Colorado State University) et son équipe en 2021 a démontré que l'exposition aux sons naturels (chants d'oiseaux, bruits d'eau) engendre des bénéfices de santé considérables : baisse financière du stress, diminution du taux de cortisol, réduction de la fréquence cardiaque et amélioration nette des performances cognitives.</p>
+    
     <p>L'étude souligne ainsi que la préservation des paysages sonores sauvages dans les parcs nationaux relève autant de la protection de la biodiversité que d'un enjeu majeur de santé publique.</p>
 
+    <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; margin-bottom: 1.5rem;">
+      <a class="resource-link" href="https://www.nature.com/articles/s41598-025-11469-x" target="_blank" rel="noopener">
+        <span class="resource-link-label">Publication · Nature Scientific Reports</span>
+        <span class="resource-link-title">Sons de la nature et connectivité cérébrale</span>
+      </a>
+      <a class="resource-link" href="https://doi.org/10.1073/pnas.2013097118" target="_blank" rel="noopener">
+        <span class="resource-link-label">Étude Source · PNAS 2021</span>
+        <span class="resource-link-title">Buxton et al. — Synthesis of health benefits of natural sounds</span>
+      </a>
+      <a class="resource-link" href="https://www.ecehh.org/news/sounds-of-nature-benefit-mental-health-and-promote-environmental-protection/" target="_blank" rel="noopener">
+        <span class="resource-link-label">Rapport · ECEHH</span>
+        <span class="resource-link-title">Natural sounds benefit mental health and protection</span>
+      </a>
+    </div>
+    
     <hr>
     <p>Retrouvez également toutes les <a href="#ressources">ressources et liens utiles pour aller plus loin</a> en bas de cette page.</p>
   </section>
 
-  <section class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
+  <section id="objectifs" class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
         
@@ -128,14 +185,14 @@ photos:
     </div> 
   </section>
 
-  <section class="content">
+  <section id="outils" class="content">
     <h2>Les outils de terrain</h2>
     
     <h3>Le sonomètre portatif de Fizziq</h3>
     <p><a href="https://www.fizziq.org/" target="_blank" rel="noopener">Fizziq</a> est une application qui transforme le smartphone en un véritable laboratoire de mesure. Dans le cadre de cet atelier, nous l'utilisons pour mesurer le niveau sonore en temps réel (décibels). Elle peut aussi servir à géolocaliser son parcours grâce au GPS.</p>
     
     <h3>Une application pour la reconnaissance des chants</h3>
-    <p>Il existe beaucoup d'applications permettant d'identifier les oiseaux par le chant. Dans le cadre de cet atelier, nous avons utilisé Merlin Bird ID, une application gratuite développée par le Cornell Lab of Ornithology pour identifier les oiseaux à partir de leur chant ou de leur apparence. <strong>Comment ça marche ?</strong> Lorsque la fonction "Sound ID" est activée, l’application capte les vocalisations des oiseaux enregistrées via le micro du téléphone. L'algorithme de traitement convertit alors le signal en image (le spectrogramme), puis applique une reconnaissance d'image grâce à un réseau de neurones entraîné sur des millions de fichiers audio de référence.</p>
+    <p>Il existe beaucoup d'applications permettant d'identification des oiseaux par le chant. Dans le cadre de cet atelier, nous avons utilisé Merlin Bird ID, une application gratuite développée par le Cornell Lab of Ornithology pour identifier les oiseaux à partir de leur chant ou de leur apparence. <strong>Comment ça marche ?</strong> Lorsque la fonction "Sound ID" est activée, l’application capte les vocalisations des oiseaux enregistrées via le micro du téléphone. L'algorithme de traitement convertit alors le signal en image (le spectrogramme), puis applique une reconnaissance d'image grâce à un réseau de neurones entraîné sur des millions de fichiers audio de référence.</p>
 
     <p>Vous pouvez bien sûr utiliser une autre application si vous le souhaitez (BirdNET, BirdWeather, etc.) pour compléter l'approche.</p>
 
@@ -157,7 +214,7 @@ photos:
         <h3 style="margin-top: 0;">Optionnel : Une parabole directionnelle</h3>
         <p>Pour les ateliers, nous avons décidé d'ajouter la parabole directionnelle <a href="https://www.birdmic.com/" target="_blank" rel="noopener">BirdMic</a> au dispositif instrumenté.</p>
 
-        <p>Une parabole directionnelle est un dispositif qui concentre et amplifie les ondes acoustiques venant d'une direction précise. La parabole BirdMic permet en plus de brancher un casque et de percevoir les sons de façon amplifiée (ce qui crée souvent un effet "whaou" chez les participants). Ce dispositif est très utilisé par les preneurs de sons (les audio-naturalistes) pour repérer plus facilement les chants d'oiseaux mais aussi pour améliorer la qualité de leur enregistrement.</p>
+        <p>Une parabole directionnelle is un dispositif qui concentre et amplifie les ondes acoustiques venant d'une direction précise. La parabole BirdMic permet en plus de brancher un casque et de percevoir les sons de façon amplifiée (ce qui crée souvent un effet "whaou" chez les participants). Ce dispositif est très utilisé par les preneurs de sons (les audio-naturalistes) pour repérer plus facilement les chants d'oiseaux mais aussi pour améliorer la qualité de leur enregistrement.</p>
         
         <h4>Comment ça marche ?</h4>
         <ul>
@@ -184,13 +241,13 @@ photos:
 
     <div class="course-downloads">
       <a href="{{ '/assets/pdf/fiche-observation.pdf' | relative_url }}" class="download-card" target="_blank" rel="noopener">
-        <span class="download-num">Fiche d'activité</span>
+        <span class="download-num">Fiche d'activity</span>
         <span class="download-title">Télécharger la fiche d'observation terrain (PDF)</span>
       </a>
     </div>
   </section>
 
-  <section class="content">
+  <section id="deroulement" class="content">
     <h2>Avant l'atelier</h2>
     <ul>
       <li>Préparer une brève mise en contexte (quelques ressources sont mises à disposition en bas de la page).</li>
