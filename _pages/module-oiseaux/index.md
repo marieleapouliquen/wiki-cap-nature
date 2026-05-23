@@ -9,11 +9,12 @@ title: "À l'écoute des oiseaux et du paysage sonore"
 <h1>{{ page.title }}</h1>
   <p class="page-lead" style="margin-top: 0;">Cet atelier d'écoacoustique participative invite les participant·es à mener une enquête sensible et instrumentée sur le paysage sonore et les oiseaux présents dans l'environnement.</p>
 
+
 <section id="paysage-sonore" class="section-full-bleed" style="background-color: #ffffff; padding: 0rem 0; margin: 0;">
   <div class="container">
     <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
 
-      <h2 id="definition" style="margin-top: 3rem;">Qu'est-ce qu'un paysage sonore ?</h2>
+      <h2 id="definition" style="margin-top: 1rem;">Qu'est-ce qu'un paysage sonore ?</h2>
       <p>Le paysage sonore (soundscape) est l'ensemble des sons présents dans un lieu à un moment donné. Comme un paysage visuel composé de couleurs et de formes, il rassemble des sons de différentes natures, classés en <strong>trois grandes catégories</strong> :</p>
 
       <div class="concept-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
@@ -173,20 +174,7 @@ title: "À l'écoute des oiseaux et du paysage sonore"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section id="objectifs" class="section-full-bleed" style="background-color: #fafbf6; border-top: 0px solid #e2e6d8; border-bottom: 0px solid #e2e6d8; padding: 2rem 0; margin: 0;">
+<section id="objectifs" class="section-full-bleed" style="background-color: #ffffff; border-top: 0px solid #ffffff; border-bottom: 0px solid #ffffff; padding: 2-0rem 0; margin: 0;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
         
