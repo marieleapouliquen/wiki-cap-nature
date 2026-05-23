@@ -2,6 +2,21 @@
 layout: page
 permalink: /module-oiseaux/
 title: "À l'écoute des oiseaux et du paysage sonore"
+toc:
+  - id: definition
+    label: "Qu'est-ce qu'un paysage sonore ?"
+  - id: objectifs
+    label: "Objectifs pédagogiques"
+  - id: outils
+    label: "Les outils de terrain"
+  - id: preparation
+    label: "Avant l'atelier"
+  - id: deroulement
+    label: "Déroulement de l'atelier"
+  - id: ressources
+    label: "Pour aller plus loin"
+  - id: ressources-complementaires
+    label: "Ressources complémentaires"
 ---
 
 <main>
@@ -327,7 +342,7 @@ title: "À l'écoute des oiseaux et du paysage sonore"
   </div>
 </section>
 
-<section id="ressources" class="section-full-bleed band-sand section-pad">
+<section id="ressources-complementaires" class="section-full-bleed band-sand section-pad">
   <div class="container">
     <div class="page-content">
       <h2 style="margin-top: 0;">Ressources complémentaires sur les paysages sonores</h2>
