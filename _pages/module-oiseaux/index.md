@@ -2,28 +2,7 @@
 layout: default
 permalink: /module-oiseaux/
 title: "À l'écoute des oiseaux et du paysage sonore"
-photos:
-  - file: grive.jpg
-    alt: Grive musicienne au sol
-    caption: Grive musicienne
-  - file: merle.jpg
-    alt: Merle noir chantant
-    caption: Merle noir
-  - file: mesange.jpg
-    alt: Mésange charbonnière sur une branche
-    caption: Mésange charbonnière
-  - file: pinson.jpg
-    alt: Pinson des arbres sur un piquet
-    caption: Pinson des arbres
-  - file: sittelle.jpg
-    alt: Sittelle torchepot sur une branche
-    caption: Sittelle torchepot
-  - file: martin-pecheur.jpg
-    alt: Martin-pêcheur d'Europe sortant de l'eau
-    caption: Martin-pêcheur
 ---
-
-{% include photo-band.html photos=page.photos %}
 
 <main class="content">
   
@@ -171,12 +150,8 @@ photos:
       <hr>
       <p style="margin-bottom: 0;">Retrouvez également d'autres <a href="#ressources">ressources et liens utiles pour aller plus loin</a> en bas de cette page.</p>
 
-    </div> </details> ```
-
-### 🧠 Astuces d'ergonomie incluses dans ce code :
-* **`open` (Optionnel)** : Si vous souhaitez que la section soit ouverte par défaut au chargement de la page et que l'utilisateur clique pour la fermer, écrivez simplement `<details id="interet" class="content" open ...>`.
-* **`onclick="event.stopPropagation();"`** : Ajouté sur le bloc interne pour éviter que la section ne se referme accidentellement si l'utilisateur clique pour sélectionner du texte ou interagir avec vos cartes de liens et vos tableaux à l'intérieur du texte déplié.
-* **`cursor: pointer;`** : Transforme le curseur de la souris en main cliquable au survol du titre pour faire comprendre instinctivement à l'utilisateur que l'élément est interactif.
+    </div> </details> 
+    
 
 
 
