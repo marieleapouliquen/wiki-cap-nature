@@ -6,7 +6,8 @@ title: "À l'écoute des oiseaux et du paysage sonore"
 
 <main class="content">
   
-  <section class="content" style="padding-bottom: 0;">
+
+<section class="content" style="padding-bottom: 0;">
     <h1>{{ page.title }}</h1>
     
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; align-items: start; margin-top: 2rem;">
@@ -47,6 +48,7 @@ title: "À l'écoute des oiseaux et du paysage sonore"
       </div>
     </div>
   </section>
+
 
 <details id="interet" class="content" style="outline: none; transition: all 0.2s ease;">
     
@@ -178,7 +180,7 @@ title: "À l'écoute des oiseaux et du paysage sonore"
     </div> </details> 
 
 
-  <section id="objectifs" class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
+<section id="objectifs" class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 2rem 0; margin: 0;">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
         
@@ -194,9 +196,9 @@ title: "À l'écoute des oiseaux et du paysage sonore"
 
       </div>
     </div> 
-  </section>
+</section>
 
-  <section id="outils" class="content">
+<section id="outils" class="content">
     <h2>Les outils de terrain</h2>
     
     <h3>Le sonomètre portatif de Fizziq</h3>
@@ -241,9 +243,9 @@ title: "À l'écoute des oiseaux et du paysage sonore"
         <span class="download-title">Télécharger la fiche d'observation terrain (PDF)</span>
       </a>
     </div>
-  </section>
+</section>
 
-  <section id="deroulement" class="content">
+<section id="deroulement" class="content">
     <h2>Avant l'atelier</h2>
     <ul>
       <li>Préparer une brève mise en contexte (quelques ressources sont mises à disposition en bas de la page).</li>
@@ -285,9 +287,10 @@ title: "À l'écoute des oiseaux et du paysage sonore"
       <img src="{{ '/assets/img/atelier-retours.jpg' | relative_url }}" alt="Ressenti des participants après l'exploration" class="page-banner-img">
       <figcaption class="page-banner-credit">© Marie-Léa Pouliquen</figcaption>
     </figure>
-  </section>
+</section>
 
-  <section id="ressources" class="section-full-bleed" style="background-color: #F7F4E9; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
+
+<section id="ressources" class="section-full-bleed" style="background-color: #F7F4E9; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 2rem 0; margin: 0; overflow: hidden">
     <div class="container">
       <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
 
@@ -318,6 +321,6 @@ title: "À l'écoute des oiseaux et du paysage sonore"
 
       </div>
     </div> 
-  </section>
+</section>
 
 </main>
