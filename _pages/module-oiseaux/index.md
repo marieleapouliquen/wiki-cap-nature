@@ -33,7 +33,8 @@ title: "À l'écoute des oiseaux et du paysage sonore"
           <p style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 0;">L'ensemble des bruits produits par l'activité humaine et le développement des infrastructures (paroles, moteurs, machines, circulation).</p>
         </div> </div> </div> </div> 
 </section>
-        
+
+
 
 <details id="interet" class="content" style="outline: none; transition: all 0.2s ease;">
     
