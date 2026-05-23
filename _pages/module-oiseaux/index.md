@@ -187,9 +187,10 @@ title: "À l'écoute des oiseaux et du paysage sonore"
           
           <h4>Comment utiliser la parabole sur le terrain ?</h4>
           <ol>
-            <li>Connecter le micro directionnel au port ou à l'adaptateur du smartphone.</li>
-            <li>Lancer l'application Merlin et activer l'onglet Sound ID.</li>
-            <li>Diriger la parabole en direction des sons qui vous intriguent.</li>
+            <li>Connectez le micro directionnel au port ou à l'adaptateur du smartphone.</li>
+            <li>Ouvrez l'application Merlin</li>
+            <li>Lancez Sound ID</li>
+            <li>Allumez la parabole (lorsque la connexion fonctionne, vous verrez que le spectrogramme devient moins bruité. Il faut parfois faire plusieurs essais)</li>
           </ol>
         </div>
 
@@ -202,7 +203,7 @@ title: "À l'écoute des oiseaux et du paysage sonore"
   </div>
 </section>
 
-<section id="deroulement" class="section-full-bleed band-alt section-pad">
+<section id="preparation" class="section-full-bleed band-alt section-pad">
   <div class="container">
     <div class="page-content">
       <h2 style="margin-top: 0;">Avant l'atelier</h2>
@@ -221,35 +222,39 @@ title: "À l'écoute des oiseaux et du paysage sonore"
           <span class="resource-link-title">Télécharger la fiche d'observation terrain (PDF)</span>
         </a>
       </div>
+    </div>
+  </div>
+</section>
 
-      <h2>Déroulement de l'atelier</h2>
+<section id="deroulement" class="section-full-bleed band-alt section-pad">
+  <div class="container">
+    <div class="page-content">
+      <h2 style="margin-top: 0;">Déroulement de l'atelier</h2>
+        <h3>1. Lancement de l'atelier (30 min. environ)/h3>
+          <ul>
+            <li>Mise en contexte théorique et présentation des notions de soundscape.</li>
+            <li><strong>Constitution des groupes d'exploration :</strong> Formez des sous-groupes (3 à 5 personnes idéalement).</li>
+            <li><strong>Préparation du matériel :</strong> Demandez aux participants d'installer les applications (Fizziq et Merlin) sur leur téléphone (minimum 2 téléphones par équipe). Si vous utilisez les paraboles, distribuez-en une par groupe.</li>
+            <li>Distribution des fiches d'observation papier.</li>
+          </ul>
 
-      <h3>1. En classe (env. 30 minutes)</h3>
-      <ul>
-        <li>Mise en contexte théorique et présentation des notions de soundscape.</li>
-        <li><strong>Constitution des groupes d'exploration :</strong> Formez des sous-groupes (3 à 5 personnes idéalement).</li>
-        <li><strong>Préparation du matériel :</strong> Demandez aux participants d'installer les applications (Fizziq et Merlin) sur leur téléphone (minimum 2 téléphones par équipe). Si vous utilisez les paraboles, distribuez-en une par groupe.</li>
-        <li>Distribution des fiches d'observation papier.</li>
-      </ul>
+        <h3>2. Exploration sur le terrain (30-45 min)</h3>
+          <p><strong>Mise en attention :</strong> Proposez une écoute silencieuse à oreilles nues pendant quelques minutes. Cet exercice introduit naturellement les notions de biophonie, géophonie et anthrophonie.</p>
+          <p><strong>Enquête instrumentée :</strong> Chaque groupe explore la zone en autonomie. La consigne est simple : faire silence, mesurer les décibels avec Fizziq, lancer Merlin Sound ID pour identifier les espèces, et consigner l'ensemble sur la fiche d'observation.</p>
 
-      <h3>2. L'exploration sur le terrain (30-45 min)</h3>
-      <p><strong>Mise en attention :</strong> Proposez une écoute silencieuse à oreilles nues pendant quelques minutes. Cet exercice introduit naturellement les notions de biophonie, géophonie et anthrophonie.</p>
-      <p><strong>Enquête instrumentée :</strong> Chaque groupe explore la zone en autonomie. La consigne est simple : faire silence, mesurer les décibels avec Fizziq, lancer Merlin Sound ID pour identifier les espèces, et consigner l'ensemble sur la fiche d'observation.</p>
+        <h4>Idée d'activité: Réaliser une soundmap collective</h4>
+          <ol>
+            <li><strong>Définir la zone d'étude :</strong> Divisez le terrain d'exploration en plusieurs secteurs distincts pour y établir des points d'écoute fixes.</li>
+            <li><strong>Prendre les mesures :</strong> À chaque station, restez immobile : utilisez Fizziq pour capter le niveau sonore (dB), lancez Merlin pour répertorier les oiseaux présents, et notez l'heure ainsi que la météo.</li>
+            <li><strong>Analyser :</strong> Prenez le temps d'étudier le profil de chaque point (dominance des bruits, niveau moyen) et consignez votre ressenti qualitatif.</li>
+            <li><strong>Cartographier :</strong> Pour conclure, positionnez vos relevés sur une carte géographique en attribuant des icônes thématiques à chaque type de son rencontré.</li>
+          </ol>
 
-      <h3>Quelques pistes d'activités sur le terrain</h3>
-
-      <h4>Réaliser une soundmap collective</h4>
-      <ol>
-        <li><strong>Définir la zone d'étude :</strong> Divisez le terrain d'exploration en plusieurs secteurs distincts pour y établir des points d'écoute fixes.</li>
-        <li><strong>Prendre les mesures :</strong> À chaque station, restez immobile : utilisez Fizziq pour capter le niveau sonore (dB), lancez Merlin pour répertorier les oiseaux présents, et notez l'heure ainsi que la météo.</li>
-        <li><strong>Analyser :</strong> Prenez le temps d'étudier le profil de chaque point (dominance des bruits, niveau moyen) et consignez votre ressenti qualitatif.</li>
-        <li><strong>Cartographier :</strong> Pour conclure, positionnez vos relevés sur une carte géographique en attribuant des icônes thématiques à chaque type de son rencontré.</li>
-      </ol>
-
-      <h4 style="margin-top: 2.5rem;">Idées supplémentaires</h4>
-      <p>Pour d'autres idées d'activités sur le terrain, vous pouvez consulter la fiche du Réseau IDée : <a href="https://www.reseau-idee.be/fr/symbioses/lecoute-de-la-nature-7-activites-pour-tendre-loreille" target="_blank" rel="noopener">L'écoute de la nature : 7 activités pour tendre l'oreille</a>.</p>
+          <p>Pour d'autres idées d'activités sur le terrain, vous pouvez consulter la fiche du Réseau IDée : <a href="https://www.reseau-idee.be/fr/symbioses/lecoute-de-la-nature-7-activites-pour-tendre-loreille" target="_blank" rel="noopener">L'écoute de la nature : 7 activités pour tendre l'oreille</a>.</p>
 
       <h3 style="margin-top: 2.5rem;">3. Retours réflexifs</h3>
+
+      
       <figure class="page-banner" style="margin-top: 1.5rem;">
         <img src="{{ '/assets/img/atelier-retours.jpg' | relative_url }}" alt="Ressenti des participants après l'exploration" class="page-banner-img">
         <figcaption class="page-banner-credit">© Marie-Léa Pouliquen</figcaption>
