@@ -288,10 +288,15 @@ toc:
     <p>Veillez à maintenir un cadre bienveillant où le ressenti prime sur la performance. Si vous souhaitez conserver une trace exploitable de la séance, le journal d'écoute et la carte sensible collective se prêtent particulièrement bien à une analyse a posteriori.</p>
   </div>
 
-  <figure class="page-banner" style="margin-top: 1.5rem;">
-    <img src="{{ '/assets/img/atelier-retours.jpg' | relative_url }}" alt="Ressenti des participants après l'exploration" class="page-banner-img">
-    <figcaption class="page-banner-credit">© Marie-Léa Pouliquen</figcaption>
+  <figure class="reflexion-gallery" style="margin-top: 1.5rem;">
+    <div class="gallery-grid">
+      <img src="{{ '/assets/img/atelier-retours.jpg' | relative_url }}" alt="Ressenti des participants après l'exploration">
+      <img src="{{ '/assets/img/production-carnet-oiseaux.jpg' | relative_url }}" alt="Carnet d'observation des oiseaux réalisé par les participants">
+      <img src="{{ '/assets/img/production-carte-sensible.jpg' | relative_url }}" alt="Carte sensible collective réalisée en fin d'atelier">
+    </div>
+    <figcaption>© Marie-Léa Pouliquen</figcaption>
   </figure>
+  
 </section>
 
 <section id="ressources" class="page-section">
