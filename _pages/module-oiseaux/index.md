@@ -313,7 +313,7 @@ toc:
 </section>
 
 <section id="ressources" class="page-section">
-  <h2>1. Pour aller plus loin</h2>
+  <h2>Pour aller plus loin</h2>
 
   <h3>1. En savoir + sur les paysages sonores</h3>
 
