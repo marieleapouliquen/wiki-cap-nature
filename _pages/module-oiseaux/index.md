@@ -313,7 +313,9 @@ toc:
 </section>
 
 <section id="ressources" class="page-section">
-  <h2>1. En savoir + sur les paysages sonores</h2>
+  <h2>1. Pour aller plus loin</h2>
+
+  <h3>1. En savoir + sur les paysages sonores</h3>
 
     <div class="resource-links">
     <a class="resource-link" href="https://www.reseau-idee.be/fr/symbioses/les-paysages-sonores-ont-beaucoup-nous-dire" target="_blank" rel="noopener">
@@ -334,7 +336,7 @@ toc:
     </a>
   </div>
   
-  <h2>2. Approfondir l'analyse des signaux sonores</h2>
+  <h3>2. Approfondir l'analyse des signaux sonores</h3>
 
   <p>Pour prolonger l'atelier, l'outil <a href="https://fizziqweb.web.app/audio" target="_blank" rel="noopener">FizziQ Web — Analyse audio</a> permet de visualiser un son directement dans le navigateur, sans rien installer. On peut y charger un enregistrement (par exemple un chant d'oiseau capté sur le terrain) et l'explorer selon plusieurs représentations : <strong>amplitude</strong>, <strong>niveau sonore</strong>, <strong>fréquence fondamentale</strong>, <strong>spectre de fréquences</strong> et <strong>spectrogramme</strong>. Les observations peuvent être consignées dans un <em>cahier d'expériences</em> intégré, puis rassemblées dans un rapport — utile pour comparer les chants de plusieurs espèces ou pour mettre en évidence la signature acoustique d'un oiseau. C'est une excellente manière de relier l'écoute sensible à une démarche d'analyse scientifique, et de prolonger la lecture de spectrogramme abordée dans la fiche <a href="{{ '/module-oiseaux/fiche3-sonogramme/' | relative_url }}">« Lire un spectrogramme »</a>.</p>
 
