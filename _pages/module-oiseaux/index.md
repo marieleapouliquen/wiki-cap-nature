@@ -48,11 +48,20 @@ title: "À l'écoute des oiseaux et du paysage sonore"
     </div>
   </section>
 
-<details id="interet" class="content" style="cursor: pointer; outline: none;">
+<details id="interet" class="content" style="outline: none; transition: all 0.2s ease;">
     
-    <summary style="list-style: none; outline: none;">
-      <h3 style="display: inline-block; margin-top: 0; margin-bottom: 0;"> - <span style="font-size: 1.1rem; color: var(--color-text-muted); margin-left: 0.5rem; font-weight: bold;">Pourquoi étudier les paysages sonores ?</span></h3>
-    </summary>
+  <summary 
+    style="list-style: none; outline: none; cursor: pointer; transition: color 0.2s ease;"
+    onmouseover="this.style.color='var(--color-link, #2b6cb0)';" 
+    onmouseout="this.style.color='inherit';">
+    
+    <h2 style="display: inline-block; margin-top: 0; margin-bottom: 0; color: inherit;">
+      Pourquoi étudier les paysages sonores ? 
+      <span style="font-size: 1.1rem; color: var(--color-text-muted, #718096); margin-left: 0.5rem; font-weight: normal;">
+        (Cliquez pour déplier)
+      </span>
+    </h2>
+  </summary>
 
     <div style="margin-top: 1.5rem; cursor: default;" onclick="event.stopPropagation();">
 
@@ -130,13 +139,22 @@ title: "À l'écoute des oiseaux et du paysage sonore"
     </div> </details> 
 
 
-<details id="bienfaits" class="content" style="cursor: pointer; outline: none;">
+<details id="bienfaits" class="content" style="outline: none; transition: all 0.2s ease;">
     
-    <summary style="list-style: none; outline: none;">
-      <h3 style="display: inline-block; margin-top: 0; margin-bottom: 0;"> - <span style="font-size: 1.1rem; color: var(--color-text-muted); margin-left: 0.5rem; font-weight: bold;">Les bienfaits des sons de la nature</span></h3>
-    </summary>
-
-    <div style="margin-top: 1.5rem; cursor: default;" onclick="event.stopPropagation();">
+  <summary 
+    style="list-style: none; outline: none; cursor: pointer; transition: color 0.2s ease;"
+    onmouseover="this.style.color='var(--color-link, #2b6cb0)';" 
+    onmouseout="this.style.color='inherit';">
+    
+    <h2 style="display: inline-block; margin-top: 0; margin-bottom: 0; color: inherit;">
+      Les bienfaits des sons de la nature 
+      <span style="font-size: 1.1rem; color: var(--color-text-muted, #718096); margin-left: 0.5rem; font-weight: normal;">
+        (Cliquez pour déplier)
+      </span>
+    </h2>
+  </summary>
+  
+  <div style="margin-top: 1.5rem; cursor: default;" onclick="event.stopPropagation();">
 
       <p>Alors que la pollution sonore affecte tant la santé humaine que la biodiversité, l'écoute de la nature exerce une action thérapeutique avérée sur notre organisme. Une vaste synthèse scientifique menée par la chercheuse <strong>Rachel T. Buxton</strong> (Colorado State University) et son équipe en 2021 a démontré que l'exposition aux sons naturels (chants d'oiseaux, bruits d'eau) engendre des bénéfices de santé considérables : baisse financière du stress, diminution du taux de cortisol, réduction de la fréquence cardiaque et amélioration nette des performances cognitives.</p>
       
