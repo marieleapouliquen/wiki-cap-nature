@@ -16,8 +16,6 @@ toc:
     label: "Déroulement de l'atelier"
   - id: ressources
     label: "Pour aller plus loin"
-  - id: ressources-complementaires
-    label: "Ressources complémentaires"
 ---
 
 <section id="definition" class="page-section">
