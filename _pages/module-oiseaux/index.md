@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 permalink: /module-oiseaux/
 title: "À l'écoute des oiseaux et du paysage sonore"
 ---
