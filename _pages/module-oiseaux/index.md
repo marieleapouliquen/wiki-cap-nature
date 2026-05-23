@@ -100,34 +100,44 @@ title: "À l'écoute des oiseaux et du paysage sonore"
         </div>
       </div>
 
-      <p>Pour approfondir la thématique du bruit sur la biodiversité : </p>
-
-      <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; margin-bottom: 2rem;">
-        <a class="resource-link" href="https://www.bruit.fr/?view=article&id=24591:vient-de-paraitre-echo-bruit-n-185-entendre-la-nature-en-ville&catid=592" target="_blank" rel="noopener">
-          <span class="resource-link-label">Centre d'information sur le Bruit (CIDB)</span>
-          <span class="resource-link-title">Echo Bruit n°185 : Entendre la nature en ville</span>
-        </a>
-        <a class="resource-link" href="https://www.cerema.fr/fr/actualites/sons-biodiversite-ville-favoriser-paysages-sonores-qualite" target="_blank" rel="noopener">
-          <span class="resource-link-label">Étude · Cerema</span>
-          <span class="resource-link-title">Sons et biodiversité en ville — Favoriser les paysages sonores</span>
-        </a>
-        <a class="resource-link" href="https://revue-set.fr/article/view/7512" target="_blank" rel="noopener">
-          <span class="resource-link-label">Revue Scientifique · SET</span>
-          <span class="resource-link-title">Écoacoustique et suivi de la biodiversité animale</span>
-        </a>
-        <a class="resource-link" href="https://biodiversite.gouv.fr/mesure-9-reduire-les-pollutions-lumineuses-et-sonores" target="_blank" rel="noopener">
-          <span class="resource-link-label">Action Publique · Plan Biodiversité</span>
-          <span class="resource-link-title">Mesure 9 — Réduire les pollutions lumineuses et sonores</span>
-        </a>
-      </div>
 
       <div class="callout info" style="margin-top: 2rem;">
-        <div class="callout-title">Capsule vidéo : La pollution sonore et la faune</div>
-        <p><a href="https://www.youtube.com/watch?v=hmhTfwy3K3k&t=1s" target="_blank" rel="noopener">L'impact de la pollution sonore sur la biodiversité sur YouTube</a>.</p>
-        <p><a href="https://www.youtube.com/watch?v=9X5JfGI0hr0" target="_blank" rel="noopener">Soundscapes - Yosemite sur YouTube</a>.</p>
+        <div class="callout-title">Pour approfondir la thématique du bruit sur la biodiversité :</div>
+        
+        <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; margin-bottom: 2rem;">
+          <a class="resource-link" href="https://biodiversite.gouv.fr/mesure-9-reduire-les-pollutions-lumineuses-et-sonores" target="_blank" rel="noopener">
+            <span class="resource-link-label">CNRS</span>
+            <span class="resource-link-title">L'impact de la pollution sonore sur la biodiversité sur YouTube</span>
+          </a>
+          <a class="resource-link" href="https://www.bruit.fr/?view=article&id=24591:vient-de-paraitre-echo-bruit-n-185-entendre-la-nature-en-ville&catid=592" target="_blank" rel="noopener">
+            <span class="resource-link-label">Centre d'information sur le Bruit (CIDB)</span>
+            <span class="resource-link-title">Echo Bruit n°185 : Entendre la nature en ville</span>
+          </a>
+          <a class="resource-link" href="https://www.cerema.fr/fr/actualites/sons-biodiversite-ville-favoriser-paysages-sonores-qualite" target="_blank" rel="noopener">
+            <span class="resource-link-label">Étude · Cerema</span>
+            <span class="resource-link-title">Sons et biodiversité en ville — Favoriser les paysages sonores</span>
+          </a>
+          <a class="resource-link" href="https://revue-set.fr/article/view/7512" target="_blank" rel="noopener">
+            <span class="resource-link-label">Revue Scientifique · SET</span>
+            <span class="resource-link-title">Écoacoustique et suivi de la biodiversité animale</span>
+          </a>
+          <a class="resource-link" href="https://biodiversite.gouv.fr/mesure-9-reduire-les-pollutions-lumineuses-et-sonores" target="_blank" rel="noopener">
+            <span class="resource-link-label">Action Publique · Plan Biodiversité</span>
+            <span class="resource-link-title">Mesure 9 — Réduire les pollutions lumineuses et sonores</span>
+          </a>
+          </div>
       </div>
 
-      <h3>Les bienfaits des sons de la nature pour la santé humaine</h3>
+    </div> </details> 
+
+<details id="interet" class="content" style="cursor: pointer; outline: none;">
+    
+    <summary style="list-style: none; outline: none;">
+      <h2 style="display: inline-block; margin-top: 0; margin-bottom: 0;">Les bienfaits des sons de la nature<span style="font-size: 1.1rem; color: var(--color-text-muted); margin-left: 0.5rem; font-weight: bold;">(Cliquez pour déplier le contenu)</span></h2>
+    </summary>
+
+    <div style="margin-top: 1.5rem; cursor: default;" onclick="event.stopPropagation();">
+
       <p>Alors que la pollution sonore affecte tant la santé humaine que la biodiversité, l'écoute de la nature exerce une action thérapeutique avérée sur notre organisme. Une vaste synthèse scientifique menée par la chercheuse <strong>Rachel T. Buxton</strong> (Colorado State University) et son équipe en 2021 a démontré que l'exposition aux sons naturels (chants d'oiseaux, bruits d'eau) engendre des bénéfices de santé considérables : baisse financière du stress, diminution du taux de cortisol, réduction de la fréquence cardiaque et amélioration nette des performances cognitives.</p>
       
       <p>L'étude souligne ainsi que la préservation des paysages sonores sauvages dans les parcs nationaux relève autant de la protection de la biodiversité que d'un enjeu majeur de santé publique.</p>
@@ -146,12 +156,13 @@ title: "À l'écoute des oiseaux et du paysage sonore"
           <span class="resource-link-title">Natural sounds benefit mental health and protection</span>
         </a>
       </div>
-      
-      <hr>
-      <p style="margin-bottom: 0;">Retrouvez également d'autres <a href="#ressources">ressources et liens utiles pour aller plus loin</a> en bas de cette page.</p>
 
     </div> </details> 
-    
+      
+      
+
+
+
 
 
 
