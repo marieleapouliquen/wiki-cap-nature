@@ -185,18 +185,7 @@ title: "À l'écoute des oiseaux et du paysage sonore"
     <p><a href="https://www.fizziq.org/" target="_blank" rel="noopener">Fizziq</a> est une application qui transforme le smartphone en un véritable laboratoire de mesure. Dans le cadre de cet atelier, nous l'utilisons pour mesurer le niveau sonore en temps réel (décibels). Elle peut aussi servir à géolocaliser son parcours grâce au GPS.</p>
     
     <h3>Une application pour la reconnaissance des chants</h3>
-    <p>Il existe beaucoup d'applications permettant d'identification des oiseaux par le chant. Dans le cadre de cet atelier, nous avons utilisé <a href="https://merlin.allaboutbirds.org/" target="_blank" rel="noopener">Merlin Bird ID</a>, une application gratuite développée par le Cornell Lab of Ornithology pour identifier les oiseaux à partir de leur chant ou de leur apparence. <strong>Comment ça marche ?</strong> Lorsque la fonction "Sound ID" est activée, l’application capte les vocalisations des oiseaux enregistrées via le micro du téléphone. L'algorithme de traitement convertit alors le signal en image (le spectrogramme), puis applique une reconnaissance d'image grâce à un réseau de neurones entraîné sur des millions de fichiers audio de référence. Vous pouvez bien sûr utiliser une autre application si vous le souhaitez (BirdNET, BirdWeather, etc.) pour compléter l'approche. Pour en savoir plus sur la lecture d'un spectrogramme ou sur l'algorithme de ce type d'outils, consultez les ressources ci-dessous :</p>
-
-    <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; margin-bottom: 2rem;">
-      <a class="resource-link" href="{{ '/module-oiseaux/fiche3-sonogramme/' | relative_url }}">
-        <span class="resource-link-label">Fiche Scientifique 3</span>
-        <span class="resource-link-title">Lire un spectrogramme</span>
-      </a>
-      <a class="resource-link" href="https://birdnet.cornell.edu/" target="_blank" rel="noopener">
-        <span class="resource-link-label">Plateforme Scientifique</span>
-        <span class="resource-link-title">Algorithme de traitement BirdNET</span>
-      </a>
-    </div>
+    <p>Il existe beaucoup d'applications permettant d'identification des oiseaux par le chant. Dans le cadre de cet atelier, nous avons utilisé <a href="https://merlin.allaboutbirds.org/" target="_blank" rel="noopener">Merlin Bird ID</a>, une application gratuite développée par le Cornell Lab of Ornithology pour identifier les oiseaux à partir de leur chant ou de leur apparence. <strong>Comment ça marche ?</strong> Lorsque la fonction "Sound ID" est activée, l’application capte les vocalisations des oiseaux enregistrées via le micro du téléphone. L'<a href="https://birdnet.cornell.edu/" target="_blank" rel="noopener">algorithme de traitement</a> convertit alors le signal en image (le spectrogramme), puis applique une reconnaissance d'image grâce à un réseau de neurones entraîné sur des millions de fichiers audio de référence. Vous pouvez bien sûr utiliser une autre application si vous le souhaitez (BirdNET, BirdWeather, etc.) pour compléter l'approche.</p>
 
     <div class="text-image-split">
       <div class="tis-text">
