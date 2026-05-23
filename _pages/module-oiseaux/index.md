@@ -230,7 +230,7 @@ title: "À l'écoute des oiseaux et du paysage sonore"
   <div class="container">
     <div class="page-content">
       <h2 style="margin-top: 0;">Déroulement de l'atelier</h2>
-        <h3>1. Lancement de l'atelier (30 min. environ)/h3>
+        <h3>1. Lancement de l'atelier (30 min. environ)</h3>
           <ul>
             <li>Mise en contexte théorique et présentation des notions de soundscape.</li>
             <li><strong>Constitution des groupes d'exploration :</strong> Formez des sous-groupes (3 à 5 personnes idéalement).</li>
@@ -259,6 +259,12 @@ title: "À l'écoute des oiseaux et du paysage sonore"
         <img src="{{ '/assets/img/atelier-retours.jpg' | relative_url }}" alt="Ressenti des participants après l'exploration" class="page-banner-img">
         <figcaption class="page-banner-credit">© Marie-Léa Pouliquen</figcaption>
       </figure>
+
+
+      <h3 style="margin-top: 2.5rem;">4. Pour aller + loin en classe</h3>
+
+      
+
     </div>
   </div>
 </section>
