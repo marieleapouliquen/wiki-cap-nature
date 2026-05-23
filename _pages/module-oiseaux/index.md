@@ -69,103 +69,117 @@ photos:
     </div>
   </section>
 
-  <section id="interet" class="content">
-    <h2>Pourquoi étudier les paysages sonores ?</h2>
-
-    <h3>Le paysage sonore comme indicateur écologique</h3>
-    <p>L'analyse des indices acoustiques permet de mesurer l'état de santé d'un écosystème de manière non invasive. Les chercheurs étudient ces environnements pour quantifier la biodiversité, suivre l'évolution de l'activité animale ou évaluer l'impact négatif de la pollution sonore sur la faune sauvage.</p>
-
-    <h3>Les enjeux de la pollution sonore</h3>
-    <p>Si les effets de la pollution sonore sur la santé humaine sont bien connus (perturbation du sommeil, stress...), son impact écologique est souvent sous-estimé. Or le bruit généré par les infrastructures humaines (transports, industries) a un véritable effet sur la faune sauvage, que ce soit en milieu terrestre ou en milieu aquatique. Le bruit anthropique tend à masquer les signaux de communication essentiels des animaux.</p>
+<details id="interet" class="content" style="cursor: pointer; outline: none;">
     
-    <p>Pour faire face à cette pression et survivre en milieu anthropisé, de nombreuses espèces doivent adapter l'amplitude, la durée ou la fréquence de leurs vocalisations. C'est le cas par exemple de la <strong>mésange bleue</strong> ou du <strong>merle noir</strong>, qui chantent plus fort ou décalent leurs plages horaires en ville pour surmonter le vrombissement urbain. Cet effort constant perturbe leur équilibre énergétique et leurs chances de reproduction. Le bioacousticien Bernie Krause a notamment documenté la disparition progressive de ces structures symphoniques naturelles sous l'effet du développement des infrastructures.</p>
+    <summary style="list-style: none; outline: none;">
+      <h2 style="display: inline-block; margin-top: 0; margin-bottom: 0;">Pourquoi étudier les paysages sonores ? <span style="font-size: 1.1rem; color: var(--color-text-muted); margin-left: 0.5rem; font-weight: normal;">(Cliquez pour déplier)</span></h2>
+    </summary>
 
-    <div class="callout warning">
-      <div class="callout-title">Comprendre les décibels</div>
-      <p>Le décibel (dB) sert à quantifier le niveau de pression acoustique. L'échelle étant logarithmique, une petite variation en dB traduit un changement d'énergie considérable : <strong>+10 dB correspond à un son 10 fois plus puissant</strong> en énergie, bien que perçu environ 2 fois plus fort par notre oreille.</p>
+    <div style="margin-top: 1.5rem; cursor: default;" onclick="event.stopPropagation();">
 
-      <div class="db-chart">
-        <div class="db-row">
-          <span class="db-label">Seuil d'audition (0 dB)</span>
-          <div class="db-track"><div class="db-fill db-ok" style="width: 15%">0 dB</div></div>
-        </div>
-        <div class="db-row">
-          <span class="db-label">Chuchotement</span>
-          <div class="db-track"><div class="db-fill db-ok" style="width: 30%">25 dB</div></div>
-        </div>
-        <div class="db-row">
-          <span class="db-label">Conversation normale</span>
-          <div class="db-track"><div class="db-fill db-ok" style="width: 50%">45 dB</div></div>
-        </div>
-        <div class="db-row">
-          <span class="db-label">Rue animée, aspirateur</span>
-          <div class="db-track"><div class="db-fill db-warning" style="width: 70%">70 dB</div></div>
-        </div>
-        <div class="db-row">
-          <span class="db-label">Tondeuse, moto</span>
-          <div class="db-track"><div class="db-fill db-warning" style="width: 85%">90 dB</div></div>
-        </div>
-        <div class="db-row">
-          <span class="db-label">Concert rock</span>
-          <div class="db-track"><div class="db-fill db-danger" style="width: 95%">110 dB</div></div>
-        </div>
-        <div class="db-row">
-          <span class="db-label">Seuil de douleur</span>
-          <div class="db-track"><div class="db-fill db-danger" style="width: 100%">125 dB</div></div>
+      <h3>Le paysage sonore comme indicateur écologique</h3>
+      <p>L'analyse des indices acoustiques permet de mesurer l'état de santé d'un écosystème de manière non invasive. Les chercheurs étudient ces environnements pour quantifier la biodiversité, suivre l'évolution de l'activité animale ou évaluer l'impact négatif de la pollution sonore sur la faune sauvage.</p>
+
+      <h3>Les enjeux de la pollution sonore</h3>
+      <p>Si les effets de la pollution sonore sur la santé humaine sont bien connus (perturbation du sommeil, stress...), son impact écologique est souvent sous-estimé. Or le bruit généré par les infrastructures humaines (transports, industries) a un véritable effet sur la faune sauvage, que ce soit en milieu terrestre ou en milieu aquatique. Le bruit anthropique tend à masquer les signaux de communication essentiels des animaux.</p>
+      
+      <p>Pour faire face à cette pression et survivre en milieu anthropisé, de nombreuses espèces doivent adapter l'amplitude, la durée ou la fréquence de leurs vocalisations. C'est le cas par exemple de la <strong>mésange bleue</strong> ou du <strong>merle noir</strong>, qui chantent plus fort ou décalent leurs plages horaires en ville pour surmonter le vrombissement urbain. Cet effort constant perturbe leur équilibre énergétique et leurs chances de reproduction. Le bioacousticien Bernie Krause a notamment documenté la disparition progressive de ces structures symphoniques naturelles sous l'effet du développement des infrastructures.</p>
+
+      <div class="callout warning">
+        <div class="callout-title">Comprendre les décibels</div>
+        <p>Le décibel (dB) sert à quantifier le niveau de pression acoustique. L'échelle étant logarithmique, une petite variation en dB traduit un changement d'énergie considérable : <strong>+10 dB correspond à un son 10 fois plus puissant</strong> en énergie, bien que perçu environ 2 fois plus fort par notre oreille.</p>
+
+        <div class="db-chart">
+          <div class="db-row">
+            <span class="db-label">Seuil d'audition (0 dB)</span>
+            <div class="db-track"><div class="db-fill db-ok" style="width: 15%">0 dB</div></div>
+          </div>
+          <div class="db-row">
+            <span class="db-label">Chuchotement</span>
+            <div class="db-track"><div class="db-fill db-ok" style="width: 30%">25 dB</div></div>
+          </div>
+          <div class="db-row">
+            <span class="db-label">Conversation normale</span>
+            <div class="db-track"><div class="db-fill db-ok" style="width: 50%">45 dB</div></div>
+          </div>
+          <div class="db-row">
+            <span class="db-label">Rue animée, aspirateur</span>
+            <div class="db-track"><div class="db-fill db-warning" style="width: 70%">70 dB</div></div>
+          </div>
+          <div class="db-row">
+            <span class="db-label">Tondeuse, moto</span>
+            <div class="db-track"><div class="db-fill db-warning" style="width: 85%">90 dB</div></div>
+          </div>
+          <div class="db-row">
+            <span class="db-label">Concert rock</span>
+            <div class="db-track"><div class="db-fill db-danger" style="width: 95%">110 dB</div></div>
+          </div>
+          <div class="db-row">
+            <span class="db-label">Seuil de douleur</span>
+            <div class="db-track"><div class="db-fill db-danger" style="width: 100%">125 dB</div></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="callout info" style="margin-top: 2rem;">
-      <div class="callout-title">Capsule vidéo : La pollution sonore et la faune</div>
-      <p>Pour introduire la séance et observer concrètement l'effet du bruit sur les milieux naturels, vous pouvez visionner cet extrait : <a href="https://www.youtube.com/watch?v=hmhTfwy3K3k&t=1s" target="_blank" rel="noopener">L'impact de la pollution sonore sur la biodiversité sur YouTube</a>.</p>
-    </div>
+      <p>Pour approfondir la thématique du bruit sur la biodiversité : </p>
 
-    <p>Pour approfondir la thématique du bruit sur la biodiversité, vous pouvez consulter les études du <a href="http://www.bruit.fr/" target="_blank" rel="noopener">Centre d'information sur le Bruit (CIDB)</a> et en particulier sa revue dédiée <a href="https://www.bruit.fr/?view=article&id=24591:vient-de-paraitre-echo-bruit-n-185-entendre-la-nature-en-ville&catid=592" target="_blank" rel="noopener">Echo Bruit n°185 : Entendre la nature en ville</a>.</p>
+      <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; margin-bottom: 2rem;">
+        <a class="resource-link" href="https://www.bruit.fr/?view=article&id=24591:vient-de-paraitre-echo-bruit-n-185-entendre-la-nature-en-ville&catid=592" target="_blank" rel="noopener">
+          <span class="resource-link-label">Centre d'information sur le Bruit (CIDB)</span>
+          <span class="resource-link-title">Echo Bruit n°185 : Entendre la nature en ville</span>
+        </a>
+        <a class="resource-link" href="https://www.cerema.fr/fr/actualites/sons-biodiversite-ville-favoriser-paysages-sonores-qualite" target="_blank" rel="noopener">
+          <span class="resource-link-label">Étude · Cerema</span>
+          <span class="resource-link-title">Sons et biodiversité en ville — Favoriser les paysages sonores</span>
+        </a>
+        <a class="resource-link" href="https://revue-set.fr/article/view/7512" target="_blank" rel="noopener">
+          <span class="resource-link-label">Revue Scientifique · SET</span>
+          <span class="resource-link-title">Écoacoustique et suivi de la biodiversité animale</span>
+        </a>
+        <a class="resource-link" href="https://biodiversite.gouv.fr/mesure-9-reduire-les-pollutions-lumineuses-et-sonores" target="_blank" rel="noopener">
+          <span class="resource-link-label">Action Publique · Plan Biodiversité</span>
+          <span class="resource-link-title">Mesure 9 — Réduire les pollutions lumineuses et sonores</span>
+        </a>
+      </div>
 
-    <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; margin-bottom: 2rem;">
-      <a class="resource-link" href="https://www.cerema.fr/fr/actualites/sons-biodiversite-ville-favoriser-paysages-sonores-qualite" target="_blank" rel="noopener">
-        <span class="resource-link-label">Étude · Cerema</span>
-        <span class="resource-link-title">Sons et biodiversité en ville — Favoriser les paysages sonores</span>
-      </a>
-      <a class="resource-link" href="https://revue-set.fr/article/view/7512" target="_blank" rel="noopener">
-        <span class="resource-link-label">Revue Scientifique · SET</span>
-        <span class="resource-link-title">Écoacoustique et suivi de la biodiversité animale</span>
-      </a>
-      <a class="resource-link" href="https://biodiversite.gouv.fr/mesure-9-reduire-les-pollutions-lumineuses-et-sonores" target="_blank" rel="noopener">
-        <span class="resource-link-label">Action Publique · Plan Biodiversité</span>
-        <span class="resource-link-title">Mesure 9 — Réduire les pollutions lumineuses et sonores</span>
-      </a>
-    </div>
+      <div class="callout info" style="margin-top: 2rem;">
+        <div class="callout-title">Capsule vidéo : La pollution sonore et la faune</div>
+        <p><a href="https://www.youtube.com/watch?v=hmhTfwy3K3k&t=1s" target="_blank" rel="noopener">L'impact de la pollution sonore sur la biodiversité sur YouTube</a>.</p>
+        <p><a href="https://www.youtube.com/watch?v=9X5JfGI0hr0" target="_blank" rel="noopener">Soundscapes - Yosemite sur YouTube</a>.</p>
+      </div>
 
-    <div class="callout info">
-      <div class="callout-title">Enjeu de la pollution sonore dans les parcs nationaux - Exemple des États-Unis</div>
-      <p>Pour introduire la séance ou approfondir la thématique en classe, vous pouvez visionner ce reportage de contexte : <a href="https://www.youtube.com/watch?v=9X5JfGI0hr0" target="_blank" rel="noopener">Soundscapes - Yosemite sur YouTube</a>.</p>
-    </div>
+      <h3>Les bienfaits des sons de la nature pour la santé humaine</h3>
+      <p>Alors que la pollution sonore affecte tant la santé humaine que la biodiversité, l'écoute de la nature exerce une action thérapeutique avérée sur notre organisme. Une vaste synthèse scientifique menée par la chercheuse <strong>Rachel T. Buxton</strong> (Colorado State University) et son équipe en 2021 a démontré que l'exposition aux sons naturels (chants d'oiseaux, bruits d'eau) engendre des bénéfices de santé considérables : baisse financière du stress, diminution du taux de cortisol, réduction de la fréquence cardiaque et amélioration nette des performances cognitives.</p>
+      
+      <p>L'étude souligne ainsi que la préservation des paysages sonores sauvages dans les parcs nationaux relève autant de la protection de la biodiversité que d'un enjeu majeur de santé publique.</p>
 
-    <h3>Les bienfaits des sons de la nature pour la santé humaine</h3>
-    <p>Alors que la pollution sonore affecte tant la santé humaine que la biodiversité, l'écoute de la nature exerce une action thérapeutique avérée sur notre organisme. Une vaste synthèse scientifique menée par la chercheuse <strong>Rachel T. Buxton</strong> (Colorado State University) et son équipe en 2021 a démontré que l'exposition aux sons naturels (chants d'oiseaux, bruits d'eau) engendre des bénéfices de santé considérables : baisse financière du stress, diminution du taux de cortisol, réduction de la fréquence cardiaque et amélioration nette des performances cognitives.</p>
-    
-    <p>L'étude souligne ainsi que la préservation des paysages sonores sauvages dans les parcs nationaux relève autant de la protection de la biodiversité que d'un enjeu majeur de santé publique.</p>
+      <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; margin-bottom: 1.5rem;">
+        <a class="resource-link" href="https://www.nature.com/articles/s41598-025-11469-x" target="_blank" rel="noopener">
+          <span class="resource-link-label">Publication · Nature Scientific Reports</span>
+          <span class="resource-link-title">Sons de la nature et connectivité cérébrale</span>
+        </a>
+        <a class="resource-link" href="https://doi.org/10.1073/pnas.2013097118" target="_blank" rel="noopener">
+          <span class="resource-link-label">Étude Source · PNAS 2021</span>
+          <span class="resource-link-title">Buxton et al. — Synthesis of health benefits of natural sounds</span>
+        </a>
+        <a class="resource-link" href="https://www.ecehh.org/news/sounds-of-nature-benefit-mental-health-and-promote-environmental-protection/" target="_blank" rel="noopener">
+          <span class="resource-link-label">Rapport · ECEHH</span>
+          <span class="resource-link-title">Natural sounds benefit mental health and protection</span>
+        </a>
+      </div>
+      
+      <hr>
+      <p style="margin-bottom: 0;">Retrouvez également d'autres <a href="#ressources">ressources et liens utiles pour aller plus loin</a> en bas de cette page.</p>
 
-    <div class="resource-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; margin-bottom: 1.5rem;">
-      <a class="resource-link" href="https://www.nature.com/articles/s41598-025-11469-x" target="_blank" rel="noopener">
-        <span class="resource-link-label">Publication · Nature Scientific Reports</span>
-        <span class="resource-link-title">Sons de la nature et connectivité cérébrale</span>
-      </a>
-      <a class="resource-link" href="https://doi.org/10.1073/pnas.2013097118" target="_blank" rel="noopener">
-        <span class="resource-link-label">Étude Source · PNAS 2021</span>
-        <span class="resource-link-title">Buxton et al. — Synthesis of health benefits of natural sounds</span>
-      </a>
-      <a class="resource-link" href="https://www.ecehh.org/news/sounds-of-nature-benefit-mental-health-and-promote-environmental-protection/" target="_blank" rel="noopener">
-        <span class="resource-link-label">Rapport · ECEHH</span>
-        <span class="resource-link-title">Natural sounds benefit mental health and protection</span>
-      </a>
-    </div>
-    
-    <hr>
-    <p>Retrouvez également toutes les <a href="#ressources">ressources et liens utiles pour aller plus loin</a> en bas de cette page.</p>
-  </section>
+    </div> </details> ```
+
+### 🧠 Astuces d'ergonomie incluses dans ce code :
+* **`open` (Optionnel)** : Si vous souhaitez que la section soit ouverte par défaut au chargement de la page et que l'utilisateur clique pour la fermer, écrivez simplement `<details id="interet" class="content" open ...>`.
+* **`onclick="event.stopPropagation();"`** : Ajouté sur le bloc interne pour éviter que la section ne se referme accidentellement si l'utilisateur clique pour sélectionner du texte ou interagir avec vos cartes de liens et vos tableaux à l'intérieur du texte déplié.
+* **`cursor: pointer;`** : Transforme le curseur de la souris en main cliquable au survol du titre pour faire comprendre instinctivement à l'utilisateur que l'élément est interactif.
+
+
+
 
   <section id="objectifs" class="section-full-bleed" style="background-color: #fafbf6; border-top: 0.2px solid #e2e6d8; border-bottom: 0.2px solid #e2e6d8; padding: 0rem 0; margin: 0; overflow: hidden;">
     <div class="container">
