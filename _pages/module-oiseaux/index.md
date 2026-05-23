@@ -162,8 +162,8 @@ toc:
 <section id="outils" class="page-section">
   <h2>Les outils de terrain</h2>
 
-  <h3>Le sonomètre portatif Fizziq</h3>
-  <p><a href="https://www.fizziq.org/" target="_blank" rel="noopener">Fizziq</a> est une application qui transforme le smartphone en un véritable laboratoire de mesure. Dans le cadre de cet atelier, nous l'utilisons pour mesurer le niveau sonore en temps réel (décibels). Elle peut aussi servir à géolocaliser son parcours grâce au GPS.</p>
+  <h3>Le sonomètre portatif FizziQ</h3>
+  <p><a href="https://www.fizziq.org/" target="_blank" rel="noopener">FizziQ</a> est une application qui transforme le smartphone en un véritable laboratoire de mesure. Dans le cadre de cet atelier, nous l'utilisons pour mesurer le niveau sonore en temps réel (décibels). Elle peut aussi servir à géolocaliser son parcours grâce au GPS.</p>
 
   <h3>Une application pour la reconnaissance des chants</h3>
   <p>Il existe beaucoup d'applications permettant d'identifier les oiseaux par le chant. Dans le cadre de cet atelier, nous avons utilisé <a href="https://merlin.allaboutbirds.org/" target="_blank" rel="noopener">Merlin Bird ID</a>, une application gratuite développée par le Cornell Lab of Ornithology pour identifier les oiseaux à partir de leur chant ou de leur apparence.</p>
@@ -343,7 +343,7 @@ toc:
     </a>
     <a class="resource-link" href="https://fizziqweb.web.app/audio" target="_blank" rel="noopener">
       <span class="resource-link-label">Outil en ligne · FizziQ Web</span>
-      <span class="resource-link-title">Analyser un signal audio dans le navigateur</span>
+      <span class="resource-link-title">Analyser un signal audio avec FizziQ</span>
     </a>
   </div>
 </section>
