@@ -353,7 +353,26 @@ toc:
 
           <div class="tb-note">
             <strong>Attention :</strong> la température de brillance n'est pas forcément la température réelle de la surface. La caméra suppose une émissivité de 0,95 ; si le matériau émet moins bien (métal, verre…), une partie du flux capté provient en réalité du rayonnement réfléchi de l'environnement, et la lecture s'écarte de la vraie température. Interpréter une image thermique, c'est garder cet écart à l'esprit.
+            <br><br>
+            En pratique, la plupart des surfaces naturelles et des matériaux de construction ont une émissivité élevée (0,90–0,97), proche du réglage de 0,95 : la température de brillance y est donc une bonne approximation de la température réelle. L'écart ne devient important que pour les surfaces métalliques.
           </div>
+
+          <table class="tb-emis-table">
+            <thead>
+              <tr><th>Surface</th><th>Émissivité (ε)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Eau</td><td>0,96</td></tr>
+              <tr><td>Végétation, feuillage</td><td>0,94 – 0,98</td></tr>
+              <tr><td>Peau humaine</td><td>0,98</td></tr>
+              <tr><td>Bois</td><td>0,90 – 0,95</td></tr>
+              <tr><td>Béton, brique</td><td>0,92 – 0,95</td></tr>
+              <tr><td>Peinture (toutes couleurs)</td><td>0,90 – 0,95</td></tr>
+              <tr><td>Verre</td><td>0,85 – 0,95</td></tr>
+              <tr><td>Métal peint ou oxydé</td><td>0,40 – 0,80</td></tr>
+              <tr><td>Métal poli (aluminium, acier)</td><td>0,05 – 0,20</td></tr>
+            </tbody>
+          </table>
         </div>
 
     </div>
@@ -456,6 +475,11 @@ toc:
   .tb-box .tb-box-formula { font-size: 0.72rem; font-style: italic; color: var(--tb-muted); margin-top: 0.25rem; }
   .tb-arrow { display: flex; align-items: center; color: var(--tb-muted); font-size: 1.3rem; }
   .tb-note { font-size: 0.88rem; line-height: 1.6; color: var(--tb-ink); padding: 0.8rem 1rem; border-radius: 6px; background: #fff; border: 1px solid var(--tb-line); }
+  .tb-emis-table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.85rem; background: #fff; }
+  .tb-emis-table th, .tb-emis-table td { text-align: left; padding: 0.45rem 0.8rem; border-bottom: 1px solid var(--tb-line); }
+  .tb-emis-table th { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--tb-muted); }
+  .tb-emis-table td:last-child, .tb-emis-table th:last-child { text-align: right; font-family: Georgia, serif; }
+  .tb-emis-table tr:last-child td { border-bottom: none; }
   @media (max-width: 600px) {
     .tb-row { flex-wrap: wrap; }
     .tb-row label { min-width: 100%; }
