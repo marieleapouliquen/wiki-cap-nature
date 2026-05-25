@@ -52,7 +52,7 @@ show_photo_credits: false
           <p>Ce wiki rassemble les ressources pour mener les ateliers Cap Nature : protocoles d'observation, prise en main des capteurs, fiches d'activité et pistes pédagogiques. Le wiki documente chaque atelier pas à pas pour qu'un·e animateur·rice, un·e enseignant·e ou un collectif puisse s'en emparer et l'adapter à son contexte éducatif.</p>
           
           <div class="card-grid" style="margin-top: 1.5rem;">
-            <a class="card" href="{{ '/module-oiseaux/' | relative_url }}">
+            <a class="card" href="{{ '/atelier-oiseaux/' | relative_url }}">
               <span class="card-title">Atelier · Écoacoustique</span>
               <span class="card-desc">Initiation à l'écoute des oiseaux et des paysages sonores</span>
               <span class="btn">Découvrir l'atelier →</span>
