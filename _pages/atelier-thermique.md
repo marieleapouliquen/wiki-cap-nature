@@ -22,20 +22,30 @@ toc:
   <h2>Qu'est-ce que la thermographie infrarouge ?</h2>
   <p>Tout objet émet un rayonnement infrarouge invisible à l'œil nu, d'autant plus intense qu'il est chaud. Une <strong>caméra thermique</strong> capte ce rayonnement et le traduit en une image colorée où chaque teinte correspond à une température apparente. Elle rend ainsi visibles des phénomènes que nous ne percevons pas directement : la chaleur d'un mur exposé au soleil, la fraîcheur d'un plan d'eau, la signature thermique d'un être vivant. Trois notions aident à comprendre ce que l'on observe :</p>
 
-  <div class="concept-grid">
+<div class="concept-grid">
     <div class="concept-card">
       <strong>Rayonnement infrarouge</strong>
-      <p>Tout corps dont la température dépasse le zéro absolu émet de la chaleur sous forme de rayonnement infrarouge. La caméra mesure ce rayonnement, pas la température « au toucher ».</p>
-    </div>
-    <div class="concept-card">
-      <strong>Émissivité</strong>
-      <p>La capacité d'une surface à émettre ce rayonnement. Une surface mate (bois, végétation, eau) émet bien ; une surface brillante ou métallique émet mal et reflète son environnement, ce qui peut tromper la lecture.</p>
+      <p>Tout corps dont la température dépasse le zéro absolu émet de la chaleur sous forme de rayonnement infrarouge (IR). La caméra mesure ce rayonnement, et non la température « au toucher ».</p>
     </div>
     <div class="concept-card">
       <strong>Température de brillance</strong>
-      <p>Ce que « voit » la caméra est une température apparente, déduite du rayonnement reçu. Elle peut différer de la température réelle de la surface, notamment sur les matériaux à faible émissivité.</p>
+      <p> 
+        C'est la grandeur que « voit » réellement la caméra : une température déduite du rayonnement reçu en supposant un corps noir parfait. Sur les surfaces à émissivité élevée, elle est proche de la température réelle ; sur les matériaux à faible émissivité, elle s'en écarte fortement à cause du rayonnement réfléchi.</p>
     </div>
+
+  <p>La caméra mesure le flux de rayonnement IR émis par une surface. Elle convertit ce flux en température en supposant une relation idéale entre flux et température (modèle du corps gris : equation...). La température calculée est appelée la température de brillance.</p>
+
+    <div class="concept-card">
+      <strong>Émissivité</strong>
+      <p>L'émissivité est l'aptitude d'une surface à émettre du rayonnement IR, exprimée entre 0 et 1. Les surfaces non métalliques (bois, végétation, eau, peinture) ont une émissivité élevée (≈ 0,9) : la caméra mesure alors une température proche de la température réelle. Les surfaces métalliques polies ont une émissivité faible — elles émettent peu de rayonnement propre et réfléchissent celui de leur environnement —, si bien que la mesure est faussée.</p>
+    </div>
+
   </div>
+
+
+
+
+  
 
   <details id="interet" class="disclosure">
     <summary>
@@ -178,6 +188,49 @@ toc:
         <div class="callout-title">Le piège de la vitre froide</div>
         <p>Sur un thermogramme extérieur, les vitres d'une voiture apparaissent souvent d'un bleu très sombre, comme glacées. Ce n'est pas qu'elles sont froides : le verre, à faible émissivité, <strong>reflète le rayonnement froid du ciel</strong>. C'est l'exemple classique d'un artéfact de réflexion — l'image montre le ciel, pas la vitre.</p>
       </div>
+
+      <h3>Tester l'effet de l'émissivité</h3>
+      <p>Le petit calculateur ci-dessous permet de manipuler directement ce que décrit le piège de la vitre froide. Réglez la température réelle d'une surface, son émissivité et la température de la source qu'elle reflète (ciel, soleil, mur voisin…), puis observez la <strong>température de brillance</strong> — celle qu'affiche la caméra. Les préréglages montrent les deux directions possibles de l'erreur sur le métal : froid quand il reflète le ciel, chaud quand il reflète le soleil.</p>
+
+<div class="tb-calc" markdown="0">
+  <p class="tb-calc-intro">Ce calculateur illustre l'écart entre <strong>température réelle</strong> et <strong>température de brillance</strong>. La surface rayonne selon le modèle du corps gris, mais réfléchit aussi une part du rayonnement de la <strong>source qu'elle a en face d'elle</strong> — le ciel, le soleil, un mur voisin. Cette source est souvent une source lointaine, sans raison d'être à la même température que la surface : c'est précisément cet écart qui crée l'artéfact. La caméra, qui suppose un corps noir parfait, additionne rayonnement propre et reflet : faites chuter l'émissivité et observez la lecture décrocher.</p>
+  <div class="tb-row">
+    <label for="tb-temp">Température réelle de surface</label>
+    <input id="tb-temp" type="range" min="-20" max="120" step="1" value="25" />
+    <output id="tb-temp-out">25 °C</output>
+  </div>
+  <div class="tb-row">
+    <label for="tb-emis">Émissivité ε</label>
+    <input id="tb-emis" type="range" min="0.05" max="1" step="0.01" value="0.95" />
+    <output id="tb-emis-out">0,95</output>
+  </div>
+  <div class="tb-row">
+    <label for="tb-env">Température de la source réfléchie</label>
+    <input id="tb-env" type="range" min="-40" max="120" step="1" value="15" />
+    <output id="tb-env-out">15 °C</output>
+  </div>
+  <div class="tb-presets">
+    <button type="button" data-e="0.96">Végétation (ε 0,96)</button>
+    <button type="button" data-e="0.98">Eau (ε 0,98)</button>
+    <button type="button" data-e="0.92">Béton (ε 0,92)</button>
+    <button type="button" data-e="0.10" data-env="-35">Vitre reflétant le ciel (ε 0,10)</button>
+    <button type="button" data-e="0.10" data-env="55">Métal au soleil (ε 0,10)</button>
+  </div>
+  <div class="tb-chain">
+    <div class="tb-box">
+      <div class="tb-box-label">Flux capté par la caméra</div>
+      <div class="tb-box-value" id="tb-flux">—</div>
+      <div class="tb-box-formula">ε·σ·T⁴ + (1−ε)·σ·T<sub>source</sub>⁴</div>
+    </div>
+    <span class="tb-arrow">→</span>
+    <div class="tb-box" id="tb-result-box">
+      <div class="tb-box-label">Température de brillance</div>
+      <div class="tb-box-value" id="tb-result">—</div>
+      <div class="tb-box-formula">la caméra suppose ε = 1</div>
+    </div>
+  </div>
+  <div class="tb-note" id="tb-note">—</div>
+</div>
 
     </div>
   </details>
@@ -334,3 +387,101 @@ toc:
   </div>
 </section>
 
+<style>
+  .tb-calc {
+    --tb-ink: var(--ink, #1f2a6b);
+    --tb-muted: var(--muted, #5b6472);
+    --tb-line: var(--line, #e2e6d8);
+    --tb-paper: var(--paper, #fafbf6);
+    --tb-accent: var(--accent, #2c7da0);
+    border: 1px solid var(--tb-line);
+    border-radius: 8px;
+    background: var(--tb-paper);
+    padding: 1.4rem 1.5rem;
+    margin: 1.8rem 0;
+  }
+  .tb-calc * { box-sizing: border-box; }
+  .tb-calc-intro { font-size: 0.92rem; line-height: 1.55; color: var(--tb-muted); margin: 0 0 1.3rem; }
+  .tb-calc-intro strong { color: var(--tb-ink); }
+  .tb-row { display: flex; align-items: center; gap: 0.9rem; margin-bottom: 0.9rem; }
+  .tb-row label { font-size: 0.9rem; color: var(--tb-ink); font-weight: 600; min-width: 210px; }
+  .tb-row input[type="range"] { flex: 1; min-width: 140px; accent-color: var(--tb-accent); }
+  .tb-row output { font-family: Georgia, serif; font-size: 1.05rem; font-weight: 600; color: var(--tb-accent); min-width: 64px; text-align: right; }
+  .tb-presets { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.1rem 0 1.4rem; }
+  .tb-presets button {
+    font-size: 0.82rem; padding: 0.35rem 0.7rem; border: 1px solid var(--tb-line);
+    border-radius: 4px; background: #fff; color: var(--tb-ink); cursor: pointer; font-family: inherit;
+  }
+  .tb-presets button:hover { background: var(--tb-paper); border-color: var(--tb-accent); }
+  .tb-chain { display: flex; align-items: stretch; gap: 0.6rem; flex-wrap: wrap; margin: 0 0 1rem; }
+  .tb-box {
+    flex: 1; min-width: 150px; background: #fff; border: 1px solid var(--tb-line);
+    border-radius: 6px; padding: 0.85rem 1rem;
+  }
+  .tb-box .tb-box-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--tb-muted); font-weight: 600; }
+  .tb-box .tb-box-value { font-family: Georgia, serif; font-size: 1.4rem; font-weight: 600; color: var(--tb-ink); margin-top: 0.2rem; }
+  .tb-box .tb-box-formula { font-size: 0.72rem; font-style: italic; color: var(--tb-muted); margin-top: 0.25rem; }
+  .tb-arrow { display: flex; align-items: center; color: var(--tb-muted); font-size: 1.3rem; }
+  .tb-note { font-size: 0.88rem; line-height: 1.6; color: var(--tb-ink); padding: 0.8rem 1rem; border-radius: 6px; background: #fff; border: 1px solid var(--tb-line); }
+  @media (max-width: 600px) {
+    .tb-row { flex-wrap: wrap; }
+    .tb-row label { min-width: 100%; }
+    .tb-chain { flex-direction: column; }
+    .tb-arrow { transform: rotate(90deg); justify-content: center; }
+  }
+</style>
+
+<script>
+(function(){
+  var SIGMA = 5.67e-8, K = 273.15;
+  var temp = document.getElementById('tb-temp'),
+      emis = document.getElementById('tb-emis'),
+      env  = document.getElementById('tb-env'),
+      tempOut = document.getElementById('tb-temp-out'),
+      emisOut = document.getElementById('tb-emis-out'),
+      envOut  = document.getElementById('tb-env-out'),
+      flux = document.getElementById('tb-flux'),
+      result = document.getElementById('tb-result'),
+      box = document.getElementById('tb-result-box'),
+      note = document.getElementById('tb-note');
+  if (!temp) return;
+  function fr(n){ return n.toFixed(1).replace('.', ','); }
+  function compute(){
+    var T = parseFloat(temp.value), e = parseFloat(emis.value), Te = parseFloat(env.value);
+    var Tk = T + K, Tek = Te + K;
+    var fluxCapte = e * SIGMA * Math.pow(Tk, 4) + (1 - e) * SIGMA * Math.pow(Tek, 4);
+    var Tb = Math.pow(fluxCapte / SIGMA, 0.25) - K;
+    var ecart = Tb - T, absEc = Math.abs(ecart);
+    tempOut.textContent = T + ' °C';
+    emisOut.textContent = e.toFixed(2).replace('.', ',');
+    envOut.textContent = Te + ' °C';
+    flux.textContent = Math.round(fluxCapte) + ' W/m²';
+    result.textContent = fr(Tb) + ' °C';
+    var col = '#3a7a52', word = 'fiable';
+    if (absEc > 5){ col = '#c1666b'; word = 'très biaisée'; }
+    else if (absEc > 1.5){ col = '#c98a1f'; word = 'légèrement biaisée'; }
+    box.style.borderColor = col;
+    box.style.boxShadow = '0 0 0 1px ' + col;
+    var signe = ecart >= 0 ? '+' : '−';
+    var sens = ecart >= 0 ? 'plus chaud' : 'plus froid';
+    note.innerHTML = 'Écart à la température réelle : <strong style="color:' + col + '">' + signe + fr(absEc)
+      + ' °C</strong> — lecture ' + word + '. '
+      + (e >= 0.9
+          ? 'À forte émissivité, la surface rayonne presque tout elle-même : la caméra lit une température proche du réel, quelle que soit la source réfléchie.'
+          : 'À faible émissivité, le flux capté est dominé par le rayonnement de la source réfléchie. La surface apparaît donc <strong>' + sens
+            + '</strong> qu\u2019elle ne l\u2019est : sa température de brillance est tirée vers celle de ce qu\u2019elle reflète'
+            + (ecart < 0 ? ' — ici une source plus froide, comme le ciel : c\u2019est le piège de la vitre « froide ».'
+                         : ' — ici une source plus chaude, comme le soleil ou un mur exposé.'));
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('.tb-presets button'), function(b){
+    b.addEventListener('click', function(){
+      emis.value = b.getAttribute('data-e');
+      var ev = b.getAttribute('data-env');
+      if (ev !== null) env.value = ev;
+      compute();
+    });
+  });
+  [temp, emis, env].forEach(function(s){ s.addEventListener('input', compute); });
+  compute();
+})();
+</script>
