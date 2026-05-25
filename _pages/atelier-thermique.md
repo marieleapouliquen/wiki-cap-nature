@@ -18,6 +18,16 @@ toc:
     label: "Pour aller plus loin"
 ---
 
+<figure class="reflexion-gallery" style="margin-top: 1.5rem;">
+    <div class="gallery-grid">
+      <img src="{{ '/assets/img/thermique/galerie-arbres-bati.jpg' | relative_url }}" alt="Image thermique contrastant des arbres frais et une façade chaude">
+      <img src="{{ '/assets/img/thermique/galerie-facade-nuit.jpg' | relative_url }}" alt="Image thermique d'une façade de bâtiment">
+      <img src="{{ '/assets/img/thermique/galerie-radiateur.jpg' | relative_url }}" alt="Image thermique d'un radiateur diffusant sa chaleur">
+    </div>
+    <figcaption>Observations thermiques réalisées en atelier (contraste végétation / bâti, façade, radiateur) — Photo : Marie-Léa Pouliquen</figcaption>
+</figure>
+
+
 <section id="enjeu" class="page-section">
   <h2>Pourquoi s'intéresser à la chaleur ?</h2>
 
@@ -282,15 +292,6 @@ toc:
   <h3 style="margin-top: 2.5rem;">3. Partage et retours réflexifs (20 min environ)</h3>
 
   <p>Ce temps de clôture permet de consolider les apprentissages et d'inviter chacun·e à mettre des mots sur son expérience. Comme pour tout retour réflexif, l'objectif n'est pas d'évaluer des connaissances mais de faire émerger observations, surprises et ressentis.</p>
-
-  <figure class="reflexion-gallery" style="margin-top: 1.5rem;">
-    <div class="gallery-grid">
-      <img src="{{ '/assets/img/thermique/galerie-arbres-bati.jpg' | relative_url }}" alt="Image thermique contrastant des arbres frais et une façade chaude">
-      <img src="{{ '/assets/img/thermique/galerie-facade-nuit.jpg' | relative_url }}" alt="Image thermique d'une façade de bâtiment">
-      <img src="{{ '/assets/img/thermique/galerie-radiateur.jpg' | relative_url }}" alt="Image thermique d'un radiateur diffusant sa chaleur">
-    </div>
-    <figcaption>Observations thermiques réalisées en atelier (contraste végétation / bâti, façade, radiateur) — Photo : Marie-Léa Pouliquen</figcaption>
-  </figure>
 
   <h4 style="margin-top: 2rem;">À l'œil nu et à la caméra thermique</h4>
   <p>Une même scène, vue normalement puis en thermographie. Passez la souris sur une image (ou touchez-la sur mobile) pour révéler sa version thermique : les arbres, plus frais, ressortent en sombre, tandis que les façades et les sols minéraux, qui stockent la chaleur, apparaissent en clair.</p>
