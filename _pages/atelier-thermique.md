@@ -20,18 +20,17 @@ toc:
     label: "Ressources"
 ---
 
-<figure class="reflexion-gallery" style="margin-top: 1.5rem;">
+<section id="enjeu" class="page-section">
+  <h2>Pourquoi s'intéresser à la chaleur ?</h2>
+
+  <figure class="reflexion-gallery" style="margin-top: 1.5rem;">
     <div class="gallery-grid">
       <img src="{{ '/assets/img/thermique/galerie-arbres-bati.jpg' | relative_url }}" alt="Image thermique contrastant des arbres frais et une façade chaude">
       <img src="{{ '/assets/img/thermique/galerie-facade-nuit.jpg' | relative_url }}" alt="Image thermique d'une façade de bâtiment">
       <img src="{{ '/assets/img/thermique/galerie-radiateur.jpg' | relative_url }}" alt="Image thermique d'un radiateur diffusant sa chaleur">
     </div>
     <figcaption>Observations thermiques réalisées en atelier (contraste végétation / bâti, façade, radiateur) — Photo : Marie-Léa Pouliquen</figcaption>
-</figure>
-
-
-<section id="enjeu" class="page-section">
-  <h2>Pourquoi s'intéresser à la chaleur ?</h2>
+  </figure>
 
   <p>Avant d'être une grandeur physique, la chaleur est quelque chose que l'on <strong>ressent</strong> : on cherche l'ombre d'un arbre en été, la fraîcheur d'un parc ou d'un point d'eau, on fuit un parking brûlant à midi — et l'hiver, on apprécie la tiédeur d'un mur au soleil ou d'une pièce bien isolée. Ce confort thermique du quotidien dépend étroitement de notre environnement proche, et notamment de la présence du vivant.</p>
 
@@ -313,12 +312,9 @@ toc:
             <li><strong>Apparent ≠ réel :</strong> la caméra affiche une température de brillance, pas nécessairement la température réelle de la surface.</li>
           </ul>
        </div>
-      </div>
-    
-  </div>
 
+    </div>
   </details>
-
 
   <details id="emissivite" class="disclosure">
     <summary>
@@ -328,7 +324,9 @@ toc:
     <div class="disclosure-body">
 
   
-        <p>Le petit calculateur ci-dessous permet de manipuler directement ce que décrit le piège de la vitre froide. Réglez la température réelle d'une surface, son émissivité et la température de la source qu'elle reflète (ciel, soleil, mur voisin…), puis observez la <strong>température de brillance</strong> — celle qu'affiche la caméra. Les préréglages montrent les deux directions possibles de l'erreur sur le métal : froid quand il reflète le ciel, chaud quand il reflète le soleil.</p>
+        <p><strong>Le piège de la vitre froide :</strong> sur un thermogramme extérieur, les vitres apparaissent souvent d'un bleu très sombre, comme glacées. Ce n'est pas qu'elles sont froides — le verre, à faible émissivité, reflète le rayonnement froid du ciel. L'image montre alors le ciel, pas la vitre.</p>
+
+      <p>Le petit calculateur ci-dessous permet de manipuler directement ce que décrit le piège de la vitre froide. Réglez la température réelle d'une surface, son émissivité et la température de la source qu'elle reflète (ciel, soleil, mur voisin…), puis observez la <strong>température de brillance</strong> — celle qu'affiche la caméra. Les préréglages montrent les deux directions possibles de l'erreur sur le métal : froid quand il reflète le ciel, chaud quand il reflète le soleil.</p>
 
         <div class="tb-calc" markdown="0">
           <p class="tb-calc-intro">Ce calculateur illustre l'écart entre <strong>température réelle</strong> et <strong>température de brillance</strong>. La surface rayonne selon le modèle du corps gris, mais réfléchit aussi une part du rayonnement de la <strong>source qu'elle a en face d'elle</strong> — le ciel, le soleil, un mur voisin. Cette source est souvent une source lointaine, sans raison d'être à la même température que la surface : c'est précisément cet écart qui crée l'artéfact. La caméra, qui suppose un corps noir parfait, additionne rayonnement propre et reflet : faites chuter l'émissivité et observez la lecture décrocher.</p>
@@ -370,8 +368,10 @@ toc:
           <div class="tb-note" id="tb-note">—</div>
         </div>
 
+    </div>
+  </details>
 
-</section> 
+</section>
 
 
 
