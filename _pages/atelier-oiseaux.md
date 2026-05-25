@@ -176,7 +176,7 @@ toc:
       </summary>
       <div class="disclosure-body">
   
-      <p>L'application Merlin convertit le signal audio en une image appelée <strong>sonogramme </strong>. Sur cette image, des motifs défilent en temps réel. C'est la trace des sons entendus. Les oiseaux émettent des cris et des chants caractéristiques selon leur espèce. Ainsi, en comparant le signal audio capté en temps réel à une base de données de référence, l'application est capable de données le nom de l'espèce de l'oiseau entendu avec une certaine marge de confiance. Bien sûr, une erreur est toujours possible, aussi est-il préférable de vérifier visuellement quand on le peut.</p>
+      <p>L'application Merlin convertit le signal audio en une image appelée <strong>sonogramme </strong>. Sur cette image, des motifs défilent en temps réel. C'est la trace des sons entendus. Les oiseaux émettent des cris et des chants caractéristiques selon leur espèce. Ainsi, en comparant le signal audio capté en temps réel à une base de données de référence, l'application est capable de donner le nom de l'espèce de l'oiseau entendu avec une certaine marge de confiance. Bien sûr, une erreur est toujours possible, aussi est-il préférable de vérifier visuellement quand on le peut.</p>
   
       <h2>Les deux axes : temps et fréquence</h2>
       <p>Un sonogramme a deux dimensions : le <strong>temps</strong> qui défile horizontalement, la <strong>fréquence</strong> (du grave en bas à l'aigu en haut) sur la verticale.</p>
