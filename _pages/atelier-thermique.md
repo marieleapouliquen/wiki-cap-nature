@@ -87,7 +87,7 @@ toc:
     </div>
   </div>
 
-    <h2>Comment observer concrètement ces échanges de chaleur invisibles à l'oeil nu ? </h2>
+    <h2>Comment observer concrètement ces échanges de chaleur invisibles à l'œil nu ? </h2>
   
     <p>C'est là qu'intervient la <strong>caméra thermique</strong>. Tout objet émet un rayonnement infrarouge d'autant plus intense qu'il est chaud ; la caméra capte ce rayonnement et le traduit en une image colorée où chaque teinte correspond à une température apparente. Elle rend ainsi visibles, sur le terrain, le mur qui restitue la chaleur du soleil, la fraîcheur d'un plan d'eau ou la signature thermique d'un être vivant.</p>
   
