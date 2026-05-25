@@ -713,31 +713,24 @@ main.content > p > em, main.content > em {
    9. LOGOS INSTITUTIONNELS
    ============================================================================ */
 
-/* Grille de logos partenaires */
-.logo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1.5rem;
-  align-items: center;
-  margin: 1.5rem 0 0;
-}
-.logo-item {
+.partner-banner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  background: #ffffff;
-  border: 1px solid var(--color-border);
-  border-radius: 6px;
-  min-height: 110px;
-  transition: all 0.15s ease;
+  gap: 2.5rem;
+  margin-top: 1rem;
 }
-.logo-item:hover { border-color: var(--teal); transform: translateY(-2px); }
-.logo-item img {
-  max-width: 100%;
-  max-height: 70px;
+.partner-banner img {
+  height: 60px;
   width: auto;
-  height: auto;
+  max-width: 160px;
   object-fit: contain;
-  display: block;
+  filter: grayscale(100%);
+  opacity: 0.75;
+  transition: all 0.2s ease;
+}
+.partner-banner img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
 }
