@@ -23,7 +23,7 @@ title: Apprendre à lire un sonogramme
   <p>Un sonogramme a deux dimensions : le <strong>temps</strong> qui défile horizontalement, la <strong>fréquence</strong> (du grave en bas à l'aigu en haut) sur la verticale.</p>
 
   <div class="sono-frame">
-    <svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" style="width: 80%; height: auto; display: block;">
+    <svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
       <rect x="80" y="40" width="560" height="280" fill="#fafbf6" stroke="#e2e6d8"/>
       <line x1="80" y1="40" x2="640" y2="40" stroke="#e2e6d8" stroke-dasharray="3,3"/>
       <line x1="80" y1="110" x2="640" y2="110" stroke="#e2e6d8" stroke-dasharray="3,3"/>
@@ -86,42 +86,51 @@ title: Apprendre à lire un sonogramme
 
   
 
-  <h3>Anatomie d'un chant : le vocabulaire visuel</h3>
+  <h3>Anatomie d'un chant</h3>
   <p>Quelques termes utiles pour décrire ce qu'on observe sur un spectrogramme :</p>
 
   <div class="sono-frame">
     <svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
       <rect x="80" y="20" width="560" height="240" fill="#fafbf6" stroke="#e2e6d8"/>
+      
+      <line x1="80" y1="80" x2="640" y2="80" stroke="#e2e6d8" stroke-dasharray="3,3"/>
+      <line x1="80" y1="140" x2="640" y2="140" stroke="#e2e6d8" stroke-dasharray="3,3"/>
+      <line x1="80" y1="200" x2="640" y2="200" stroke="#e2e6d8" stroke-dasharray="3,3"/>
+      
       <line x1="80" y1="20" x2="80" y2="260" stroke="#1f2a6b" stroke-width="1.5"/>
-      <text x="65" y="30" font-size="10" fill="#1f2a6b" text-anchor="end">8 kHz</text>
-      <text x="65" y="100" font-size="10" fill="#1f2a6b" text-anchor="end">6 kHz</text>
-      <text x="65" y="170" font-size="10" fill="#1f2a6b" text-anchor="end">4 kHz</text>
-      <text x="65" y="240" font-size="10" fill="#1f2a6b" text-anchor="end">2 kHz</text>
+      <text x="65" y="25" font-size="11" fill="#1f2a6b" text-anchor="end">8 kHz</text>
+      <text x="65" y="85" font-size="11" fill="#1f2a6b" text-anchor="end">6 kHz</text>
+      <text x="65" y="145" font-size="11" fill="#1f2a6b" text-anchor="end">4 kHz</text>
+      <text x="65" y="205" font-size="11" fill="#1f2a6b" text-anchor="end">2 kHz</text>
+      <text x="65" y="265" font-size="11" fill="#1f2a6b" text-anchor="end">0</text>
+      
       <line x1="80" y1="260" x2="640" y2="260" stroke="#1f2a6b" stroke-width="1.5"/>
       
-      <ellipse cx="130" cy="120" rx="6" ry="10" fill="#e8862a"/>
-      <text x="130" y="145" font-size="11" font-weight="bold" fill="#1f2a6b" text-anchor="middle">A</text>
-      <path d="M 175 100 Q 185 130 200 140" stroke="#e8862a" stroke-width="6" fill="none" stroke-linecap="round"/>
-      <text x="187" y="165" font-size="11" font-weight="bold" fill="#1f2a6b" text-anchor="middle">B</text>
-      <path d="M 240 160 Q 250 130 265 110" stroke="#e8862a" stroke-width="6" fill="none" stroke-linecap="round"/>
-      <text x="252" y="185" font-size="11" font-weight="bold" fill="#1f2a6b" text-anchor="middle">C</text>
+      <ellipse cx="130" cy="120" rx="6" ry="10" fill="#000000"/>
+      <text x="130" y="150" font-size="12" font-weight="bold" fill="#1f2a6b" text-anchor="middle">A</text>
       
-      <g fill="#e8862a">
-        <ellipse cx="320" cy="170" rx="3" ry="8"/><ellipse cx="330" cy="165" rx="3" ry="8"/>
-        <ellipse cx="340" cy="170" rx="3" ry="8"/><ellipse cx="350" cy="165" rx="3" ry="8"/>
-        <ellipse cx="360" cy="170" rx="3" ry="8"/><ellipse cx="370" cy="165" rx="3" ry="8"/>
+      <path d="M 175 100 Q 185 130 200 140" stroke="#000000" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <text x="187" y="165" font-size="12" font-weight="bold" fill="#1f2a6b" text-anchor="middle">B</text>
+      
+      <path d="M 240 160 Q 250 130 265 110" stroke="#000000" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <text x="252" y="185" font-size="12" font-weight="bold" fill="#1f2a6b" text-anchor="middle">C</text>
+      
+      <g fill="#000000">
+        <ellipse cx="320" cy="140" rx="3" ry="8"/><ellipse cx="330" cy="135" rx="3" ry="8"/>
+        <ellipse cx="340" cy="140" rx="3" ry="8"/><ellipse cx="350" cy="135" rx="3" ry="8"/>
+        <ellipse cx="360" cy="140" rx="3" ry="8"/><ellipse cx="370" cy="135" rx="3" ry="8"/>
       </g>
-      <text x="345" y="195" font-size="11" font-weight="bold" fill="#1f2a6b" text-anchor="middle">D</text>
+      <text x="345" y="165" font-size="12" font-weight="bold" fill="#1f2a6b" text-anchor="middle">D</text>
       
-      <ellipse cx="430" cy="100" rx="5" ry="12" fill="#e8862a"/>
-      <path d="M 445 90 Q 455 120 470 110" stroke="#e8862a" stroke-width="5" fill="none" stroke-linecap="round"/>
-      <ellipse cx="485" cy="120" rx="5" ry="10" fill="#e8862a"/>
-      <text x="460" y="150" font-size="11" font-weight="bold" fill="#1f2a6b" text-anchor="middle">E</text>
+      <ellipse cx="430" cy="100" rx="5" ry="12" fill="#000000"/>
+      <path d="M 445 90 Q 455 120 470 110" stroke="#000000" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="485" cy="120" rx="5" ry="10" fill="#000000"/>
+      <text x="460" y="150" font-size="12" font-weight="bold" fill="#1f2a6b" text-anchor="middle">E</text>
       
-      <line x1="585" y1="200" x2="600" y2="200" stroke="#e8862a" stroke-width="3"/>
-      <line x1="585" y1="160" x2="600" y2="160" stroke="#f7d038" stroke-width="3"/>
-      <line x1="585" y1="120" x2="600" y2="120" stroke="#94c11f" stroke-width="2"/>
-      <text x="593" y="220" font-size="11" font-weight="bold" fill="#1f2a6b" text-anchor="middle">F</text>
+      <line x1="585" y1="180" x2="600" y2="180" stroke="#000000" stroke-width="4"/>
+      <line x1="585" y1="140" x2="600" y2="140" stroke="#555555" stroke-width="3"/>
+      <line x1="585" y1="100" x2="600" y2="100" stroke="#999999" stroke-width="2"/>
+      <text x="593" y="205" font-size="12" font-weight="bold" fill="#1f2a6b" text-anchor="middle">F</text>
     </svg>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.4rem 1.2rem; margin-top: 0.75rem; font-size: 0.9rem;">
@@ -133,6 +142,8 @@ title: Apprendre à lire un sonogramme
       <div><strong>F</strong> · <strong>Harmoniques</strong> (son riche superposé)</div>
     </div>
   </div>
+
+
 
   <h2>Les grands motifs visuels des chants</h2>
   <p>Avant même d'identification l'espèce, apprenez à repérer ces grandes signatures visuelles :</p>
