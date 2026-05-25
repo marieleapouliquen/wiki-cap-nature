@@ -6,12 +6,10 @@ lead: "Cet atelier de thermographie infrarouge invite les participant·es à obs
 toc:
   - id: enjeu
     label: "Pourquoi la chaleur ?"
-  - id: definition
-    label: "Voir la chaleur : la caméra thermique"
   - id: objectifs
     label: "Objectifs pédagogiques"
   - id: outils
-    label: "Les outils de terrain"
+    label: "Voir la chaleur : la caméra thermique"
   - id: preparation
     label: "Avant l'atelier"
   - id: deroulement
@@ -79,114 +77,34 @@ toc:
   </div>
 </section>
 
-<section id="definition" class="page-section">
-  <h2>Voir la chaleur : la caméra thermique</h2>
-  <p>Comment observer concrètement ces échanges de chaleur, normalement invisibles ? C'est là qu'intervient la <strong>caméra thermique</strong>. Tout objet émet un rayonnement infrarouge d'autant plus intense qu'il est chaud ; la caméra capte ce rayonnement et le traduit en une image colorée où chaque teinte correspond à une température apparente. Elle rend ainsi visibles, sur le terrain, le mur qui restitue la chaleur du soleil, la fraîcheur d'un plan d'eau ou la signature thermique d'un être vivant. Trois notions aident à comprendre ce que l'on observe :</p>
-
-  <div class="concept-grid">
-    <div class="concept-card">
-      <strong>Rayonnement infrarouge</strong>
-      <p>Tout corps dont la température dépasse le zéro absolu émet de la chaleur sous forme de rayonnement infrarouge (IR). La caméra mesure ce rayonnement, et non la température « au toucher ».</p>
-    </div>
-    <div class="concept-card">
-      <strong>Température de brillance</strong>
-      <p>C'est la grandeur que « voit » réellement la caméra : une température déduite du rayonnement reçu en supposant un corps noir parfait. Sur les surfaces à émissivité élevée, elle est proche de la température réelle ; sur les matériaux à faible émissivité, elle s'en écarte fortement à cause du rayonnement réfléchi.</p>
-    </div>
-    <div class="concept-card">
-      <strong>Émissivité</strong>
-      <p>L'aptitude d'une surface à émettre du rayonnement IR, exprimée entre 0 et 1. Les surfaces non métalliques (bois, végétation, eau, peinture) ont une émissivité élevée (≈ 0,9) : la caméra mesure alors une température proche du réel. Les métaux polis ont une émissivité faible — ils émettent peu et reflètent leur environnement —, si bien que la mesure est faussée.</p>
-    </div>
-  </div>
-
-  <details id="interet" class="disclosure">
-    <summary>
-      <span class="disclosure-title">Pourquoi observer la chaleur ?</span>
-      <span class="disclosure-hint">(Cliquez pour déplier)</span>
-    </summary>
-    <div class="disclosure-body">
-
-      <h3>Rendre l'invisible visible</h3>
-      <p>Les processus thermiques — bilan radiatif, transfert de chaleur, inertie des matériaux — sont souvent enseignés de façon abstraite, à travers des modèles difficiles à relier au monde que l'on habite. La caméra thermique agit comme un médiateur : elle transforme un environnement familier en terrain d'observation, où l'on voit directement comment bâtiments, sols, végétation et eau échangent de l'énergie.</p>
-
-      <h3>Lire un microclimat</h3>
-      <p>À petite échelle, un campus, une cour ou un parc forme une mosaïque thermique. Le béton et le bitume stockent et restituent la chaleur ; la végétation et l'eau, grâce à leur forte inertie et à l'évaporation, tempèrent leur environnement. Observer ces contrastes, c'est commencer à lire les <strong>microclimats</strong> et à comprendre, concrètement, ce que sont les îlots de chaleur urbains et le rôle rafraîchissant du vivant.</p>
-
-      <div class="callout warning">
-        <div class="callout-title">Attention aux artéfacts de mesure</div>
-        <p>Une image thermique ne se lit pas toujours au premier degré. Trois pièges fréquents :</p>
-        <ul>
-          <li><strong>Réflexion du ciel :</strong> une vitre ou une carrosserie peut apparaître très froide non parce qu'elle l'est, mais parce qu'elle reflète le rayonnement froid du ciel (faible émissivité).</li>
-          <li><strong>Angle de visée :</strong> la température apparente d'une même surface change selon l'angle sous lequel on la vise.</li>
-          <li><strong>Apparent ≠ réel :</strong> la caméra affiche une température de brillance, pas nécessairement la température réelle de la surface.</li>
-        </ul>
-        <p>Distinguer un véritable contraste thermique d'un simple artéfact fait partie de l'apprentissage.</p>
-      </div>
-
-      <div class="callout info" style="margin-top: 2rem;">
-        <div class="callout-title">Pour approfondir la thématique de la chaleur et du climat :</div>
-        <div class="resource-links">
-          <a class="resource-link" href="https://www.ipcc.ch/report/ar6/wg1/" target="_blank" rel="noopener">
-            <span class="resource-link-label">Rapport · GIEC</span>
-            <span class="resource-link-title">AR6 — Les bases physiques du changement climatique</span>
-          </a>
-          <a class="resource-link" href="https://doi.org/10.1177/1470412919841019" target="_blank" rel="noopener">
-            <span class="resource-link-label">Article · Journal of Visual Culture</span>
-            <span class="resource-link-title">Starosielski — « Thermal Vision » : voir la chaleur</span>
-          </a>
-          <a class="resource-link" href="https://doi.org/10.1119/1.3628268" target="_blank" rel="noopener">
-            <span class="resource-link-label">Pédagogie · The Physics Teacher</span>
-            <span class="resource-link-title">Xie &amp; Hazzard — Infrared imaging for inquiry-based learning</span>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </details>
-
-  <details id="bienfaits" class="disclosure">
-    <summary>
-      <span class="disclosure-title">Voir la chaleur pour se relier à son environnement</span>
-      <span class="disclosure-hint">(Cliquez pour déplier)</span>
-    </summary>
-    <div class="disclosure-body">
-
-      <p>Au-delà de l'apprentissage scientifique, observer la chaleur modifie le regard porté sur un lieu familier. En rendant visibles les échanges thermiques entre surfaces bâties et naturelles, la caméra aide à percevoir son environnement comme un système où l'humain, le vivant et le bâti interagissent — plutôt que comme un décor inerte. Cette <strong>pensée systémique</strong> (se reconnaître comme partie d'un ensemble plutôt que séparé de lui) est étroitement liée au sentiment de connexion à la nature.</p>
-
-      <p>Une expérimentation menée à l'Université de Rennes auprès d'étudiant·es a montré qu'une activité de terrain de deux heures en thermographie infrarouge faisait nettement progresser la compréhension des processus thermiques, tout en renforçant, plus modestement, le sentiment de connexion à l'environnement — ce dernier effet étant le plus marqué chez les personnes les moins connectées au départ. Les deux dimensions, cognitive et relationnelle, semblent relever de mécanismes en partie indépendants : comprendre ne suffit pas à se relier, et inversement.</p>
-
-      <div class="resource-links">
-        <a class="resource-link" href="https://doi.org/10.1111/conl.12852" target="_blank" rel="noopener">
-          <span class="resource-link-label">Méta-analyse · Conservation Letters</span>
-          <span class="resource-link-title">Barragan-Jason et al. — Connexion à la nature et durabilité</span>
-        </a>
-        <a class="resource-link" href="https://doi.org/10.1002/fee.1225" target="_blank" rel="noopener">
-          <span class="resource-link-label">Article · Frontiers in Ecology</span>
-          <span class="resource-link-title">Soga &amp; Gaston — L'extinction de l'expérience de nature</span>
-        </a>
-        <a class="resource-link" href="https://doi.org/10.1016/j.rser.2022.112540" target="_blank" rel="noopener">
-          <span class="resource-link-label">Revue · Renewable &amp; Sustainable Energy Reviews</span>
-          <span class="resource-link-title">Martin et al. — Thermographie infrarouge dans l'environnement bâti</span>
-        </a>
-      </div>
-
-    </div>
-  </details>
-</section>
-
 <section id="objectifs" class="page-section">
   <h2>Les objectifs pédagogiques de l'atelier</h2>
-  <p>Cet atelier a pour objectifs de permettre aux participants de :</p>
+  <p>Cet atelier articule deux familles d'objectifs, à la croisée des sciences humaines et de la physique.</p>
+
+  <h4>Interactions humain–nature</h4>
+  <ul>
+    <li>Percevoir son environnement proche comme un écosystème thermique, où le bâti et le vivant interagissent.</li>
+    <li>Comprendre le rôle de la végétation et des plans d'eau dans la régulation du climat local.</li>
+    <li>Saisir la notion de confort thermique et ce qui le détermine.</li>
+  </ul>
+
+  <h4>Physique</h4>
   <ul>
     <li>Comprendre ce que mesure réellement une caméra thermique (rayonnement infrarouge, émissivité, température de brillance).</li>
     <li>Identifier les principaux artéfacts de mesure (réflexion du ciel, angle de visée, température apparente ≠ réelle).</li>
     <li>Interpréter les signatures thermiques de différentes surfaces : bâtiments, végétation, eau, sols.</li>
     <li>Relier ces observations aux notions de microclimat, d'inertie thermique et d'îlot de chaleur.</li>
-    <li>Percevoir leur environnement proche comme un système thermique où le bâti et le vivant interagissent.</li>
   </ul>
 </section>
 
 <section id="outils" class="page-section">
-  <h2>Les outils de terrain</h2>
+  <h2>Voir la chaleur : la caméra thermique</h2>
+
+  <p>Comment observer concrètement ces échanges de chaleur, normalement invisibles ? C'est là qu'intervient la <strong>caméra thermique</strong>. Tout objet émet un rayonnement infrarouge d'autant plus intense qu'il est chaud ; la caméra capte ce rayonnement et le traduit en une image colorée où chaque teinte correspond à une température apparente. Elle rend ainsi visibles, sur le terrain, le mur qui restitue la chaleur du soleil, la fraîcheur d'un plan d'eau ou la signature thermique d'un être vivant.</p>
+
+  <p>Au-delà de l'apprentissage scientifique, observer la chaleur modifie le regard porté sur un lieu familier. En rendant visibles les échanges thermiques entre surfaces bâties et naturelles, la caméra aide à percevoir son environnement comme un écosystème dynamique plutôt que comme un décor inerte.</p>
+
+  <p>À petite échelle, un campus, une cour ou un parc forme une mosaïque thermique. Le béton et le bitume stockent et restituent la chaleur ; la végétation et l'eau, grâce à leur forte inertie et à l'évaporation, tempèrent leur environnement. Observer ces contrastes, c'est commencer à lire les <strong>microclimats</strong> et à comprendre, concrètement, ce que sont les îlots de chaleur urbains et le rôle rafraîchissant du vivant.</p>
 
   <h3>La caméra thermique FLIR One</h3>
   <p>Pour cet atelier, nous utilisons des caméras infrarouges portables <a href="https://www.flir.fr/products/flir-one-pro/" target="_blank" rel="noopener">FLIR One</a> qui se branchent directement sur le smartphone (selon les modèles, par port USB-C ou Lightning). Compactes, peu coûteuses et simples d'usage, elles permettent de concentrer l'attention sur l'observation plutôt que sur le réglage de l'instrument.</p>
@@ -202,28 +120,34 @@ toc:
     </summary>
     <div class="disclosure-body">
 
+      <h3>Les concepts-clés</h3>
+
+      <div class="concept-grid">
+        <div class="concept-card">
+          <strong>Rayonnement infrarouge</strong>
+          <p>Tout corps dont la température dépasse le zéro absolu émet de la chaleur sous forme de rayonnement infrarouge (IR). La caméra mesure ce rayonnement, et non la température « au toucher ».</p>
+        </div>
+        <div class="concept-card">
+          <strong>Température de brillance</strong>
+          <p>C'est la grandeur que « voit » réellement la caméra : une température déduite du rayonnement reçu en supposant un corps noir parfait. Sur les surfaces à émissivité élevée, elle est proche de la température réelle ; sur les matériaux à faible émissivité, elle s'en écarte fortement à cause du rayonnement réfléchi.</p>
+        </div>
+        <div class="concept-card">
+          <strong>Émissivité</strong>
+          <p>L'aptitude d'une surface à émettre du rayonnement IR, exprimée entre 0 et 1. Les surfaces non métalliques (bois, végétation, eau, peinture) ont une émissivité élevée (≈ 0,9) : la caméra mesure alors une température proche du réel. Les métaux polis ont une émissivité faible — ils émettent peu et reflètent leur environnement —, si bien que la mesure est faussée.</p>
+        </div>
+      </div>
+
       <p>Sur une image thermique, chaque couleur traduit une <strong>température apparente</strong>. La caméra ne mesure pas la chaleur « au toucher » mais le rayonnement infrarouge reçu : il faut donc apprendre à interpréter l'image plutôt qu'à la lire littéralement.</p>
 
-      <h3>L'échelle de couleurs</h3>
-      <p>La plupart des palettes vont du froid (sombre / bleu / violet) au chaud (clair / jaune / blanc). L'échelle affichée sur le côté indique à quelles températures correspondent les teintes. <strong>Attention :</strong> l'échelle est souvent relative à la scène — une même couleur ne représente pas la même température d'une image à l'autre.</p>
-
-      <div class="sono-frame">
-        <svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
-          <rect x="50" y="30" width="600" height="120" fill="#fafbf6" stroke="#e2e6d8"/>
-          <defs>
-            <linearGradient id="thermalGrad" x1="0%" x2="100%">
-              <stop offset="0%" stop-color="#1a1a4e"/>
-              <stop offset="35%" stop-color="#7b2d8e"/>
-              <stop offset="65%" stop-color="#e0962f"/>
-              <stop offset="100%" stop-color="#fff7d6"/>
-            </linearGradient>
-          </defs>
-          <rect x="50" y="40" width="600" height="40" fill="url(#thermalGrad)" stroke="#e2e6d8"/>
-          <text x="50" y="25" font-size="11" fill="#1f2a6b">froid (sombre)</text>
-          <text x="350" y="25" font-size="11" font-weight="bold" fill="#1f2a6b" text-anchor="middle">température apparente →</text>
-          <text x="650" y="25" font-size="11" fill="#1f2a6b" text-anchor="end">chaud (clair)</text>
-          <text x="350" y="110" font-size="12" fill="#1f2a6b" text-anchor="middle">Palette thermique — du sombre (surfaces froides) au clair lumineux (surfaces chaudes)</text>
-        </svg>
+      <div class="callout warning">
+        <div class="callout-title">Attention aux artéfacts de mesure</div>
+        <p>Une image thermique ne se lit pas toujours au premier degré. Trois pièges fréquents :</p>
+        <ul>
+          <li><strong>Réflexion du ciel :</strong> une vitre ou une carrosserie peut apparaître très froide non parce qu'elle l'est, mais parce qu'elle reflète le rayonnement froid du ciel (faible émissivité).</li>
+          <li><strong>Angle de visée :</strong> la température apparente d'une même surface change selon l'angle sous lequel on la vise.</li>
+          <li><strong>Apparent ≠ réel :</strong> la caméra affiche une température de brillance, pas nécessairement la température réelle de la surface.</li>
+        </ul>
+        <p>Distinguer un véritable contraste thermique d'un simple artéfact fait partie de l'apprentissage.</p>
       </div>
 
       <h3>Quelques signatures thermiques typiques</h3>
@@ -361,12 +285,55 @@ toc:
 
   <figure class="reflexion-gallery" style="margin-top: 1.5rem;">
     <div class="gallery-grid">
-      <img src="{{ '/assets/img/thermique-batiment.jpg' | relative_url }}" alt="Image thermique d'un bâtiment montrant les déperditions de chaleur">
-      <img src="{{ '/assets/img/thermique-vegetation.jpg' | relative_url }}" alt="Image thermique contrastant végétation fraîche et sol minéral chaud">
-      <img src="{{ '/assets/img/thermique-main.jpg' | relative_url }}" alt="Image thermique d'une main montrant la chaleur du corps">
+      <img src="{{ '/assets/img/thermique/galerie-arbres-bati.jpg' | relative_url }}" alt="Image thermique contrastant des arbres frais et une façade chaude">
+      <img src="{{ '/assets/img/thermique/galerie-facade-nuit.jpg' | relative_url }}" alt="Image thermique d'une façade de bâtiment">
+      <img src="{{ '/assets/img/thermique/galerie-radiateur.jpg' | relative_url }}" alt="Image thermique d'un radiateur diffusant sa chaleur">
     </div>
-    <figcaption>Observations thermiques réalisées en atelier (bâti, végétation, corps vivant) — Photo : Marie-Léa Pouliquen</figcaption>
+    <figcaption>Observations thermiques réalisées en atelier (contraste végétation / bâti, façade, radiateur) — Photo : Marie-Léa Pouliquen</figcaption>
   </figure>
+
+  <h4 style="margin-top: 2rem;">À l'œil nu et à la caméra thermique</h4>
+  <p>Une même scène, vue normalement puis en thermographie. Passez la souris sur une image (ou touchez-la sur mobile) pour révéler sa version thermique : les arbres, plus frais, ressortent en sombre, tandis que les façades et les sols minéraux, qui stockent la chaleur, apparaissent en clair.</p>
+
+  <div class="ir-compare-grid">
+
+    <figure class="ir-compare">
+      <div class="ir-pair">
+        <img class="ir-visible" src="{{ '/assets/img/thermique/arbres-immeubles-visible.jpg' | relative_url }}" alt="Immeubles et grands arbres, vue normale">
+        <img class="ir-thermal" src="{{ '/assets/img/thermique/arbres-immeubles-thermique.jpg' | relative_url }}" alt="La même scène en thermographie : arbres frais en sombre, façades chaudes en clair">
+        <span class="ir-hint">thermique ⇄ visible</span>
+      </div>
+      <figcaption>Des immeubles encadrant une rangée d'arbres : la végétation tempère nettement son environnement.</figcaption>
+    </figure>
+
+    <figure class="ir-compare">
+      <div class="ir-pair">
+        <img class="ir-visible" src="{{ '/assets/img/thermique/immeuble-rouge-visible.jpg' | relative_url }}" alt="Immeuble entouré d'arbres, vue normale">
+        <img class="ir-thermal" src="{{ '/assets/img/thermique/immeuble-rouge-thermique.jpg' | relative_url }}" alt="La même scène en thermographie : arbres en violet, façade chaude en jaune">
+        <span class="ir-hint">thermique ⇄ visible</span>
+      </div>
+      <figcaption>Deux arbres frais encadrent une façade qui restitue la chaleur accumulée.</figcaption>
+    </figure>
+
+    <figure class="ir-compare">
+      <div class="ir-pair">
+        <img class="ir-visible" src="{{ '/assets/img/thermique/parking-arbres-visible.jpg' | relative_url }}" alt="Immeuble, parking et arbres, vue normale">
+        <img class="ir-thermal" src="{{ '/assets/img/thermique/parking-arbres-thermique.jpg' | relative_url }}" alt="La même scène en thermographie : sol et bâti chauds, arbres frais">
+        <span class="ir-hint">thermique ⇄ visible</span>
+      </div>
+      <figcaption>Le sol minéral du parking et les bâtiments contrastent avec la fraîcheur des arbres.</figcaption>
+    </figure>
+
+    <figure class="ir-compare">
+      <div class="ir-pair">
+        <img class="ir-visible" src="{{ '/assets/img/thermique/voie-ferree-visible.jpg' | relative_url }}" alt="Quartier traversé par une voie ferrée, vue normale">
+        <img class="ir-thermal" src="{{ '/assets/img/thermique/voie-ferree-thermique.jpg' | relative_url }}" alt="La même scène en thermographie : surfaces minérales chaudes, végétation fraîche">
+        <span class="ir-hint">thermique ⇄ visible</span>
+      </div>
+      <figcaption>À l'échelle d'un quartier, la mosaïque thermique révèle où la chaleur s'accumule.</figcaption>
+    </figure>
+
+  </div>
 
   <h4 style="margin-top: 2rem;">Mettre en commun les observations</h4>
 
@@ -440,6 +407,15 @@ toc:
 </section>
 
 <style>
+  .ir-compare-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+  .ir-compare { margin: 0; }
+  .ir-pair { position: relative; border-radius: 4px; overflow: hidden; border: 1px solid var(--color-border, #e2e6d8); aspect-ratio: 1000 / 739; }
+  .ir-pair img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+  .ir-pair .ir-thermal { opacity: 0; transition: opacity 0.35s ease; }
+  .ir-pair:hover .ir-thermal, .ir-pair:focus-within .ir-thermal, .ir-pair.is-active .ir-thermal { opacity: 1; }
+  .ir-hint { position: absolute; right: 0.5rem; bottom: 0.5rem; background: rgba(14, 77, 77, 0.85); color: #fff; font-size: 0.72rem; padding: 0.2rem 0.5rem; border-radius: 3px; pointer-events: none; }
+  .ir-compare figcaption { font-size: 0.85rem; color: var(--color-muted, #5b6472); margin-top: 0.5rem; line-height: 1.4; }
+
   .tb-calc {
     --tb-ink: var(--ink, #1f2a6b);
     --tb-muted: var(--muted, #5b6472);
