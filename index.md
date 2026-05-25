@@ -44,9 +44,9 @@ show_photo_credits: false
         
         <div>
           <h2>Cap Nature : une approche par l'expérimentation instrumentée</h2>
-          <p>Cap Nature est développé dans le cadre du travail de thèse de <a href="https://marieleapouliquen.github.io/recherche/" target="_blank" rel="noopener">Marie-Léa Pouliquen</a> portant sur le lien des jeunes au vivant et sur l'usage des capteurs environnementaux comme outils d'attention au milieu naturel<sup><a href="#ref7">7</a></sup> (voir : <a href="https://terra-forma-web.osug.fr/Les-ateliers-Cap-Nature-Presentation-du-cycle-d-automne-2025" target="_blank" rel="noopener">les Ateliers Cap Nature : Cycle d'automne 2025</a>.</p> 
+          <p>Cap Nature est développé dans le cadre du travail de thèse de <a href="https://marieleapouliquen.github.io/recherche/" target="_blank" rel="noopener">Marie-Léa Pouliquen</a> portant sur le lien des jeunes au vivant et sur l'usage des capteurs environnementaux comme outils d'attention au milieu naturel<sup><a href="#ref7">7</a></sup>.</p> 
           
-          <p>Pour en savoir plus sur <a href="{{ '/atelier-oiseaux/' | relative_url }}" target="_blank" rel="noopener">le projet de recherche</a>.</p>
+          <p>Pour en savoir plus sur <a href="{{ '/atelier-oiseaux/' | relative_url }}" target="_blank" rel="noopener">le projet de recherche</a>. Voir aussi : <a href="https://terra-forma-web.osug.fr/Les-ateliers-Cap-Nature-Presentation-du-cycle-d-automne-2025" target="_blank" rel="noopener">les Ateliers Cap Nature : Cycle d'automne 2025</a>.</p>
 
           <h3>Le wiki des Ateliers</h3>
           <p>Ce wiki rassemble les ressources pour mener les ateliers Cap Nature : protocoles d'observation, prise en main des capteurs, fiches d'activité et pistes pédagogiques. Le wiki documente chaque atelier pas à pas pour qu'un·e animateur·rice, un·e enseignant·e ou un collectif puisse s'en emparer et l'adapter à son contexte éducatif.</p>
