@@ -24,7 +24,7 @@ title: Apprendre à lire un sonogramme
   </div>
 
   <h3>Les deux axes : temps et fréquence</h3>
-  <p>Un sonogramme se lit comme une partition de musique simplifiée. Il a deux dimensions :</p>
+  <p>Un sonogramme a deux dimensions : le <strong>temps</strong> qui défile horizontalement, la <strong>fréquence</strong> (du grave en bas à l'aigu en haut) sur la verticale.</p>
 
   <div class="sono-frame">
     <svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" style="width: 80%; height: auto; display: block;">
@@ -60,11 +60,10 @@ title: Apprendre à lire un sonogramme
           <polygon points="0 0, 8 3, 0 6" fill="#1f2a6b"/>
         </marker>
       </defs>
-      <line x1="660" y1="320" x2="660" y2="50" stroke="#1f2a6b" stroke-width="2" marker-end="url(#arrowhead-up)"/>
-      <text x="672" y="315" font-size="11" font-weight="bold" fill="#1f2a6b">Grave</text>
-      <text x="672" y="55" font-size="11" font-weight="bold" fill="#1f2a6b">Aigu</text>
+      <line x1="655" y1="320" x2="655" y2="50" stroke="#1f2a6b" stroke-width="2" marker-end="url(#arrowhead-up)"/>
+      <text x="668" y="315" font-size="11" font-weight="bold" fill="#1f2a6b">Grave</text>
+      <text x="668" y="55" font-size="11" font-weight="bold" fill="#1f2a6b">Aigu</text>
     </svg>
-    <p class="sono-caption">Les deux axes d'un sonogramme : le <strong>temps</strong> qui défile horizontalement, la <strong>fréquence</strong> (du grave en bas à l'aigu en haut) sur la verticale.</p>
   </div>
 
 
