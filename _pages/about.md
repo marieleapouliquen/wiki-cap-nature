@@ -4,15 +4,29 @@ permalink: /about/
 title: "Partenaires et soutiens du projet"
 lead: "Cap Nature est mené dans le cadre d'une thèse de doctorat, grâce au soutien de plusieurs institutions de recherche et de financement."
 toc:
+  - id: equipe
+    label: "Equipe de recherche"
   - id: financement
     label: "Financement"
   - id: labo
     label: "Laboratoires porteurs"
   - id: partenaires
     label: "Programmes et structures de recherche partenaires"
-  - id: encadrement
-    label: "Encadrement de la thèse"
 ---
+
+<section id="equipe" class="page-section">
+  <p>Ce travail de thèse est mené par <strong>Marie-Léa Pouliquen</strong>, sous la direction de :</p>
+  <ul>
+    <li><strong>Véronique Van Tilbeurgh</strong> — Professeure des universités (laboratoire Espaces et Sociétés, Université de Rennes 2)</li>
+    <li><strong>Laurent Longuevergne</strong> — Directeur de recherche au CNRS (laboratoire Géosciences Rennes, Université de Rennes)</li>
+  </ul>
+  <p>Avec le co-encadrement de :</p>
+  <ul>
+    <li><strong>Gladys Barragan-Jason</strong> — Chargée de recherche au CNRS (Station d'Écologie Théorique et Expérimentale de Moulis)</li>
+    <li><strong>Maxime Cauchoix</strong> — Chargé de recherche au CNRS (Station d'Écologie Théorique et Expérimentale de Moulis)</li>
+  </ul>
+</section>
+
 <section id="financement" class="page-section">
   <h2>Financement</h2>
   <p>Le projet est financé dans le cadre d'une thèse de doctorat par les soutiens suivants :</p>
@@ -56,20 +70,6 @@ toc:
       <span class="resource-link-title">Station d'Écologie Théorique et Expérimentale (SETE) de Moulis</span>
     </a>
   </div>
-</section>
-
-<section id="encadrement" class="page-section">
-  <h2>Encadrement de la thèse</h2>
-  <p>Ce travail de thèse est mené par <strong>Marie-Léa Pouliquen</strong>, sous la direction de :</p>
-  <ul>
-    <li><strong>Véronique Van Tilbeurgh</strong> — Professeure des universités (laboratoire Espaces et Sociétés, Université de Rennes 2)</li>
-    <li><strong>Laurent Longuevergne</strong> — Directeur de recherche au CNRS (laboratoire Géosciences Rennes, Université de Rennes)</li>
-  </ul>
-  <p>Avec le co-encadrement de :</p>
-  <ul>
-    <li><strong>Gladys Barragan-Jason</strong> — Chargée de recherche au CNRS (Station d'Écologie Théorique et Expérimentale de Moulis)</li>
-    <li><strong>Maxime Cauchoix</strong> — Chargé de recherche au CNRS (Station d'Écologie Théorique et Expérimentale de Moulis)</li>
-  </ul>
 </section>
 
 <section class="page-section">
