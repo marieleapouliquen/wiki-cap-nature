@@ -15,7 +15,7 @@ title: Apprendre à lire un sonogramme
     </a>
   </nav>
 
-  <h2>Guide : Apprendre à lire un sonogramme</h2>
+  <h2>A propos</h2>
   <p>Quand l'application Merlin identifie un oiseau, elle affiche un <strong>sonogramme</strong> (ou spectrogramme) qui défile en temps réel. Comprendre cette image enrichit considérablement l'analyse pédagogique en transformant une onde sonore invisible en repère visuel.</p>
 
   <div class="callout science">
@@ -27,7 +27,7 @@ title: Apprendre à lire un sonogramme
   <p>Un sonogramme se lit comme une partition de musique simplifiée. Il a deux dimensions :</p>
 
   <div class="sono-frame">
-    <svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
+    <svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" style="width: 90%; height: auto; display: block;">
       <rect x="80" y="40" width="560" height="280" fill="#fafbf6" stroke="#e2e6d8"/>
       <line x1="80" y1="40" x2="640" y2="40" stroke="#e2e6d8" stroke-dasharray="3,3"/>
       <line x1="80" y1="110" x2="640" y2="110" stroke="#e2e6d8" stroke-dasharray="3,3"/>
