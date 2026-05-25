@@ -198,6 +198,139 @@ toc:
   </div>
 </section>
 
+<details id="sono-frame" class="disclosure">
+    <summary>
+      <span class="disclosure-title">Lire un sonogramme</span>
+      <span class="disclosure-hint">(Cliquez pour déplier)</span>
+    </summary>
+    <div class="disclosure-body">
+
+    <p>L'application Merlin convertit le signal audio en une image appelée <strong>sonogramme </strong>. Sur cette image, des motifs défilent en temps réel. C'est la trace des sons entendus. Les oiseaux émettent des cris et des chants caractéristiques selon leur espèce. Ainsi, en comparant le signal audio capté en temps réel à une base de données de référence, l'application est capable de données le nom de l'espèce de l'oiseau entendu avec une certaine marge de confiance. Bien sûr, une erreur est toujours possible, aussi est-il préférable de vérifier visuellement quand on le peut.</p>
+
+    <h2>Les deux axes : temps et fréquence</h2>
+    <p>Un sonogramme a deux dimensions : le <strong>temps</strong> qui défile horizontalement, la <strong>fréquence</strong> (du grave en bas à l'aigu en haut) sur la verticale.</p>
+
+    <div class="sono-frame">
+      <svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
+        <rect x="80" y="40" width="560" height="280" fill="#fafbf6" stroke="#e2e6d8"/>
+        <line x1="80" y1="40" x2="640" y2="40" stroke="#e2e6d8" stroke-dasharray="3,3"/>
+        <line x1="80" y1="110" x2="640" y2="110" stroke="#e2e6d8" stroke-dasharray="3,3"/>
+        <line x1="80" y1="180" x2="640" y2="180" stroke="#e2e6d8" stroke-dasharray="3,3"/>
+        <line x1="80" y1="250" x2="640" y2="250" stroke="#e2e6d8" stroke-dasharray="3,3"/>
+        <line x1="220" y1="40" x2="220" y2="320" stroke="#e2e6d8" stroke-dasharray="3,3"/>
+        <line x1="360" y1="40" x2="360" y2="320" stroke="#e2e6d8" stroke-dasharray="3,3"/>
+        <line x1="500" y1="40" x2="500" y2="320" stroke="#e2e6d8" stroke-dasharray="3,3"/>
+        
+        <line x1="80" y1="40" x2="80" y2="320" stroke="#1f2a6b" stroke-width="2"/>
+        <polygon points="80,30 75,42 85,42" fill="#1f2a6b"/>
+        <text x="65" y="45" font-size="12" fill="#1f2a6b" text-anchor="end">8 kHz</text>
+        <text x="65" y="115" font-size="12" fill="#1f2a6b" text-anchor="end">6 kHz</text>
+        <text x="65" y="185" font-size="12" fill="#1f2a6b" text-anchor="end">4 kHz</text>
+        <text x="65" y="255" font-size="12" fill="#1f2a6b" text-anchor="end">2 kHz</text>
+        <text x="65" y="325" font-size="12" fill="#1f2a6b" text-anchor="end">0</text>
+        <text x="30" y="180" font-size="14" font-weight="bold" fill="#1f2a6b" text-anchor="middle" transform="rotate(-90 30 180)">Fréquence</text>
+        
+        <line x1="80" y1="320" x2="640" y2="320" stroke="#1f2a6b" stroke-width="2"/>
+        <polygon points="650,320 638,315 638,325" fill="#1f2a6b"/>
+        <text x="80" y="340" font-size="12" fill="#1f2a6b" text-anchor="middle">0 s</text>
+        <text x="220" y="340" font-size="12" fill="#1f2a6b" text-anchor="middle">1 s</text>
+        <text x="360" y="340" font-size="12" fill="#1f2a6b" text-anchor="middle">2 s</text>
+        <text x="500" y="340" font-size="12" fill="#1f2a6b" text-anchor="middle">3 s</text>
+        <text x="630" y="340" font-size="12" fill="#1f2a6b" text-anchor="middle">4 s</text>
+        <text x="360" y="365" font-size="14" font-weight="bold" fill="#1f2a6b" text-anchor="middle">Temps</text>
+        
+        <defs>
+          <marker id="arrowhead-up" markerWidth="8" markerHeight="8" refX="0" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#1f2a6b"/>
+          </marker>
+        </defs>
+        <line x1="655" y1="320" x2="655" y2="50" stroke="#1f2a6b" stroke-width="2" marker-end="url(#arrowhead-up)"/>
+        <text x="668" y="315" font-size="11" font-weight="bold" fill="#1f2a6b">Grave</text>
+        <text x="668" y="55" font-size="11" font-weight="bold" fill="#1f2a6b">Aigu</text>
+      </svg>
+    </div>
+
+  <h2>L'intensité du son : le contraste noir et blanc</h2>
+  <p>Plus une trace est noire et foncée, plus le son est puissant à ce moment précis sur cette fréquence.</p>
+
+    <div class="sono-frame">
+      <svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
+        <rect x="50" y="30" width="600" height="120" fill="#fafbf6" stroke="#e2e6d8"/>
+        <defs>
+          <linearGradient id="monochromeGrad" x1="0%" x2="100%">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="50%" stop-color="#888888"/>
+            <stop offset="100%" stop-color="#000000"/>
+          </linearGradient>
+        </defs>
+        <rect x="50" y="40" width="600" height="40" fill="url(#monochromeGrad)" stroke="#e2e6d8"/>
+        <text x="50" y="25" font-size="11" fill="#1f2a6b">silence (blanc)</text>
+        <text x="350" y="25" font-size="11" font-weight="bold" fill="#1f2a6b" text-anchor="middle">intensité du son →</text>
+        <text x="650" y="25" font-size="11" fill="#1f2a6b" text-anchor="end">son fort (noir)</text>
+        <text x="350" y="110" font-size="12" fill="#1f2a6b" text-anchor="middle">Échelle monochrome — du blanc lumineux (silence) au noir profond (son intense)</text>
+      </svg>
+    </div>
+
+    <h2>Anatomie d'un chant</h2>
+    <p>Quelques termes utiles pour décrire ce qu'on observe sur un sonogramme :</p>
+
+      <div class="sono-frame">
+      <svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
+        <rect x="80" y="20" width="560" height="240" fill="#fafbf6" stroke="#e2e6d8"/>
+        
+        <line x1="80" y1="80" x2="640" y2="80" stroke="#e2e6d8" stroke-dasharray="3,3"/>
+        <line x1="80" y1="140" x2="640" y2="140" stroke="#e2e6d8" stroke-dasharray="3,3"/>
+        <line x1="80" y1="200" x2="640" y2="200" stroke="#e2e6d8" stroke-dasharray="3,3"/>
+        
+        <line x1="80" y1="20" x2="80" y2="260" stroke="#1f2a6b" stroke-width="1.5"/>
+        <text x="65" y="25" font-size="11" fill="#1f2a6b" text-anchor="end">8 kHz</text>
+        <text x="65" y="85" font-size="11" fill="#1f2a6b" text-anchor="end">6 kHz</text>
+        <text x="65" y="145" font-size="11" fill="#1f2a6b" text-anchor="end">4 kHz</text>
+        <text x="65" y="205" font-size="11" fill="#1f2a6b" text-anchor="end">2 kHz</text>
+        <text x="65" y="265" font-size="11" fill="#1f2a6b" text-anchor="end">0</text>
+        
+        <line x1="80" y1="260" x2="640" y2="260" stroke="#1f2a6b" stroke-width="1.5"/>
+        
+        <ellipse cx="130" cy="120" rx="6" ry="10" fill="#000000"/>
+        <text x="130" y="150" font-size="12" font-weight="bold" fill="#1f2a6b" text-anchor="middle">A</text>
+        
+        <path d="M 175 100 Q 185 130 200 140" stroke="#000000" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <text x="187" y="165" font-size="12" font-weight="bold" fill="#1f2a6b" text-anchor="middle">B</text>
+        
+        <path d="M 240 160 Q 250 130 265 110" stroke="#000000" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <text x="252" y="185" font-size="12" font-weight="bold" fill="#1f2a6b" text-anchor="middle">C</text>
+        
+        <g fill="#000000">
+          <ellipse cx="320" cy="140" rx="3" ry="8"/><ellipse cx="330" cy="135" rx="3" ry="8"/>
+          <ellipse cx="340" cy="140" rx="3" ry="8"/><ellipse cx="350" cy="135" rx="3" ry="8"/>
+          <ellipse cx="360" cy="140" rx="3" ry="8"/><ellipse cx="370" cy="135" rx="3" ry="8"/>
+        </g>
+        <text x="345" y="165" font-size="12" font-weight="bold" fill="#1f2a6b" text-anchor="middle">D</text>
+        
+        <ellipse cx="430" cy="100" rx="5" ry="12" fill="#000000"/>
+        <path d="M 445 90 Q 455 120 470 110" stroke="#000000" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <ellipse cx="485" cy="120" rx="5" ry="10" fill="#000000"/>
+        <text x="460" y="150" font-size="12" font-weight="bold" fill="#1f2a6b" text-anchor="middle">E</text>
+        
+        <line x1="585" y1="180" x2="600" y2="180" stroke="#000000" stroke-width="4"/>
+        <line x1="585" y1="140" x2="600" y2="140" stroke="#555555" stroke-width="3"/>
+        <line x1="585" y1="100" x2="600" y2="100" stroke="#999999" stroke-width="2"/>
+        <text x="593" y="205" font-size="12" font-weight="bold" fill="#1f2a6b" text-anchor="middle">F</text>
+      </svg>
+  
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.4rem 1.2rem; margin-top: 0.75rem; font-size: 0.9rem;">
+        <div><strong>A</strong> · <strong>Note pure</strong> (fréquence stable)</div>
+        <div><strong>B</strong> · <strong>Note descendante</strong> (glissement grave)</div>
+        <div><strong>C</strong> · <strong>Note ascendante</strong> (glissement aigu)</div>
+        <div><strong>D</strong> · <strong>Trille</strong> (succession très rapide)</div>
+        <div><strong>E</strong> · <strong>Strophe</strong> (phrase complète)</div>
+        <div><strong>F</strong> · <strong>Harmoniques</strong> (son riche superposé)</div>
+      </div>
+    </div>
+
+    </div>
+</details>
+
 <section id="preparation" class="page-section">
   <h2>Avant l'atelier</h2>
   <ul>
@@ -315,40 +448,37 @@ toc:
 <section id="ressources" class="page-section">
   <h2>Pour aller plus loin</h2>
 
-  <h3>1. En savoir + sur les paysages sonores</h3>
+    <h3>Approfondir l'analyse des signaux sonores</h3>
+    
+    <p>Pour prolonger l'atelier, l'outil <a href="https://fizziqweb.web.app/audio" target="_blank" rel="noopener">FizziQ Web — Analyse audio</a> permet de visualiser un son directement dans le navigateur, sans rien installer. On peut y charger un enregistrement (par exemple un chant d'oiseau capté sur le terrain) et l'explorer selon plusieurs représentations : <strong>amplitude</strong>, <strong>niveau sonore</strong>, <strong>fréquence fondamentale</strong>, <strong>spectre de fréquences</strong> et <strong>spectrogramme</strong>. Les observations peuvent être consignées dans un <em>cahier d'expériences</em> intégré, puis rassemblées dans un rapport — utile pour comparer les chants de plusieurs espèces ou pour mettre en évidence la signature acoustique d'un oiseau.</p>
 
     <div class="resource-links">
-    <a class="resource-link" href="https://www.reseau-idee.be/fr/symbioses/les-paysages-sonores-ont-beaucoup-nous-dire" target="_blank" rel="noopener">
-      <span class="resource-link-label">Article · Réseau IDée</span>
-      <span class="resource-link-title">Les paysages sonores ont beaucoup à nous dire</span>
-    </a>
-    <a class="resource-link" href="https://www.naturo-phonia.com/" target="_blank" rel="noopener">
-      <span class="resource-link-label">Audio Naturaliste</span>
-      <span class="resource-link-title">Naturophonia — Site de Fernand Deroussen</span>
-    </a>
-    <a class="resource-link" href="https://www.radiofrance.fr/franceinter/podcasts/la-terre-au-carre/la-terre-au-carre-du-vendredi-28-novembre-2025-4700890" target="_blank" rel="noopener">
-      <span class="resource-link-label">Émission · France Inter</span>
-      <span class="resource-link-title">La Terre au Carré — Écoacoustique</span>
-    </a>
-    <a class="resource-link" href="https://www.radiofrance.fr/franceculture/podcasts/lsd-la-serie-documentaire/ecologie-la-nature-sur-ecoute-4781708" target="_blank" rel="noopener">
-      <span class="resource-link-label">Série Documentaire · France Culture</span>
-      <span class="resource-link-title">Radio France — Écologie : la nature sur écoute</span>
-    </a>
+      <a class="resource-link" href="https://fizziqweb.web.app/audio" target="_blank" rel="noopener">
+        <span class="resource-link-label">Outil en ligne · FizziQ Web</span>
+        <span class="resource-link-title">Analyser un signal audio avec FizziQ</span>
+      </a>
+    </div>
+    
+    <h3>En savoir + sur les paysages sonores</h3>
+
+    <div class="resource-links">
+      <a class="resource-link" href="https://www.reseau-idee.be/fr/symbioses/les-paysages-sonores-ont-beaucoup-nous-dire" target="_blank" rel="noopener">
+        <span class="resource-link-label">Article · Réseau IDée</span>
+        <span class="resource-link-title">Les paysages sonores ont beaucoup à nous dire</span>
+      </a>
+      <a class="resource-link" href="https://www.naturo-phonia.com/" target="_blank" rel="noopener">
+        <span class="resource-link-label">Audio Naturaliste</span>
+        <span class="resource-link-title">Naturophonia — Site de Fernand Deroussen</span>
+      </a>
+      <a class="resource-link" href="https://www.radiofrance.fr/franceinter/podcasts/la-terre-au-carre/la-terre-au-carre-du-vendredi-28-novembre-2025-4700890" target="_blank" rel="noopener">
+        <span class="resource-link-label">Émission · France Inter</span>
+        <span class="resource-link-title">La Terre au Carré — Écoacoustique</span>
+      </a>
+      <a class="resource-link" href="https://www.radiofrance.fr/franceculture/podcasts/lsd-la-serie-documentaire/ecologie-la-nature-sur-ecoute-4781708" target="_blank" rel="noopener">
+        <span class="resource-link-label">Série Documentaire · France Culture</span>
+        <span class="resource-link-title">Radio France — Écologie : la nature sur écoute</span>
+      </a>
   </div>
   
-  <h3>2. Approfondir l'analyse des signaux sonores</h3>
-
-  <p>Pour prolonger l'atelier, l'outil <a href="https://fizziqweb.web.app/audio" target="_blank" rel="noopener">FizziQ Web — Analyse audio</a> permet de visualiser un son directement dans le navigateur, sans rien installer. On peut y charger un enregistrement (par exemple un chant d'oiseau capté sur le terrain) et l'explorer selon plusieurs représentations : <strong>amplitude</strong>, <strong>niveau sonore</strong>, <strong>fréquence fondamentale</strong>, <strong>spectre de fréquences</strong> et <strong>spectrogramme</strong>. Les observations peuvent être consignées dans un <em>cahier d'expériences</em> intégré, puis rassemblées dans un rapport — utile pour comparer les chants de plusieurs espèces ou pour mettre en évidence la signature acoustique d'un oiseau. C'est une excellente manière de relier l'écoute sensible à une démarche d'analyse scientifique, et de prolonger la lecture de spectrogramme abordée dans la fiche <a href="{{ '/module-oiseaux/fiche3-sonogramme/' | relative_url }}">« Lire un spectrogramme »</a>.</p>
-
-  <div class="resource-links">
-    <a class="resource-link" href="{{ '/module-oiseaux/sonogramme/' | relative_url }}">
-      <span class="resource-link-label">Fiche Scientifique</span>
-      <span class="resource-link-title">Comment lire un spectrogramme ?</span>
-    </a>
-    <a class="resource-link" href="https://fizziqweb.web.app/audio" target="_blank" rel="noopener">
-      <span class="resource-link-label">Outil en ligne · FizziQ Web</span>
-      <span class="resource-link-title">Analyser un signal audio avec FizziQ</span>
-    </a>
-  </div>
 </section>
 
