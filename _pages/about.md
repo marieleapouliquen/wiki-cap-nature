@@ -3,9 +3,18 @@ layout: page
 permalink: /about/
 title: "Partenaires et soutiens du projet"
 lead: "Cap Nature est mené dans le cadre d'une thèse de doctorat, grâce au soutien de plusieurs institutions de recherche et de financement."
+toc:
+  - id: financement
+    label: "Financement"
+  - id: labo
+    label: "Laboratoires porteurs"
+  - id: partenaires
+    label: "Programmes et structures de recherche partenaires"
+  - id: encadrement
+    label: "Encadrement de la thèse"
 ---
 
-<section class="page-section">
+<section id="financement" class="page-section">
   <h2>Financement</h2>
   <p>Le projet est financé dans le cadre d'une thèse de doctorat par les soutiens suivants :</p>
 
@@ -21,7 +30,7 @@ lead: "Cap Nature est mené dans le cadre d'une thèse de doctorat, grâce au so
   </div>
 </section>
 
-<section class="page-section">
+<section id="labo" class="page-section">
   <h2>Laboratoires porteurs</h2>
   <p>Le projet est conduit en collaboration entre deux universités rennaises et leurs laboratoires :</p>
 
@@ -37,7 +46,7 @@ lead: "Cap Nature est mené dans le cadre d'une thèse de doctorat, grâce au so
   </div>
 </section>
 
-<section class="page-section">
+<section id="partenaires" class="page-section">
   <h2>Programmes et structures de recherche partenaires</h2>
 
   <p>Cap Nature s'inscrit dans le programme <strong>Terra Forma</strong> (Équipement d'excellence — Équipex+), au sein de son axe consacré à la reconnexion à la nature (WP4).</p>
@@ -54,7 +63,7 @@ lead: "Cap Nature est mené dans le cadre d'une thèse de doctorat, grâce au so
   </div>
 </section>
 
-<section class="page-section">
+<section id="encadrement" class="page-section">
   <h2>Encadrement de la thèse</h2>
   <p>Ce travail de thèse est mené par <strong>Marie-Léa Pouliquen</strong>, sous la direction de :</p>
   <ul>
