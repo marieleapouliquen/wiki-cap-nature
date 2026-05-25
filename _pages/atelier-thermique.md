@@ -318,7 +318,7 @@ toc:
 
   <details id="emissivite" class="disclosure">
     <summary>
-      <span class="disclosure-title">Tester l'effet de l'émissivité</span>
+      <span class="disclosure-title">Comprendre la mesure : flux thermqieu, émissivité et température</span>
       <span class="disclosure-hint">(Cliquez pour déplier)</span>
     </summary>
     <div class="disclosure-body">
