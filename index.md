@@ -57,12 +57,12 @@ show_photo_credits: false
               <span class="card-desc">Initiation à l'écoute des oiseaux et des paysages sonores</span>
               <span class="btn">Découvrir l'atelier →</span>
             </a>
-            
-            <div class="card">
+
+            <a class="card" href="{{ '/atelier-thermique/' | relative_url }}">
               <span class="card-title">Atelier · Caméras thermiques</span>
               <span class="card-desc">Voir l'environnement autrement : explorer la chaleur invisible avec des caméras thermiques.</span>
-              <span class="btn" style="opacity: 0.5; pointer-events: none;">En préparation</span>
-            </div>
+              <span class="btn">Découvrir l'atelier →</span>
+            </a>
           </div>
           
           <p style="margin-top: 2rem; font-size: 0.9rem;">Pour toute question, collaboration ou réutilisation, n'hésitez pas à contacter : <a href="mailto:marie-lea.pouliquen@univ-rennes.fr">marie-lea.pouliquen@univ-rennes.fr</a>.</p>
