@@ -91,9 +91,9 @@ toc:
       <div class="callout info" style="margin-top: 2rem;">
         <div class="callout-title">Pour approfondir la thématique du bruit sur la biodiversité :</div>
         <div class="resource-links">
-          <a class="resource-link" href="https://biodiversite.gouv.fr/mesure-9-reduire-les-pollutions-lumineuses-et-sonores" target="_blank" rel="noopener">
+          <a class="resource-link" href="https://www.youtube.com/watch?v=hmhTfwy3K3k" target="_blank" rel="noopener">
             <span class="resource-link-label">CNRS</span>
-            <span class="resource-link-title">L'impact de la pollution sonore sur la biodiversité sur YouTube</span>
+            <span class="resource-link-title">Vidéo : Oiseaux des villes, oiseaux stressés</span>
           </a>
           <a class="resource-link" href="https://www.bruit.fr/?view=article&id=24591:vient-de-paraitre-echo-bruit-n-185-entendre-la-nature-en-ville&catid=592" target="_blank" rel="noopener">
             <span class="resource-link-label">Centre d'information sur le Bruit (CIDB)</span>
