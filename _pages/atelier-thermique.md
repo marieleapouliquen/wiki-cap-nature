@@ -390,7 +390,7 @@ toc:
         <span class="resource-link-label">Étude · Energy and Built Environment</span>
         <span class="resource-link-title">Hawas &amp; Al-Habaibeh — Thermographie citoyenne et économies d'énergie</span>
       </a>
-      a class="resource-link" href="https://doi.org/10.1177/23733799251363155" target="_blank" rel="noopener">
+      <a class="resource-link" href="https://doi.org/10.1177/23733799251363155" target="_blank" rel="noopener">
         <span class="resource-link-label">Pédagogie · Pedagogy in Health Promotion</span>
         <span class="resource-link-title">Monteblanco et al. — « Photovoix thermique » et chaleur urbaine</span>
       </a>
