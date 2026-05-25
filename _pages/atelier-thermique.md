@@ -5,7 +5,7 @@ title: "Rendre la chaleur visible : explorer les microclimats à la caméra ther
 lead: "Cet atelier de thermographie infrarouge invite les participant·es à observer, avec une caméra thermique connectée au smartphone, les échanges de chaleur invisibles entre bâtiments, végétation, eau et corps vivants — et à percevoir leur environnement proche comme un système thermique en interaction."
 toc:
   - id: enjeu
-    label: "Pourquoi la chaleur ?"
+    label: "Pourquoi s'intéresser à la chaleur ?"
   - id: objectifs
     label: "Objectifs pédagogiques"
   - id: outils
@@ -14,8 +14,10 @@ toc:
     label: "Avant l'atelier"
   - id: deroulement
     label: "Déroulement de l'atelier"
+  - id: physique
+    label: "Concepts de physique (pour aller + loin)"
   - id: ressources
-    label: "Pour aller plus loin"
+    label: "Ressources"
 ---
 
 <figure class="reflexion-gallery" style="margin-top: 1.5rem;">
@@ -117,6 +119,7 @@ toc:
   </ul>
 </section>
 
+
 <section id="outils" class="page-section">
   <h3>La caméra thermique FLIR One</h3>
   <p>Pour cet atelier, nous utilisons des caméras infrarouges portables <a href="https://www.flir.fr/products/flir-one-pro/" target="_blank" rel="noopener">FLIR One</a> qui se branchent directement sur le smartphone (selon les modèles, par port USB-C ou Lightning). Compactes, peu coûteuses et simples d'usage, elles permettent de concentrer l'attention sur l'observation plutôt que sur le réglage de l'instrument.</p>
@@ -146,7 +149,7 @@ toc:
   <ul>
     <li>Choisissez un site présentant des surfaces thermiquement variées : bâtiments, sols minéraux, végétation, et si possible un plan d'eau. Une cour, un campus ou un parc bordé de bâti conviennent bien.</li>
     <li>Les contrastes thermiques sont marqués par temps ensoleillé en été, mais aussi en hiver — un bâtiment chauffé se distingue alors nettement de l'air froid extérieur. L'atelier fonctionne donc dans les deux saisons.</li>
-    <li>Faites un test des caméras avant la séance et installez l'application FLIR One sur les téléphones qui serviront.</li>
+    <li>Faites un test des caméras avant la séance.</li>
     <li>Chargez les caméras et prévenez les participants que leurs téléphones devront être bien chargés.</li>
     <li>Préparez une brève mise en contexte (qu'est-ce que l'infrarouge, que mesure la caméra).</li>
     <li>Imprimez les fiches d'observation (1 par groupe d'exploration suffit).</li>
@@ -170,7 +173,7 @@ toc:
 <section id="deroulement" class="page-section">
   <h2>Déroulement de l'atelier</h2>
 
-  <h3>1. Introduction en salle (40 min environ)</h3>
+  <h3>1. Introduction en salle (30 min environ)</h3>
   <ul>
     <li>Invitez les participants à formuler ce qu'ils pensent qu'une caméra thermique mesure, avant toute explication.</li>
     <li>Présentez les principes : rayonnement infrarouge, émissivité, température de brillance, et les principaux artéfacts (réflexion du ciel, angle de visée).</li>
@@ -195,6 +198,7 @@ toc:
   <h3 style="margin-top: 2.5rem;">3. Partage et retours réflexifs (20 min environ)</h3>
 
   <p>Ce temps de clôture permet de consolider les apprentissages et d'inviter chacun·e à mettre des mots sur son expérience. Comme pour tout retour réflexif, l'objectif n'est pas d'évaluer des connaissances mais de faire émerger observations, surprises et ressentis.</p>
+
 
   <h4 style="margin-top: 2rem;">À l'œil nu et à la caméra thermique</h4>
   <p>Une même scène, vue normalement puis en thermographie. Passez la souris sur une image (ou touchez-la sur mobile) pour révéler sa version thermique : les arbres, plus frais, ressortent en sombre, tandis que les façades et les sols minéraux, qui stockent la chaleur, apparaissent en clair.</p>
@@ -241,7 +245,7 @@ toc:
 
   <h4 style="margin-top: 2rem;">Mettre en commun les observations</h4>
 
-  <p><strong>Le tour des découvertes.</strong> Chaque groupe présente une observation thermique marquante, une difficulté d'interprétation rencontrée et une question restée ouverte. C'est l'occasion de revenir collectivement sur les artéfacts (la fameuse vitre « froide ») et de distinguer signal et reflet.</p>
+  <p><strong>Le tour des découvertes.</strong> Chaque groupe présente une observation thermique marquante, une difficulté d'interprétation rencontrée et une question restée ouverte. C'est l'occasion de revenir aussi sur les artéfacts de mesure.</p>
 
   <p><strong>Le débat mouvant.</strong> Énoncez une affirmation : les participant·es se déplacent selon qu'ils sont d'accord ou non, puis quelques-un·es justifient. Quelques pistes :</p>
   <ul>
@@ -268,106 +272,108 @@ toc:
 
 
 <section id="physique" class="page-section">
-  <h2>Pour aller plus loin</h2>
+  <h2>Concepts de physique (pour aller + loin)</h2>
 
-    <details id="lire-image" class="disclosure">
+    <details id="concepts" class="disclosure">
     <summary>
-      <span class="disclosure-title">Lire une image thermique</span>
+      <span class="disclosure-title">Les concepts-clés</span>
       <span class="disclosure-hint">(Cliquez pour déplier)</span>
     </summary>
     <div class="disclosure-body">
 
-      <h3>Les concepts-clés</h3>
-
-      <div class="concept-grid">
-        <div class="concept-card">
-          <strong>Rayonnement infrarouge</strong>
-          <p>Tout corps dont la température dépasse le zéro absolu émet de la chaleur sous forme de rayonnement infrarouge (IR). La caméra mesure ce rayonnement, et non la température « au toucher ».</p>
-        </div>
-        <div class="concept-card">
-          <strong>Température de brillance</strong>
-          <p>C'est la grandeur que « voit » réellement la caméra : une température déduite du rayonnement reçu en supposant un corps noir parfait. Sur les surfaces à émissivité élevée, elle est proche de la température réelle ; sur les matériaux à faible émissivité, elle s'en écarte fortement à cause du rayonnement réfléchi.</p>
-        </div>
-        <div class="concept-card">
-          <strong>Émissivité</strong>
-          <p>L'aptitude d'une surface à émettre du rayonnement IR, exprimée entre 0 et 1. Les surfaces non métalliques (bois, végétation, eau, peinture) ont une émissivité élevée (≈ 0,9) : la caméra mesure alors une température proche du réel. Les métaux polis ont une émissivité faible — ils émettent peu et reflètent leur environnement —, si bien que la mesure est faussée.</p>
-        </div>
+    <div class="concept-grid">
+      <div class="concept-card">
+        <strong>Rayonnement infrarouge</strong>
+        <p>Tout corps dont la température dépasse le zéro absolu émet de la chaleur sous forme de rayonnement infrarouge (IR). La caméra mesure ce rayonnement, et non la température « au toucher ».</p>
       </div>
-
-      <p>Sur une image thermique, chaque couleur traduit une <strong>température apparente</strong>. La caméra ne mesure pas la chaleur « au toucher » mais le rayonnement infrarouge reçu : il faut donc apprendre à interpréter l'image plutôt qu'à la lire littéralement.</p>
-
-      <div class="callout warning">
-        <div class="callout-title">Attention aux artéfacts de mesure</div>
-        <p>Une image thermique ne se lit pas toujours au premier degré. Trois pièges fréquents :</p>
-        <ul>
-          <li><strong>Réflexion du ciel :</strong> une vitre ou une carrosserie peut apparaître très froide non parce qu'elle l'est, mais parce qu'elle reflète le rayonnement froid du ciel (faible émissivité).</li>
-          <li><strong>Angle de visée :</strong> la température apparente d'une même surface change selon l'angle sous lequel on la vise.</li>
-          <li><strong>Apparent ≠ réel :</strong> la caméra affiche une température de brillance, pas nécessairement la température réelle de la surface.</li>
-        </ul>
-        <p>Distinguer un véritable contraste thermique d'un simple artéfact fait partie de l'apprentissage.</p>
+      <div class="concept-card">
+        <strong>Température de brillance</strong>
+        <p>La caméra mesure le flux de rayonnement IR émis par une surface, puis le convertit en température en supposant une surface idéale (corps noir parfait, ε = 1). La température ainsi obtenue est appelée température de brillance.</p>
+        <p>Sur les surfaces à émissivité élevée, elle est proche de la température réelle ; sur les matériaux à faible émissivité, elle s'en écarte fortement à cause du rayonnement réfléchi. C'est pourquoi on règle l'émissivité sur la caméra : pour corriger cet écart.</p>
       </div>
+      <div class="concept-card">
+        <strong>Émissivité</strong>
+        <p>L'émissivité est l'aptitude d'une surface à émettre du rayonnement IR, exprimée entre 0 et 1. Les surfaces non métalliques (bois, végétation, eau, peinture) ont une émissivité élevée (≈ 0,9) : la caméra mesure alors une température proche de la température réelle. Les surfaces métalliques polies ont une émissivité faible — elles émettent peu de rayonnement propre et réfléchissent celui de leur environnement —, si bien que la mesure est faussée.</p>
+      </div>
+    </div>
+
 
       <h3>Quelques signatures thermiques typiques</h3>
       <ul>
         <li><strong>Bâtiments et bitume :</strong> souvent chauds, surtout après une exposition au soleil — ils stockent puis restituent la chaleur (forte inertie thermique). En hiver, une façade chauffée laisse au contraire deviner ses déperditions.</li>
         <li><strong>Végétation :</strong> généralement plus fraîche, grâce à l'évapotranspiration des plantes qui agit comme une climatisation naturelle.</li>
         <li><strong>Eau :</strong> température très stable, du fait de sa grande inertie thermique — fraîche en journée d'été, parfois plus tiède que l'air en hiver.</li>
-        <li><strong>Vitres et métal :</strong> à interpréter avec prudence — leur faible émissivité fait qu'elles reflètent le ciel ou l'environnement plutôt que leur propre température.</li>
-        <li><strong>Le vivant :</strong> un corps, une main, un animal apparaissent nettement chauds — d'autant plus sur un fond froid hivernal —, une bonne entrée pour parler de thermorégulation.</li>
       </ul>
 
       <div class="callout warning">
-        <div class="callout-title">Le piège de la vitre froide</div>
-        <p>Sur un thermogramme extérieur, les vitres d'une voiture apparaissent souvent d'un bleu très sombre, comme glacées. Ce n'est pas qu'elles sont froides : le verre, à faible émissivité, <strong>reflète le rayonnement froid du ciel</strong>. C'est l'exemple classique d'un artéfact de réflexion — l'image montre le ciel, pas la vitre.</p>
+        <div class="callout-title">Attention aux artefacts de mesure</div>
+          <ul>
+            <li><strong>Réflexion :</strong> une vitre ou une carrosserie peut apparaître très froide non parce qu'elle l'est, mais parce qu'elle reflète le rayonnement froid du ciel (faible émissivité).</li>
+            <li><strong>Angle de visée :</strong> la température apparente d'une même surface change selon l'angle sous lequel on la vise.</li>
+            <li><strong>Apparent ≠ réel :</strong> la caméra affiche une température de brillance, pas nécessairement la température réelle de la surface.</li>
+          </ul>
+       </div>
       </div>
+    
+  </div>
 
-      <h3>Tester l'effet de l'émissivité</h3>
-      <p>Le petit calculateur ci-dessous permet de manipuler directement ce que décrit le piège de la vitre froide. Réglez la température réelle d'une surface, son émissivité et la température de la source qu'elle reflète (ciel, soleil, mur voisin…), puis observez la <strong>température de brillance</strong> — celle qu'affiche la caméra. Les préréglages montrent les deux directions possibles de l'erreur sur le métal : froid quand il reflète le ciel, chaud quand il reflète le soleil.</p>
-
-<div class="tb-calc" markdown="0">
-  <p class="tb-calc-intro">Ce calculateur illustre l'écart entre <strong>température réelle</strong> et <strong>température de brillance</strong>. La surface rayonne selon le modèle du corps gris, mais réfléchit aussi une part du rayonnement de la <strong>source qu'elle a en face d'elle</strong> — le ciel, le soleil, un mur voisin. Cette source est souvent une source lointaine, sans raison d'être à la même température que la surface : c'est précisément cet écart qui crée l'artéfact. La caméra, qui suppose un corps noir parfait, additionne rayonnement propre et reflet : faites chuter l'émissivité et observez la lecture décrocher.</p>
-  <div class="tb-row">
-    <label for="tb-temp">Température réelle de surface</label>
-    <input id="tb-temp" type="range" min="-20" max="120" step="1" value="25" />
-    <output id="tb-temp-out">25 °C</output>
-  </div>
-  <div class="tb-row">
-    <label for="tb-emis">Émissivité ε</label>
-    <input id="tb-emis" type="range" min="0.05" max="1" step="0.01" value="0.95" />
-    <output id="tb-emis-out">0,95</output>
-  </div>
-  <div class="tb-row">
-    <label for="tb-env">Température de la source réfléchie</label>
-    <input id="tb-env" type="range" min="-40" max="120" step="1" value="15" />
-    <output id="tb-env-out">15 °C</output>
-  </div>
-  <div class="tb-presets">
-    <button type="button" data-e="0.96">Végétation (ε 0,96)</button>
-    <button type="button" data-e="0.98">Eau (ε 0,98)</button>
-    <button type="button" data-e="0.92">Béton (ε 0,92)</button>
-    <button type="button" data-e="0.10" data-env="-35">Vitre reflétant le ciel (ε 0,10)</button>
-    <button type="button" data-e="0.10" data-env="55">Métal au soleil (ε 0,10)</button>
-  </div>
-  <div class="tb-chain">
-    <div class="tb-box">
-      <div class="tb-box-label">Flux capté par la caméra</div>
-      <div class="tb-box-value" id="tb-flux">—</div>
-      <div class="tb-box-formula">ε·σ·T⁴ + (1−ε)·σ·T<sub>source</sub>⁴</div>
-    </div>
-    <span class="tb-arrow">→</span>
-    <div class="tb-box" id="tb-result-box">
-      <div class="tb-box-label">Température de brillance</div>
-      <div class="tb-box-value" id="tb-result">—</div>
-      <div class="tb-box-formula">la caméra suppose ε = 1</div>
-    </div>
-  </div>
-  <div class="tb-note" id="tb-note">—</div>
-</div>
-
-    </div>
   </details>
 
+
+  <details id="emissivite" class="disclosure">
+    <summary>
+      <span class="disclosure-title">Tester l'effet de l'émissivité</span>
+      <span class="disclosure-hint">(Cliquez pour déplier)</span>
+    </summary>
+    <div class="disclosure-body">
+
+  
+        <p>Le petit calculateur ci-dessous permet de manipuler directement ce que décrit le piège de la vitre froide. Réglez la température réelle d'une surface, son émissivité et la température de la source qu'elle reflète (ciel, soleil, mur voisin…), puis observez la <strong>température de brillance</strong> — celle qu'affiche la caméra. Les préréglages montrent les deux directions possibles de l'erreur sur le métal : froid quand il reflète le ciel, chaud quand il reflète le soleil.</p>
+
+        <div class="tb-calc" markdown="0">
+          <p class="tb-calc-intro">Ce calculateur illustre l'écart entre <strong>température réelle</strong> et <strong>température de brillance</strong>. La surface rayonne selon le modèle du corps gris, mais réfléchit aussi une part du rayonnement de la <strong>source qu'elle a en face d'elle</strong> — le ciel, le soleil, un mur voisin. Cette source est souvent une source lointaine, sans raison d'être à la même température que la surface : c'est précisément cet écart qui crée l'artéfact. La caméra, qui suppose un corps noir parfait, additionne rayonnement propre et reflet : faites chuter l'émissivité et observez la lecture décrocher.</p>
+          <div class="tb-row">
+            <label for="tb-temp">Température réelle de surface</label>
+            <input id="tb-temp" type="range" min="-20" max="120" step="1" value="25" />
+            <output id="tb-temp-out">25 °C</output>
+          </div>
+          <div class="tb-row">
+            <label for="tb-emis">Émissivité ε</label>
+            <input id="tb-emis" type="range" min="0.05" max="1" step="0.01" value="0.95" />
+            <output id="tb-emis-out">0,95</output>
+          </div>
+          <div class="tb-row">
+            <label for="tb-env">Température de la source réfléchie</label>
+            <input id="tb-env" type="range" min="-40" max="120" step="1" value="15" />
+            <output id="tb-env-out">15 °C</output>
+          </div>
+          <div class="tb-presets">
+            <button type="button" data-e="0.96">Végétation (ε 0,96)</button>
+            <button type="button" data-e="0.98">Eau (ε 0,98)</button>
+            <button type="button" data-e="0.92">Béton (ε 0,92)</button>
+            <button type="button" data-e="0.10" data-env="-35">Vitre reflétant le ciel (ε 0,10)</button>
+            <button type="button" data-e="0.10" data-env="55">Métal au soleil (ε 0,10)</button>
+          </div>
+          <div class="tb-chain">
+            <div class="tb-box">
+              <div class="tb-box-label">Flux capté par la caméra</div>
+              <div class="tb-box-value" id="tb-flux">—</div>
+              <div class="tb-box-formula">ε·σ·T⁴ + (1−ε)·σ·T<sub>source</sub>⁴</div>
+            </div>
+            <span class="tb-arrow">→</span>
+            <div class="tb-box" id="tb-result-box">
+              <div class="tb-box-label">Température de brillance</div>
+              <div class="tb-box-value" id="tb-result">—</div>
+              <div class="tb-box-formula">la caméra suppose ε = 1</div>
+            </div>
+          </div>
+          <div class="tb-note" id="tb-note">—</div>
+        </div>
+
+
 </section> 
+
+
 
 <section id="ressources" class="page-section">
   <h2>Quelques ressources</h2>
