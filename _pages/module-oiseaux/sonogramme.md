@@ -27,7 +27,7 @@ title: Apprendre à lire un sonogramme
   <p>Un sonogramme se lit comme une partition de musique simplifiée. Il a deux dimensions :</p>
 
   <div class="sono-frame">
-    <svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" style="width: 90%; height: auto; display: block;">
+    <svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" style="width: 80%; height: auto; display: block;">
       <rect x="80" y="40" width="560" height="280" fill="#fafbf6" stroke="#e2e6d8"/>
       <line x1="80" y1="40" x2="640" y2="40" stroke="#e2e6d8" stroke-dasharray="3,3"/>
       <line x1="80" y1="110" x2="640" y2="110" stroke="#e2e6d8" stroke-dasharray="3,3"/>
@@ -36,6 +36,7 @@ title: Apprendre à lire un sonogramme
       <line x1="220" y1="40" x2="220" y2="320" stroke="#e2e6d8" stroke-dasharray="3,3"/>
       <line x1="360" y1="40" x2="360" y2="320" stroke="#e2e6d8" stroke-dasharray="3,3"/>
       <line x1="500" y1="40" x2="500" y2="320" stroke="#e2e6d8" stroke-dasharray="3,3"/>
+      
       <line x1="80" y1="40" x2="80" y2="320" stroke="#1f2a6b" stroke-width="2"/>
       <polygon points="80,30 75,42 85,42" fill="#1f2a6b"/>
       <text x="65" y="45" font-size="12" fill="#1f2a6b" text-anchor="end">8 kHz</text>
@@ -44,6 +45,7 @@ title: Apprendre à lire un sonogramme
       <text x="65" y="255" font-size="12" fill="#1f2a6b" text-anchor="end">2 kHz</text>
       <text x="65" y="325" font-size="12" fill="#1f2a6b" text-anchor="end">0</text>
       <text x="30" y="180" font-size="14" font-weight="bold" fill="#1f2a6b" text-anchor="middle" transform="rotate(-90 30 180)">Fréquence</text>
+      
       <line x1="80" y1="320" x2="640" y2="320" stroke="#1f2a6b" stroke-width="2"/>
       <polygon points="650,320 638,315 638,325" fill="#1f2a6b"/>
       <text x="80" y="340" font-size="12" fill="#1f2a6b" text-anchor="middle">0 s</text>
@@ -52,48 +54,42 @@ title: Apprendre à lire un sonogramme
       <text x="500" y="340" font-size="12" fill="#1f2a6b" text-anchor="middle">3 s</text>
       <text x="630" y="340" font-size="12" fill="#1f2a6b" text-anchor="middle">4 s</text>
       <text x="360" y="365" font-size="14" font-weight="bold" fill="#1f2a6b" text-anchor="middle">Temps</text>
-      <path d="M 660 50 L 660 150" stroke="#7bbd97" stroke-width="2" marker-end="url(#arrowhead1)"/>
+      
       <defs>
-        <marker id="arrowhead1" markerWidth="8" markerHeight="8" refX="0" refY="3" orient="auto">
-          <polygon points="0 0, 8 3, 0 6" fill="#7bbd97"/>
+        <marker id="arrowhead-up" markerWidth="8" markerHeight="8" refX="0" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#1f2a6b"/>
         </marker>
       </defs>
-      <text x="668" y="55" font-size="12" fill="#4a9d6e">vers</text>
-      <text x="668" y="70" font-size="12" font-weight="bold" fill="#4a9d6e">l'aigu</text>
-      <path d="M 660 290 L 660 200" stroke="#e8862a" stroke-width="2" marker-end="url(#arrowhead2)"/>
-      <defs>
-        <marker id="arrowhead2" markerWidth="8" markerHeight="8" refX="0" refY="3" orient="auto">
-          <polygon points="0 0, 8 3, 0 6" fill="#e8862a"/>
-        </marker>
-      </defs>
-      <text x="668" y="295" font-size="12" fill="#e8862a">vers</text>
-      <text x="668" y="310" font-size="12" font-weight="bold" fill="#e8862a">le grave</text>
+      <line x1="660" y1="320" x2="660" y2="50" stroke="#1f2a6b" stroke-width="2" marker-end="url(#arrowhead-up)"/>
+      <text x="672" y="315" font-size="11" font-weight="bold" fill="#1f2a6b">Grave</text>
+      <text x="672" y="55" font-size="11" font-weight="bold" fill="#1f2a6b">Aigu</text>
     </svg>
     <p class="sono-caption">Les deux axes d'un sonogramme : le <strong>temps</strong> qui défile horizontalement, la <strong>fréquence</strong> (du grave en bas à l'aigu en haut) sur la verticale.</p>
   </div>
 
-  <h3>L'intensité du son : la couleur</h3>
-  <p>Plus une trace est colorée vivement, plus le son est puissant à ce moment précis sur cette fréquence.</p>
+
+  <h3>L'intensité du son : le contraste noir et blanc</h3>
+  <p>Plus une trace est noire et foncée, plus le son est puissant à ce moment précis sur cette fréquence.</p>
 
   <div class="sono-frame">
     <svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
       <rect x="50" y="30" width="600" height="120" fill="#fafbf6" stroke="#e2e6d8"/>
       <defs>
-        <linearGradient id="merlinGrad" x1="0%" x2="100%">
-          <stop offset="0%" stop-color="#0d1130"/>
-          <stop offset="30%" stop-color="#3a4a8a"/>
-          <stop offset="60%" stop-color="#94c11f"/>
-          <stop offset="85%" stop-color="#f7d038"/>
-          <stop offset="100%" stop-color="#e8862a"/>
+        <linearGradient id="monochromeGrad" x1="0%" x2="100%">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="50%" stop-color="#888888"/>
+          <stop offset="100%" stop-color="#000000"/>
         </linearGradient>
       </defs>
-      <rect x="50" y="40" width="600" height="40" fill="url(#merlinGrad)"/>
-      <text x="50" y="25" font-size="11" fill="#0e4d4d">silence</text>
-      <text x="350" y="25" font-size="11" font-weight="bold" fill="#0e4d4d" text-anchor="middle">intensité du son →</text>
-      <text x="650" y="25" font-size="11" fill="#0e4d4d" text-anchor="end">son fort</text>
-      <text x="350" y="110" font-size="12" fill="#0e4d4d" text-anchor="middle">Échelle de couleur Merlin — du sombre froid (silence) au chaud lumineux (son fort)</text>
+      <rect x="50" y="40" width="600" height="40" fill="url(#monochromeGrad)" stroke="#e2e6d8"/>
+      <text x="50" y="25" font-size="11" fill="#1f2a6b">silence (blanc)</text>
+      <text x="350" y="25" font-size="11" font-weight="bold" fill="#1f2a6b" text-anchor="middle">intensité du son →</text>
+      <text x="650" y="25" font-size="11" fill="#1f2a6b" text-anchor="end">son fort (noir)</text>
+      <text x="350" y="110" font-size="12" fill="#1f2a6b" text-anchor="middle">Échelle monochrome — du blanc lumineux (silence) au noir profond (son intense)</text>
     </svg>
   </div>
+
+  
 
   <h3>Anatomie d'un chant : le vocabulaire visuel</h3>
   <p>Quelques termes utiles pour décrire ce qu'on observe sur un spectrogramme :</p>
