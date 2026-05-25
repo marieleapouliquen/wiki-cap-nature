@@ -4,8 +4,10 @@ permalink: /atelier-thermique/
 title: "Rendre la chaleur visible : explorer les microclimats à la caméra thermique"
 lead: "Cet atelier de thermographie infrarouge invite les participant·es à observer, avec une caméra thermique connectée au smartphone, les échanges de chaleur invisibles entre bâtiments, végétation, eau et corps vivants — et à percevoir leur environnement proche comme un système thermique en interaction."
 toc:
+  - id: enjeu
+    label: "Pourquoi s'intéresse à la chaleur en ville ?"
   - id: definition
-    label: "Qu'est-ce que la thermographie infrarouge ?"
+    label: "Voir la chaleur : la caméra thermique"
   - id: objectifs
     label: "Objectifs pédagogiques"
   - id: outils
@@ -18,29 +20,68 @@ toc:
     label: "Pour aller plus loin"
 ---
 
-<section id="definition" class="page-section">
-  <h2>Qu'est-ce que la thermographie infrarouge ?</h2>
-  <p>Tout objet émet un rayonnement infrarouge invisible à l'œil nu, d'autant plus intense qu'il est chaud. Une <strong>caméra thermique</strong> capte ce rayonnement et le traduit en une image colorée où chaque teinte correspond à une température apparente. Elle rend ainsi visibles des phénomènes que nous ne percevons pas directement : la chaleur d'un mur exposé au soleil, la fraîcheur d'un plan d'eau, la signature thermique d'un être vivant. Trois notions aident à comprendre ce que l'on observe :</p>
 
-<div class="concept-grid">
+<section id="enjeu" class="page-section">
+  <h2>Pourquoi s'intéresser à la chaleur en ville ?</h2>
+
+  <p>Avant d'être une grandeur physique, la chaleur est quelque chose que l'on <strong>ressent</strong> : on cherche l'ombre d'un arbre en été, la fraîcheur d'un parc ou d'un point d'eau, on fuit un parking brûlant à midi. Ce confort thermique du quotidien dépend étroitement de notre environnement proche — et notamment de la présence du vivant.</p>
+
+  <p>La nature rend en effet un <strong>service de régulation</strong> : la végétation et l'eau tempèrent l'air ambiant. Un arbre rafraîchit à la fois en faisant de l'ombre et par <strong>évapotranspiration</strong> — en évaporant de l'eau, il absorbe de la chaleur, comme une climatisation naturelle. À l'inverse, les surfaces minérales (béton, bitume, pierre) stockent la chaleur le jour et la restituent la nuit. C'est l'un des nombreux <em>services écosystémiques</em> que nous rendent les milieux naturels, souvent invisibles tant qu'ils fonctionnent.</p>
+
+  <div class="concept-grid">
     <div class="concept-card">
-      <strong>Rayonnement infrarouge</strong>
-      <p>Tout corps dont la température dépasse le zéro absolu émet de la chaleur sous forme de rayonnement infrarouge (IR). La caméra mesure ce rayonnement, et non la température « au toucher ».</p>
+      <strong>Confort thermique</strong>
+      <p>La sensation de chaleur ou de fraîcheur que l'on éprouve dans un lieu. Elle ne dépend pas que de la température de l'air, mais aussi des surfaces qui nous entourent et de leur rayonnement.</p>
     </div>
     <div class="concept-card">
-      <strong>Température de brillance</strong>
-      <p> 
-        C'est la grandeur que « voit » réellement la caméra : une température déduite du rayonnement reçu en supposant un corps noir parfait. Sur les surfaces à émissivité élevée, elle est proche de la température réelle ; sur les matériaux à faible émissivité, elle s'en écarte fortement à cause du rayonnement réfléchi.</p>
+      <strong>Service de régulation</strong>
+      <p>Le rôle tampon joué par la végétation et l'eau, qui rafraîchissent l'air par l'ombrage et l'évapotranspiration — un service écosystémique gratuit et précieux face à la chaleur.</p>
     </div>
-
-  <p>La caméra mesure le flux de rayonnement IR émis par une surface. Elle convertit ce flux en température en supposant une relation idéale entre flux et température (modèle du corps gris : equation...). La température calculée est appelée la température de brillance.</p>
-
     <div class="concept-card">
-      <strong>Émissivité</strong>
-      <p>L'émissivité est l'aptitude d'une surface à émettre du rayonnement IR, exprimée entre 0 et 1. Les surfaces non métalliques (bois, végétation, eau, peinture) ont une émissivité élevée (≈ 0,9) : la caméra mesure alors une température proche de la température réelle. Les surfaces métalliques polies ont une émissivité faible — elles émettent peu de rayonnement propre et réfléchissent celui de leur environnement —, si bien que la mesure est faussée.</p>
+      <strong>Îlot de chaleur urbain</strong>
+      <p>En ville, les matériaux minéraux et la densité du bâti piègent la chaleur : il peut y faire plusieurs degrés de plus qu'à la campagne voisine, surtout la nuit.</p>
     </div>
-
   </div>
+
+  <p>Ce phénomène d'<strong>îlot de chaleur urbain</strong> devient un enjeu de santé publique majeur : les vagues de chaleur, plus fréquentes et plus intenses avec le changement climatique, frappent d'abord les villes les plus minérales. Comprendre comment la chaleur circule entre bâti, sols, eau et végétation, c'est aussi comprendre comment rafraîchir nos lieux de vie — et mesurer ce que le vivant nous apporte.</p>
+
+  <div class="callout info" style="margin-top: 2rem;">
+    <div class="callout-title">Pour situer l'enjeu :</div>
+    <div class="resource-links">
+      <a class="resource-link" href="https://meteofrance.com/le-changement-climatique/les-bases-du-changement-climatique/quest-ce-que-lilot-de-chaleur-urbain" target="_blank" rel="noopener">
+        <span class="resource-link-label">Météo-France</span>
+        <span class="resource-link-title">Qu'est-ce que l'îlot de chaleur urbain ?</span>
+      </a>
+      <a class="resource-link" href="https://www.cerema.fr/fr/actualites/ilots-chaleur-agir-territoires-adapter-villes-au-changement" target="_blank" rel="noopener">
+        <span class="resource-link-label">Cerema</span>
+        <span class="resource-link-title">Îlots de chaleur : agir pour adapter les villes</span>
+      </a>
+      <a class="resource-link" href="https://www.adaptaville.fr/les-ilots-de-fraicheur-une-reponse-efficace-contre-les-canicules" target="_blank" rel="noopener">
+        <span class="resource-link-label">Adaptaville</span>
+        <span class="resource-link-title">Les îlots de fraîcheur, une réponse aux canicules</span>
+      </a>
+      <a class="resource-link" href="https://agirpourlatransition.ademe.fr/collectivites/conseils/adaptation/rafraichissement-urbain" target="_blank" rel="noopener">
+        <span class="resource-link-label">ADEME</span>
+        <span class="resource-link-title">Le rafraîchissement urbain</span>
+      </a>
+      <a class="resource-link" href="https://www.supagro.fr/ress-pepites/Opale/ServicesEco/co/ServicesRegulations.html" target="_blank" rel="noopener">
+        <span class="resource-link-label">Ressource pédagogique · Institut Agro</span>
+        <span class="resource-link-title">Les services écosystémiques de régulation</span>
+      </a>
+      <a class="resource-link" href="https://agirpourlatransition.ademe.fr/particuliers/proteger-sante/periode-canicule/canicule-comment-garder-logement-frais" target="_blank" rel="noopener">
+        <span class="resource-link-label">ADEME · Conseils</span>
+        <span class="resource-link-title">Canicule : comment garder son logement frais</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="definition" class="page-section">
+  <h2>Voir la chaleur : la caméra thermique</h2>
+  <p>Comment observer concrètement ces échanges de chaleur, normalement invisibles ? C'est là qu'intervient la <strong>caméra thermique</strong>. Tout objet émet un rayonnement infrarouge d'autant plus intense qu'il est chaud ; la caméra capte ce rayonnement et le traduit en une image colorée où chaque teinte correspond à une température apparente. Elle rend ainsi visibles, sur le terrain, le mur qui restitue la chaleur du soleil, la fraîcheur d'un plan d'eau ou la signature thermique d'un être vivant. Trois notions aident à comprendre ce que l'on observe :</p>
+
+</section>
+
 
 
 
