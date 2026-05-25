@@ -370,6 +370,7 @@ toc:
 
 </section>
 
+
 <section id="ressources" class="page-section">
   <h2>Pour aller plus loin</h2>
 
@@ -389,6 +390,7 @@ toc:
     </a>
   </div>
 
+
   <h3>Sur la chaleur, le climat et le vivant</h3>
   <div class="resource-links">
     <a class="resource-link" href="https://doi.org/10.1016/j.enbenv.2020.09.008" target="_blank" rel="noopener">
@@ -405,6 +407,8 @@ toc:
     </a>
   </div>
 </section>
+
+
 
 <style>
   .ir-compare-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
