@@ -151,20 +151,22 @@ toc:
     <li>Faites un test des caméras avant la séance.</li>
     <li>Chargez les caméras et prévenez les participants que leurs téléphones devront être bien chargés.</li>
     <li>Préparez une brève mise en contexte (qu'est-ce que l'infrarouge, que mesure la caméra).</li>
-    <li>Imprimez les fiches d'observation (1 par groupe d'exploration suffit).</li>
   </ul>
 
-  <h3>Fiches pédagogiques (PDF à télécharger)</h3>
+  <h3>Démarche pédagogique</h3>
 
     <p>Pour guider l'enquête sans figer le raisonnement, on peut s'appuyer sur la démarche <strong>Prédire – Observer – Expliquer</strong> : avant de viser une surface, les participants notent leurs prédictions (« ce mur sera-t-il plus chaud que l'arbre voisin ? »), puis observent à la caméra, relèvent les températures apparentes, repèrent les éventuels artéfacts, et enfin confrontent leurs résultats à leurs hypothèses. Cette structure transforme chaque observation en petite expérience.</p>
 
+  <!--
+  <h3>Fiches pédagogiques (PDF à télécharger)</h3>
   <div class="resource-links">
     <a class="resource-link" href="{{ '/assets/pdf/fiche-thermique-observation.pdf' | relative_url }}" target="_blank" rel="noopener">
       <span class="resource-link-label">Fiche n°1</span>
       <span class="resource-link-title">Fiche d'observation terrain (Prédire – Observer – Expliquer)</span>
     </a>
-    <!-- [À COMPLÉTER] Ajoutez ici d'autres fiches si vous en produisez (prise en main FLIR One, lecture d'image thermique, etc.) -->
+    [À COMPLÉTER] Ajoutez ici d'autres fiches si vous en produisez (prise en main FLIR One, lecture d'image thermique, etc.)
   </div>
+  -->
   
 </section>
 
