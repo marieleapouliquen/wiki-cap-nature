@@ -329,13 +329,21 @@ toc:
       <p>Le calculateur ci-dessous illustre cette conversion : faites varier le flux infrarouge capté et observez la température de brillance correspondante.</p>
 
         <div class="tb-calc" markdown="0">
-          <p class="tb-calc-intro">La caméra applique la loi de Stefan-Boltzmann : à partir du flux capté <em>F</em>, elle calcule la température d'un corps noir parfait qui émettrait ce même flux. C'est la température de brillance.</p>
+          <p class="tb-calc-intro">La caméra applique la loi de Stefan-Boltzmann : à partir du flux capté <em>F</em> et de l'émissivité qu'on lui a réglée, elle calcule la température de brillance. Faites varier les deux curseurs : pour un même flux, la température affichée change selon le réglage d'émissivité — c'est pourquoi il faut l'ajuster au matériau visé (voir le tableau plus bas).</p>
 
           <div class="tb-row tb-row-main">
             <label for="tb-flux-in">Flux infrarouge mesuré</label>
             <input id="tb-flux-in" type="range" min="200" max="1050" step="5" value="420" />
             <output id="tb-flux-out">420 W/m²</output>
           </div>
+
+          <div class="tb-row tb-row-main">
+            <label for="tb-emis-set">Émissivité réglée sur la caméra</label>
+            <input id="tb-emis-set" type="range" min="0.05" max="1" step="0.01" value="0.95" />
+            <output id="tb-emis-set-out">0,95</output>
+          </div>
+
+          <div class="tb-match" id="tb-match">Réglage adapté à : surfaces mates courantes</div>
 
           <div class="tb-chain">
             <div class="tb-box">
@@ -347,7 +355,7 @@ toc:
             <div class="tb-box" id="tb-result-box">
               <div class="tb-box-label">Température de brillance</div>
               <div class="tb-box-value" id="tb-bril">—</div>
-              <div class="tb-box-formula">F = ε·σ·T⁴, avec ε = 0,95</div>
+              <div class="tb-box-formula">selon l’émissivité réglée</div>
             </div>
           </div>
 
@@ -474,6 +482,7 @@ toc:
   .tb-box .tb-box-value { font-family: Georgia, serif; font-size: 1.4rem; font-weight: 600; color: var(--tb-ink); margin-top: 0.2rem; }
   .tb-box .tb-box-formula { font-size: 0.72rem; font-style: italic; color: var(--tb-muted); margin-top: 0.25rem; }
   .tb-arrow { display: flex; align-items: center; color: var(--tb-muted); font-size: 1.3rem; }
+  .tb-match { font-size: 0.82rem; font-style: italic; color: var(--tb-muted); margin: -0.4rem 0 1.2rem; }
   .tb-note { font-size: 0.88rem; line-height: 1.6; color: var(--tb-ink); padding: 0.8rem 1rem; border-radius: 6px; background: #fff; border: 1px solid var(--tb-line); }
   .tb-emis-table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.85rem; background: #fff; }
   .tb-emis-table th, .tb-emis-table td { text-align: left; padding: 0.45rem 0.8rem; border-bottom: 1px solid var(--tb-line); }
@@ -490,21 +499,38 @@ toc:
 
 <script>
 (function(){
-  var SIGMA = 5.67e-8, K = 273.15, CAM = 0.95;
+  var SIGMA = 5.67e-8, K = 273.15;
   var fluxIn = document.getElementById('tb-flux-in'),
       fluxOut = document.getElementById('tb-flux-out'),
+      emisSet = document.getElementById('tb-emis-set'),
+      emisSetOut = document.getElementById('tb-emis-set-out'),
       fluxDisp = document.getElementById('tb-flux-disp'),
-      bril = document.getElementById('tb-bril');
+      bril = document.getElementById('tb-bril'),
+      match = document.getElementById('tb-match');
   if (!fluxIn) return;
+  // Plages d'émissivité par type de surface (ordonnées du plus émissif au moins émissif)
+  var BANDS = [
+    { min: 0.93, max: 1.00, label: 'surfaces naturelles et mates (eau, végétation, peau, béton, peinture)' },
+    { min: 0.85, max: 0.93, label: 'bois, verre, surfaces mates plus sèches' },
+    { min: 0.40, max: 0.85, label: 'métal peint ou oxydé' },
+    { min: 0.05, max: 0.40, label: 'métal poli (aluminium, acier) — lecture peu fiable' }
+  ];
   function fr(n){ return n.toFixed(1).replace('.', ','); }
   function compute(){
-    var F = parseFloat(fluxIn.value);
-    var Tbril = Math.pow(F / (CAM * SIGMA), 0.25) - K;
+    var F = parseFloat(fluxIn.value), e = parseFloat(emisSet.value);
+    var Tbril = Math.pow(F / (e * SIGMA), 0.25) - K;
     fluxOut.textContent = Math.round(F) + ' W/m²';
     fluxDisp.textContent = Math.round(F) + ' W/m²';
+    emisSetOut.textContent = e.toFixed(2).replace('.', ',');
     bril.textContent = fr(Tbril) + ' °C';
+    var lab = '';
+    for (var i = 0; i < BANDS.length; i++){
+      if (e >= BANDS[i].min && e <= BANDS[i].max){ lab = BANDS[i].label; break; }
+    }
+    match.textContent = 'Réglage adapté à : ' + lab;
+    match.style.color = (e < 0.40) ? '#c1666b' : 'var(--tb-muted)';
   }
-  fluxIn.addEventListener('input', compute);
+  [fluxIn, emisSet].forEach(function(el){ el.addEventListener('input', compute); });
   compute();
 })();
 </script>
