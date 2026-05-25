@@ -16,12 +16,8 @@ title: Apprendre à lire un sonogramme
   </nav>
 
   <h2>A propos</h2>
-  <p>Quand l'application Merlin identifie un oiseau, elle affiche un <strong>sonogramme</strong> (ou spectrogramme) qui défile en temps réel. Comprendre cette image enrichit considérablement l'analyse pédagogique en transformant une onde sonore invisible en repère visuel.</p>
+  <p>L'application Merlin convertit le signal audio en une image appelée <strong>spectrogramme </strong>. Sur cette image, des motifs défilent en temps réel. C'est la trace des sons entendus. Les oiseaux émettent des cris et des chants caractéristiques selon leur espèce. Ainsi, en comparant le signal audio capté en temps réel à une base de données de référence, l'application est capable de données le nom de l'espèce de l'oiseau entendu avec une certaine marge de confiance. Bien sûr, une erreur est toujours possible, aussi est-il préférable de vérifier visuellement quand on le peut.</p>
 
-  <div class="callout science">
-    <div class="callout-title">🔬 Une IA qui regarde, pas qui écoute</div>
-    <p>L'intelligence artificielle de Merlin n'écoute pas directement le fichier audio de la même façon qu'une oreille humaine. <strong>Elle convertit le signal en image (le spectrogramme), puis effectue de la reconnaissance d'image</strong> grâce à un réseau de neurones entraîné sur des millions d'exemples de référence.</p>
-  </div>
 
   <h3>Les deux axes : temps et fréquence</h3>
   <p>Un sonogramme a deux dimensions : le <strong>temps</strong> qui défile horizontalement, la <strong>fréquence</strong> (du grave en bas à l'aigu en haut) sur la verticale.</p>
