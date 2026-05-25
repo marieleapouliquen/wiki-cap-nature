@@ -87,7 +87,7 @@ toc:
     </div>
   </div>
 
-    <h2>Comment observer concrètement ces échanges de chaleur invisibles à l'œil nu ? </h2>
+    <h2>Comment observer concrètement ces échanges de chaleur invisibles à l'oeil nu ? </h2>
   
     <p>C'est là qu'intervient la <strong>caméra thermique</strong>. Tout objet émet un rayonnement infrarouge d'autant plus intense qu'il est chaud ; la caméra capte ce rayonnement et le traduit en une image colorée où chaque teinte correspond à une température apparente. Elle rend ainsi visibles, sur le terrain, le mur qui restitue la chaleur du soleil, la fraîcheur d'un plan d'eau ou la signature thermique d'un être vivant.</p>
   
@@ -151,22 +151,20 @@ toc:
     <li>Faites un test des caméras avant la séance.</li>
     <li>Chargez les caméras et prévenez les participants que leurs téléphones devront être bien chargés.</li>
     <li>Préparez une brève mise en contexte (qu'est-ce que l'infrarouge, que mesure la caméra).</li>
+    <li>Imprimez les fiches d'observation (1 par groupe d'exploration suffit).</li>
   </ul>
 
-  <h3>Démarche pédagogique</h3>
+  <h3>Fiches pédagogiques (PDF à télécharger)</h3>
 
     <p>Pour guider l'enquête sans figer le raisonnement, on peut s'appuyer sur la démarche <strong>Prédire – Observer – Expliquer</strong> : avant de viser une surface, les participants notent leurs prédictions (« ce mur sera-t-il plus chaud que l'arbre voisin ? »), puis observent à la caméra, relèvent les températures apparentes, repèrent les éventuels artéfacts, et enfin confrontent leurs résultats à leurs hypothèses. Cette structure transforme chaque observation en petite expérience.</p>
 
-  <!--
-  <h3>Fiches pédagogiques (PDF à télécharger)</h3>
   <div class="resource-links">
     <a class="resource-link" href="{{ '/assets/pdf/fiche-thermique-observation.pdf' | relative_url }}" target="_blank" rel="noopener">
       <span class="resource-link-label">Fiche n°1</span>
       <span class="resource-link-title">Fiche d'observation terrain (Prédire – Observer – Expliquer)</span>
     </a>
-    [À COMPLÉTER] Ajoutez ici d'autres fiches si vous en produisez (prise en main FLIR One, lecture d'image thermique, etc.)
+    <!-- [À COMPLÉTER] Ajoutez ici d'autres fiches si vous en produisez (prise en main FLIR One, lecture d'image thermique, etc.) -->
   </div>
-  -->
   
 </section>
 
@@ -288,14 +286,16 @@ toc:
         <p>Tout corps dont la température dépasse le zéro absolu émet de la chaleur sous forme de rayonnement infrarouge (IR). La caméra mesure ce rayonnement, et non la température « au toucher ».</p>
       </div>
       <div class="concept-card">
+        <strong>Température de brillance</strong>
+        <p>La caméra mesure le flux de rayonnement IR émis par une surface, puis le convertit en température en supposant une surface idéale (corps noir parfait, ε = 1). La température ainsi obtenue est appelée température de brillance.</p>
+        <p>Sur les surfaces à émissivité élevée, elle est proche de la température réelle ; sur les matériaux à faible émissivité, elle s'en écarte fortement à cause du rayonnement réfléchi. C'est pourquoi on règle l'émissivité sur la caméra : pour corriger cet écart.</p>
+      </div>
+      <div class="concept-card">
         <strong>Émissivité</strong>
         <p>L'émissivité est l'aptitude d'une surface à émettre du rayonnement IR, exprimée entre 0 et 1. Les surfaces non métalliques (bois, végétation, eau, peinture) ont une émissivité élevée (≈ 0,9) : la caméra mesure alors une température proche de la température réelle. Les surfaces métalliques polies ont une émissivité faible — elles émettent peu de rayonnement propre et réfléchissent celui de leur environnement —, si bien que la mesure est faussée.</p>
       </div>
-      <div class="concept-card">
-        <strong>Température de brillance</strong>
-        <p>La caméra mesure le flux de rayonnement IR émis par une surface, puis le convertit en température en supposant une surface idéale (corps noir parfait, ε = 1). La température ainsi obtenue est appelée température de brillance.</p>
-      </div>
     </div>
+
 
       <h3>Quelques signatures thermiques typiques</h3>
       <ul>
@@ -326,43 +326,42 @@ toc:
   
         <p><strong>Le piège de la vitre froide :</strong> sur un thermogramme extérieur, les vitres apparaissent souvent d'un bleu très sombre, comme glacées. Ce n'est pas qu'elles sont froides — le verre, à faible émissivité, reflète le rayonnement froid du ciel. L'image montre alors le ciel, pas la vitre.</p>
 
-      <p>Le petit calculateur ci-dessous permet de manipuler directement ce que décrit le piège de la vitre froide. Réglez la température réelle d'une surface, son émissivité et la température de son environnement, puis observez la <strong>température de brillance</strong> — celle qu'affiche la caméra. Les préréglages montrent les deux directions possibles de l'erreur sur le métal : froid quand il reflète le ciel, chaud quand il reflète le soleil.</p>
+      <p>Le calculateur ci-dessous illustre ce piège. La caméra est réglée sur une émissivité de <strong>0,95</strong> (notre réglage de terrain) et ne bouge pas. On observe différents matériaux : choisissez une scène, puis faites varier la <strong>vraie émissivité du matériau</strong> et comparez la température réelle de la surface à celle que lit la caméra. Tant que l'émissivité est proche de 0,95, la mesure est juste ; quand elle chute, la caméra se trompe.</p>
 
         <div class="tb-calc" markdown="0">
-          <p class="tb-calc-intro">Ce calculateur illustre l'écart entre <strong>température réelle</strong> et <strong>température de brillance</strong>. La surface rayonne selon le modèle du corps gris, mais réfléchit aussi une part du rayonnement de son environnement. Les deux n'ont pas forcément la même température : une vitre peut rester tiède tout en reflétant un ciel glacé. La caméra, qui suppose un corps noir parfait, additionne rayonnement propre et reflet : faites chuter l'émissivité et observez la lecture décrocher.</p>
-          <div class="tb-row">
-            <label for="tb-temp">Température réelle de surface</label>
-            <input id="tb-temp" type="range" min="-40" max="120" step="1" value="25" />
-            <output id="tb-temp-out">25 °C</output>
+          <p class="tb-calc-intro">La caméra capte un <strong>flux de rayonnement</strong> émis par la surface. Mais ce flux mélange deux choses : le rayonnement <em>propre</em> de la surface (lié à sa vraie température) et le rayonnement de l'environnement qu'elle <em>reflète</em>. Plus l'émissivité du matériau est faible, plus la part réfléchie domine — et plus la caméra, qui suppose toujours ε = 0,95, se trompe.</p>
+
+          <div class="tb-scene">
+            <span class="tb-scene-label">Scène :</span>
+            <button type="button" class="tb-preset is-active" data-er="0.96" data-ts="25" data-env="25">Végétation au soleil</button>
+            <button type="button" class="tb-preset" data-er="0.92" data-ts="30" data-env="25">Mur en béton</button>
+            <button type="button" class="tb-preset" data-er="0.10" data-ts="15" data-env="-30">Vitre face au ciel</button>
+            <button type="button" class="tb-preset" data-er="0.10" data-ts="30" data-env="60">Tôle métallique au soleil</button>
           </div>
-          <div class="tb-row">
-            <label for="tb-emis">Émissivité ε</label>
-            <input id="tb-emis" type="range" min="0.05" max="1" step="0.01" value="0.95" />
-            <output id="tb-emis-out">0,95</output>
+
+          <div class="tb-row tb-row-main">
+            <label for="tb-emis">Vraie émissivité du matériau ε</label>
+            <input id="tb-emis" type="range" min="0.05" max="1" step="0.01" value="0.96" />
+            <output id="tb-emis-out">0,96</output>
           </div>
-          <div class="tb-row">
-            <label for="tb-env">Température de l'environnement</label>
-            <input id="tb-env" type="range" min="-40" max="120" step="1" value="15" />
-            <output id="tb-env-out">15 °C</output>
+
+          <div class="tb-fixed">
+            <span>Vraie température de la surface : <strong id="tb-ts-out">25 °C</strong></span>
+            <span>Température de l'environnement réfléchi : <strong id="tb-env-out">25 °C</strong></span>
+            <span class="tb-cam-setting">Caméra réglée sur ε = 0,95</span>
           </div>
-          <div class="tb-presets">
-            <button type="button" data-e="0.96">Végétation (ε 0,96)</button>
-            <button type="button" data-e="0.98">Eau (ε 0,98)</button>
-            <button type="button" data-e="0.92">Béton (ε 0,92)</button>
-            <button type="button" data-e="0.10" data-env="-35">Vitre reflétant le ciel (ε 0,10)</button>
-            <button type="button" data-e="0.10" data-env="55">Métal au soleil (ε 0,10)</button>
-          </div>
+
           <div class="tb-chain">
             <div class="tb-box">
-              <div class="tb-box-label">Flux capté par la caméra</div>
-              <div class="tb-box-value" id="tb-flux">—</div>
-              <div class="tb-box-formula">ε·σ·T⁴ + (1−ε)·σ·T<sub>env</sub>⁴</div>
+              <div class="tb-box-label">Vraie température de la surface</div>
+              <div class="tb-box-value" id="tb-true">—</div>
+              <div class="tb-box-formula">ce qu'on cherche à mesurer</div>
             </div>
             <span class="tb-arrow">→</span>
             <div class="tb-box" id="tb-result-box">
-              <div class="tb-box-label">Température de brillance</div>
+              <div class="tb-box-label">Température lue par la caméra</div>
               <div class="tb-box-value" id="tb-result">—</div>
-              <div class="tb-box-formula">la caméra suppose ε = 1</div>
+              <div class="tb-box-formula">en supposant ε = 0,95</div>
             </div>
           </div>
           <div class="tb-note" id="tb-note">—</div>
@@ -378,30 +377,38 @@ toc:
 <section id="ressources" class="page-section">
   <h2>Quelques ressources</h2>
 
-  <h3>Publications scientifiques sur la thermographie en éducation et la thermographie citoyenne</h3>
-    <div class="resource-links">
-      <a class="resource-link" href="https://doi.org/10.1007/s11165-015-9476-8" target="_blank" rel="noopener">
-        <span class="resource-link-label">Recherche · Research in Science Education</span>
-        <span class="resource-link-title">Haglund et al. — Les caméras IR comme invitation à l'investigation</span>
-      </a>
-      <a class="resource-link" href="https://doi.org/10.1088/1361-6552/ab15b9" target="_blank" rel="noopener">
-        <span class="resource-link-label">Pédagogie · Physics Education</span>
-        <span class="resource-link-title">Kácovský — La thermographie en une séance de physique</span>
-      </a>
-      <a class="resource-link" href="https://doi.org/10.1016/j.enbenv.2020.09.008" target="_blank" rel="noopener">
-        <span class="resource-link-label">Étude · Energy and Built Environment</span>
-        <span class="resource-link-title">Hawas &amp; Al-Habaibeh — Thermographie citoyenne et économies d'énergie</span>
-      </a>
-      <a class="resource-link" href="https://doi.org/10.1177/23733799251363155" target="_blank" rel="noopener">
-        <span class="resource-link-label">Pédagogie · Pedagogy in Health Promotion</span>
-        <span class="resource-link-title">Monteblanco et al. — « Photovoix thermique » et chaleur urbaine</span>
-      </a>
-      <a class="resource-link" href="https://doi.org/10.3390/su14053096" target="_blank" rel="noopener">
-        <span class="resource-link-label">Médiation · Sustainability</span>
-        <span class="resource-link-title">L'imagerie thermique pour communiquer la science</span>
-      </a>
-    </div>
-    
+  <h3>Sur la thermographie en éducation</h3>
+  <div class="resource-links">
+    <a class="resource-link" href="https://doi.org/10.1007/s11165-015-9476-8" target="_blank" rel="noopener">
+      <span class="resource-link-label">Recherche · Research in Science Education</span>
+      <span class="resource-link-title">Haglund et al. — Les caméras IR comme invitation à l'investigation</span>
+    </a>
+    <a class="resource-link" href="https://doi.org/10.1088/1361-6552/ab15b9" target="_blank" rel="noopener">
+      <span class="resource-link-label">Pédagogie · Physics Education</span>
+      <span class="resource-link-title">Kácovský — La thermographie en une séance de physique</span>
+    </a>
+    <a class="resource-link" href="https://doi.org/10.3390/su14053096" target="_blank" rel="noopener">
+      <span class="resource-link-label">Médiation · Sustainability</span>
+      <span class="resource-link-title">L'imagerie thermique pour communiquer la science</span>
+    </a>
+  </div>
+
+
+  <h3>Sur la chaleur, le climat et le vivant</h3>
+  <div class="resource-links">
+    <a class="resource-link" href="https://doi.org/10.1016/j.enbenv.2020.09.008" target="_blank" rel="noopener">
+      <span class="resource-link-label">Étude · Energy and Built Environment</span>
+      <span class="resource-link-title">Hawas &amp; Al-Habaibeh — Thermographie citoyenne et économies d'énergie</span>
+    </a>
+    <a class="resource-link" href="https://doi.org/10.1111/nph.17321" target="_blank" rel="noopener">
+      <span class="resource-link-label">Recherche · New Phytologist</span>
+      <span class="resource-link-title">Still et al. — Imagerie thermique de la canopée et des écosystèmes</span>
+    </a>
+    <a class="resource-link" href="https://doi.org/10.1177/23733799251363155" target="_blank" rel="noopener">
+      <span class="resource-link-label">Pédagogie · Pedagogy in Health Promotion</span>
+      <span class="resource-link-title">Monteblanco et al. — « Photovoix thermique » et chaleur urbaine</span>
+    </a>
+  </div>
 </section>
 
 
@@ -441,6 +448,15 @@ toc:
     border-radius: 4px; background: #fff; color: var(--tb-ink); cursor: pointer; font-family: inherit;
   }
   .tb-presets button:hover { background: var(--tb-paper); border-color: var(--tb-accent); }
+  .tb-scene { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: 0 0 1.3rem; }
+  .tb-scene-label { font-size: 0.9rem; font-weight: 600; color: var(--tb-ink); margin-right: 0.2rem; }
+  .tb-preset { font-size: 0.82rem; padding: 0.35rem 0.7rem; border: 1px solid var(--tb-line); border-radius: 4px; background: #fff; color: var(--tb-ink); cursor: pointer; font-family: inherit; }
+  .tb-preset:hover { border-color: var(--tb-accent); }
+  .tb-preset.is-active { background: var(--tb-accent); color: #fff; border-color: var(--tb-accent); }
+  .tb-row-main label { font-weight: 700; }
+  .tb-fixed { display: flex; flex-wrap: wrap; gap: 0.4rem 1.5rem; font-size: 0.85rem; color: var(--tb-muted); margin: 0 0 1.3rem; }
+  .tb-fixed strong { color: var(--tb-ink); }
+  .tb-cam-setting { font-style: italic; }
   .tb-chain { display: flex; align-items: stretch; gap: 0.6rem; flex-wrap: wrap; margin: 0 0 1rem; }
   .tb-box {
     flex: 1; min-width: 150px; background: #fff; border: 1px solid var(--tb-line);
@@ -461,55 +477,57 @@ toc:
 
 <script>
 (function(){
-  var SIGMA = 5.67e-8, K = 273.15;
-  var temp = document.getElementById('tb-temp'),
-      emis = document.getElementById('tb-emis'),
-      env  = document.getElementById('tb-env'),
-      tempOut = document.getElementById('tb-temp-out'),
+  var SIGMA = 5.67e-8, K = 273.15, CAM = 0.95; // la caméra suppose toujours ε = 0,95
+  var emis = document.getElementById('tb-emis'),
       emisOut = document.getElementById('tb-emis-out'),
-      envOut  = document.getElementById('tb-env-out'),
-      flux = document.getElementById('tb-flux'),
+      tsOut = document.getElementById('tb-ts-out'),
+      envOut = document.getElementById('tb-env-out'),
+      trueBox = document.getElementById('tb-true'),
       result = document.getElementById('tb-result'),
       box = document.getElementById('tb-result-box'),
       note = document.getElementById('tb-note');
-  if (!temp) return;
+  if (!emis) return;
+  var Ts = 25, Tenv = 25; // valeurs de la scène courante (vraie temp. surface, environnement)
   function fr(n){ return n.toFixed(1).replace('.', ','); }
   function compute(){
-    var T = parseFloat(temp.value), e = parseFloat(emis.value), Te = parseFloat(env.value);
-    var Tk = T + K, Tek = Te + K;
-    var fluxCapte = e * SIGMA * Math.pow(Tk, 4) + (1 - e) * SIGMA * Math.pow(Tek, 4);
-    var Tb = Math.pow(fluxCapte / SIGMA, 0.25) - K;
-    var ecart = Tb - T, absEc = Math.abs(ecart);
-    tempOut.textContent = T + ' °C';
+    var e = parseFloat(emis.value);
+    // Vrai flux capté : émission propre du matériau + reflet de l'environnement
+    var flux = e * SIGMA * Math.pow(Ts + K, 4) + (1 - e) * SIGMA * Math.pow(Tenv + K, 4);
+    // La caméra inverse ce flux en supposant ε = 0,95
+    var Tlue = Math.pow((flux - (1 - CAM) * SIGMA * Math.pow(Tenv + K, 4)) / (CAM * SIGMA), 0.25) - K;
+    var ecart = Tlue - Ts, absEc = Math.abs(ecart);
     emisOut.textContent = e.toFixed(2).replace('.', ',');
-    envOut.textContent = Te + ' °C';
-    flux.textContent = Math.round(fluxCapte) + ' W/m²';
-    result.textContent = fr(Tb) + ' °C';
+    tsOut.textContent = Ts + ' °C';
+    envOut.textContent = Tenv + ' °C';
+    trueBox.textContent = fr(Ts) + ' °C';
+    result.textContent = fr(Tlue) + ' °C';
     var col = '#3a7a52', word = 'fiable';
-    if (absEc > 5){ col = '#c1666b'; word = 'très biaisée'; }
-    else if (absEc > 1.5){ col = '#c98a1f'; word = 'légèrement biaisée'; }
+    if (absEc > 5){ col = '#c1666b'; word = 'très faussée'; }
+    else if (absEc > 1.5){ col = '#c98a1f'; word = 'légèrement faussée'; }
     box.style.borderColor = col;
     box.style.boxShadow = '0 0 0 1px ' + col;
     var signe = ecart >= 0 ? '+' : '−';
-    var sens = ecart >= 0 ? 'plus chaud' : 'plus froid';
-    note.innerHTML = 'Écart à la température réelle : <strong style="color:' + col + '">' + signe + fr(absEc)
+    var sens = ecart >= 0 ? 'plus chaude' : 'plus froide';
+    note.innerHTML = 'Écart à la vraie température : <strong style="color:' + col + '">' + signe + fr(absEc)
       + ' °C</strong> — lecture ' + word + '. '
-      + (e >= 0.9
-          ? 'À forte émissivité, la surface rayonne presque tout elle-même : la caméra lit une température proche du réel, quel que soit l\u2019environnement.'
-          : 'À faible émissivité, le flux capté est dominé par le rayonnement de l\u2019environnement réfléchi. La surface apparaît donc <strong>' + sens
-            + '</strong> qu\u2019elle ne l\u2019est : sa température de brillance est tirée vers celle de ce qu\u2019elle reflète'
-            + (ecart < 0 ? ' — ici un environnement plus froid, comme le ciel : c\u2019est le piège de la vitre « froide ».'
-                         : ' — ici un environnement plus chaud, comme le soleil ou un mur exposé.'));
+      + (Math.abs(e - CAM) < 0.04
+          ? 'L\u2019émissivité du matériau est proche du réglage de la caméra (0,95) : la mesure est juste.'
+          : (e >= 0.9
+              ? 'L\u2019émissivité reste élevée : la surface rayonne presque tout elle-même, la mesure varie peu.'
+              : 'À faible émissivité, le flux capté est dominé par le rayonnement réfléchi de l\u2019environnement. La caméra, qui croit voir un matériau à ε = 0,95, lit donc une température ' + sens
+                + ' que la réalité' + (ecart < 0 ? ' — tirée vers un environnement plus froid, comme le ciel : c\u2019est le piège de la vitre « froide ».' : ' — tirée vers un environnement plus chaud, comme le soleil.')));
   }
-  Array.prototype.forEach.call(document.querySelectorAll('.tb-presets button'), function(b){
+  Array.prototype.forEach.call(document.querySelectorAll('.tb-preset'), function(b){
     b.addEventListener('click', function(){
-      emis.value = b.getAttribute('data-e');
-      var ev = b.getAttribute('data-env');
-      if (ev !== null) env.value = ev;
+      document.querySelectorAll('.tb-preset').forEach(function(x){ x.classList.remove('is-active'); });
+      b.classList.add('is-active');
+      Ts = parseFloat(b.getAttribute('data-ts'));
+      Tenv = parseFloat(b.getAttribute('data-env'));
+      emis.value = b.getAttribute('data-er');
       compute();
     });
   });
-  [temp, emis, env].forEach(function(s){ s.addEventListener('input', compute); });
+  emis.addEventListener('input', compute);
   compute();
 })();
 </script>
