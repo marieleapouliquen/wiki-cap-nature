@@ -324,13 +324,13 @@ toc:
   
         <p><strong>Le piège de la vitre froide :</strong> sur un thermogramme extérieur, les vitres apparaissent souvent d'un bleu très sombre, comme glacées. Ce n'est pas qu'elles sont froides — le verre, à faible émissivité, reflète le rayonnement froid du ciel. L'image montre alors le ciel, pas la vitre.</p>
 
-      <p>Le petit calculateur ci-dessous permet de manipuler directement ce que décrit le piège de la vitre froide. Réglez la température réelle d'une surface, son émissivité et la température de la source qu'elle reflète (ciel, soleil, mur voisin…), puis observez la <strong>température de brillance</strong> — celle qu'affiche la caméra. Les préréglages montrent les deux directions possibles de l'erreur sur le métal : froid quand il reflète le ciel, chaud quand il reflète le soleil.</p>
+      <p>Le petit calculateur ci-dessous permet de manipuler directement ce que décrit le piège de la vitre froide. Réglez la température réelle d'une surface, son émissivité et la température de son environnement, puis observez la <strong>température de brillance</strong> — celle qu'affiche la caméra. Les préréglages montrent les deux directions possibles de l'erreur sur le métal : froid quand il reflète le ciel, chaud quand il reflète le soleil.</p>
 
         <div class="tb-calc" markdown="0">
-          <p class="tb-calc-intro">Ce calculateur illustre l'écart entre <strong>température réelle</strong> et <strong>température de brillance</strong>. La surface rayonne selon le modèle du corps gris, mais réfléchit aussi une part du rayonnement de la <strong>source qu'elle a en face d'elle</strong> — le ciel, le soleil, un mur voisin. Cette source est souvent une source lointaine, sans raison d'être à la même température que la surface : c'est précisément cet écart qui crée l'artéfact. La caméra, qui suppose un corps noir parfait, additionne rayonnement propre et reflet : faites chuter l'émissivité et observez la lecture décrocher.</p>
+          <p class="tb-calc-intro">Ce calculateur illustre l'écart entre <strong>température réelle</strong> et <strong>température de brillance</strong>. La surface rayonne selon le modèle du corps gris, mais réfléchit aussi une part du rayonnement de son environnement. Les deux n'ont pas forcément la même température : une vitre peut rester tiède tout en reflétant un ciel glacé. La caméra, qui suppose un corps noir parfait, additionne rayonnement propre et reflet : faites chuter l'émissivité et observez la lecture décrocher.</p>
           <div class="tb-row">
             <label for="tb-temp">Température réelle de surface</label>
-            <input id="tb-temp" type="range" min="-20" max="120" step="1" value="25" />
+            <input id="tb-temp" type="range" min="-40" max="120" step="1" value="25" />
             <output id="tb-temp-out">25 °C</output>
           </div>
           <div class="tb-row">
@@ -339,7 +339,7 @@ toc:
             <output id="tb-emis-out">0,95</output>
           </div>
           <div class="tb-row">
-            <label for="tb-env">Température de la source réfléchie</label>
+            <label for="tb-env">Température de l'environnement</label>
             <input id="tb-env" type="range" min="-40" max="120" step="1" value="15" />
             <output id="tb-env-out">15 °C</output>
           </div>
@@ -354,7 +354,7 @@ toc:
             <div class="tb-box">
               <div class="tb-box-label">Flux capté par la caméra</div>
               <div class="tb-box-value" id="tb-flux">—</div>
-              <div class="tb-box-formula">ε·σ·T⁴ + (1−ε)·σ·T<sub>source</sub>⁴</div>
+              <div class="tb-box-formula">ε·σ·T⁴ + (1−ε)·σ·T<sub>env</sub>⁴</div>
             </div>
             <span class="tb-arrow">→</span>
             <div class="tb-box" id="tb-result-box">
@@ -493,11 +493,11 @@ toc:
     note.innerHTML = 'Écart à la température réelle : <strong style="color:' + col + '">' + signe + fr(absEc)
       + ' °C</strong> — lecture ' + word + '. '
       + (e >= 0.9
-          ? 'À forte émissivité, la surface rayonne presque tout elle-même : la caméra lit une température proche du réel, quelle que soit la source réfléchie.'
-          : 'À faible émissivité, le flux capté est dominé par le rayonnement de la source réfléchie. La surface apparaît donc <strong>' + sens
+          ? 'À forte émissivité, la surface rayonne presque tout elle-même : la caméra lit une température proche du réel, quel que soit l\u2019environnement.'
+          : 'À faible émissivité, le flux capté est dominé par le rayonnement de l\u2019environnement réfléchi. La surface apparaît donc <strong>' + sens
             + '</strong> qu\u2019elle ne l\u2019est : sa température de brillance est tirée vers celle de ce qu\u2019elle reflète'
-            + (ecart < 0 ? ' — ici une source plus froide, comme le ciel : c\u2019est le piège de la vitre « froide ».'
-                         : ' — ici une source plus chaude, comme le soleil ou un mur exposé.'));
+            + (ecart < 0 ? ' — ici un environnement plus froid, comme le ciel : c\u2019est le piège de la vitre « froide ».'
+                         : ' — ici un environnement plus chaud, comme le soleil ou un mur exposé.'));
   }
   Array.prototype.forEach.call(document.querySelectorAll('.tb-presets button'), function(b){
     b.addEventListener('click', function(){
