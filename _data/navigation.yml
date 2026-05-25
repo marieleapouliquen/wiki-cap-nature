@@ -2,6 +2,9 @@
 
 - title: Accueil
   url: /
+
+- title: Le Projet
+  url: /about/
   
 - title: Atelier "Ecoacoustique"
   url: /atelier-oiseaux/
