@@ -2,12 +2,12 @@
 
 - title: Accueil
   url: /
-
-- title: Le Projet
-  url: /about/
   
 - title: Atelier "Ecoacoustique"
   url: /atelier-oiseaux/
   
 - title: Atelier "Caméras Thermiques"
   url: /module-thermique/
+
+- title: Partenaires
+  url: /about/
