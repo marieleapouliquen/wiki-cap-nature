@@ -99,18 +99,23 @@ show_photo_credits: false
     </div>
   </section>
 
-  <section class="page-section">
-    <h2>Ils soutiennent le projet</h2>
-    <div class="partner-banner">
-      <img src="{{ '/assets/img/logos/univ-rennes.png' | relative_url }}" alt="Université de Rennes">
-      <img src="{{ '/assets/img/logos/rennes2.png' | relative_url }}" alt="Université Rennes 2">
-      <img src="{{ '/assets/img/logos/cnrs.png' | relative_url }}" alt="CNRS">
-      <img src="{{ '/assets/img/logos/terraforma.png' | relative_url }}" alt="Terra Forma">
-      <img src="{{ '/assets/img/logos/interreg.png' | relative_url }}" alt="Interreg North Sea — Blue Transition">
-      <img src="{{ '/assets/img/logos/cdb.png' | relative_url }}" alt="Collège Doctoral de Bretagne">
-      <img src="{{ '/assets/img/logos/eso.png' | relative_url }}" alt="Espaces et Sociétés">
-      <img src="{{ '/assets/img/logos/geos.png' | relative_url }}" alt="Géosciences Rennes">
-      <img src="{{ '/assets/img/logos/sete.png' | relative_url }}" alt="Station d'Ecologie Théorique et Expérimentale">    
+  <section class="section-full-bleed" style="background-color: #ffffff; padding: 2rem 0; margin: 0;">
+    <div class="container">
+      <div class="page-content" style="padding-top: 0; padding-bottom: 0;">
+        
+        <h2>Ils soutiennent le projet</h2>
+        <div class="partner-banner">
+          <img src="{{ '/assets/img/logos/univ-rennes.png' | relative_url }}" alt="Université de Rennes">
+          <img src="{{ '/assets/img/logos/rennes2.png' | relative_url }}" alt="Université Rennes 2">
+          <img src="{{ '/assets/img/logos/cnrs.png' | relative_url }}" alt="CNRS">
+          <img src="{{ '/assets/img/logos/terraforma.png' | relative_url }}" alt="Terra Forma">
+          <img src="{{ '/assets/img/logos/interreg.png' | relative_url }}" alt="Interreg North Sea — Blue Transition">
+          <img src="{{ '/assets/img/logos/cdb.png' | relative_url }}" alt="Collège Doctoral de Bretagne">
+          <img src="{{ '/assets/img/logos/eso.png' | relative_url }}" alt="Espaces et Sociétés">
+          <img src="{{ '/assets/img/logos/geos.png' | relative_url }}" alt="Géosciences Rennes">
+          <img src="{{ '/assets/img/logos/sete.png' | relative_url }}" alt="Station d'Ecologie Théorique et Expérimentale">    
+        </div>
+      </div>
     </div>
 </section>
 
