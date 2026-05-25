@@ -13,11 +13,9 @@ toc:
   - id: encadrement
     label: "Encadrement de la thèse"
 ---
-
 <section id="financement" class="page-section">
   <h2>Financement</h2>
   <p>Le projet est financé dans le cadre d'une thèse de doctorat par les soutiens suivants :</p>
-
   <div class="resource-links">
     <a class="resource-link" href="https://www.doctorat-bretagne.fr/" target="_blank" rel="noopener">
       <span class="resource-link-label">Allocation doctorale</span>
@@ -28,12 +26,15 @@ toc:
       <span class="resource-link-title">Projet Blue Transition</span>
     </a>
   </div>
+  <div class="logo-grid">
+    <a class="logo-item" href="https://www.interregnorthsea.eu/blue-transition" target="_blank" rel="noopener">
+      <img src="{{ '/assets/img/logos/interreg.png' | relative_url }}" alt="Interreg North Sea — Blue Transition">
+    </a>
+  </div>
 </section>
-
 <section id="labo" class="page-section">
   <h2>Laboratoires porteurs</h2>
   <p>Le projet est conduit en collaboration entre deux universités rennaises et leurs laboratoires :</p>
-
   <div class="resource-links">
     <a class="resource-link" href="https://geosciences.univ-rennes.fr/" target="_blank" rel="noopener">
       <span class="resource-link-label">Université de Rennes</span>
@@ -44,13 +45,18 @@ toc:
       <span class="resource-link-title">Laboratoire Espaces et Sociétés (ESO)</span>
     </a>
   </div>
+  <div class="logo-grid">
+    <a class="logo-item" href="https://www.univ-rennes.fr/" target="_blank" rel="noopener">
+      <img src="{{ '/assets/img/logos/univ-rennes.png' | relative_url }}" alt="Université de Rennes">
+    </a>
+    <a class="logo-item" href="https://www.univ-rennes2.fr/" target="_blank" rel="noopener">
+      <img src="{{ '/assets/img/logos/rennes2.png' | relative_url }}" alt="Université Rennes 2">
+    </a>
+  </div>
 </section>
-
 <section id="partenaires" class="page-section">
   <h2>Programmes et structures de recherche partenaires</h2>
-
   <p>Cap Nature s'inscrit dans le programme <strong>Terra Forma</strong> (Équipement d'excellence — Équipex+), au sein de son axe consacré à la reconnexion à la nature (WP4).</p>
-
   <div class="resource-links">
     <a class="resource-link" href="https://terra-forma-web.osug.fr/Reconnexion-a-la-nature-244" target="_blank" rel="noopener">
       <span class="resource-link-label">Équipex+ · WP4</span>
@@ -61,18 +67,25 @@ toc:
       <span class="resource-link-title">Station d'Écologie Théorique et Expérimentale (SETE) de Moulis</span>
     </a>
   </div>
+  <div class="logo-grid">
+    <a class="logo-item" href="https://terra-forma-web.osug.fr/Reconnexion-a-la-nature-244" target="_blank" rel="noopener">
+      <img src="{{ '/assets/img/logos/terraforma.png' | relative_url }}" alt="Terra Forma">
+    </a>
+    <a class="logo-item" href="https://sete-moulis-cnrs.fr/" target="_blank" rel="noopener">
+      <img src="{{ '/assets/img/logos/cnrs.png' | relative_url }}" alt="CNRS">
+    </a>
+  </div>
 </section>
-
 <section id="encadrement" class="page-section">
   <h2>Encadrement de la thèse</h2>
   <p>Ce travail de thèse est mené par <strong>Marie-Léa Pouliquen</strong>, sous la direction de :</p>
   <ul>
-    <li><strong>Véronique Van Tilbeurgh</strong> — Professeure de université (laboratoire Espaces et Sociétés, Université de Rennes 2)</li>
+    <li><strong>Véronique Van Tilbeurgh</strong> — Professeure des universités (laboratoire Espaces et Sociétés, Université de Rennes 2)</li>
     <li><strong>Laurent Longuevergne</strong> — Directeur de recherche au CNRS (laboratoire Géosciences Rennes, Université de Rennes)</li>
   </ul>
   <p>Avec le co-encadrement de :</p>
   <ul>
     <li><strong>Gladys Barragan-Jason</strong> — Chargée de recherche au CNRS (Station d'Écologie Théorique et Expérimentale de Moulis)</li>
-    <li><strong>Maxime Cauchoix</strong> —  Chargé de recherche au CNRS (Station d'Écologie Théorique et Expérimentale de Moulis)</li>
+    <li><strong>Maxime Cauchoix</strong> — Chargé de recherche au CNRS (Station d'Écologie Théorique et Expérimentale de Moulis)</li>
   </ul>
 </section>
