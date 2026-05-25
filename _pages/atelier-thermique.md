@@ -5,7 +5,7 @@ title: "Rendre la chaleur visible : explorer les microclimats à la caméra ther
 lead: "Cet atelier de thermographie infrarouge invite les participant·es à observer, avec une caméra thermique connectée au smartphone, les échanges de chaleur invisibles entre bâtiments, végétation, eau et corps vivants — et à percevoir leur environnement proche comme un système thermique en interaction."
 toc:
   - id: enjeu
-    label: "Pourquoi s'intéresse à la chaleur en ville ?"
+    label: "Pourquoi la chaleur ?"
   - id: definition
     label: "Voir la chaleur : la caméra thermique"
   - id: objectifs
@@ -20,11 +20,10 @@ toc:
     label: "Pour aller plus loin"
 ---
 
-
 <section id="enjeu" class="page-section">
-  <h2>Pourquoi s'intéresser à la chaleur en ville ?</h2>
+  <h2>Pourquoi s'intéresser à la chaleur ?</h2>
 
-  <p>Avant d'être une grandeur physique, la chaleur est quelque chose que l'on <strong>ressent</strong> : on cherche l'ombre d'un arbre en été, la fraîcheur d'un parc ou d'un point d'eau, on fuit un parking brûlant à midi. Ce confort thermique du quotidien dépend étroitement de notre environnement proche — et notamment de la présence du vivant.</p>
+  <p>Avant d'être une grandeur physique, la chaleur est quelque chose que l'on <strong>ressent</strong> : on cherche l'ombre d'un arbre en été, la fraîcheur d'un parc ou d'un point d'eau, on fuit un parking brûlant à midi — et l'hiver, on apprécie la tiédeur d'un mur au soleil ou d'une pièce bien isolée. Ce confort thermique du quotidien dépend étroitement de notre environnement proche, et notamment de la présence du vivant.</p>
 
   <p>La nature rend en effet un <strong>service de régulation</strong> : la végétation et l'eau tempèrent l'air ambiant. Un arbre rafraîchit à la fois en faisant de l'ombre et par <strong>évapotranspiration</strong> — en évaporant de l'eau, il absorbe de la chaleur, comme une climatisation naturelle. À l'inverse, les surfaces minérales (béton, bitume, pierre) stockent la chaleur le jour et la restituent la nuit. C'est l'un des nombreux <em>services écosystémiques</em> que nous rendent les milieux naturels, souvent invisibles tant qu'ils fonctionnent.</p>
 
@@ -38,12 +37,12 @@ toc:
       <p>Le rôle tampon joué par la végétation et l'eau, qui rafraîchissent l'air par l'ombrage et l'évapotranspiration — un service écosystémique gratuit et précieux face à la chaleur.</p>
     </div>
     <div class="concept-card">
-      <strong>Îlot de chaleur urbain</strong>
-      <p>En ville, les matériaux minéraux et la densité du bâti piègent la chaleur : il peut y faire plusieurs degrés de plus qu'à la campagne voisine, surtout la nuit.</p>
+      <strong>La chaleur, été comme hiver</strong>
+      <p>En été, les surfaces minérales piègent la chaleur (îlot de chaleur urbain) ; en hiver, les bâtiments mal isolés la laissent fuir. Deux faces d'un même enjeu : comment la chaleur circule dans nos environnements.</p>
     </div>
   </div>
 
-  <p>Ce phénomène d'<strong>îlot de chaleur urbain</strong> devient un enjeu de santé publique majeur : les vagues de chaleur, plus fréquentes et plus intenses avec le changement climatique, frappent d'abord les villes les plus minérales. Comprendre comment la chaleur circule entre bâti, sols, eau et végétation, c'est aussi comprendre comment rafraîchir nos lieux de vie — et mesurer ce que le vivant nous apporte.</p>
+  <p>Ces échanges de chaleur sont au cœur de deux grands enjeux de société. <strong>En été</strong>, le phénomène d'<strong>îlot de chaleur urbain</strong> — où les matériaux minéraux et la densité du bâti piègent la chaleur — devient un enjeu de santé publique, à l'heure où les vagues de chaleur s'intensifient avec le changement climatique. <strong>En hiver</strong>, ce sont les <strong>déperditions de chaleur</strong> des bâtiments, et donc la question de l'isolation et de la sobriété énergétique, qui sont en jeu. Dans les deux cas, comprendre comment la chaleur circule entre bâti, sols, eau et végétation, c'est mieux saisir le rôle du vivant et la façon dont nous habitons nos lieux de vie.</p>
 
   <div class="callout info" style="margin-top: 2rem;">
     <div class="callout-title">Pour situer l'enjeu :</div>
@@ -51,6 +50,10 @@ toc:
       <a class="resource-link" href="https://meteofrance.com/le-changement-climatique/les-bases-du-changement-climatique/quest-ce-que-lilot-de-chaleur-urbain" target="_blank" rel="noopener">
         <span class="resource-link-label">Météo-France</span>
         <span class="resource-link-title">Qu'est-ce que l'îlot de chaleur urbain ?</span>
+      </a>
+      <a class="resource-link" href="https://www.youtube.com/watch?v=aJ75kBxa1xE" target="_blank" rel="noopener">
+        <span class="resource-link-label">Reportage · CNRS</span>
+        <span class="resource-link-title">Îlot de chaleur : quel climat urbain pour demain ?</span>
       </a>
       <a class="resource-link" href="https://www.cerema.fr/fr/actualites/ilots-chaleur-agir-territoires-adapter-villes-au-changement" target="_blank" rel="noopener">
         <span class="resource-link-label">Cerema</span>
@@ -80,13 +83,20 @@ toc:
   <h2>Voir la chaleur : la caméra thermique</h2>
   <p>Comment observer concrètement ces échanges de chaleur, normalement invisibles ? C'est là qu'intervient la <strong>caméra thermique</strong>. Tout objet émet un rayonnement infrarouge d'autant plus intense qu'il est chaud ; la caméra capte ce rayonnement et le traduit en une image colorée où chaque teinte correspond à une température apparente. Elle rend ainsi visibles, sur le terrain, le mur qui restitue la chaleur du soleil, la fraîcheur d'un plan d'eau ou la signature thermique d'un être vivant. Trois notions aident à comprendre ce que l'on observe :</p>
 
-</section>
-
-
-
-
-
-  
+  <div class="concept-grid">
+    <div class="concept-card">
+      <strong>Rayonnement infrarouge</strong>
+      <p>Tout corps dont la température dépasse le zéro absolu émet de la chaleur sous forme de rayonnement infrarouge (IR). La caméra mesure ce rayonnement, et non la température « au toucher ».</p>
+    </div>
+    <div class="concept-card">
+      <strong>Température de brillance</strong>
+      <p>C'est la grandeur que « voit » réellement la caméra : une température déduite du rayonnement reçu en supposant un corps noir parfait. Sur les surfaces à émissivité élevée, elle est proche de la température réelle ; sur les matériaux à faible émissivité, elle s'en écarte fortement à cause du rayonnement réfléchi.</p>
+    </div>
+    <div class="concept-card">
+      <strong>Émissivité</strong>
+      <p>L'aptitude d'une surface à émettre du rayonnement IR, exprimée entre 0 et 1. Les surfaces non métalliques (bois, végétation, eau, peinture) ont une émissivité élevée (≈ 0,9) : la caméra mesure alors une température proche du réel. Les métaux polis ont une émissivité faible — ils émettent peu et reflètent leur environnement —, si bien que la mesure est faussée.</p>
+    </div>
+  </div>
 
   <details id="interet" class="disclosure">
     <summary>
@@ -218,11 +228,11 @@ toc:
 
       <h3>Quelques signatures thermiques typiques</h3>
       <ul>
-        <li><strong>Bâtiments et bitume :</strong> souvent chauds, surtout après une exposition au soleil — ils stockent puis restituent la chaleur (forte inertie thermique).</li>
+        <li><strong>Bâtiments et bitume :</strong> souvent chauds, surtout après une exposition au soleil — ils stockent puis restituent la chaleur (forte inertie thermique). En hiver, une façade chauffée laisse au contraire deviner ses déperditions.</li>
         <li><strong>Végétation :</strong> généralement plus fraîche, grâce à l'évapotranspiration des plantes qui agit comme une climatisation naturelle.</li>
-        <li><strong>Eau :</strong> température très stable et souvent fraîche en journée, du fait de sa grande inertie thermique.</li>
+        <li><strong>Eau :</strong> température très stable, du fait de sa grande inertie thermique — fraîche en journée d'été, parfois plus tiède que l'air en hiver.</li>
         <li><strong>Vitres et métal :</strong> à interpréter avec prudence — leur faible émissivité fait qu'elles reflètent le ciel ou l'environnement plutôt que leur propre température.</li>
-        <li><strong>Le vivant :</strong> un corps, une main, un animal apparaissent nettement chauds — une bonne entrée pour parler de thermorégulation.</li>
+        <li><strong>Le vivant :</strong> un corps, une main, un animal apparaissent nettement chauds — d'autant plus sur un fond froid hivernal —, une bonne entrée pour parler de thermorégulation.</li>
       </ul>
 
       <div class="callout warning">
@@ -302,7 +312,7 @@ toc:
   <h2>Avant l'atelier</h2>
   <ul>
     <li>Choisissez un site présentant des surfaces thermiquement variées : bâtiments, sols minéraux, végétation, et si possible un plan d'eau. Une cour, un campus ou un parc bordé de bâti conviennent bien.</li>
-    <li>Privilégiez si possible une journée ensoleillée (ou une fin de journée), où les contrastes thermiques sont les plus marqués.</li>
+    <li>Les contrastes thermiques sont marqués par temps ensoleillé en été, mais aussi en hiver — un bâtiment chauffé se distingue alors nettement de l'air froid extérieur. L'atelier fonctionne donc dans les deux saisons.</li>
     <li>Faites un test des caméras avant la séance et installez l'application FLIR One sur les téléphones qui serviront.</li>
     <li>Chargez les caméras et prévenez les participants que leurs téléphones devront être bien chargés.</li>
     <li>Préparez une brève mise en contexte (qu'est-ce que l'infrarouge, que mesure la caméra).</li>
@@ -335,6 +345,7 @@ toc:
   <h3>2. Exploration de terrain (60 min environ)</h3>
   <p><strong>Mise en attention :</strong> avant de sortir la caméra, proposez d'observer le site à l'œil nu et de prédire où se trouveront les zones chaudes et froides.</p>
   <p><strong>Enquête instrumentée :</strong> chaque groupe explore le site et observe successivement quatre types de surfaces — <strong>bâtiments, zones végétalisées, plans d'eau et sols minéraux (parkings, bitume)</strong>. Pour chacune : prédire, observer à la caméra, relever la température apparente, repérer les éventuels artéfacts, puis expliquer le contraste observé.</p>
+  <p>En hiver, l'observation se déplace volontiers vers le bâti : repérez les <strong>déperditions de chaleur</strong> d'une façade chauffée, les ponts thermiques autour des fenêtres, et le contraste saisissant entre un corps chaud et l'air froid.</p>
 
   <h4>Idée d'activité : la carte thermique du site</h4>
   <ol>
@@ -383,11 +394,11 @@ toc:
 
   <h4 style="margin-top: 2rem;">Changer de perspective</h4>
 
-  <p><strong>Le campus (ou le quartier) comme système thermique.</strong> Discutez collectivement : comment bâtiments, végétation, eau et corps interagissent-ils thermiquement ? Où sont les zones les plus inconfortables en cas de forte chaleur ? Que changerait-on pour les rafraîchir ? Cette discussion relie l'observation locale aux enjeux d'adaptation au changement climatique.</p>
+  <p><strong>Le campus (ou le quartier) comme système thermique.</strong> Discutez collectivement : comment bâtiments, végétation, eau et corps interagissent-ils thermiquement ? Où sont les zones les plus inconfortables en cas de forte chaleur (ou les plus déperditives en hiver) ? Que changerait-on pour les améliorer ? Cette discussion relie l'observation locale aux enjeux d'adaptation au changement climatique et de sobriété énergétique.</p>
 
   <div class="callout tip" style="margin-top: 2rem;">
     <div class="callout-title">Conseils</div>
-    <p>L'hiver et la végétation en dormance n'empêchent pas l'atelier : les contrastes entre bâti, eau et minéral restent très lisibles. Pensez aussi à ménager un moment de réflexion personnelle — la compréhension scientifique et le sentiment de connexion à l'environnement ne progressent pas automatiquement ensemble, et la dimension sensible mérite qu'on lui laisse une place explicite.</p>
+    <p>L'hiver et la végétation en dormance n'empêchent pas l'atelier : les contrastes entre bâti, eau et minéral restent très lisibles, et les déperditions des bâtiments chauffés sont alors particulièrement spectaculaires. Pensez aussi à ménager un moment de réflexion personnelle — la compréhension scientifique et le sentiment de connexion à l'environnement ne progressent pas automatiquement ensemble, et la dimension sensible mérite qu'on lui laisse une place explicite.</p>
   </div>
 
 </section>
@@ -407,7 +418,7 @@ toc:
     </a>
     <a class="resource-link" href="https://doi.org/10.3390/su14053096" target="_blank" rel="noopener">
       <span class="resource-link-label">Médiation · Sustainability</span>
-      <span class="resource-link-title">@thermogramer — L'imagerie thermique pour communiquer la science</span>
+      <span class="resource-link-title">L'imagerie thermique pour communiquer la science</span>
     </a>
   </div>
 
