@@ -26,12 +26,8 @@ toc:
       <span class="resource-link-title">Projet Blue Transition</span>
     </a>
   </div>
-  <div class="logo-grid">
-    <a class="logo-item" href="https://www.interregnorthsea.eu/blue-transition" target="_blank" rel="noopener">
-      <img src="{{ '/assets/img/logos/interreg.png' | relative_url }}" alt="Interreg North Sea — Blue Transition">
-    </a>
-  </div>
 </section>
+
 <section id="labo" class="page-section">
   <h2>Laboratoires porteurs</h2>
   <p>Le projet est conduit en collaboration entre deux universités rennaises et leurs laboratoires :</p>
@@ -45,15 +41,8 @@ toc:
       <span class="resource-link-title">Laboratoire Espaces et Sociétés (ESO)</span>
     </a>
   </div>
-  <div class="logo-grid">
-    <a class="logo-item" href="https://www.univ-rennes.fr/" target="_blank" rel="noopener">
-      <img src="{{ '/assets/img/logos/univ-rennes.png' | relative_url }}" alt="Université de Rennes">
-    </a>
-    <a class="logo-item" href="https://www.univ-rennes2.fr/" target="_blank" rel="noopener">
-      <img src="{{ '/assets/img/logos/rennes2.png' | relative_url }}" alt="Université Rennes 2">
-    </a>
-  </div>
 </section>
+
 <section id="partenaires" class="page-section">
   <h2>Programmes et structures de recherche partenaires</h2>
   <p>Cap Nature s'inscrit dans le programme <strong>Terra Forma</strong> (Équipement d'excellence — Équipex+), au sein de son axe consacré à la reconnexion à la nature (WP4).</p>
@@ -67,15 +56,8 @@ toc:
       <span class="resource-link-title">Station d'Écologie Théorique et Expérimentale (SETE) de Moulis</span>
     </a>
   </div>
-  <div class="logo-grid">
-    <a class="logo-item" href="https://terra-forma-web.osug.fr/Reconnexion-a-la-nature-244" target="_blank" rel="noopener">
-      <img src="{{ '/assets/img/logos/terraforma.png' | relative_url }}" alt="Terra Forma">
-    </a>
-    <a class="logo-item" href="https://sete-moulis-cnrs.fr/" target="_blank" rel="noopener">
-      <img src="{{ '/assets/img/logos/cnrs.png' | relative_url }}" alt="CNRS">
-    </a>
-  </div>
 </section>
+
 <section id="encadrement" class="page-section">
   <h2>Encadrement de la thèse</h2>
   <p>Ce travail de thèse est mené par <strong>Marie-Léa Pouliquen</strong>, sous la direction de :</p>
@@ -88,4 +70,19 @@ toc:
     <li><strong>Gladys Barragan-Jason</strong> — Chargée de recherche au CNRS (Station d'Écologie Théorique et Expérimentale de Moulis)</li>
     <li><strong>Maxime Cauchoix</strong> — Chargé de recherche au CNRS (Station d'Écologie Théorique et Expérimentale de Moulis)</li>
   </ul>
+</section>
+
+<section class="page-section">
+  <h2>Ils soutiennent le projet</h2>
+  <div class="partner-banner">
+    <img src="{{ '/assets/img/logos/univ-rennes.png' | relative_url }}" alt="Université de Rennes">
+    <img src="{{ '/assets/img/logos/rennes2.png' | relative_url }}" alt="Université Rennes 2">
+    <img src="{{ '/assets/img/logos/cnrs.png' | relative_url }}" alt="CNRS">
+    <img src="{{ '/assets/img/logos/terraforma.png' | relative_url }}" alt="Terra Forma">
+    <img src="{{ '/assets/img/logos/interreg.png' | relative_url }}" alt="Interreg North Sea — Blue Transition">
+    <img src="{{ '/assets/img/logos/cdb.png' | relative_url }}" alt="Collège Doctoral de Bretagne">
+    <img src="{{ '/assets/img/logos/eso.png' | relative_url }}" alt="Espaces et Sociétés">
+    <img src="{{ '/assets/img/logos/geos.png' | relative_url }}" alt="Géosciences Rennes">
+    <img src="{{ '/assets/img/logos/sete.png' | relative_url }}" alt="Station d'Ecologie Théorique et Expérimentale">    
+  </div>
 </section>
