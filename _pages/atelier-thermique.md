@@ -85,7 +85,17 @@ toc:
       </a>
     </div>
   </div>
+
+    <h2>Comment observer concrètement ces échanges de chaleur invisibles à l'oeil nu ? </h2>
+  
+    <p>C'est là qu'intervient la <strong>caméra thermique</strong>. Tout objet émet un rayonnement infrarouge d'autant plus intense qu'il est chaud ; la caméra capte ce rayonnement et le traduit en une image colorée où chaque teinte correspond à une température apparente. Elle rend ainsi visibles, sur le terrain, le mur qui restitue la chaleur du soleil, la fraîcheur d'un plan d'eau ou la signature thermique d'un être vivant.</p>
+  
+    <p>Au-delà de l'apprentissage scientifique, observer la chaleur modifie le regard porté sur un lieu familier. En rendant visibles les échanges thermiques entre surfaces bâties et naturelles, la caméra aide à percevoir son environnement comme un écosystème dynamique plutôt que comme un décor inerte.</p>
+  
+    <p>À petite échelle, un campus, une cour ou un parc forme une mosaïque thermique. Le béton et le bitume stockent et restituent la chaleur ; la végétation et l'eau, grâce à leur forte inertie et à l'évaporation, tempèrent leur environnement. Observer ces contrastes, c'est commencer à lire les <strong>microclimats</strong> et à comprendre, concrètement, ce que sont les îlots de chaleur urbains et le rôle rafraîchissant du vivant.</p>
+
 </section>
+
 
 <section id="objectifs" class="page-section">
   <h2>Les objectifs pédagogiques de l'atelier</h2>
@@ -100,7 +110,7 @@ toc:
 
   <h4>Physique</h4>
   <ul>
-    <li>Comprendre ce que mesure réellement une caméra thermique (rayonnement infrarouge, émissivité, température de brillance).</li>
+    <li>Comprendre ce que mesure réellement une caméra thermique.</li>
     <li>Identifier les principaux artéfacts de mesure (réflexion du ciel, angle de visée, température apparente ≠ réelle).</li>
     <li>Interpréter les signatures thermiques de différentes surfaces : bâtiments, végétation, eau, sols.</li>
     <li>Relier ces observations aux notions de microclimat, d'inertie thermique et d'îlot de chaleur.</li>
@@ -108,14 +118,6 @@ toc:
 </section>
 
 <section id="outils" class="page-section">
-  <h2>Voir la chaleur : la caméra thermique</h2>
-
-  <p>Comment observer concrètement ces échanges de chaleur, normalement invisibles ? C'est là qu'intervient la <strong>caméra thermique</strong>. Tout objet émet un rayonnement infrarouge d'autant plus intense qu'il est chaud ; la caméra capte ce rayonnement et le traduit en une image colorée où chaque teinte correspond à une température apparente. Elle rend ainsi visibles, sur le terrain, le mur qui restitue la chaleur du soleil, la fraîcheur d'un plan d'eau ou la signature thermique d'un être vivant.</p>
-
-  <p>Au-delà de l'apprentissage scientifique, observer la chaleur modifie le regard porté sur un lieu familier. En rendant visibles les échanges thermiques entre surfaces bâties et naturelles, la caméra aide à percevoir son environnement comme un écosystème dynamique plutôt que comme un décor inerte.</p>
-
-  <p>À petite échelle, un campus, une cour ou un parc forme une mosaïque thermique. Le béton et le bitume stockent et restituent la chaleur ; la végétation et l'eau, grâce à leur forte inertie et à l'évaporation, tempèrent leur environnement. Observer ces contrastes, c'est commencer à lire les <strong>microclimats</strong> et à comprendre, concrètement, ce que sont les îlots de chaleur urbains et le rôle rafraîchissant du vivant.</p>
-
   <h3>La caméra thermique FLIR One</h3>
   <p>Pour cet atelier, nous utilisons des caméras infrarouges portables <a href="https://www.flir.fr/products/flir-one-pro/" target="_blank" rel="noopener">FLIR One</a> qui se branchent directement sur le smartphone (selon les modèles, par port USB-C ou Lightning). Compactes, peu coûteuses et simples d'usage, elles permettent de concentrer l'attention sur l'observation plutôt que sur le réglage de l'instrument.</p>
   <p>Le modèle utilisé combine un capteur thermique et une caméra visible : la technologie <strong>MSX</strong> superpose les contours de l'image visible sur l'image thermique, ce qui rend les motifs de chaleur plus faciles à situer. Caractéristiques de notre matériel : résolution thermique 80 × 60 pixels, sensibilité d'environ 0,1 °C, précision nominale ±3 °C, émissivité réglée sur 0,95 (valeur adaptée à la plupart des surfaces naturelles et mates).</p>
@@ -123,7 +125,152 @@ toc:
   <h3>L'application FLIR One</h3>
   <p>La caméra fonctionne avec l'application gratuite <strong>FLIR One</strong>, disponible sur l'App Store (iOS) et Google Play (Android). Une fois la caméra branchée, l'application affiche l'image thermique en direct et permet de capturer des photos, de relever la température apparente d'un point précis et de changer la palette de couleurs.</p>
 
-  <details id="lire-image" class="disclosure">
+  <div class="text-image-split">
+    <div class="tis-text">
+      <h4>Comment utiliser la caméra sur le terrain ?</h4>
+      <ol>
+        <li>Branchez la caméra FLIR One sur le port du smartphone (ou connectez-la selon le modèle).</li>
+        <li>Ouvrez l'application FLIR One et attendez l'affichage de l'image en direct.</li>
+        <li>Vérifiez que l'émissivité est réglée sur 0,95 dans les réglages.</li>
+        <li>Visez une surface, observez l'image et utilisez le point de mesure pour relever sa température apparente.</li>
+        <li>Variez l'angle et comparez : un changement de température apparente sans changement réel signale souvent un artéfact de réflexion.</li>
+      </ol>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="preparation" class="page-section">
+  <h2>Avant l'atelier</h2>
+  <ul>
+    <li>Choisissez un site présentant des surfaces thermiquement variées : bâtiments, sols minéraux, végétation, et si possible un plan d'eau. Une cour, un campus ou un parc bordé de bâti conviennent bien.</li>
+    <li>Les contrastes thermiques sont marqués par temps ensoleillé en été, mais aussi en hiver — un bâtiment chauffé se distingue alors nettement de l'air froid extérieur. L'atelier fonctionne donc dans les deux saisons.</li>
+    <li>Faites un test des caméras avant la séance et installez l'application FLIR One sur les téléphones qui serviront.</li>
+    <li>Chargez les caméras et prévenez les participants que leurs téléphones devront être bien chargés.</li>
+    <li>Préparez une brève mise en contexte (qu'est-ce que l'infrarouge, que mesure la caméra).</li>
+    <li>Imprimez les fiches d'observation (1 par groupe d'exploration suffit).</li>
+  </ul>
+
+  <h3>Fiches pédagogiques (PDF à télécharger)</h3>
+
+    <p>Pour guider l'enquête sans figer le raisonnement, on peut s'appuyer sur la démarche <strong>Prédire – Observer – Expliquer</strong> : avant de viser une surface, les participants notent leurs prédictions (« ce mur sera-t-il plus chaud que l'arbre voisin ? »), puis observent à la caméra, relèvent les températures apparentes, repèrent les éventuels artéfacts, et enfin confrontent leurs résultats à leurs hypothèses. Cette structure transforme chaque observation en petite expérience.</p>
+
+  <div class="resource-links">
+    <a class="resource-link" href="{{ '/assets/pdf/fiche-thermique-observation.pdf' | relative_url }}" target="_blank" rel="noopener">
+      <span class="resource-link-label">Fiche n°1</span>
+      <span class="resource-link-title">Fiche d'observation terrain (Prédire – Observer – Expliquer)</span>
+    </a>
+    <!-- [À COMPLÉTER] Ajoutez ici d'autres fiches si vous en produisez (prise en main FLIR One, lecture d'image thermique, etc.) -->
+  </div>
+  
+</section>
+
+
+<section id="deroulement" class="page-section">
+  <h2>Déroulement de l'atelier</h2>
+
+  <h3>1. Introduction en salle (40 min environ)</h3>
+  <ul>
+    <li>Invitez les participants à formuler ce qu'ils pensent qu'une caméra thermique mesure, avant toute explication.</li>
+    <li>Présentez les principes : rayonnement infrarouge, émissivité, température de brillance, et les principaux artéfacts (réflexion du ciel, angle de visée).</li>
+    <li>Reliez ces notions à des exemples concrets (du bilan radiatif planétaire jusqu'aux contrastes du site que l'on s'apprête à explorer).</li>
+    <li><strong>Constitution des groupes :</strong> formez des sous-groupes de 2 à 4 personnes, une caméra par groupe.</li>
+    <li>Distribuez les fiches d'observation et faites installer l'application FLIR One.</li>
+  </ul>
+
+  <h3>2. Exploration de terrain (60 min environ)</h3>
+  <p><strong>Mise en attention :</strong> avant de sortir la caméra, proposez d'observer le site à l'œil nu et de prédire où se trouveront les zones chaudes et froides.</p>
+  <p><strong>Enquête instrumentée :</strong> chaque groupe explore le site et observe successivement quatre types de surfaces — <strong>bâtiments, zones végétalisées, plans d'eau et sols minéraux (parkings, bitume)</strong>. Pour chacune : prédire, observer à la caméra, relever la température apparente, repérer les éventuels artéfacts, puis expliquer le contraste observé.</p>
+  <p>En hiver, l'observation se déplace volontiers vers le bâti : repérez les <strong>déperditions de chaleur</strong> d'une façade chauffée, les ponts thermiques autour des fenêtres, et le contraste saisissant entre un corps chaud et l'air froid.</p>
+
+  <h4>Idée d'activité : la carte thermique du site</h4>
+  <ol>
+    <li><strong>Définir la zone d'étude :</strong> repérez plusieurs points d'observation représentatifs (un mur exposé, un arbre, l'eau, un sol minéral, une zone d'ombre).</li>
+    <li><strong>Prédire :</strong> à chaque point, le groupe note ses hypothèses sur la température relative avant de viser.</li>
+    <li><strong>Observer et relever :</strong> capturez une image thermique, notez la température apparente, l'exposition au soleil et les éventuels reflets.</li>
+    <li><strong>Cartographier :</strong> reportez les relevés sur un plan du site pour faire apparaître sa mosaïque thermique — et discuter des îlots de chaleur et des zones rafraîchies par le vivant.</li>
+  </ol>
+
+  <h3 style="margin-top: 2.5rem;">3. Partage et retours réflexifs (20 min environ)</h3>
+
+  <p>Ce temps de clôture permet de consolider les apprentissages et d'inviter chacun·e à mettre des mots sur son expérience. Comme pour tout retour réflexif, l'objectif n'est pas d'évaluer des connaissances mais de faire émerger observations, surprises et ressentis.</p>
+
+  <h4 style="margin-top: 2rem;">À l'œil nu et à la caméra thermique</h4>
+  <p>Une même scène, vue normalement puis en thermographie. Passez la souris sur une image (ou touchez-la sur mobile) pour révéler sa version thermique : les arbres, plus frais, ressortent en sombre, tandis que les façades et les sols minéraux, qui stockent la chaleur, apparaissent en clair.</p>
+
+  <div class="ir-compare-grid">
+
+    <figure class="ir-compare">
+      <div class="ir-pair">
+        <img class="ir-visible" src="{{ '/assets/img/thermique/arbres-immeubles-visible.jpg' | relative_url }}" alt="Immeubles et grands arbres, vue normale">
+        <img class="ir-thermal" src="{{ '/assets/img/thermique/arbres-immeubles-thermique.jpg' | relative_url }}" alt="La même scène en thermographie : arbres frais en sombre, façades chaudes en clair">
+        <span class="ir-hint">thermique ⇄ visible</span>
+      </div>
+      <figcaption>Des immeubles encadrant une rangée d'arbres : la végétation tempère nettement son environnement.</figcaption>
+    </figure>
+
+    <figure class="ir-compare">
+      <div class="ir-pair">
+        <img class="ir-visible" src="{{ '/assets/img/thermique/immeuble-rouge-visible.jpg' | relative_url }}" alt="Immeuble entouré d'arbres, vue normale">
+        <img class="ir-thermal" src="{{ '/assets/img/thermique/immeuble-rouge-thermique.jpg' | relative_url }}" alt="La même scène en thermographie : arbres en violet, façade chaude en jaune">
+        <span class="ir-hint">thermique ⇄ visible</span>
+      </div>
+      <figcaption>Deux arbres frais encadrent une façade qui restitue la chaleur accumulée.</figcaption>
+    </figure>
+
+    <figure class="ir-compare">
+      <div class="ir-pair">
+        <img class="ir-visible" src="{{ '/assets/img/thermique/parking-arbres-visible.jpg' | relative_url }}" alt="Immeuble, parking et arbres, vue normale">
+        <img class="ir-thermal" src="{{ '/assets/img/thermique/parking-arbres-thermique.jpg' | relative_url }}" alt="La même scène en thermographie : sol et bâti chauds, arbres frais">
+        <span class="ir-hint">thermique ⇄ visible</span>
+      </div>
+      <figcaption>Le sol minéral du parking et les bâtiments contrastent avec la fraîcheur des arbres.</figcaption>
+    </figure>
+
+    <figure class="ir-compare">
+      <div class="ir-pair">
+        <img class="ir-visible" src="{{ '/assets/img/thermique/voie-ferree-visible.jpg' | relative_url }}" alt="Quartier traversé par une voie ferrée, vue normale">
+        <img class="ir-thermal" src="{{ '/assets/img/thermique/voie-ferree-thermique.jpg' | relative_url }}" alt="La même scène en thermographie : surfaces minérales chaudes, végétation fraîche">
+        <span class="ir-hint">thermique ⇄ visible</span>
+      </div>
+      <figcaption>À l'échelle d'un quartier, la mosaïque thermique révèle où la chaleur s'accumule.</figcaption>
+    </figure>
+
+  </div>
+
+  <h4 style="margin-top: 2rem;">Mettre en commun les observations</h4>
+
+  <p><strong>Le tour des découvertes.</strong> Chaque groupe présente une observation thermique marquante, une difficulté d'interprétation rencontrée et une question restée ouverte. C'est l'occasion de revenir collectivement sur les artéfacts (la fameuse vitre « froide ») et de distinguer signal et reflet.</p>
+
+  <p><strong>Le débat mouvant.</strong> Énoncez une affirmation : les participant·es se déplacent selon qu'ils sont d'accord ou non, puis quelques-un·es justifient. Quelques pistes :</p>
+  <ul>
+    <li>« En ville, la végétation rafraîchit vraiment l'air autour d'elle. »</li>
+    <li>« Une surface qui paraît froide sur la caméra est forcément froide au toucher. »</li>
+    <li>« Le béton et les arbres jouent le même rôle dans la température d'un quartier. »</li>
+    <li>« Voir la chaleur change la façon dont je regarde mon environnement. »</li>
+  </ul>
+
+  <h4 style="margin-top: 2rem;">Garder une trace</h4>
+
+  <p><strong>Le mot de la fin.</strong> Invitez chacun·e à décrire en un mot ou une courte phrase son état d'esprit à l'issue de l'atelier (« curieux·se », « surpris·e », « inspiré·e »…). Ces mots, rassemblés, dressent un paysage du ressenti collectif.</p>
+
+  <h4 style="margin-top: 2rem;">Changer de perspective</h4>
+
+  <p><strong>Le campus (ou le quartier) comme système thermique.</strong> Discutez collectivement : comment bâtiments, végétation, eau et corps interagissent-ils thermiquement ? Où sont les zones les plus inconfortables en cas de forte chaleur (ou les plus déperditives en hiver) ? Que changerait-on pour les améliorer ? Cette discussion relie l'observation locale aux enjeux d'adaptation au changement climatique et de sobriété énergétique.</p>
+
+  <div class="callout tip" style="margin-top: 2rem;">
+    <div class="callout-title">Conseils</div>
+    <p>L'hiver et la végétation en dormance n'empêchent pas l'atelier : les contrastes entre bâti, eau et minéral restent très lisibles, et les déperditions des bâtiments chauffés sont alors particulièrement spectaculaires. Pensez aussi à ménager un moment de réflexion personnelle — la compréhension scientifique et le sentiment de connexion à l'environnement ne progressent pas automatiquement ensemble, et la dimension sensible mérite qu'on lui laisse une place explicite.</p>
+  </div>
+
+</section>
+
+
+<section id="physique" class="page-section">
+  <h2>Pour aller plus loin</h2>
+
+    <details id="lire-image" class="disclosure">
     <summary>
       <span class="disclosure-title">Lire une image thermique</span>
       <span class="disclosure-hint">(Cliquez pour déplier)</span>
@@ -220,160 +367,10 @@ toc:
     </div>
   </details>
 
-  <h3>Optionnel : une fiche d'observation structurée</h3>
-  <p>Pour guider l'enquête sans figer le raisonnement, on peut s'appuyer sur la démarche <strong>Prédire – Observer – Expliquer</strong> : avant de viser une surface, les participants notent leurs prédictions (« ce mur sera-t-il plus chaud que l'arbre voisin ? »), puis observent à la caméra, relèvent les températures apparentes, repèrent les éventuels artéfacts, et enfin confrontent leurs résultats à leurs hypothèses. Cette structure transforme chaque observation en petite expérience.</p>
-
-  <div class="text-image-split">
-    <div class="tis-text">
-      <h4>Comment utiliser la caméra sur le terrain ?</h4>
-      <ol>
-        <li>Branchez la caméra FLIR One sur le port du smartphone (ou connectez-la selon le modèle).</li>
-        <li>Ouvrez l'application FLIR One et attendez l'affichage de l'image en direct.</li>
-        <li>Vérifiez que l'émissivité est réglée sur 0,95 dans les réglages.</li>
-        <li>Visez une surface, observez l'image et utilisez le point de mesure pour relever sa température apparente.</li>
-        <li>Variez l'angle et comparez : un changement de température apparente sans changement réel signale souvent un artéfact de réflexion.</li>
-      </ol>
-    </div>
-
-    <figure class="tis-image">
-      <img src="{{ '/assets/img/atelier-thermique.jpg' | relative_url }}" alt="Participant·es observant les contrastes thermiques avec une caméra FLIR One">
-      <figcaption>© Marie-Léa Pouliquen</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section id="preparation" class="page-section">
-  <h2>Avant l'atelier</h2>
-  <ul>
-    <li>Choisissez un site présentant des surfaces thermiquement variées : bâtiments, sols minéraux, végétation, et si possible un plan d'eau. Une cour, un campus ou un parc bordé de bâti conviennent bien.</li>
-    <li>Les contrastes thermiques sont marqués par temps ensoleillé en été, mais aussi en hiver — un bâtiment chauffé se distingue alors nettement de l'air froid extérieur. L'atelier fonctionne donc dans les deux saisons.</li>
-    <li>Faites un test des caméras avant la séance et installez l'application FLIR One sur les téléphones qui serviront.</li>
-    <li>Chargez les caméras et prévenez les participants que leurs téléphones devront être bien chargés.</li>
-    <li>Préparez une brève mise en contexte (qu'est-ce que l'infrarouge, que mesure la caméra).</li>
-    <li>Imprimez les fiches d'observation (1 par groupe d'exploration suffit).</li>
-  </ul>
-
-  <h3>Fiches pédagogiques (PDF à télécharger)</h3>
-
-  <div class="resource-links">
-    <a class="resource-link" href="{{ '/assets/pdf/fiche-thermique-observation.pdf' | relative_url }}" target="_blank" rel="noopener">
-      <span class="resource-link-label">Fiche n°1</span>
-      <span class="resource-link-title">Fiche d'observation terrain (Prédire – Observer – Expliquer)</span>
-    </a>
-    <!-- [À COMPLÉTER] Ajoutez ici d'autres fiches si vous en produisez (prise en main FLIR One, lecture d'image thermique, etc.) -->
-  </div>
-</section>
-
-<section id="deroulement" class="page-section">
-  <h2>Déroulement de l'atelier</h2>
-
-  <h3>1. Introduction en salle (40 min environ)</h3>
-  <ul>
-    <li>Invitez les participants à formuler ce qu'ils pensent qu'une caméra thermique mesure, avant toute explication.</li>
-    <li>Présentez les principes : rayonnement infrarouge, émissivité, température de brillance, et les principaux artéfacts (réflexion du ciel, angle de visée).</li>
-    <li>Reliez ces notions à des exemples concrets (du bilan radiatif planétaire jusqu'aux contrastes du site que l'on s'apprête à explorer).</li>
-    <li><strong>Constitution des groupes :</strong> formez des sous-groupes de 2 à 4 personnes, une caméra par groupe.</li>
-    <li>Distribuez les fiches d'observation et faites installer l'application FLIR One.</li>
-  </ul>
-
-  <h3>2. Exploration de terrain (60 min environ)</h3>
-  <p><strong>Mise en attention :</strong> avant de sortir la caméra, proposez d'observer le site à l'œil nu et de prédire où se trouveront les zones chaudes et froides.</p>
-  <p><strong>Enquête instrumentée :</strong> chaque groupe explore le site et observe successivement quatre types de surfaces — <strong>bâtiments, zones végétalisées, plans d'eau et sols minéraux (parkings, bitume)</strong>. Pour chacune : prédire, observer à la caméra, relever la température apparente, repérer les éventuels artéfacts, puis expliquer le contraste observé.</p>
-  <p>En hiver, l'observation se déplace volontiers vers le bâti : repérez les <strong>déperditions de chaleur</strong> d'une façade chauffée, les ponts thermiques autour des fenêtres, et le contraste saisissant entre un corps chaud et l'air froid.</p>
-
-  <h4>Idée d'activité : la carte thermique du site</h4>
-  <ol>
-    <li><strong>Définir la zone d'étude :</strong> repérez plusieurs points d'observation représentatifs (un mur exposé, un arbre, l'eau, un sol minéral, une zone d'ombre).</li>
-    <li><strong>Prédire :</strong> à chaque point, le groupe note ses hypothèses sur la température relative avant de viser.</li>
-    <li><strong>Observer et relever :</strong> capturez une image thermique, notez la température apparente, l'exposition au soleil et les éventuels reflets.</li>
-    <li><strong>Cartographier :</strong> reportez les relevés sur un plan du site pour faire apparaître sa mosaïque thermique — et discuter des îlots de chaleur et des zones rafraîchies par le vivant.</li>
-  </ol>
-
-  <h3 style="margin-top: 2.5rem;">3. Partage et retours réflexifs (20 min environ)</h3>
-
-  <p>Ce temps de clôture permet de consolider les apprentissages et d'inviter chacun·e à mettre des mots sur son expérience. Comme pour tout retour réflexif, l'objectif n'est pas d'évaluer des connaissances mais de faire émerger observations, surprises et ressentis.</p>
-
-  <h4 style="margin-top: 2rem;">À l'œil nu et à la caméra thermique</h4>
-  <p>Une même scène, vue normalement puis en thermographie. Passez la souris sur une image (ou touchez-la sur mobile) pour révéler sa version thermique : les arbres, plus frais, ressortent en sombre, tandis que les façades et les sols minéraux, qui stockent la chaleur, apparaissent en clair.</p>
-
-  <div class="ir-compare-grid">
-
-    <figure class="ir-compare">
-      <div class="ir-pair">
-        <img class="ir-visible" src="{{ '/assets/img/thermique/arbres-immeubles-visible.jpg' | relative_url }}" alt="Immeubles et grands arbres, vue normale">
-        <img class="ir-thermal" src="{{ '/assets/img/thermique/arbres-immeubles-thermique.jpg' | relative_url }}" alt="La même scène en thermographie : arbres frais en sombre, façades chaudes en clair">
-        <span class="ir-hint">thermique ⇄ visible</span>
-      </div>
-      <figcaption>Des immeubles encadrant une rangée d'arbres : la végétation tempère nettement son environnement.</figcaption>
-    </figure>
-
-    <figure class="ir-compare">
-      <div class="ir-pair">
-        <img class="ir-visible" src="{{ '/assets/img/thermique/immeuble-rouge-visible.jpg' | relative_url }}" alt="Immeuble entouré d'arbres, vue normale">
-        <img class="ir-thermal" src="{{ '/assets/img/thermique/immeuble-rouge-thermique.jpg' | relative_url }}" alt="La même scène en thermographie : arbres en violet, façade chaude en jaune">
-        <span class="ir-hint">thermique ⇄ visible</span>
-      </div>
-      <figcaption>Deux arbres frais encadrent une façade qui restitue la chaleur accumulée.</figcaption>
-    </figure>
-
-    <figure class="ir-compare">
-      <div class="ir-pair">
-        <img class="ir-visible" src="{{ '/assets/img/thermique/parking-arbres-visible.jpg' | relative_url }}" alt="Immeuble, parking et arbres, vue normale">
-        <img class="ir-thermal" src="{{ '/assets/img/thermique/parking-arbres-thermique.jpg' | relative_url }}" alt="La même scène en thermographie : sol et bâti chauds, arbres frais">
-        <span class="ir-hint">thermique ⇄ visible</span>
-      </div>
-      <figcaption>Le sol minéral du parking et les bâtiments contrastent avec la fraîcheur des arbres.</figcaption>
-    </figure>
-
-    <figure class="ir-compare">
-      <div class="ir-pair">
-        <img class="ir-visible" src="{{ '/assets/img/thermique/voie-ferree-visible.jpg' | relative_url }}" alt="Quartier traversé par une voie ferrée, vue normale">
-        <img class="ir-thermal" src="{{ '/assets/img/thermique/voie-ferree-thermique.jpg' | relative_url }}" alt="La même scène en thermographie : surfaces minérales chaudes, végétation fraîche">
-        <span class="ir-hint">thermique ⇄ visible</span>
-      </div>
-      <figcaption>À l'échelle d'un quartier, la mosaïque thermique révèle où la chaleur s'accumule.</figcaption>
-    </figure>
-
-  </div>
-
-  <h4 style="margin-top: 2rem;">Mettre en commun les observations</h4>
-
-  <p><strong>Le tour des découvertes.</strong> Chaque groupe présente une observation thermique marquante, une difficulté d'interprétation rencontrée et une question restée ouverte. C'est l'occasion de revenir collectivement sur les artéfacts (la fameuse vitre « froide ») et de distinguer signal et reflet.</p>
-
-  <p><strong>Le débat mouvant.</strong> Énoncez une affirmation : les participant·es se déplacent selon qu'ils sont d'accord ou non, puis quelques-un·es justifient. Quelques pistes :</p>
-  <ul>
-    <li>« En ville, la végétation rafraîchit vraiment l'air autour d'elle. »</li>
-    <li>« Une surface qui paraît froide sur la caméra est forcément froide au toucher. »</li>
-    <li>« Le béton et les arbres jouent le même rôle dans la température d'un quartier. »</li>
-    <li>« Voir la chaleur change la façon dont je regarde mon environnement. »</li>
-  </ul>
-
-  <h4 style="margin-top: 2rem;">Garder une trace</h4>
-
-  <p><strong>Le mot de la fin.</strong> Invitez chacun·e à décrire en un mot ou une courte phrase son état d'esprit à l'issue de l'atelier (« curieux·se », « surpris·e », « inspiré·e »…). Ces mots, rassemblés, dressent un paysage du ressenti collectif.</p>
-
-  <p><strong>Le carnet thermique.</strong> Un court écrit individuel à partir d'amorces :</p>
-  <ul>
-    <li>« Aujourd'hui, j'ai vu pour la première fois… »</li>
-    <li>« Ce qui m'a le plus surpris·e, c'est… »</li>
-    <li>« Je ne savais pas que… »</li>
-    <li>« La prochaine fois que je marcherai dehors, je regarderai… »</li>
-  </ul>
-
-  <h4 style="margin-top: 2rem;">Changer de perspective</h4>
-
-  <p><strong>Le campus (ou le quartier) comme système thermique.</strong> Discutez collectivement : comment bâtiments, végétation, eau et corps interagissent-ils thermiquement ? Où sont les zones les plus inconfortables en cas de forte chaleur (ou les plus déperditives en hiver) ? Que changerait-on pour les améliorer ? Cette discussion relie l'observation locale aux enjeux d'adaptation au changement climatique et de sobriété énergétique.</p>
-
-  <div class="callout tip" style="margin-top: 2rem;">
-    <div class="callout-title">Conseils</div>
-    <p>L'hiver et la végétation en dormance n'empêchent pas l'atelier : les contrastes entre bâti, eau et minéral restent très lisibles, et les déperditions des bâtiments chauffés sont alors particulièrement spectaculaires. Pensez aussi à ménager un moment de réflexion personnelle — la compréhension scientifique et le sentiment de connexion à l'environnement ne progressent pas automatiquement ensemble, et la dimension sensible mérite qu'on lui laisse une place explicite.</p>
-  </div>
-
-</section>
-
+</section> 
 
 <section id="ressources" class="page-section">
-  <h2>Pour aller plus loin</h2>
+  <h2>Quelques ressources</h2>
 
   <h3>Sur la thermographie en éducation</h3>
   <div class="resource-links">
