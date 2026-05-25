@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 permalink: /about/
 title: "Partenaires et soutiens du projet"
 lead: "Cap Nature est mené dans le cadre d'une thèse de doctorat, grâce au soutien de plusieurs institutions de recherche et de financement."
