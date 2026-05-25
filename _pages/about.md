@@ -5,7 +5,7 @@ title: "Partenaires et soutiens du projet"
 lead: "Cap Nature est mené dans le cadre d'une thèse de doctorat, grâce au soutien de plusieurs institutions de recherche et de financement."
 toc:
   - id: equipe
-    label: "Equipe de recherche"
+    label: "Équipe de recherche"
   - id: financement
     label: "Financement"
   - id: labo
