@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /partenaires/
+permalink: /about/
 title: "Partenaires et soutiens du projet"
 lead: "Cap Nature est mené dans le cadre d'une thèse de doctorat, grâce au soutien de plusieurs institutions de recherche et de financement."
 ---
@@ -54,3 +54,16 @@ lead: "Cap Nature est mené dans le cadre d'une thèse de doctorat, grâce au so
   </div>
 </section>
 
+<section class="page-section">
+  <h2>Encadrement de la thèse</h2>
+  <p>Ce travail de thèse est mené par <strong>Marie-Léa Pouliquen</strong>, sous la direction de :</p>
+  <ul>
+    <li><strong>Véronique Van Tilbeurgh</strong> — directrice de thèse (laboratoire Espaces et Sociétés, Université de Rennes 2)</li>
+    <li><strong>Laurent Longuevergne</strong> — co-directeur (laboratoire Géosciences Rennes, Université de Rennes)</li>
+  </ul>
+  <p>Avec le co-encadrement de :</p>
+  <ul>
+    <li><strong>Gladys Barragan-Jason</strong> — Station d'Écologie Théorique et Expérimentale (SETE) de Moulis, CNRS</li>
+    <li><strong>Maxime Cauchoix</strong> — Station d'Écologie Théorique et Expérimentale (SETE) de Moulis, CNRS</li>
+  </ul>
+</section>
