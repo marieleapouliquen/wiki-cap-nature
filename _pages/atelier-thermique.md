@@ -378,38 +378,30 @@ toc:
 <section id="ressources" class="page-section">
   <h2>Quelques ressources</h2>
 
-  <h3>Sur la thermographie en éducation</h3>
-  <div class="resource-links">
-    <a class="resource-link" href="https://doi.org/10.1007/s11165-015-9476-8" target="_blank" rel="noopener">
-      <span class="resource-link-label">Recherche · Research in Science Education</span>
-      <span class="resource-link-title">Haglund et al. — Les caméras IR comme invitation à l'investigation</span>
-    </a>
-    <a class="resource-link" href="https://doi.org/10.1088/1361-6552/ab15b9" target="_blank" rel="noopener">
-      <span class="resource-link-label">Pédagogie · Physics Education</span>
-      <span class="resource-link-title">Kácovský — La thermographie en une séance de physique</span>
-    </a>
-    <a class="resource-link" href="https://doi.org/10.3390/su14053096" target="_blank" rel="noopener">
-      <span class="resource-link-label">Médiation · Sustainability</span>
-      <span class="resource-link-title">L'imagerie thermique pour communiquer la science</span>
-    </a>
-  </div>
-
-
-  <h3>Sur la chaleur, le climat et le vivant</h3>
-  <div class="resource-links">
-    <a class="resource-link" href="https://doi.org/10.1016/j.enbenv.2020.09.008" target="_blank" rel="noopener">
-      <span class="resource-link-label">Étude · Energy and Built Environment</span>
-      <span class="resource-link-title">Hawas &amp; Al-Habaibeh — Thermographie citoyenne et économies d'énergie</span>
-    </a>
-    <a class="resource-link" href="https://doi.org/10.1111/nph.17321" target="_blank" rel="noopener">
-      <span class="resource-link-label">Recherche · New Phytologist</span>
-      <span class="resource-link-title">Still et al. — Imagerie thermique de la canopée et des écosystèmes</span>
-    </a>
-    <a class="resource-link" href="https://doi.org/10.1177/23733799251363155" target="_blank" rel="noopener">
-      <span class="resource-link-label">Pédagogie · Pedagogy in Health Promotion</span>
-      <span class="resource-link-title">Monteblanco et al. — « Photovoix thermique » et chaleur urbaine</span>
-    </a>
-  </div>
+  <h3>Publications scientifiques sur la thermographie en éducation et la thermographie citoyenne</h3>
+    <div class="resource-links">
+      <a class="resource-link" href="https://doi.org/10.1007/s11165-015-9476-8" target="_blank" rel="noopener">
+        <span class="resource-link-label">Recherche · Research in Science Education</span>
+        <span class="resource-link-title">Haglund et al. — Les caméras IR comme invitation à l'investigation</span>
+      </a>
+      <a class="resource-link" href="https://doi.org/10.1088/1361-6552/ab15b9" target="_blank" rel="noopener">
+        <span class="resource-link-label">Pédagogie · Physics Education</span>
+        <span class="resource-link-title">Kácovský — La thermographie en une séance de physique</span>
+      </a>
+      <a class="resource-link" href="https://doi.org/10.1016/j.enbenv.2020.09.008" target="_blank" rel="noopener">
+        <span class="resource-link-label">Étude · Energy and Built Environment</span>
+        <span class="resource-link-title">Hawas &amp; Al-Habaibeh — Thermographie citoyenne et économies d'énergie</span>
+      </a>
+      a class="resource-link" href="https://doi.org/10.1177/23733799251363155" target="_blank" rel="noopener">
+        <span class="resource-link-label">Pédagogie · Pedagogy in Health Promotion</span>
+        <span class="resource-link-title">Monteblanco et al. — « Photovoix thermique » et chaleur urbaine</span>
+      </a>
+      <a class="resource-link" href="https://doi.org/10.3390/su14053096" target="_blank" rel="noopener">
+        <span class="resource-link-label">Médiation · Sustainability</span>
+        <span class="resource-link-title">L'imagerie thermique pour communiquer la science</span>
+      </a>
+    </div>
+    
 </section>
 
 
