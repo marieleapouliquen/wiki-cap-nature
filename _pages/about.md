@@ -17,13 +17,13 @@ toc:
 <section id="equipe" class="page-section">
   <p>Ce travail de thèse est mené par <strong>Marie-Léa Pouliquen</strong>, sous la direction de :</p>
   <ul>
-    <li><strong>Véronique Van Tilbeurgh</strong> — Professeure des universités (laboratoire Espaces et Sociétés, Université de Rennes 2)</li>
-    <li><strong>Laurent Longuevergne</strong> — Directeur de recherche au CNRS (laboratoire Géosciences Rennes, Université de Rennes)</li>
+    <li><strong>Véronique Van Tilbeurgh</strong> — Professeure des universités — laboratoire Espaces et Sociétés, Université de Rennes 2</li>
+    <li><strong>Laurent Longuevergne</strong> — Directeur de recherche au CNRS — laboratoire Géosciences Rennes, Université de Rennes</li>
   </ul>
   <p>Avec le co-encadrement de :</p>
   <ul>
-    <li><strong>Gladys Barragan-Jason</strong> — Chargée de recherche au CNRS (Station d'Écologie Théorique et Expérimentale de Moulis)</li>
-    <li><strong>Maxime Cauchoix</strong> — Chargé de recherche au CNRS (Station d'Écologie Théorique et Expérimentale de Moulis)</li>
+    <li><strong>Gladys Barragan-Jason</strong> — Chargée de recherche au CNRS — Station d'Écologie Théorique et Expérimentale de Moulis</li>
+    <li><strong>Maxime Cauchoix</strong> — Chargé de recherche au CNRS — Station d'Écologie Théorique et Expérimentale de Moulis</li>
   </ul>
 </section>
 
