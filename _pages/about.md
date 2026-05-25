@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 permalink: /about/
 title: "Partenaires et soutiens du projet"
 lead: "Cap Nature est mené dans le cadre d'une thèse de doctorat, grâce au soutien de plusieurs institutions de recherche et de financement."
@@ -10,7 +10,7 @@ lead: "Cap Nature est mené dans le cadre d'une thèse de doctorat, grâce au so
   <p>Le projet est financé dans le cadre d'une thèse de doctorat par les soutiens suivants :</p>
 
   <div class="resource-links">
-    <a class="resource-link" href="https://www.bretagne.bzh/aides/college-doctoral-de-bretagne/" target="_blank" rel="noopener">
+    <a class="resource-link" href="https://www.doctorat-bretagne.fr/" target="_blank" rel="noopener">
       <span class="resource-link-label">Allocation doctorale</span>
       <span class="resource-link-title">Collège Doctoral de Bretagne</span>
     </a>
