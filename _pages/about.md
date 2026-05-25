@@ -58,12 +58,12 @@ lead: "Cap Nature est mené dans le cadre d'une thèse de doctorat, grâce au so
   <h2>Encadrement de la thèse</h2>
   <p>Ce travail de thèse est mené par <strong>Marie-Léa Pouliquen</strong>, sous la direction de :</p>
   <ul>
-    <li><strong>Véronique Van Tilbeurgh</strong> — directrice de thèse (laboratoire Espaces et Sociétés, Université de Rennes 2)</li>
-    <li><strong>Laurent Longuevergne</strong> — co-directeur (laboratoire Géosciences Rennes, Université de Rennes)</li>
+    <li><strong>Véronique Van Tilbeurgh</strong> — Professeure de université (laboratoire Espaces et Sociétés, Université de Rennes 2)</li>
+    <li><strong>Laurent Longuevergne</strong> — Directeur de recherche au CNRS (laboratoire Géosciences Rennes, Université de Rennes)</li>
   </ul>
   <p>Avec le co-encadrement de :</p>
   <ul>
-    <li><strong>Gladys Barragan-Jason</strong> — Station d'Écologie Théorique et Expérimentale (SETE) de Moulis, CNRS</li>
-    <li><strong>Maxime Cauchoix</strong> — Station d'Écologie Théorique et Expérimentale (SETE) de Moulis, CNRS</li>
+    <li><strong>Gladys Barragan-Jason</strong> — Chargée de recherche au CNRS (Station d'Écologie Théorique et Expérimentale de Moulis)</li>
+    <li><strong>Maxime Cauchoix</strong> —  Chargé de recherche au CNRS (Station d'Écologie Théorique et Expérimentale de Moulis)</li>
   </ul>
 </section>
