@@ -83,6 +83,6 @@ toc:
     <img src="{{ '/assets/img/logos/cdb.png' | relative_url }}" alt="Collège Doctoral de Bretagne">
     <img src="{{ '/assets/img/logos/eso.png' | relative_url }}" alt="Espaces et Sociétés">
     <img src="{{ '/assets/img/logos/geos.png' | relative_url }}" alt="Géosciences Rennes">
-    <img src="{{ '/assets/img/logos/sete.png' | relative_url }}" alt="Station d'Ecologie Théorique et Expérimentale">    
+    <img src="{{ '/assets/img/logos/sete.png' | relative_url }}" alt="Station d'Écologie Théorique et Expérimentale">    
   </div>
 </section>
