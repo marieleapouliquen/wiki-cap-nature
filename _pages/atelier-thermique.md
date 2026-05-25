@@ -324,32 +324,17 @@ toc:
     <div class="disclosure-body">
 
   
-        <p>Une caméra thermique ne mesure pas directement une température : elle capte un <strong>flux de rayonnement infrarouge</strong> et le traduit en température. Mais cette traduction dépend de l'<strong>émissivité</strong> du matériau visé — c'est pourquoi la caméra possède un réglage d'émissivité, fixé ici à <strong>0,95</strong>.</p>
+        <p>Une caméra thermique ne mesure pas directement une température : elle capte un <strong>flux de rayonnement infrarouge</strong>, puis le convertit en température en supposant une surface idéale (corps noir, émissivité ε = 0,95). La température ainsi obtenue est la <strong>température de brillance</strong> — celle qu'affiche l'appareil.</p>
 
-      <p>Le calculateur ci-dessous illustre cette étape. Choisissez un matériau et faites varier son émissivité : pour un <strong>même flux mesuré</strong>, comparez la <strong>température de brillance</strong> (celle qu'affiche la caméra réglée sur 0,95) à la <strong>vraie température</strong> de la surface. Tant que l'émissivité du matériau est proche de 0,95, les deux coïncident ; plus elle s'en éloigne, plus l'écart se creuse.</p>
+      <p>Le calculateur ci-dessous illustre cette conversion : faites varier le flux infrarouge capté et observez la température de brillance correspondante.</p>
 
         <div class="tb-calc" markdown="0">
-          <p class="tb-calc-intro">La seule grandeur que mesure réellement la caméra, c'est un <strong>flux de rayonnement infrarouge</strong> (en W/m²). Pour en déduire une température, il faut l'interpréter — et cette interprétation dépend de l'émissivité supposée. La caméra applique son réglage (ε = 0,95) et obtient la <strong>température de brillance</strong>. Mais la vraie température de la surface ne s'obtient qu'en utilisant la <strong>vraie émissivité du matériau</strong>.</p>
+          <p class="tb-calc-intro">La caméra applique la loi de Stefan-Boltzmann : à partir du flux capté <em>F</em>, elle calcule la température d'un corps noir parfait qui émettrait ce même flux. C'est la température de brillance.</p>
 
           <div class="tb-row tb-row-main">
             <label for="tb-flux-in">Flux infrarouge mesuré</label>
             <input id="tb-flux-in" type="range" min="200" max="1050" step="5" value="420" />
             <output id="tb-flux-out">420 W/m²</output>
-          </div>
-
-          <div class="tb-scene">
-            <span class="tb-scene-label">Matériau observé :</span>
-            <button type="button" class="tb-preset is-active" data-e="0.95">Surface mate (ε 0,95)</button>
-            <button type="button" class="tb-preset" data-e="0.96">Végétation (ε 0,96)</button>
-            <button type="button" class="tb-preset" data-e="0.92">Béton (ε 0,92)</button>
-            <button type="button" class="tb-preset" data-e="0.30">Métal peint (ε 0,30)</button>
-            <button type="button" class="tb-preset" data-e="0.10">Métal poli (ε 0,10)</button>
-          </div>
-
-          <div class="tb-row">
-            <label for="tb-emis">Vraie émissivité du matériau ε</label>
-            <input id="tb-emis" type="range" min="0.05" max="1" step="0.01" value="0.95" />
-            <output id="tb-emis-out">0,95</output>
           </div>
 
           <div class="tb-chain">
@@ -359,19 +344,16 @@ toc:
               <div class="tb-box-formula">ce que capte la caméra</div>
             </div>
             <span class="tb-arrow">→</span>
-            <div class="tb-box">
+            <div class="tb-box" id="tb-result-box">
               <div class="tb-box-label">Température de brillance</div>
               <div class="tb-box-value" id="tb-bril">—</div>
-              <div class="tb-box-formula">interprétation à ε = 0,95</div>
-            </div>
-            <span class="tb-arrow">→</span>
-            <div class="tb-box" id="tb-result-box">
-              <div class="tb-box-label">Vraie température</div>
-              <div class="tb-box-value" id="tb-true">—</div>
-              <div class="tb-box-formula">interprétation à la vraie ε</div>
+              <div class="tb-box-formula">F = ε·σ·T⁴, avec ε = 0,95</div>
             </div>
           </div>
-          <div class="tb-note" id="tb-note">—</div>
+
+          <div class="tb-note">
+            <strong>Attention :</strong> la température de brillance n'est pas forcément la température réelle de la surface. La caméra suppose une émissivité de 0,95 ; si le matériau émet moins bien (métal, verre…), une partie du flux capté provient en réalité du rayonnement réfléchi de l'environnement, et la lecture s'écarte de la vraie température. Interpréter une image thermique, c'est garder cet écart à l'esprit.
+          </div>
         </div>
 
     </div>
@@ -487,57 +469,18 @@ toc:
   var SIGMA = 5.67e-8, K = 273.15, CAM = 0.95;
   var fluxIn = document.getElementById('tb-flux-in'),
       fluxOut = document.getElementById('tb-flux-out'),
-      emis = document.getElementById('tb-emis'),
-      emisOut = document.getElementById('tb-emis-out'),
       fluxDisp = document.getElementById('tb-flux-disp'),
-      bril = document.getElementById('tb-bril'),
-      trueBox = document.getElementById('tb-true'),
-      box = document.getElementById('tb-result-box'),
-      note = document.getElementById('tb-note');
+      bril = document.getElementById('tb-bril');
   if (!fluxIn) return;
   function fr(n){ return n.toFixed(1).replace('.', ','); }
   function compute(){
-    var F = parseFloat(fluxIn.value), e = parseFloat(emis.value);
-    // Température de brillance : flux interprété avec l'émissivité de la caméra (0,95)
+    var F = parseFloat(fluxIn.value);
     var Tbril = Math.pow(F / (CAM * SIGMA), 0.25) - K;
-    // Vraie température : même flux interprété avec la vraie émissivité du matériau
-    var Treal = Math.pow(F / (e * SIGMA), 0.25) - K;
-    var ecart = Treal - Tbril, absEc = Math.abs(ecart);
     fluxOut.textContent = Math.round(F) + ' W/m²';
-    emisOut.textContent = e.toFixed(2).replace('.', ',');
     fluxDisp.textContent = Math.round(F) + ' W/m²';
     bril.textContent = fr(Tbril) + ' °C';
-    trueBox.textContent = fr(Treal) + ' °C';
-    var col = '#3a7a52', word = 'fiable';
-    if (absEc > 5){ col = '#c1666b'; word = 'très faussée'; }
-    else if (absEc > 1.5){ col = '#c98a1f'; word = 'légèrement faussée'; }
-    box.style.borderColor = col;
-    box.style.boxShadow = '0 0 0 1px ' + col;
-    note.innerHTML = (Math.abs(e - CAM) < 0.04
-      ? 'L\u2019émissivité du matériau est proche du réglage de la caméra (0,95) : la température de brillance correspond presque à la vraie température.'
-      : 'Pour un <strong>même flux mesuré</strong>, la température de brillance (lue à ε = 0,95) et la vraie température diffèrent de <strong style="color:' + col + '">' + fr(absEc)
-        + ' °C</strong> — lecture ' + word + '. Plus l\u2019émissivité du matériau est faible, plus il faut une température réelle élevée pour émettre le même flux : la brillance <strong>sous-estime</strong> alors la vraie température. C\u2019est pourquoi on règle l\u2019émissivité sur la caméra.');
   }
-  Array.prototype.forEach.call(document.querySelectorAll('.tb-preset'), function(b){
-    b.addEventListener('click', function(){
-      document.querySelectorAll('.tb-preset').forEach(function(x){ x.classList.remove('is-active'); });
-      b.classList.add('is-active');
-      emis.value = b.getAttribute('data-e');
-      compute();
-    });
-  });
-  [fluxIn, emis].forEach(function(s){ s.addEventListener('input', function(){
-    // bouger le curseur émissivité désélectionne les préréglages si valeur ne correspond pas
-    compute();
-  }); });
-  emis.addEventListener('input', function(){
-    var v = emis.value;
-    var match=false;
-    document.querySelectorAll('.tb-preset').forEach(function(x){
-      if (x.getAttribute('data-e')===v){ x.classList.add('is-active'); match=true; }
-      else x.classList.remove('is-active');
-    });
-  });
+  fluxIn.addEventListener('input', compute);
   compute();
 })();
 </script>
