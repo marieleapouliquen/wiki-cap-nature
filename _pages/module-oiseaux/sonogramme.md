@@ -5,7 +5,17 @@ title: Apprendre à lire un sonogramme
 
 <main class="content">
 
- <h2>Guide : Apprendre à lire un sonogramme</h2>
+  <nav class="back-navigation" style="margin-top: 1rem; margin-bottom: 2rem;">
+    <a href="{{ '/module-oiseaux/' | relative_url }}" 
+       style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--color-text-muted, #718096); font-weight: bold; font-size: 0.95rem; transition: color 0.2s ease;"
+       onmouseover="this.style.color='var(--color-link, #2b6cb0)'; this.querySelector('.arrow').style.transform='translateX(-3px)';" 
+       onmouseout="this.style.color='var(--color-text-muted, #718096)'; this.querySelector('.arrow').style.transform='translateX(0)';">
+      <span class="arrow" style="display: inline-block; transition: transform 0.2s ease;">←</span> 
+      Retour à la page "Atelier Écoacoustique"
+    </a>
+  </nav>
+
+  <h2>Guide : Apprendre à lire un sonogramme</h2>
   <p>Quand l'application Merlin identifie un oiseau, elle affiche un <strong>sonogramme</strong> (ou spectrogramme) qui défile en temps réel. Comprendre cette image enrichit considérablement l'analyse pédagogique en transformant une onde sonore invisible en repère visuel.</p>
 
   <div class="callout science">
@@ -17,7 +27,7 @@ title: Apprendre à lire un sonogramme
   <p>Un sonogramme se lit comme une partition de musique simplifiée. Il a deux dimensions :</p>
 
   <div class="sono-frame">
-    <svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
       <rect x="80" y="40" width="560" height="280" fill="#fafbf6" stroke="#e2e6d8"/>
       <line x1="80" y1="40" x2="640" y2="40" stroke="#e2e6d8" stroke-dasharray="3,3"/>
       <line x1="80" y1="110" x2="640" y2="110" stroke="#e2e6d8" stroke-dasharray="3,3"/>
@@ -66,7 +76,7 @@ title: Apprendre à lire un sonogramme
   <p>Plus une trace est colorée vivement, plus le son est puissant à ce moment précis sur cette fréquence.</p>
 
   <div class="sono-frame">
-    <svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
       <rect x="50" y="30" width="600" height="120" fill="#fafbf6" stroke="#e2e6d8"/>
       <defs>
         <linearGradient id="merlinGrad" x1="0%" x2="100%">
@@ -89,7 +99,7 @@ title: Apprendre à lire un sonogramme
   <p>Quelques termes utiles pour décrire ce qu'on observe sur un spectrogramme :</p>
 
   <div class="sono-frame">
-    <svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
       <rect x="80" y="20" width="560" height="240" fill="#fafbf6" stroke="#e2e6d8"/>
       <line x1="80" y1="20" x2="80" y2="260" stroke="#1f2a6b" stroke-width="1.5"/>
       <text x="65" y="30" font-size="10" fill="#1f2a6b" text-anchor="end">8 kHz</text>
@@ -134,7 +144,7 @@ title: Apprendre à lire un sonogramme
   </div>
 
   <h2>Les grands motifs visuels des chants</h2>
-  <p>Avant même d'identifier l'espèce, apprenez à repérer ces grandes signatures visuelles :</p>
+  <p>Avant même d'identification l'espèce, apprenez à repérer ces grandes signatures visuelles :</p>
 
   <div class="legend-mini">
     <span><span class="swatch" style="background:#e8862a"></span> intensité forte</span>
@@ -147,7 +157,7 @@ title: Apprendre à lire un sonogramme
     <div class="sono-card">
       <h4>Pattern : “Strophe mélodique”</h4>
       <span class="latin">Notes flûtées fluctuantes</span>
-      <svg viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
         <rect x="35" y="10" width="260" height="90" fill="#fafbf6" stroke="#e2e6d8"/>
         <line x1="35" y1="10" x2="35" y2="100" stroke="#1f2a6b"/><line x1="35" y1="100" x2="295" y2="100" stroke="#1f2a6b"/>
         <path d="M 60 60 Q 75 30 95 45 Q 110 70 125 40" stroke="#e8862a" stroke-width="5" fill="none" stroke-linecap="round"/>
@@ -159,7 +169,7 @@ title: Apprendre à lire un sonogramme
     <div class="sono-card">
       <h4>Pattern : “Phrase répétée”</h4>
       <span class="latin">Séquences brèves identiques</span>
-      <svg viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
         <rect x="35" y="10" width="260" height="90" fill="#fafbf6" stroke="#e2e6d8"/>
         <line x1="35" y1="10" x2="35" y2="100" stroke="#1f2a6b"/><line x1="35" y1="100" x2="295" y2="100" stroke="#1f2a6b"/>
         <ellipse cx="70" cy="40" rx="3" ry="9" fill="#e8862a"/><ellipse cx="85" cy="60" rx="3" ry="9" fill="#e8862a"/>
@@ -172,7 +182,7 @@ title: Apprendre à lire un sonogramme
     <div class="sono-card">
       <h4>Pattern : “Bloc grave bas”</h4>
       <span class="latin">Traces horizontales très basses</span>
-      <svg viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
         <rect x="35" y="10" width="260" height="90" fill="#fafbf6" stroke="#e2e6d8"/>
         <line x1="35" y1="10" x2="35" y2="100" stroke="#1f2a6b"/><line x1="35" y1="100" x2="295" y2="100" stroke="#1f2a6b"/>
         <ellipse cx="100" cy="85" rx="35" ry="8" fill="#e8862a"/>
@@ -184,7 +194,7 @@ title: Apprendre à lire un sonogramme
     <div class="sono-card">
       <h4>Pattern : “Cri rauque large bande”</h4>
       <span class="latin">Taches verticales épaisses</span>
-      <svg viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
         <rect x="35" y="10" width="260" height="90" fill="#fafbf6" stroke="#e2e6d8"/>
         <line x1="35" y1="10" x2="35" y2="100" stroke="#1f2a6b"/><line x1="35" y1="100" x2="295" y2="100" stroke="#1f2a6b"/>
         <rect x="90" y="25" width="15" height="65" fill="#e8862a"/>
@@ -195,17 +205,4 @@ title: Apprendre à lire un sonogramme
 
   </div>
 
-<nav class="back-navigation" style="margin-bottom: 2rem;">
-    <a href="{{ '/module-oiseaux/' | relative_url }}" 
-       style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--color-text-muted, #718096); font-weight: bold; font-size: 0.95rem; transition: color 0.2s ease;"
-       onmouseover="this.style.color='var(--color-link, #2b6cb0)'; this.querySelector('.arrow').style.transform='translateX(-3px)';" 
-       onmouseout="this.style.color='var(--color-text-muted, #718096)'; this.querySelector('.arrow').style.transform='translateX(0)';">
-      <span class="arrow" style="display: inline-block; transition: transform 0.2s ease;">←</span> 
-      Retour à la page "Atelier Écoacoustique"
-    </a>
- </nav>
-
-
 </main>
-
-
