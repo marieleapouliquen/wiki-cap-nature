@@ -286,16 +286,14 @@ toc:
         <p>Tout corps dont la température dépasse le zéro absolu émet de la chaleur sous forme de rayonnement infrarouge (IR). La caméra mesure ce rayonnement, et non la température « au toucher ».</p>
       </div>
       <div class="concept-card">
-        <strong>Température de brillance</strong>
-        <p>La caméra mesure le flux de rayonnement IR émis par une surface, puis le convertit en température en supposant une surface idéale (corps noir parfait, ε = 1). La température ainsi obtenue est appelée température de brillance.</p>
-        <p>Sur les surfaces à émissivité élevée, elle est proche de la température réelle ; sur les matériaux à faible émissivité, elle s'en écarte fortement à cause du rayonnement réfléchi. C'est pourquoi on règle l'émissivité sur la caméra : pour corriger cet écart.</p>
-      </div>
-      <div class="concept-card">
         <strong>Émissivité</strong>
         <p>L'émissivité est l'aptitude d'une surface à émettre du rayonnement IR, exprimée entre 0 et 1. Les surfaces non métalliques (bois, végétation, eau, peinture) ont une émissivité élevée (≈ 0,9) : la caméra mesure alors une température proche de la température réelle. Les surfaces métalliques polies ont une émissivité faible — elles émettent peu de rayonnement propre et réfléchissent celui de leur environnement —, si bien que la mesure est faussée.</p>
       </div>
+      <div class="concept-card">
+        <strong>Température de brillance</strong>
+        <p>La caméra mesure le flux de rayonnement IR émis par une surface, puis le convertit en température en supposant une surface idéale (corps noir parfait, ε = 1). La température ainsi obtenue est appelée température de brillance.</p>
+      </div>
     </div>
-
 
       <h3>Quelques signatures thermiques typiques</h3>
       <ul>
