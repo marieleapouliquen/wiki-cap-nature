@@ -302,9 +302,7 @@ toc:
       </div>
   </details>
 
-  
-
-  <h3>Optionnel : une parabole directionnelle</h3>
+  <h3>Outil optionnel : la parabole directionnelle</h3>
   <p>Pour les ateliers, nous avons décidé d'ajouter au dispositif instrumenté la parabole directionnelle <a href="https://www.birdmic.com/" target="_blank" rel="noopener">BirdMic</a>. Une parabole directionnelle est un dispositif qui concentre et amplifie les ondes acoustiques venant d'une direction précise.</p>
 
   <div class="text-image-split">
