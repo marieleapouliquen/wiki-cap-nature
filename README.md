@@ -1,4 +1,4 @@
-# Cap Nature — Ateliers Birds
+# Cap Nature
 
 ## Structure du dépôt
 
