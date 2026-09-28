@@ -2,6 +2,7 @@
 layout: page
 permalink: /atelier-oiseaux/
 title: "À l'écoute des oiseaux et du paysage sonore"
+description: "Atelier d'écoacoustique participative"
 lead: "Cet atelier d'écoacoustique participative invite les participant·es à mener une enquête sensible et instrumentée sur le paysage sonore et les oiseaux présents dans l'environnement."
 toc:
   - id: definition
