@@ -2,6 +2,7 @@
 layout: page
 permalink: /about/
 title: "Partenaires et soutiens du projet"
+description: "Partenaires, laboratoires et financeurs du projet Cap Nature"
 lead: "Cap Nature est mené dans le cadre d'une thèse de doctorat, grâce au soutien de plusieurs institutions de recherche et de financement."
 toc:
   - id: equipe
