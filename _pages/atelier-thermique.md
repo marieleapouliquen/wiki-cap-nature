@@ -2,6 +2,7 @@
 layout: page
 permalink: /atelier-thermique/
 title: "Rendre la chaleur visible : explorer les microclimats à la caméra thermique"
+description: "Atelier de thermographie infrarouge : observer les microclimats urbains avec une caméra thermique"
 lead: "Cet atelier de thermographie infrarouge invite les participant·es à observer, avec une caméra thermique connectée au smartphone, les échanges de chaleur invisibles entre bâtiments, végétation, eau et corps vivants — et à percevoir leur environnement proche comme un système thermique en interaction."
 toc:
   - id: enjeu
