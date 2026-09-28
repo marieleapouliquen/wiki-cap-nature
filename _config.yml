@@ -3,14 +3,14 @@
 # -----------------------------------------------------------------------------
 title: "Les Ateliers Cap Nature"
 tagline: "(Re)découvrir la nature avec des capteurs participatifs"
-description: "Les Ateliers Cap Nature"
+description: "Ateliers participatifs pour (re)découvrir la nature avec des capteurs environnementaux"
 lang: fr
 timezone: Europe/Paris
 
 # URL de base : le site est publié sur https://<user>.github.io/wiki-cap-nature/
 # donc baseurl vaut "/wiki-cap-nature". Pour un domaine racine, mettre "".
 baseurl: "/wiki-cap-nature"
-url: ""
+url: "https://www.marieleapouliquen.com"
 
 # Crédits photos affichés dans le pied de page de l'accueil
 # photo_credits: "Amee Fairbank-Brown, Don Coombez, Andrew Odintsov, Konstantin Nezhbert, Lex Melony, Vincent van Zalinge — Unsplash"
@@ -40,3 +40,7 @@ collections:
 # Navigation
 # -----------------------------------------------------------------------------
 # Le menu est défini dans _data/navigation.yml
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
